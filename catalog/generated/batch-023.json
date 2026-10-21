@@ -1,0 +1,770 @@
+{
+  "schemaVersion": 1,
+  "offset": 23,
+  "limit": 17,
+  "processed": 17,
+  "indexed": [
+    {
+      "id": "agentdeskai-browser-tools-mcp",
+      "name": "browser-tools-mcp",
+      "fullName": "AgentDeskAI/browser-tools-mcp",
+      "description": "Monitor browser logs directly from Cursor and other MCP compatible IDEs.",
+      "category": "mcp",
+      "source": "https://github.com/AgentDeskAI/browser-tools-mcp",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/AgentDeskAI/browser-tools-mcp/license"
+      },
+      "github": {
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "anthropic",
+          "cursor",
+          "mcp",
+          "mcp-server"
+        ],
+        "stars": 7329,
+        "forks": 536,
+        "pushedAt": "2026-10-16T18:21:25Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "verified-awesome-mcp-servers"
+        ],
+        "githubApi": "https://api.github.com/repos/AgentDeskAI/browser-tools-mcp",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "agentdock-agentdock",
+      "name": "AgentDock",
+      "fullName": "AgentDock/AgentDock",
+      "description": "Framework retired. Prompts and document generators moved to AgentDock/prompt-library, the book to AgentDock/ai-agents-book. See the pinned issue.",
+      "category": "mcp",
+      "source": "https://github.com/AgentDock/AgentDock",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/AgentDock/AgentDock/license"
+      },
+      "github": {
+        "language": "MDX",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "llm",
+          "mcp",
+          "prompt-library",
+          "prompts"
+        ],
+        "stars": 1773,
+        "forks": 132,
+        "pushedAt": "2026-07-14T07:40:00Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/AgentDock/AgentDock",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "agenticenv-agent-sdk-go",
+      "name": "agent-sdk-go",
+      "fullName": "agenticenv/agent-sdk-go",
+      "description": "Durable execution framework for AI agents in Go. Keeps agent state, tool calls, and execution loops resilient across process crashes.",
+      "category": "mcp",
+      "source": "https://github.com/agenticenv/agent-sdk-go",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/agenticenv/agent-sdk-go/license"
+      },
+      "github": {
+        "language": "Go",
+        "topics": [
+          "a2a",
+          "ag-ui",
+          "agent-harness",
+          "agent-sdk",
+          "agent-sdk-go",
+          "agentic-ai",
+          "ai",
+          "ai-agents",
+          "ai-agents-framework",
+          "distributed-agents",
+          "durable-agents",
+          "durable-execution",
+          "framework",
+          "golang",
+          "in-process",
+          "mcp",
+          "restate",
+          "restatedotdev",
+          "temporal",
+          "workflow"
+        ],
+        "stars": 61,
+        "forks": 8,
+        "pushedAt": "2026-10-20T23:44:33Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/agenticenv/agent-sdk-go",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "agentlas-ai-agentlas-os",
+      "name": "Agentlas-OS",
+      "fullName": "agentlas-ai/Agentlas-OS",
+      "description": "Agent OS: keep specialist agents in a hub, spin up a temporary orchestrator per task. Local-first, works with any model.",
+      "category": "mcp",
+      "source": "https://github.com/agentlas-ai/Agentlas-OS",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/agentlas-ai/Agentlas-OS/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "a2a",
+          "agent",
+          "agent-framework",
+          "agent-os-desktop",
+          "agent-skills",
+          "agentic-ai",
+          "agentic-workflow",
+          "agentos",
+          "agents",
+          "agents-team",
+          "agentshub",
+          "ai-agents",
+          "autonomous-agents",
+          "llm",
+          "llm-agents",
+          "llm-tools",
+          "mcp",
+          "multi-agent-systems",
+          "ochestration"
+        ],
+        "stars": 1614,
+        "forks": 111,
+        "pushedAt": "2026-10-20T01:55:52Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents",
+          "verified-awesome-mcp-servers"
+        ],
+        "githubApi": "https://api.github.com/repos/agentlas-ai/Agentlas-OS",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "agentops-ai-agentops",
+      "name": "agentops",
+      "fullName": "AgentOps-AI/agentops",
+      "description": "Python SDK for AI agent monitoring, LLM cost tracking, benchmarking, and more. Integrates with most LLMs and agent frameworks including CrewAI, Agno, OpenAI Agents SDK, Langchain, Autogen, AG2, and CamelAI",
+      "category": "agent-framework",
+      "source": "https://github.com/AgentOps-AI/agentops",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/AgentOps-AI/agentops/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "agent",
+          "agentops",
+          "agents-sdk",
+          "ai",
+          "anthropic",
+          "autogen",
+          "cost-estimation",
+          "crewai",
+          "evals",
+          "evaluation-metrics",
+          "groq",
+          "langchain",
+          "llm",
+          "mistral",
+          "ollama",
+          "openai",
+          "openai-agents"
+        ],
+        "stars": 5901,
+        "forks": 646,
+        "pushedAt": "2026-06-25T08:25:03Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/AgentOps-AI/agentops",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "agentrhq-webcmd",
+      "name": "webcmd",
+      "fullName": "agentrhq/webcmd",
+      "description": "Self-learning agent browser",
+      "category": "browser-agent",
+      "source": "https://github.com/agentrhq/webcmd",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/agentrhq/webcmd/license"
+      },
+      "github": {
+        "language": "TypeScript",
+        "topics": [
+          "ai-agents",
+          "browser-automation",
+          "browser-use",
+          "cli",
+          "developer-tools",
+          "playwright",
+          "self-learning-ai"
+        ],
+        "stars": 2739,
+        "forks": 1538,
+        "pushedAt": "2026-10-20T14:17:58Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/agentrhq/webcmd",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "agentscope-ai-agentscope",
+      "name": "agentscope",
+      "fullName": "agentscope-ai/agentscope",
+      "description": "Build and run agents you can see, understand and trust.",
+      "category": "mcp",
+      "source": "https://github.com/agentscope-ai/agentscope",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/agentscope-ai/agentscope/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "agent",
+          "chatbot",
+          "large-language-models",
+          "llm",
+          "llm-agent",
+          "mcp",
+          "multi-agent",
+          "multi-modal",
+          "react-agent",
+          "realtime-agent",
+          "voice-agent",
+          "voice-assistant"
+        ],
+        "stars": 33594,
+        "forks": 3686,
+        "pushedAt": "2026-10-21T10:30:05Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks",
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/agentscope-ai/agentscope",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "agentset-ai-agentset",
+      "name": "agentset",
+      "fullName": "agentset-ai/agentset",
+      "description": "The open-source RAG platform: built-in citations, deep research, 22+ file formats, partitions, MCP server, and more.",
+      "category": "mcp",
+      "source": "https://github.com/agentset-ai/agentset",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/agentset-ai/agentset/license"
+      },
+      "github": {
+        "language": "TypeScript",
+        "topics": [
+          "agentic-rag",
+          "ai",
+          "ai-agents",
+          "ai-sdk",
+          "chatbots",
+          "embeddings",
+          "genai",
+          "llms",
+          "memory",
+          "memory-management",
+          "rag",
+          "vercel-ai-sdk"
+        ],
+        "stars": 2111,
+        "forks": 188,
+        "pushedAt": "2026-10-13T23:26:57Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/agentset-ai/agentset",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "agiresearch-openagi",
+      "name": "OpenAGI",
+      "fullName": "agiresearch/OpenAGI",
+      "description": "OpenAGI: When LLM Meets Domain Experts",
+      "category": "agent-framework",
+      "source": "https://github.com/agiresearch/OpenAGI",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/agiresearch/OpenAGI/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [],
+        "stars": 2288,
+        "forks": 211,
+        "pushedAt": "2024-11-28T15:48:29Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-ai-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/agiresearch/OpenAGI",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aglio-lab-ai-agent-frameworks",
+      "name": "ai-agent-frameworks",
+      "fullName": "aglio-lab/ai-agent-frameworks",
+      "description": "The comprehensive list of AI agent frameworks and orchestration tools: 175 SDKs, workflows, multi-agent systems, MCP tools, memory, deployment, and evaluation.",
+      "category": "mcp",
+      "source": "https://github.com/aglio-lab/ai-agent-frameworks",
+      "license": {
+        "code": "CC0-1.0",
+        "source": "https://api.github.com/repos/aglio-lab/ai-agent-frameworks/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "agent-framework",
+          "agent-orchestration",
+          "agentic-ai",
+          "ai-agents",
+          "awesome-list",
+          "generative-ai",
+          "llm-agents",
+          "llmops",
+          "mcp",
+          "multi-agent"
+        ],
+        "stars": 4,
+        "forks": 3,
+        "pushedAt": "2026-07-16T10:12:04Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/aglio-lab/ai-agent-frameworks",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aglio-lab-ai-evaluation-tools",
+      "name": "ai-evaluation-tools",
+      "fullName": "aglio-lab/ai-evaluation-tools",
+      "description": "The comprehensive list of AI evaluation tools: 300+ open-source and commercial LLM evaluation frameworks, platforms, benchmarks, observability, red teaming, and guardrails — for LLMs, RAG, and AI agents.",
+      "category": "agent-framework",
+      "source": "https://github.com/aglio-lab/ai-evaluation-tools",
+      "license": {
+        "code": "CC0-1.0",
+        "source": "https://api.github.com/repos/aglio-lab/ai-evaluation-tools/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "agent-evaluation",
+          "ai-evaluation",
+          "awesome-list",
+          "benchmarks",
+          "evals",
+          "evaluation-framework",
+          "generative-ai",
+          "guardrails",
+          "llm-evals",
+          "llm-evaluation",
+          "llm-observability",
+          "llm-testing",
+          "llmops",
+          "rag-evaluation",
+          "red-teaming"
+        ],
+        "stars": 11,
+        "forks": 13,
+        "pushedAt": "2026-08-05T09:56:11Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/aglio-lab/ai-evaluation-tools",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aglio-lab-ai-governance-tools",
+      "name": "ai-governance-tools",
+      "fullName": "aglio-lab/ai-governance-tools",
+      "description": "The comprehensive list of AI governance tools: 130+ platforms and resources for AI risk, compliance, model governance, audit, fairness, privacy, and responsible AI.",
+      "category": "agent-framework",
+      "source": "https://github.com/aglio-lab/ai-governance-tools",
+      "license": {
+        "code": "CC0-1.0",
+        "source": "https://api.github.com/repos/aglio-lab/ai-governance-tools/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "ai-compliance",
+          "ai-governance",
+          "ai-risk",
+          "ai-safety",
+          "algorithmic-auditing",
+          "awesome-list",
+          "eu-ai-act",
+          "model-governance",
+          "nist-ai-rmf",
+          "responsible-ai"
+        ],
+        "stars": 2,
+        "forks": 3,
+        "pushedAt": "2026-07-16T10:12:08Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/aglio-lab/ai-governance-tools",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aglio-lab-ai-red-teaming-tools",
+      "name": "ai-red-teaming-tools",
+      "fullName": "aglio-lab/ai-red-teaming-tools",
+      "description": "The comprehensive list of AI red teaming tools: open-source and commercial frameworks, scanners, jailbreak tests, guardrails, benchmarks, and security resources.",
+      "category": "agent-framework",
+      "source": "https://github.com/aglio-lab/ai-red-teaming-tools",
+      "license": {
+        "code": "CC0-1.0",
+        "source": "https://api.github.com/repos/aglio-lab/ai-red-teaming-tools/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "adversarial-testing",
+          "agent-security",
+          "ai-red-teaming",
+          "ai-safety",
+          "awesome-list",
+          "generative-ai",
+          "jailbreak",
+          "llm-security",
+          "prompt-injection",
+          "security-tools"
+        ],
+        "stars": 1,
+        "forks": 4,
+        "pushedAt": "2026-07-16T10:13:03Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/aglio-lab/ai-red-teaming-tools",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aglio-lab-context-engineering-tools",
+      "name": "context-engineering-tools",
+      "fullName": "aglio-lab/context-engineering-tools",
+      "description": "The comprehensive list of context engineering tools: 160+ tools for LLM memory, prompts, context management, compression, caching, MCP, retrieval, and evaluation.",
+      "category": "mcp",
+      "source": "https://github.com/aglio-lab/context-engineering-tools",
+      "license": {
+        "code": "CC0-1.0",
+        "source": "https://api.github.com/repos/aglio-lab/context-engineering-tools/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "awesome-list",
+          "context-engineering",
+          "context-management",
+          "generative-ai",
+          "llm",
+          "llm-memory",
+          "long-context",
+          "mcp",
+          "prompt-engineering",
+          "prompt-management"
+        ],
+        "stars": 4,
+        "forks": 4,
+        "pushedAt": "2026-07-16T10:12:04Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/aglio-lab/context-engineering-tools",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aglio-lab-llm-fine-tuning-tools",
+      "name": "llm-fine-tuning-tools",
+      "fullName": "aglio-lab/llm-fine-tuning-tools",
+      "description": "The comprehensive list of LLM fine-tuning tools: 150+ frameworks and platforms for SFT, PEFT, LoRA, RLHF, preference optimization, data, quantization, and deployment.",
+      "category": "agent-framework",
+      "source": "https://github.com/aglio-lab/llm-fine-tuning-tools",
+      "license": {
+        "code": "CC0-1.0",
+        "source": "https://api.github.com/repos/aglio-lab/llm-fine-tuning-tools/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "awesome-list",
+          "fine-tuning",
+          "generative-ai",
+          "llm-fine-tuning",
+          "llm-training",
+          "lora",
+          "machine-learning",
+          "peft",
+          "post-training",
+          "rlhf"
+        ],
+        "stars": 0,
+        "forks": 2,
+        "pushedAt": "2026-07-16T10:12:07Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/aglio-lab/llm-fine-tuning-tools",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aglio-lab-llm-observability-tools",
+      "name": "llm-observability-tools",
+      "fullName": "aglio-lab/llm-observability-tools",
+      "description": "The comprehensive list of LLM observability tools: 120 open-source and commercial platforms for AI tracing, monitoring, evaluation, analytics, cost, and security.",
+      "category": "agent-framework",
+      "source": "https://github.com/aglio-lab/llm-observability-tools",
+      "license": {
+        "code": "CC0-1.0",
+        "source": "https://api.github.com/repos/aglio-lab/llm-observability-tools/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "ai-agents",
+          "ai-monitoring",
+          "ai-observability",
+          "awesome-list",
+          "generative-ai",
+          "llm-evaluation",
+          "llm-observability",
+          "llm-tracing",
+          "llmops",
+          "opentelemetry"
+        ],
+        "stars": 2,
+        "forks": 6,
+        "pushedAt": "2026-07-16T10:12:06Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:38:49.693Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/aglio-lab/llm-observability-tools",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    }
+  ],
+  "quarantine": [
+    {
+      "fullName": "AgentsMesh/AgentsMesh",
+      "source": "https://github.com/AgentsMesh/AgentsMesh",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T17:38:49.693Z"
+    }
+  ]
+}
