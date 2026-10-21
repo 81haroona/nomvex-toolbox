@@ -39,7 +39,7 @@ That scenario should show failed checks and return exit code **1**. Expected fai
 Validate the catalog structure with:
 
 ```bash
-npm run catalog -- --query pdf --lang en
+npm run catalog -- --query pdf
 npm run catalog:check
 ```
 
