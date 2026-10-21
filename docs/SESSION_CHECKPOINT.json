@@ -11,10 +11,11 @@
     "Existing NOMVEX mark reused in repository and embedded offline reports",
     "Public GitHub documentation changed to English-first",
     "Cross-platform GitHub CI matrix configured for Ubuntu, Windows and macOS on Node 22/24",
-    "Healthy and deliberately-broken demos added to hosted verification"
+    "Healthy and deliberately-broken demos added to hosted verification",
+    "Catalog schema v2 converted public catalog descriptions and notes to English-only"
   ],
   "pendingVerification": [
-    "Actual v0.1.2 hosted matrix results",
+    "Actual v0.1.2 hosted matrix results for the current PR head",
     "Any platform-specific skipped tests must be reported explicitly",
     "Actual authorized NOMVEX staging integrations",
     "npm registry publication",
