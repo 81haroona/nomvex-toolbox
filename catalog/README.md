@@ -20,6 +20,12 @@ npm run catalog -- --query agent
 
 An authenticated `GITHUB_TOKEN` is strongly recommended for large refreshes because GitHub API rate limits apply.
 
+A production refresh scans **all** unique candidate links discovered in the curated feeds plus the core seeds. The `NOMVEX_CATALOG_MAX_REPOS` setting limits candidates only when explicitly provided for debugging; it is not set by the main sync workflow. `NOMVEX_CATALOG_USE_SNAPSHOT=1` is a diagnostic mode and does not replace the production feed crawl.
+
+The data-only sync PR includes `candidates.json`, `open-source-index.json`, and `open-source-quarantine.json`. Every candidate is counted in exactly one output. If multiple source links redirect to the same canonical repository, one reference is retained, its feed provenance is merged, and the extra alias is counted in quarantine as `canonical-alias-merged`. An alias quarantine is not a finding that the canonical project has a bad license.
+
+Only GitHub GraphQL metadata with `visibility: PUBLIC`, `isArchived: false`, `isFork: false`, and an explicitly allowlisted open-source SPDX identifier is eligible for indexing. The catalog never clones, vendors, installs, or runs discovered upstream repositories. Indexing is **not** integration, execution, or a security audit.
+
 ## Evidence states
 
 | State | Meaning |

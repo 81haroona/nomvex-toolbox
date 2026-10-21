@@ -2,14 +2,6 @@ name: Open-source catalog sync
 
 on:
   workflow_dispatch:
-  issue_comment:
-    types: [created]
-  pull_request:
-    branches: [main]
-    types: [opened]
-  pull_request_target:
-    branches: [main]
-    types: [opened, reopened]
   push:
     branches: [main]
     paths:
@@ -31,15 +23,8 @@ concurrency:
 
 jobs:
   sync:
-    if: >-
-      github.event_name == 'workflow_dispatch' ||
-      github.event_name == 'schedule' ||
-      github.event_name == 'push' ||
-      (github.event_name == 'pull_request' && startsWith(github.head_ref, 'trigger/catalog-sync')) ||
-      (github.event_name == 'pull_request_target' && startsWith(github.head_ref, 'trigger/catalog-sync')) ||
-      (github.event_name == 'issue_comment' && github.event.comment.body == '/sync-open-source')
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
@@ -61,7 +46,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
-          if git diff --quiet -- catalog/open-source-index.json catalog/open-source-quarantine.json; then
+          if git diff --quiet -- catalog/candidates.json catalog/open-source-index.json catalog/open-source-quarantine.json; then
             echo "No catalog changes."
             exit 0
           fi
@@ -69,9 +54,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B "$branch"
-          git add catalog/open-source-index.json catalog/open-source-quarantine.json
+          git add catalog/candidates.json catalog/open-source-index.json catalog/open-source-quarantine.json
           git commit -m "chore: refresh open-source registry"
-          git push --force origin "$branch"
+          git push --force-with-lease origin "$branch"
           if ! gh pr view "$branch" >/dev/null 2>&1; then
-            gh pr create --base main --head "$branch" --title "chore: refresh open-source registry" --body "Automated data-only refresh. The sync admits only public, non-archived, non-fork repositories with allowlisted open-source SPDX metadata. No upstream code is executed or vendored." || echo "::warning::Could not create PR with workflow token; branch was pushed and can be opened by a maintainer."
+            gh pr create --base main --head "$branch" --title "chore: refresh open-source registry" --body "Automated data-only refresh (candidate snapshot, admitted index, and quarantine). The sync admits only public, non-archived, non-fork repositories with allowlisted open-source SPDX metadata. No upstream code is executed or vendored." || echo "::warning::Could not create PR with workflow token; branch was pushed and can be opened by a maintainer."
           fi

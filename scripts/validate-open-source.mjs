@@ -17,7 +17,9 @@ const entry = z.strictObject({
     stars: z.number().int().nonnegative().nullable(),
     forks: z.number().int().nonnegative().nullable(),
     pushedAt: z.string().nullable(),
-    archived: z.literal(false)
+    archived: z.literal(false),
+    fork: z.literal(false),
+    visibility: z.literal('PUBLIC')
   }),
   status: z.literal('indexed'),
   observedAt: z.string().min(1),
@@ -34,6 +36,10 @@ const entry = z.strictObject({
   })
 }).superRefine((value, ctx) => {
   if (!OPEN_SOURCE_SPDX.has(value.license.code)) ctx.addIssue({ code: 'custom', message: `Non-allowlisted SPDX: ${value.license.code}` });
+  const expectedSource = `https://github.com/${value.fullName}`.toLowerCase();
+  if (value.source.toLowerCase() !== expectedSource) ctx.addIssue({ code: 'custom', message: 'Canonical source URL mismatch.' });
+  if (value.license.source.toLowerCase() !== `https://api.github.com/repos/${value.fullName}/license`.toLowerCase()) ctx.addIssue({ code: 'custom', message: 'License evidence URL mismatch.' });
+  if (value.evidence.githubApi.toLowerCase() !== `https://api.github.com/repos/${value.fullName}`.toLowerCase()) ctx.addIssue({ code: 'custom', message: 'GitHub metadata evidence URL mismatch.' });
 });
 const indexSchema = z.strictObject({
   schemaVersion: z.literal(1),
@@ -57,6 +63,8 @@ const index = indexSchema.parse(JSON.parse(await readFile(new URL('../catalog/op
 const quarantine = quarantineSchema.parse(JSON.parse(await readFile(new URL('../catalog/open-source-quarantine.json', import.meta.url), 'utf8')));
 if (index.indexedCount !== index.tools.length) throw new Error('indexedCount does not match tools length.');
 if (quarantine.quarantinedCount !== quarantine.items.length) throw new Error('quarantinedCount does not match items length.');
+if (index.candidateCount !== index.indexedCount + quarantine.quarantinedCount) throw new Error('Candidate accounting mismatch: indexed + quarantined must equal candidates.');
+if (index.generatedAt !== quarantine.generatedAt) throw new Error('Catalog evidence timestamps do not match.');
 const names = index.tools.map(item => item.fullName.toLowerCase());
 if (new Set(names).size !== names.length) throw new Error('Duplicate repository in open-source index.');
 process.stdout.write(`Open-source index valid: ${index.tools.length} indexed; ${quarantine.items.length} quarantined.\n`);

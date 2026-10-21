@@ -4,17 +4,36 @@ import {
   isRecognizedOpenSourceLicense,
   buildIndexedEntry,
   normalizeRepo,
-  graphqlNodeToMetadata
+  graphqlNodeToMetadata,
+  selectCatalogCandidates
 } from './open-source-lib.mjs';
 
 const sources = JSON.parse(await readFile(new URL('../catalog/sources.json', import.meta.url), 'utf8'));
 const seeds = JSON.parse(await readFile(new URL('../catalog/seeds.json', import.meta.url), 'utf8'));
 const token = process.env.GITHUB_TOKEN || '';
 if (!token) throw new Error('GITHUB_TOKEN is required for the batched GitHub GraphQL metadata scan.');
-const maxRepos = Number.parseInt(process.env.NOMVEX_CATALOG_MAX_REPOS || '1500', 10);
 const observedAt = new Date().toISOString();
 const userAgent = 'nomvex-toolbox-open-source-indexer';
 const useSnapshot = process.env.NOMVEX_CATALOG_USE_SNAPSHOT === '1';
+
+const transientHttp = new Set([429, 500, 502, 503, 504]);
+async function requestWithRetry(url, options, label) {
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      const response = await fetch(url, {
+        ...options,
+        signal: AbortSignal.timeout(options.timeoutMs ?? 30000)
+      });
+      if (response.ok || !transientHttp.has(response.status) || attempt === 3) return response;
+      process.stderr.write(`Retrying ${label} after transient HTTP ${response.status} (attempt ${attempt + 1}/4)\n`);
+    } catch (error) {
+      if (attempt === 3) throw error;
+      process.stderr.write(`Retrying ${label} after network error (attempt ${attempt + 1}/4)\n`);
+    }
+    await new Promise(resolve => setTimeout(resolve, 1000 * (2 ** attempt)));
+  }
+  throw new Error(`Unreachable request state for ${label}`);
+}
 
 async function rawReadme(repository, requestedRef) {
   const normalized = normalizeRepo(repository);
@@ -24,7 +43,7 @@ async function rawReadme(repository, requestedRef) {
   const failures = [];
   for (const ref of refs) {
     const url = `https://raw.githubusercontent.com/${owner}/${name}/${ref}/README.md`;
-    const response = await fetch(url, { headers: { 'User-Agent': userAgent }, signal: AbortSignal.timeout(15000) });
+    const response = await requestWithRetry(url, { headers: { 'User-Agent': userAgent }, timeoutMs: 15000 }, `README ${normalized}`);
     if (response.ok) return response.text();
     failures.push(`${ref}:${response.status}`);
   }
@@ -32,7 +51,7 @@ async function rawReadme(repository, requestedRef) {
 }
 
 async function graphql(query) {
-  const response = await fetch('https://api.github.com/graphql', {
+  const response = await requestWithRetry('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${token}`,
@@ -40,8 +59,8 @@ async function graphql(query) {
       'User-Agent': userAgent
     },
     body: JSON.stringify({ query }),
-    signal: AbortSignal.timeout(30000)
-  });
+    timeoutMs: 30000
+  }, 'GitHub GraphQL');
   const body = await response.text();
   if (!response.ok) throw new Error(`GitHub GraphQL HTTP ${response.status}: ${body.slice(0, 400)}`);
   let payload;
@@ -50,6 +69,7 @@ async function graphql(query) {
   if (payload.errors?.length && !payload.data) {
     throw new Error(`GitHub GraphQL error: ${payload.errors.map(item => item.message).join('; ').slice(0, 500)}`);
   }
+  if (!payload.data) throw new Error('GitHub GraphQL response lacks repository data.');
   return payload;
 }
 
@@ -81,7 +101,8 @@ if (useSnapshot) {
   for (const repo of seeds.repositories) add(repo, { id: 'nomvex-core-seeds', defaultCategory: 'developer-tool' });
 }
 
-const candidates = [...provenance.values()].sort((a,b)=>a.repo.localeCompare(b.repo)).slice(0, maxRepos);
+const candidates = selectCatalogCandidates([...provenance.values()].sort((a,b)=>a.repo.localeCompare(b.repo)), process.env.NOMVEX_CATALOG_MAX_REPOS);
+process.stderr.write(`Candidate discovery: ${provenance.size} unique source links; ${candidates.length} selected.\n`);
 await writeFile(new URL('../catalog/candidates.json', import.meta.url), JSON.stringify({
   schemaVersion: 1,
   generatedAt: observedAt,
@@ -94,6 +115,7 @@ await writeFile(new URL('../catalog/candidates.json', import.meta.url), JSON.str
 
 const indexed = [];
 const quarantine = [];
+const canonicalRecords = new Map();
 const BATCH_SIZE = 40;
 
 function repositorySelection(alias, owner, name) {
@@ -103,6 +125,7 @@ function repositorySelection(alias, owner, name) {
     description
     url
     isPrivate
+    visibility
     isArchived
     isFork
     pushedAt
@@ -144,21 +167,46 @@ for (let start = 0; start < candidates.length; start += BATCH_SIZE) {
     try {
       const meta = graphqlNodeToMetadata(node);
       const spdx = meta.license?.spdx_id ?? null;
+      const canonicalKey = meta.full_name.toLowerCase();
+      const previous = canonicalRecords.get(canonicalKey);
+      if (previous) {
+        // GitHub redirects older repository names. Preserve their feed provenance,
+        // but never add a second indexed entry for the same canonical repository.
+        if (previous.evidence) previous.evidence.sourceFeeds = [...new Set([...previous.evidence.sourceFeeds, ...sourceFeeds])].sort();
+        else previous.sourceFeeds = [...new Set([...previous.sourceFeeds, ...sourceFeeds])].sort();
+        quarantine.push({
+          fullName: item.repo,
+          canonicalFullName: meta.full_name,
+          source: `https://github.com/${item.repo}`,
+          reason: 'canonical-alias-merged',
+          license: spdx,
+          sourceFeeds,
+          observedAt
+        });
+        continue;
+      }
       let reason = null;
-      if (meta.private) reason = 'private';
+      if (meta.private || meta.visibility === 'PRIVATE') reason = 'private';
+      else if (meta.visibility !== 'PUBLIC') reason = 'not-public';
       else if (meta.archived) reason = 'archived';
       else if (meta.fork) reason = 'fork';
       else if (!isRecognizedOpenSourceLicense(spdx)) reason = spdx ? `license-not-allowlisted:${spdx}` : 'license-missing';
       if (reason) {
-        quarantine.push({
+        const excluded = {
           fullName: meta.full_name || item.repo,
           source: meta.html_url || `https://github.com/${item.repo}`,
           reason,
           license: spdx,
           sourceFeeds,
           observedAt
-        });
-      } else indexed.push(buildIndexedEntry(meta, item.feeds, observedAt));
+        };
+        quarantine.push(excluded);
+        canonicalRecords.set(canonicalKey, excluded);
+      } else {
+        const admitted = buildIndexedEntry(meta, item.feeds, observedAt);
+        indexed.push(admitted);
+        canonicalRecords.set(canonicalKey, admitted);
+      }
     } catch (error) {
       quarantine.push({
         fullName: item.repo,
@@ -175,6 +223,9 @@ for (let start = 0; start < candidates.length; start += BATCH_SIZE) {
   if (rate) process.stderr.write(`GraphQL batch ${start}-${start + batch.length - 1}: cost=${rate.cost}, remaining=${rate.remaining}, reset=${rate.resetAt}\n`);
 }
 
+if (indexed.length + quarantine.length !== candidates.length) {
+  throw new Error('Every discovered candidate must be indexed or quarantined exactly once.');
+}
 indexed.sort((a,b)=>a.fullName.localeCompare(b.fullName));
 quarantine.sort((a,b)=>a.fullName.localeCompare(b.fullName));
 await mkdir(new URL('../catalog/', import.meta.url), { recursive: true });

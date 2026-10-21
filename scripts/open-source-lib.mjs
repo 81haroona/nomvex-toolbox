@@ -49,6 +49,15 @@ export function inferCategory(metadata, sourceCategories = []) {
   return sourceCategories[0] || 'developer-tool';
 }
 
+export function selectCatalogCandidates(candidates, limitSetting) {
+  if (limitSetting === undefined) return candidates;
+  const limit = Number(limitSetting);
+  if (!Number.isSafeInteger(limit) || limit < 1) {
+    throw new Error('NOMVEX_CATALOG_MAX_REPOS must be a positive integer when specified.');
+  }
+  return candidates.slice(0, limit);
+}
+
 export function uniqueSorted(values) {
   return [...new Set((values || []).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
 }
@@ -57,6 +66,9 @@ export function buildIndexedEntry(metadata, sourceFeeds, observedAt) {
   const fullName = normalizeRepo(metadata?.full_name);
   if (!fullName) throw new TypeError('GitHub metadata missing full_name.');
   const spdx = metadata?.license?.spdx_id ?? null;
+  if (metadata?.visibility !== 'PUBLIC' || metadata?.private || metadata?.archived || metadata?.fork || !isRecognizedOpenSourceLicense(spdx)) {
+    throw new TypeError('Only public, non-archived, non-fork repositories with allowlisted SPDX licenses may be indexed.');
+  }
   const feedCategories = sourceFeeds.map(item => item.defaultCategory).filter(Boolean);
   return {
     id: fullName.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''),
@@ -72,7 +84,9 @@ export function buildIndexedEntry(metadata, sourceFeeds, observedAt) {
       stars: Number.isInteger(metadata.stargazers_count) ? metadata.stargazers_count : null,
       forks: Number.isInteger(metadata.forks_count) ? metadata.forks_count : null,
       pushedAt: metadata.pushed_at ?? null,
-      archived: Boolean(metadata.archived)
+      archived: Boolean(metadata.archived),
+      fork: Boolean(metadata.fork),
+      visibility: metadata.visibility
     },
     status: 'indexed',
     observedAt,
@@ -107,6 +121,7 @@ export function graphqlNodeToMetadata(node) {
     pushed_at: node.pushedAt ?? null,
     archived: Boolean(node.isArchived),
     fork: Boolean(node.isFork),
-    private: Boolean(node.isPrivate)
+    private: Boolean(node.isPrivate),
+    visibility: node.visibility ?? null
   };
 }
