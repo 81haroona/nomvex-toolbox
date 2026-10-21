@@ -83,10 +83,10 @@ test('real CLI user path produces passing and failing browser reports', { timeou
   const fixture = await startFixture();
   t.after(() => fixture.close());
   const file = join(cwd, 'config.json');
-  await writeFile(file, JSON.stringify({ ...config([redirect]), baseUrl: fixture.baseUrl }));
+  await writeFile(file, JSON.stringify({ ...config([redirect]), timeoutMs: 10000, baseUrl: fixture.baseUrl }));
   const good = await invoke(['--config', file, '--out', 'good'], cwd);
   assert.equal(good.code, 0, await diagnostic(good, join(cwd, 'good')));
-  await writeFile(file, JSON.stringify({ ...config([{ ...redirect, expectedPath: '/wrong' }]), baseUrl: fixture.baseUrl }));
+  await writeFile(file, JSON.stringify({ ...config([{ ...redirect, expectedPath: '/wrong' }]), timeoutMs: 10000, baseUrl: fixture.baseUrl }));
   const broken = await invoke(['--config', file, '--out', 'broken'], cwd);
   assert.equal(broken.code, 1, await diagnostic(broken, join(cwd, 'broken')));
   assert.equal(JSON.parse(await readFile(join(cwd, 'broken/report.json'), 'utf8')).summary.failed, 1);
