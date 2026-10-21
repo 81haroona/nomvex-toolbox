@@ -35,7 +35,15 @@ jobs:
       - if: runner.os == 'Linux'
         run: npx --no-install playwright install --with-deps chromium
       - if: runner.os != 'Linux'
-        run: npx --no-install playwright install chromium
+        shell: bash
+        run: |
+          # Browser CDN TLS or networking can fail transiently. Never disable
+          # certificate verification and never continue without Chromium.
+          for attempt in 1 2 3; do
+            if npx --no-install playwright install chromium; then exit 0; fi
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            sleep $((attempt * 5))
+          done
       - run: npm run typecheck
       - run: npm run catalog:check
       - run: npm test
