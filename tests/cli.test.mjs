@@ -102,13 +102,15 @@ test('cold browser startup has a separate budget from the actual check', {
   const browser = process.env.NOMVEX_BROWSER_EXECUTABLE ?? chromium.executablePath();
   const wrapper = join(cwd, 'delayed-browser.sh');
   const quotedBrowser = `'${browser.replaceAll("'", "'\\''")}'`;
-  await writeFile(wrapper, `#!/bin/sh\nsleep 2\nexec ${quotedBrowser} "$@"\n`);
+  const checkBudgetMs = process.platform === 'darwin' ? 5000 : 1500;
+  const startupDelaySeconds = process.platform === 'darwin' ? 6 : 2;
+  await writeFile(wrapper, `#!/bin/sh\nsleep ${startupDelaySeconds}\nexec ${quotedBrowser} "$@"\n`);
   await chmod(wrapper, 0o700);
   const file = join(cwd, 'config.json');
-  await writeFile(file, JSON.stringify({ ...config([redirect]), baseUrl: fixture.baseUrl }));
+  await writeFile(file, JSON.stringify({ ...config([redirect]), timeoutMs: checkBudgetMs, baseUrl: fixture.baseUrl }));
   const result = await invoke(['--config', file, '--out', 'cold'], cwd, { ...process.env, NOMVEX_BROWSER_EXECUTABLE: wrapper });
   assert.equal(result.code, 0, await diagnostic(result, join(cwd, 'cold')));
   const report = JSON.parse(await readFile(join(cwd, 'cold', 'report.json'), 'utf8'));
   assert.equal(report.summary.passed, 1);
-  assert.ok(Date.parse(report.finishedAt) - Date.parse(report.startedAt) >= 2000);
+  assert.ok(Date.parse(report.finishedAt) - Date.parse(report.startedAt) >= startupDelaySeconds * 1000);
 });
