@@ -13,7 +13,6 @@ export class CatalogAccessDenied extends Error {
   }
 }
 
-const own = (o, key) => Object.prototype.hasOwnProperty.call(o, key);
 const canonical = (repo) => `https://github.com/${repo}`.toLowerCase();
 const githubEvidence = (repo) => `https://api.github.com/repos/${repo}`.toLowerCase();
 const licenseEvidence = (repo) => `${githubEvidence(repo)}/license`;
@@ -48,6 +47,11 @@ export function selectFactoryReferences(index, request, trustedContext) {
       (request.category !== undefined && (typeof request.category !== 'string' || request.category.length > 60)) ||
       (request.limit !== undefined && (!Number.isInteger(request.limit) || request.limit < 1 || request.limit > 20))) {
     throw new CatalogAccessDenied('invalid_read_only_catalog_request');
+  }
+  if (!trustedContext.permissions.some(permission =>
+      permission === 'catalog:category:*' ||
+      (typeof permission === 'string' && permission.startsWith('catalog:category:')))) {
+    throw new CatalogAccessDenied('catalog_category_permission_required');
   }
   const branches = trustedContext.branches;
   if (!Array.isArray(branches) ||
