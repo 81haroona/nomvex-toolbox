@@ -6,10 +6,11 @@
     "CLI/library with strict configuration and isolated browser checks",
     "French/English HTML and JSON reports",
     "Synthetic healthy and broken fixtures",
-    "46 named tests verified from a clean copy",
+    "47 named tests verified from a clean copy",
     "24 source-reviewed catalog entries",
     "License, contribution, security and release documentation",
-    "Independent review and regression fixes"
+    "Independent review and regression fixes",
+    "Independent browser startup budget and deterministic cold-start regression"
   ],
   "sourceEvidence": "docs/evidence/verification.json",
   "fullTestEvidence": "docs/evidence/test-log.txt",
@@ -19,5 +20,12 @@
     "Dedicated test accounts supplied through environment variables",
     "A real passing journey and deliberate failure for each integrated branch"
   ],
-  "notClaimed": ["live NOMVEX integration", "Windows/macOS validation", "npm registry publication", "external adoption or star growth"]
+  "notClaimed": [
+    "live NOMVEX integration",
+    "Windows/macOS validation",
+    "npm registry publication",
+    "external adoption or star growth"
+  ],
+  "repository": "https://github.com/81haroona/nomvex-toolbox",
+  "externalDeliveryEvidence": "Consult the release notes for the exact released commit and hosted Node 22/24 CI result."
 }

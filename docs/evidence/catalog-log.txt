@@ -1,6 +1,6 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
 > @nomvex/web-checks@0.1.0 catalog:check
 > node scripts/validate-catalog.mjs
 
 Catalog valid: 24 entries; unique IDs; bilingual descriptions; declared evidence and licenses.
-npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.

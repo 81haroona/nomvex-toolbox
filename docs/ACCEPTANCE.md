@@ -10,7 +10,7 @@ Environment: **Linux, Node v24.19.0, Playwright 1.64.1, Chrome for Testing 156.0
 |---|---|---|
 | Clean locked installation | Exit 0, `npm ci --ignore-scripts --offline` with populated cache | [Install log](evidence/clean-install-log.txt) |
 | Strict TypeScript checks | Exit 0 | [Typecheck log](evidence/typecheck-log.txt) |
-| Build and complete named test suite | **46 passed, 0 failed, 0 skipped, 0 cancelled** | [Full test log](evidence/test-log.txt) |
+| Build and complete named test suite | **47 passed, 0 failed, 0 skipped, 0 cancelled** | [Full test log](evidence/test-log.txt) |
 | Healthy documented demo command | Exit 0, **6/6 checks passed** | [Demo log](evidence/demo-log.txt) |
 | Deliberately broken documented demo | Exit **1**, **7 expected behavioral failures**, no runtime errors | [Broken-demo log](evidence/demo-broken-log.txt) |
 | Catalog schema and evidence statuses | **24 entries valid** | [Catalog log](evidence/catalog-log.txt) |
@@ -30,7 +30,7 @@ The dependency advisory query `npm audit --audit-level=high --json` returned **z
 - The CLI writes reports in paths containing spaces, preserves existing reports/configuration and returns the documented exit codes.
 - HTML rendering escapes untrusted strings, uses a restrictive content policy and cannot display a green verdict for an inconsistent/unknown result state.
 
-Several named tests contain multiple assertions or browser cases. **46 is the named test count**, not a count of real users, tools deployed or supported sites.
+Several named tests contain multiple assertions or browser cases. **47 is the named test count**, not a count of real users, tools deployed or supported sites.
 
 ## Council review and corrections
 
@@ -41,12 +41,15 @@ Implementation, fixture/behavior testing and documentation/license review were s
 3. BOM-only text appeared nonempty in bytes but empty after decoding. It now fails with `DOWNLOAD_TOO_SMALL`.
 4. A dedicated/shared worker could catch an unsupported WebSocket failure and satisfy a page assertion. Such worker workflows now return an explicit unsupported error, with regressions covering both and context isolation.
 5. Heavy parsing could occupy the browser event loop. Parsing now runs in a terminable worker with a deadline and JavaScript heap limits.
+6. Browser startup incorrectly shared the per-check timeout. A controlled two-second startup delay reproduced `BROWSER_UNAVAILABLE` with a 1500 ms check budget before the fix and passed after it. Startup now has a separate 30000 ms limit. A slow-page control still returns `CHECK_TIMEOUT` at its original 500 ms budget; the CLI includes a tracked cold-start regression.
 
 The review found no remaining reproducible critical/high-severity issue in its reviewed paths. It is not an external certification, penetration test of a production platform, or proof of an operating-system sandbox.
 
 ## GitHub CI
 
 [The supplied workflow](../.github/workflows/ci.yml) targets GitHub-hosted Ubuntu with Node **22 and 24**. It uses read-only repository permissions and immutable Action references. Consult the workflow run associated with the relevant commit in the repository's **Actions** tab; this local evidence file does not manufacture a hosted-CI result.
+
+The [first hosted run](https://github.com/81haroona/nomvex-toolbox/actions/runs/39571416576) passed Node 24 but exposed one healthy CLI-path failure on Node 22. Its log did not contain the JSON diagnostic, so that historical error cannot be attributed conclusively to startup. The follow-up adds report diagnostics to failed CLI assertions and corrects the independently reproduced startup-budget defect above. Release notes link the actual final hosted result.
 
 ## Explicit boundaries
 

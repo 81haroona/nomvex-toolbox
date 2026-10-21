@@ -1,5 +1,5 @@
 {
-  "recordedAt": "2026-10-21T08:38:40.408010+00:00",
+  "recordedAt": "2026-10-21T08:51:43.771286+00:00",
   "cleanInstall": true,
   "environment": {
     "node": "v24.19.0",
@@ -10,7 +10,7 @@
   "checks": [
     {
       "name": "clean-install",
-      "command": "npm ci --ignore-scripts --offline (pre-populated public package cache)",
+      "command": "npm ci --ignore-scripts --offline",
       "exitCode": 0,
       "expectedExitCode": 0
     },
@@ -27,7 +27,7 @@
       "expectedExitCode": 0
     },
     {
-      "name": "tests",
+      "name": "test",
       "command": "npm test",
       "exitCode": 0,
       "expectedExitCode": 0
@@ -46,8 +46,8 @@
     }
   ],
   "counts": {
-    "tests": 46,
-    "pass": 46,
+    "tests": 47,
+    "pass": 47,
     "fail": 0,
     "cancelled": 0,
     "skipped": 0
@@ -59,10 +59,10 @@
     "src/downloads.ts": "ec26f6a22f512f2ba95435b39393cbf31292b584c4152e6efd95f39ac14915b0",
     "src/index.ts": "f2a2d985e6aff4062bf60b76cd8dc6edc125e5024fd43da4f218dbd5aef4dc47",
     "src/report.ts": "08b26501cada947c7a7cd9bc5c880023db45216ba0f706ea83fe0a8a704fb9fa",
-    "src/run.ts": "c0afaa0711a0849a00199340c39cbb3094abe5089f31c2de344bfd91434f7d1d",
+    "src/run.ts": "5136be8d724495cffb78cc62110e246a372f7eed02aa01d56db8102c2780abce",
     "src/types.ts": "204dd2b4ab1eed7f3cdd5906b1741797829aec6c661b78d31efa507e972d7971",
     "tests/catalog.test.mjs": "cce932c1eeb8dd33d40f7cacf13b510643397b1928d02ef0a8af8c24ebd4f5c0",
-    "tests/cli.test.mjs": "02e0c5527835eab6e00a8579101f635e763940f001bed1197318af81e65da767",
+    "tests/cli.test.mjs": "a43ff99f6e43e82bd09b5739cf68fdc700e85aec41196236e53d61c4fc6c6acb",
     "tests/config.test.mjs": "fd63788581bef6290392f8d47adeb2c721065d62222a8f15e997a4e10102b3a8",
     "tests/downloads.test.mjs": "a8f2b93791fe4bc08548232c134e8d5e6c36fab38690568a55a08786837e8c21",
     "tests/fixture.test.mjs": "37e288a583f8fd470de5ab83ec4872b213a9b8063b213f7edb0bd0e5a49f6a55",

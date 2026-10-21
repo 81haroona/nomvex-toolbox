@@ -1,13 +1,13 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
 > @nomvex/web-checks@0.1.0 demo:broken
 > npm run build && node scripts/demo.mjs --broken
 
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
 > @nomvex/web-checks@0.1.0 build
 > tsc -p tsconfig.json
 
 Démo volontairement cassée : des échecs sont attendus (code 1).
-Report: /tmp/nomvex-toolbox-final-u3jii0an/project/reports/run-2026-10-21T08-38-36-452Z-a0824c6d/report.html
+Report: /tmp/nomvex-release-verified-tyujtjjv/reports/run-2026-10-21T08-51-39-799Z-45884c6e/report.html
 0/7 passed; 7 failed; 0 errors; 0 skipped
-npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
-npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.

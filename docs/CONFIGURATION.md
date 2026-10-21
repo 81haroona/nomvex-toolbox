@@ -63,7 +63,7 @@ The paths and selectors are examples, not verified NOMVEX routes. Use test accou
 | `version` | `1` |
 | `baseUrl` | Origine HTTP(S) uniquement : schéma, hôte, port. Pas de chemin, identifiants, query ou fragment. / Origin only. |
 | `allowedOrigins` | Jusqu’à 20 origines supplémentaires exactes, par exemple votre fournisseur d’identité de test. Aucun wildcard. / Up to 20 exact extra origins. |
-| `timeoutMs` | 500–60000 ms par contrôle, défaut 15000. Le lancement et le nettoyage ont aussi un coût. / Per-check budget. |
+| `timeoutMs` | 500–60000 ms par contrôle, défaut 15000. Le navigateur dispose de 30000 ms pour démarrer avant les contrôles ; le nettoyage ajoute aussi du temps. / Per-check budget. Browser startup has a separate 30000 ms limit; cleanup also adds time. |
 | `concurrency` | 1–4 sessions, défaut 2. / Parallel sessions. |
 | `language` | `fr` par défaut ou `en`. Langue du rapport et locale initiale du navigateur, distincte de `expectedLang`. |
 | `checks` | 1–50 contrôles. / Checks. |

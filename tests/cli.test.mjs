@@ -1,15 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, writeFile, readFile, rm, readdir } from 'node:fs/promises';
+import { mkdtemp, writeFile, readFile, rm, readdir, chmod } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
+import { chromium } from 'playwright';
 import { startFixture } from '../examples/fixture.mjs';
 
 const cli = fileURLToPath(new URL('../dist/cli.js', import.meta.url));
-const invoke = (args, cwd) => new Promise(resolve => {
-  execFile(process.execPath, [cli, ...args], { cwd, timeout: 30000, maxBuffer: 1024 * 1024 }, (error, stdout, stderr) => resolve({ code: error ? error.code : 0, stdout, stderr }));
+const invoke = (args, cwd, env = process.env) => new Promise(resolve => {
+  execFile(process.execPath, [cli, ...args], { cwd, env, timeout: 30000, maxBuffer: 1024 * 1024 }, (error, stdout, stderr) => resolve({ code: error ? error.code : 0, stdout, stderr }));
 });
 const config = checks => ({ version: 1, baseUrl: 'http://127.0.0.1:1', timeoutMs: 1500, checks });
 const redirect = { id: 'return', kind: 'redirect', startPath: '/', expectedPath: '/' };
@@ -17,6 +18,12 @@ async function workspace(t) {
   const directory = await mkdtemp(join(tmpdir(), 'nomvex cli space '));
   t.after(() => rm(directory, { recursive: true, force: true }));
   return directory;
+}
+async function diagnostic(result, directory) {
+  let report;
+  try { report = JSON.parse(await readFile(join(directory, 'report.json'), 'utf8')); }
+  catch { report = { diagnostic: 'Report unavailable' }; }
+  return `${result.stdout}\n${result.stderr}\n${JSON.stringify(report)}`;
 }
 
 test('CLI help, version and invalid flags return clear exit codes', async t => {
@@ -78,9 +85,27 @@ test('real CLI user path produces passing and failing browser reports', { timeou
   const file = join(cwd, 'config.json');
   await writeFile(file, JSON.stringify({ ...config([redirect]), baseUrl: fixture.baseUrl }));
   const good = await invoke(['--config', file, '--out', 'good'], cwd);
-  assert.equal(good.code, 0, `${good.stdout}\n${good.stderr}`);
+  assert.equal(good.code, 0, await diagnostic(good, join(cwd, 'good')));
   await writeFile(file, JSON.stringify({ ...config([{ ...redirect, expectedPath: '/wrong' }]), baseUrl: fixture.baseUrl }));
   const broken = await invoke(['--config', file, '--out', 'broken'], cwd);
-  assert.equal(broken.code, 1, `${broken.stdout}\n${broken.stderr}`);
+  assert.equal(broken.code, 1, await diagnostic(broken, join(cwd, 'broken')));
   assert.equal(JSON.parse(await readFile(join(cwd, 'broken/report.json'), 'utf8')).summary.failed, 1);
+});
+
+test('cold browser startup has a separate budget from the actual check', { timeout: 60000 }, async t => {
+  const cwd = await workspace(t);
+  const fixture = await startFixture();
+  t.after(() => fixture.close());
+  const browser = process.env.NOMVEX_BROWSER_EXECUTABLE ?? chromium.executablePath();
+  const wrapper = join(cwd, 'delayed-browser.sh');
+  const quotedBrowser = `'${browser.replaceAll("'", "'\\''")}'`;
+  await writeFile(wrapper, `#!/bin/sh\nsleep 2\nexec ${quotedBrowser} "$@"\n`);
+  await chmod(wrapper, 0o700);
+  const file = join(cwd, 'config.json');
+  await writeFile(file, JSON.stringify({ ...config([redirect]), baseUrl: fixture.baseUrl }));
+  const result = await invoke(['--config', file, '--out', 'cold'], cwd, { ...process.env, NOMVEX_BROWSER_EXECUTABLE: wrapper });
+  assert.equal(result.code, 0, await diagnostic(result, join(cwd, 'cold')));
+  const report = JSON.parse(await readFile(join(cwd, 'cold', 'report.json'), 'utf8'));
+  assert.equal(report.summary.passed, 1);
+  assert.ok(Date.parse(report.finishedAt) - Date.parse(report.startedAt) >= 2000);
 });

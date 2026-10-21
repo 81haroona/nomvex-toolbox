@@ -464,7 +464,8 @@ export async function runChecks(
       await mkdir(downloadsDirectory, { mode: 0o700 });
       browser = await chromium.launch({
         headless: true, downloadsPath: downloadsDirectory,
-        timeout: Math.min(30_000, config.timeoutMs ?? 15_000),
+        // Browser startup has its own budget; timeoutMs starts in checkOne.
+        timeout: 30_000,
         ...(options.executablePath ? { executablePath: options.executablePath } : {}),
         args: ['--disable-quic', '--disable-background-networking', '--force-webrtc-ip-handling-policy=disable_non_proxied_udp'],
       });
