@@ -56,10 +56,16 @@
       "defaultCategory": "mcp"
     },
     {
-      "id": "awesome-ai-tools",
-      "repository": "mahseema/awesome-ai-tools",
+      "id": "awesome-opensource-ai",
+      "repository": "alvinreal/awesome-opensource-ai",
       "kind": "curated-list",
       "defaultCategory": "developer-tool"
+    },
+    {
+      "id": "awesome-ai-agent-platforms",
+      "repository": "Agenta-AI/awesome-ai-agent-platforms",
+      "kind": "curated-list",
+      "defaultCategory": "agents"
     }
   ]
 }
