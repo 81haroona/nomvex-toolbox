@@ -1,6 +1,6242 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T17:45:00.000Z",
-  "quarantinedCount": 0,
-  "items": []
+  "generatedAt": "2026-10-21T21:47:09.521Z",
+  "quarantinedCount": 617,
+  "items": [
+    {
+      "fullName": "0xshellming/mcp-summarizer",
+      "source": "https://github.com/0xshellming/mcp-summarizer",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "0xzcov/omni-fun-mcp-server",
+      "source": "https://github.com/0xzcov/omni-fun-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "20alexl/claude-engram",
+      "source": "https://github.com/20alexl/claude-engram",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "402signalhq/402signal",
+      "source": "https://github.com/402signalhq/402signal",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "4DA-Systems/4DA",
+      "source": "https://github.com/4DA-Systems/4DA",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "4everland/4everland-hosting-mcp",
+      "source": "https://github.com/4everland/4everland-hosting-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "930m310n/geomelon-mcp",
+      "source": "https://github.com/930m310n/geomelon-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "98lukehall/renoun-mcp",
+      "source": "https://github.com/98lukehall/renoun-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "9hannahnine-jpg/arc-gate-mcp",
+      "source": "https://github.com/9hannahnine-jpg/arc-gate-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aashari/mcp-server-atlassian-bitbucket",
+      "source": "https://github.com/aashari/mcp-server-atlassian-bitbucket",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aashari/mcp-server-atlassian-confluence",
+      "source": "https://github.com/aashari/mcp-server-atlassian-confluence",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aashari/mcp-server-atlassian-jira",
+      "source": "https://github.com/aashari/mcp-server-atlassian-jira",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aashari/mcp-server-aws-sso",
+      "source": "https://github.com/aashari/mcp-server-aws-sso",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "AbanteAI/archive-old-cli-mentat",
+      "source": "https://github.com/AbanteAI/archive-old-cli-mentat",
+      "reason": "archived",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "accomplish-ai/coworker",
+      "source": "https://github.com/accomplish-ai/coworker",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-llm-apps"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "activepieces/activepieces",
+      "source": "https://github.com/activepieces/activepieces",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "adacreativeco/ada-turbo-ai-mcp",
+      "source": "https://github.com/adacreativeco/ada-turbo-ai-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Adeptus-Innovatio/solvitor-mcp",
+      "source": "https://github.com/Adeptus-Innovatio/solvitor-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "admica/FileScopeMCP",
+      "source": "https://github.com/admica/FileScopeMCP",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aegis-dq/aegis-dq",
+      "source": "https://github.com/aegis-dq/aegis-dq",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "afghanfansmedia-ai/songcheck-mcp",
+      "source": "https://github.com/afghanfansmedia-ai/songcheck-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "AgentAvow/AgentAvow",
+      "source": "https://github.com/AgentAvow/AgentAvow",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "agenthill/vaultpilot-mcp",
+      "source": "https://github.com/agenthill/vaultpilot-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "AgentsMesh/AgentsMesh",
+      "source": "https://github.com/AgentsMesh/AgentsMesh",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "agentward-ai/agentward",
+      "source": "https://github.com/agentward-ai/agentward",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "agrath/Trello-Desktop-MCP",
+      "source": "https://github.com/agrath/Trello-Desktop-MCP",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ahmed-khalil-hafsi/P2Predict",
+      "source": "https://github.com/ahmed-khalil-hafsi/P2Predict",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ahujasid/mcp-for-blender",
+      "canonicalFullName": "ahujasid/mcp-for-blender",
+      "source": "https://github.com/ahujasid/mcp-for-blender",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "AI-by-design/primitiv",
+      "source": "https://github.com/AI-by-design/primitiv",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Airtreks/airtreks-mcp",
+      "source": "https://github.com/Airtreks/airtreks-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aitit-inc/leadace",
+      "source": "https://github.com/aitit-inc/leadace",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ajmessina/smarterdeck-mcp-connector",
+      "source": "https://github.com/ajmessina/smarterdeck-mcp-connector",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "akramIOT/MCP_AI_SOC_Sher",
+      "source": "https://github.com/akramIOT/MCP_AI_SOC_Sher",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aktsmm/skill-ninja-mcp-server",
+      "source": "https://github.com/aktsmm/skill-ninja-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Aleksey-Panf/b2b-enrichment-mcp",
+      "source": "https://github.com/Aleksey-Panf/b2b-enrichment-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "alfonsograziano/node-code-sandbox-mcp",
+      "source": "https://github.com/alfonsograziano/node-code-sandbox-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aliafsahnoudeh/shahnameh-mcp-server",
+      "source": "https://github.com/aliafsahnoudeh/shahnameh-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aliafsahnoudeh/wildfire-mcp-server",
+      "source": "https://github.com/aliafsahnoudeh/wildfire-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "alimo7amed93/webhook-tester-mcp",
+      "source": "https://github.com/alimo7amed93/webhook-tester-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "altinoren/Utopia",
+      "source": "https://github.com/altinoren/Utopia",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "amirrezasalimi/friday",
+      "source": "https://github.com/amirrezasalimi/friday",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ANative-Lab/EvoAgentX",
+      "source": "https://github.com/ANative-Lab/EvoAgentX",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "andreas-roennestad/openhive-mcp",
+      "source": "https://github.com/andreas-roennestad/openhive-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ankimcp/anki-mcp-server",
+      "canonicalFullName": "ankimcp/anki-mcp-server",
+      "source": "https://github.com/ankimcp/anki-mcp-server",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ankitmalik84/Agentic_Longterm_Memory",
+      "source": "https://github.com/ankitmalik84/Agentic_Longterm_Memory",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "AnkleBreaker-Studio/unity-mcp-server",
+      "source": "https://github.com/AnkleBreaker-Studio/unity-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "AnonymousOnyx22/brightspace-d2l-mcp",
+      "source": "https://github.com/AnonymousOnyx22/brightspace-d2l-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "anpekesen/namegender-mcp",
+      "source": "https://github.com/anpekesen/namegender-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "antics-gg/antics-mcp",
+      "source": "https://github.com/antics-gg/antics-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "AntonOsika/gpt-engineer",
+      "source": "https://github.com/AntonOsika/gpt-engineer",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aparajithn/agent-utils-mcp",
+      "source": "https://github.com/aparajithn/agent-utils-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "AperionAI/shield",
+      "source": "https://github.com/AperionAI/shield",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "apify/apify-mcp-server",
+      "canonicalFullName": "apify/apify-mcp-server",
+      "source": "https://github.com/apify/apify-mcp-server",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "apps/use-tusk",
+      "source": "https://github.com/apps/use-tusk",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "araa47/jupiter-mcp",
+      "source": "https://github.com/araa47/jupiter-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "arian-gogani/nobulex",
+      "source": "https://github.com/arian-gogani/nobulex",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ariekogan/ateam-mcp",
+      "source": "https://github.com/ariekogan/ateam-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Arize-ai/phoenix",
+      "source": "https://github.com/Arize-ai/phoenix",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "arjun1194/insta-mcp",
+      "source": "https://github.com/arjun1194/insta-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "artgas1/yandex-metrika-mcp",
+      "source": "https://github.com/artgas1/yandex-metrika-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "arthiqlabs/vedaksha",
+      "source": "https://github.com/arthiqlabs/vedaksha",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "arthurpanhku/DocSentinel",
+      "canonicalFullName": "arthurpanhku/DocSentinel",
+      "source": "https://github.com/arthurpanhku/DocSentinel",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "AshutoshRaj97/agentready-mcp",
+      "source": "https://github.com/AshutoshRaj97/agentready-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "asicojp/claudecodenavi-mcp",
+      "source": "https://github.com/asicojp/claudecodenavi-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "asicojp/registep-mcp",
+      "source": "https://github.com/asicojp/registep-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "asicojp/sparksheets-mcp",
+      "source": "https://github.com/asicojp/sparksheets-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "atakanelik34/Bilinc",
+      "source": "https://github.com/atakanelik34/Bilinc",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Auctalis/nocturnusai",
+      "source": "https://github.com/Auctalis/nocturnusai",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "aurumflux20/seal",
+      "source": "https://github.com/aurumflux20/seal",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "austenstone/myinstants-mcp",
+      "source": "https://github.com/austenstone/myinstants-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "avisangle/calculator-server",
+      "source": "https://github.com/avisangle/calculator-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "avisangle/jenkins-mcp-server",
+      "source": "https://github.com/avisangle/jenkins-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "axionquant/mcp-server",
+      "source": "https://github.com/axionquant/mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "azer/react-analyzer-mcp",
+      "source": "https://github.com/azer/react-analyzer-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Bankless/onchain-mcp",
+      "source": "https://github.com/Bankless/onchain-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "baphometnxg/aloha-fyi-mcp",
+      "source": "https://github.com/baphometnxg/aloha-fyi-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "barevalue-ai/barevalue-mcp",
+      "source": "https://github.com/barevalue-ai/barevalue-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "baserow/baserow",
+      "source": "https://github.com/baserow/baserow",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "bborota/cairn-mcp",
+      "source": "https://github.com/bborota/cairn-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "BerriAI/litellm",
+      "source": "https://github.com/BerriAI/litellm",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "beshogun/planwire-mcp",
+      "source": "https://github.com/beshogun/planwire-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "BetterDB-inc/monitor",
+      "source": "https://github.com/BetterDB-inc/monitor",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "bgauryy/octocode-mcp",
+      "canonicalFullName": "bgauryy/octocode",
+      "source": "https://github.com/bgauryy/octocode-mcp",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "BigCactusLabs/dead-letter",
+      "source": "https://github.com/BigCactusLabs/dead-letter",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "billster45/mcp-chatgpt-responses",
+      "source": "https://github.com/billster45/mcp-chatgpt-responses",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "BitteProtocol/mcp",
+      "source": "https://github.com/BitteProtocol/mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "blazephoenixxyz-crypto/blazephoenix-mcp",
+      "source": "https://github.com/blazephoenixxyz-crypto/blazephoenix-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "BloopAI/bloop",
+      "source": "https://github.com/BloopAI/bloop",
+      "reason": "archived",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "BluesPrince/thiri-mcp",
+      "source": "https://github.com/BluesPrince/thiri-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "bluzername/lennys-quotes",
+      "source": "https://github.com/bluzername/lennys-quotes",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "boltmcp/boltmcp",
+      "source": "https://github.com/boltmcp/boltmcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "brianbooms/brianbooms-mcp",
+      "source": "https://github.com/brianbooms/brianbooms-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "brianxiadong/ones-wiki-mcp-server",
+      "source": "https://github.com/brianxiadong/ones-wiki-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "bridgenode-ai/bridgenode-mcp",
+      "source": "https://github.com/bridgenode-ai/bridgenode-mcp",
+      "reason": "license-not-allowlisted:MIT-0",
+      "license": "MIT-0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Bristlecone2026/bristlecone-logic",
+      "source": "https://github.com/Bristlecone2026/bristlecone-logic",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "browserless/browserless-mcp",
+      "source": "https://github.com/browserless/browserless-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "brutalzinn/simple-mcp-selenium",
+      "source": "https://github.com/brutalzinn/simple-mcp-selenium",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Buggy1111/anonymize-mcp",
+      "source": "https://github.com/Buggy1111/anonymize-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "burningion/video-editing-mcp",
+      "source": "https://github.com/burningion/video-editing-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ByAxe/keynote-mcp",
+      "source": "https://github.com/ByAxe/keynote-mcp",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "campertunity/mcp-server",
+      "source": "https://github.com/campertunity/mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Canner/WrenAI",
+      "source": "https://github.com/Canner/WrenAI",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "carlosalvite/foundersignal-mcp",
+      "source": "https://github.com/carlosalvite/foundersignal-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Cehha79/aka-recht",
+      "source": "https://github.com/Cehha79/aka-recht",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "cerebrixos-org/tuning-engines-cli",
+      "source": "https://github.com/cerebrixos-org/tuning-engines-cli",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "cg3inc/prior_mcp",
+      "source": "https://github.com/cg3inc/prior_mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "chakkaradeep/pyCodeAGI",
+      "source": "https://github.com/chakkaradeep/pyCodeAGI",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "chaoz23/srdcheck",
+      "source": "https://github.com/chaoz23/srdcheck",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "chatmcp/mcp-server-chatsum",
+      "source": "https://github.com/chatmcp/mcp-server-chatsum",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "chopmob-cloud/AlgoVoi-Platform-Adapters",
+      "source": "https://github.com/chopmob-cloud/AlgoVoi-Platform-Adapters",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "CircleCI-Public/mcp-server-circleci",
+      "source": "https://github.com/CircleCI-Public/mcp-server-circleci",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ckanthony/Chisel",
+      "source": "https://github.com/ckanthony/Chisel",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ckanthony/openapi-mcp",
+      "source": "https://github.com/ckanthony/openapi-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "clouatre-labs/math-mcp-learning-server",
+      "source": "https://github.com/clouatre-labs/math-mcp-learning-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "cloudflare/sandbox-sdk",
+      "source": "https://github.com/cloudflare/sandbox-sdk",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "cloudsealed/cloudsealed-mcp",
+      "source": "https://github.com/cloudsealed/cloudsealed-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "codefuse-ai/codefuse-chatbot",
+      "source": "https://github.com/codefuse-ai/codefuse-chatbot",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Codex-Data/codex-mcp",
+      "source": "https://github.com/Codex-Data/codex-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "cohexa-ai/agent-coherence",
+      "source": "https://github.com/cohexa-ai/agent-coherence",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "coinbase/agentkit",
+      "source": "https://github.com/coinbase/agentkit",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "colibird-ai/local-mcp-releases",
+      "source": "https://github.com/colibird-ai/local-mcp-releases",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "commercetools/mcp-essentials",
+      "source": "https://github.com/commercetools/mcp-essentials",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "composable-models/llm_multiagent_debate",
+      "source": "https://github.com/composable-models/llm_multiagent_debate",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "conarti/mattermost-mcp",
+      "source": "https://github.com/conarti/mattermost-mcp",
+      "reason": "fork",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "congzhou09/chrome-dev-mcp",
+      "source": "https://github.com/congzhou09/chrome-dev-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Connectry-io/connectrylab-architect-cert-mcp",
+      "source": "https://github.com/Connectry-io/connectrylab-architect-cert-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "convex/convex-backend",
+      "source": "https://github.com/convex/convex-backend",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "cordum-io/cordum",
+      "source": "https://github.com/cordum-io/cordum",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "couchbase/mcp-server-couchbase",
+      "canonicalFullName": "couchbase/mcp-server-couchbase",
+      "source": "https://github.com/couchbase/mcp-server-couchbase",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "CR-Gjx/Suspicion-Agent",
+      "source": "https://github.com/CR-Gjx/Suspicion-Agent",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "CreativeClawCo/creative-claw-marketplace",
+      "source": "https://github.com/CreativeClawCo/creative-claw-marketplace",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "cursor/cursor",
+      "source": "https://github.com/cursor/cursor",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "cuttalo/depscope",
+      "source": "https://github.com/cuttalo/depscope",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "cyclops-ui/mcp-cyclops",
+      "source": "https://github.com/cyclops-ui/mcp-cyclops",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "D-Asce/pandastocksdk",
+      "source": "https://github.com/D-Asce/pandastocksdk",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "daisys-ai/daisys-mcp",
+      "source": "https://github.com/daisys-ai/daisys-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Data-Everything/mcp-server-templates",
+      "source": "https://github.com/Data-Everything/mcp-server-templates",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "datanexusmcp/mcp-server",
+      "source": "https://github.com/datanexusmcp/mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "daytonaio/daytona",
+      "source": "https://github.com/daytonaio/daytona",
+      "reason": "archived",
+      "license": null,
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ddukbg/github-enterprise-mcp",
+      "source": "https://github.com/ddukbg/github-enterprise-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "decidefyi/decide",
+      "source": "https://github.com/decidefyi/decide",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "denismaggior8/enigma-python-mcp",
+      "source": "https://github.com/denismaggior8/enigma-python-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "depwire/depwire",
+      "source": "https://github.com/depwire/depwire",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "dequelabs/axe-mcp-server-public",
+      "source": "https://github.com/dequelabs/axe-mcp-server-public",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "deslay1/amendor-mcp",
+      "source": "https://github.com/deslay1/amendor-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "dhamma-seeker/tripitaka-mcp",
+      "source": "https://github.com/dhamma-seeker/tripitaka-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Disentinel/grafema",
+      "source": "https://github.com/Disentinel/grafema",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "dl4rce/flaiwheel",
+      "source": "https://github.com/dl4rce/flaiwheel",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "dnotitia/akb",
+      "source": "https://github.com/dnotitia/akb",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "doctorm333/promptpilot-mcp-server",
+      "source": "https://github.com/doctorm333/promptpilot-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "doggychip/agentforge",
+      "source": "https://github.com/doggychip/agentforge",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "donnywin85/arb-dex-mcp",
+      "source": "https://github.com/donnywin85/arb-dex-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "donnywin85/dex-data-mcp",
+      "source": "https://github.com/donnywin85/dex-data-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Doriandarko/claude-engineer",
+      "source": "https://github.com/Doriandarko/claude-engineer",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Doriandarko/maestro",
+      "source": "https://github.com/Doriandarko/maestro",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "dotemacs/domain-lookup-mcp",
+      "source": "https://github.com/dotemacs/domain-lookup-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "dshakes/distil",
+      "source": "https://github.com/dshakes/distil",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Dusheh/myclaw-toolkit",
+      "source": "https://github.com/Dusheh/myclaw-toolkit",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "dzoba/gptrpg",
+      "source": "https://github.com/dzoba/gptrpg",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "e2b-dev/awesome-ai-agents",
+      "source": "https://github.com/e2b-dev/awesome-ai-agents",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "e2b-dev/awesome-ai-sdks",
+      "source": "https://github.com/e2b-dev/awesome-ai-sdks",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "e2b-dev/e2b-cookbook",
+      "source": "https://github.com/e2b-dev/e2b-cookbook",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "edge-claw/mood-booster-agent",
+      "source": "https://github.com/edge-claw/mood-booster-agent",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "editmamei/editmamei",
+      "source": "https://github.com/editmamei/editmamei",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "edwinbernadus/nocodb-mcp-server",
+      "source": "https://github.com/edwinbernadus/nocodb-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "eleata/eleata-einvoice-mcp",
+      "source": "https://github.com/eleata/eleata-einvoice-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "eleata/eleata-verify-mcp",
+      "source": "https://github.com/eleata/eleata-verify-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "eleata/eleion-scanner-mcp",
+      "source": "https://github.com/eleata/eleion-scanner-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "elestirelbilinc-sketch/vap-showcase",
+      "source": "https://github.com/elestirelbilinc-sketch/vap-showcase",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "elevy99927/devops-mcp-webui",
+      "source": "https://github.com/elevy99927/devops-mcp-webui",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "elhamid/llm-council",
+      "source": "https://github.com/elhamid/llm-council",
+      "reason": "fork",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "elie222/inbox-zero",
+      "source": "https://github.com/elie222/inbox-zero",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "emrgnt-cmplxty/automata",
+      "source": "https://github.com/emrgnt-cmplxty/automata",
+      "reason": "archived",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "endorhq/cli",
+      "source": "https://github.com/endorhq/cli",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "enmanuelmag/heimdall-mcp",
+      "source": "https://github.com/enmanuelmag/heimdall-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ennucore/clippinator",
+      "source": "https://github.com/ennucore/clippinator",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "epistemedeus/skillguard",
+      "source": "https://github.com/epistemedeus/skillguard",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ertad-family/liquid",
+      "source": "https://github.com/ertad-family/liquid",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "esp4ce/infra-mcp",
+      "source": "https://github.com/esp4ce/infra-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "espadaw/Agent47",
+      "source": "https://github.com/espadaw/Agent47",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "eviscerations/whisper-windows-mcp",
+      "source": "https://github.com/eviscerations/whisper-windows-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "eyaltoledano/claude-task-master",
+      "source": "https://github.com/eyaltoledano/claude-task-master",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "eyloni/pythia-oracle",
+      "source": "https://github.com/eyloni/pythia-oracle",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "farukkolip/tiktapdown-mcp",
+      "source": "https://github.com/farukkolip/tiktapdown-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "FastAlertNow/mcp-server",
+      "source": "https://github.com/FastAlertNow/mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "fdcommercial/property-finance-mcp",
+      "source": "https://github.com/fdcommercial/property-finance-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "features/preview",
+      "source": "https://github.com/features/preview",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ferrants/memvid-mcp-server",
+      "source": "https://github.com/ferrants/memvid-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "FFmpeg/FFmpeg",
+      "source": "https://github.com/FFmpeg/FFmpeg",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "fireproof-storage/mcp-database-server",
+      "source": "https://github.com/fireproof-storage/mcp-database-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "fjrdomingues/autopilot",
+      "source": "https://github.com/fjrdomingues/autopilot",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "flowcore-io/mcp-flowcore-platform",
+      "source": "https://github.com/flowcore-io/mcp-flowcore-platform",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "FlowiseAI/Flowise",
+      "source": "https://github.com/FlowiseAI/Flowise",
+      "reason": "archived",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "awesome-ai-agents",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "fluxmailai/fluxmail",
+      "source": "https://github.com/fluxmailai/fluxmail",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "foldwork-dev/mcp-injector",
+      "source": "https://github.com/foldwork-dev/mcp-injector",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "FOLLGAD/godmode",
+      "source": "https://github.com/FOLLGAD/godmode",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "format37/youtube_mcp",
+      "source": "https://github.com/format37/youtube_mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "FoundryNet/forge-mcp",
+      "source": "https://github.com/FoundryNet/forge-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "FoundryNet/mint-mcp",
+      "source": "https://github.com/FoundryNet/mint-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "foxintheloop/UpTier",
+      "source": "https://github.com/foxintheloop/UpTier",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "fr0gger/MCP_Security",
+      "source": "https://github.com/fr0gger/MCP_Security",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Fzkuji/OpenProgram",
+      "source": "https://github.com/Fzkuji/OpenProgram",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gamaze-labs/hicortex",
+      "source": "https://github.com/gamaze-labs/hicortex",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ganakailabs/cloudeval-cli",
+      "source": "https://github.com/ganakailabs/cloudeval-cli",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gbatistuta0/appfactory",
+      "source": "https://github.com/gbatistuta0/appfactory",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gblinproject/GBLIN-MCP",
+      "source": "https://github.com/gblinproject/GBLIN-MCP",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "geekan/MetaGPT",
+      "canonicalFullName": "FoundationAgents/MetaGPT",
+      "source": "https://github.com/geekan/MetaGPT",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gerkensm/callcenter.js-mcp",
+      "source": "https://github.com/gerkensm/callcenter.js-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "getsentry/toolkit",
+      "source": "https://github.com/getsentry/toolkit",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "getsentry/toolkit",
+      "canonicalFullName": "getsentry/toolkit",
+      "source": "https://github.com/getsentry/toolkit",
+      "reason": "canonical-alias-merged",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gibbrdev/gibs-mcp",
+      "source": "https://github.com/gibbrdev/gibs-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gitkraken/gk-cli",
+      "source": "https://github.com/gitkraken/gk-cli",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "glama-ai/tool-definition-quality-score",
+      "source": "https://github.com/glama-ai/tool-definition-quality-score",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Gliana-Labs/gliana-mcp",
+      "source": "https://github.com/Gliana-Labs/gliana-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gmpetrov/databerry",
+      "source": "https://github.com/gmpetrov/databerry",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gogabrielordonez/mcp-ragchat",
+      "source": "https://github.com/gogabrielordonez/mcp-ragchat",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "googleapis/mcp-toolbox",
+      "canonicalFullName": "googleapis/mcp-toolbox",
+      "source": "https://github.com/googleapis/mcp-toolbox",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gorosun/unified-diff-mcp",
+      "source": "https://github.com/gorosun/unified-diff-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gregoriofraile/gasolineras-mcp",
+      "source": "https://github.com/gregoriofraile/gasolineras-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "gvasile29/qai-consultant",
+      "source": "https://github.com/gvasile29/qai-consultant",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hamflx/imagen3-mcp",
+      "source": "https://github.com/hamflx/imagen3-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hannesrudolph/imessage-query-fastmcp-mcp-server",
+      "source": "https://github.com/hannesrudolph/imessage-query-fastmcp-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hannesrudolph/mcp-ragdocs",
+      "source": "https://github.com/hannesrudolph/mcp-ragdocs",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hannesrudolph/sqlite-explorer-fastmcp-mcp-server",
+      "source": "https://github.com/hannesrudolph/sqlite-explorer-fastmcp-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hanshs474/jevx-mcp",
+      "source": "https://github.com/hanshs474/jevx-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "haoming-luo/agentfem-mcp",
+      "source": "https://github.com/haoming-luo/agentfem-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "HarperZ9/telos",
+      "source": "https://github.com/HarperZ9/telos",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hashgraph-online/hashnet-mcp-js",
+      "source": "https://github.com/hashgraph-online/hashnet-mcp-js",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Helm-Protocol/openttt-mcp",
+      "source": "https://github.com/Helm-Protocol/openttt-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "helpful-AIs/triplyfy-mcp",
+      "source": "https://github.com/helpful-AIs/triplyfy-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "henilcalagiya/google-sheets-mcp",
+      "source": "https://github.com/henilcalagiya/google-sheets-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "HenryHaoson/Yuque-MCP-Server",
+      "source": "https://github.com/HenryHaoson/Yuque-MCP-Server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "heymrun/heym",
+      "source": "https://github.com/heymrun/heym",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hieuttmmo/entraid-mcp-server",
+      "source": "https://github.com/hieuttmmo/entraid-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "higress-group/higress-ops-mcp-server",
+      "source": "https://github.com/higress-group/higress-ops-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hiromitsusasaki/raindrop-io-mcp-server",
+      "source": "https://github.com/hiromitsusasaki/raindrop-io-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hkaanengin/opendota-mcp-server",
+      "source": "https://github.com/hkaanengin/opendota-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hoqqun/stooq-mcp",
+      "source": "https://github.com/hoqqun/stooq-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "horw/esp-mcp",
+      "source": "https://github.com/horw/esp-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "HuggingAGI/mcp-baostock-server",
+      "source": "https://github.com/HuggingAGI/mcp-baostock-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "huggingface/text-generation-inference",
+      "source": "https://github.com/huggingface/text-generation-inference",
+      "reason": "archived",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "HughesCuit/heventure-search-mcp",
+      "source": "https://github.com/HughesCuit/heventure-search-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hungthai1401/bruno-mcp",
+      "source": "https://github.com/hungthai1401/bruno-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "HuntsDesk/ve-gws",
+      "source": "https://github.com/HuntsDesk/ve-gws",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hydrolix/mcp-hydrolix",
+      "source": "https://github.com/hydrolix/mcp-hydrolix",
+      "reason": "fork",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hypawave/mcp",
+      "source": "https://github.com/hypawave/mcp",
+      "reason": "license-not-allowlisted:MIT-0",
+      "license": "MIT-0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "hyperionxmota/cook-county-property-mcp",
+      "source": "https://github.com/hyperionxmota/cook-county-property-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "i-am-bee/acp",
+      "source": "https://github.com/i-am-bee/acp",
+      "reason": "archived",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "IBM/mcp-cli",
+      "source": "https://github.com/IBM/mcp-cli",
+      "reason": "archived",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "idapixl/algora-mcp-server",
+      "source": "https://github.com/idapixl/algora-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "IgorGanapolsky/ThumbGate",
+      "canonicalFullName": "IgorGanapolsky/ThumbGate",
+      "source": "https://github.com/IgorGanapolsky/ThumbGate",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ilyautov/hh-mcp-ru",
+      "source": "https://github.com/ilyautov/hh-mcp-ru",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "infai-tech/vulnfeed-mcp",
+      "source": "https://github.com/infai-tech/vulnfeed-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "influxdata/influxdb3_mcp_server",
+      "source": "https://github.com/influxdata/influxdb3_mcp_server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Infrawise/mcp-server",
+      "source": "https://github.com/Infrawise/mcp-server",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "inngest/inngest",
+      "source": "https://github.com/inngest/inngest",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "intentos-labs/beeper-mcp",
+      "source": "https://github.com/intentos-labs/beeper-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ipfind/ipfind-mcp-server",
+      "source": "https://github.com/ipfind/ipfind-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ipfred/aiwen-mcp-server-geoip",
+      "source": "https://github.com/ipfred/aiwen-mcp-server-geoip",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "irgolic/AutoPR",
+      "source": "https://github.com/irgolic/AutoPR",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "isaacwasserman/mcp-vegalite-server",
+      "source": "https://github.com/isaacwasserman/mcp-vegalite-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "IvanAmador/vercel-ai-docs-mcp",
+      "source": "https://github.com/IvanAmador/vercel-ai-docs-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "j3k0/speech.sh",
+      "source": "https://github.com/j3k0/speech.sh",
+      "reason": "fork",
+      "license": "GPL-3.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jaggernaut007/nexus-mcp",
+      "source": "https://github.com/jaggernaut007/nexus-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jaipandya/producthunt-mcp-server",
+      "source": "https://github.com/jaipandya/producthunt-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Jambozx/onlinecybertools-mcp-server",
+      "source": "https://github.com/Jambozx/onlinecybertools-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "JamesANZ/system-prompts-mcp-server",
+      "source": "https://github.com/JamesANZ/system-prompts-mcp-server",
+      "reason": "fork",
+      "license": "GPL-3.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "janswist/mcp-dexscreener",
+      "source": "https://github.com/janswist/mcp-dexscreener",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jen6/ticktick-mcp",
+      "source": "https://github.com/jen6/ticktick-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jgsystemsconsulting/jgs-magic-sysmlv1-mcp",
+      "source": "https://github.com/jgsystemsconsulting/jgs-magic-sysmlv1-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jimfilippou/things-mcp",
+      "source": "https://github.com/jimfilippou/things-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jjsantos01/qgis_mcp",
+      "source": "https://github.com/jjsantos01/qgis_mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Jktfe/serveMyAPI",
+      "source": "https://github.com/Jktfe/serveMyAPI",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jmshinhwa/rulestamp-mcp",
+      "source": "https://github.com/jmshinhwa/rulestamp-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "joaomdmoura/crewai",
+      "canonicalFullName": "crewAIInc/crewAI",
+      "source": "https://github.com/joaomdmoura/crewai",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "johnneerdael/privateaccess-mcp",
+      "source": "https://github.com/johnneerdael/privateaccess-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jonnybottles/patch-tuesday-mcp",
+      "source": "https://github.com/jonnybottles/patch-tuesday-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "JordanDalton/DoorDash-MCP-Server",
+      "source": "https://github.com/JordanDalton/DoorDash-MCP-Server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "JordanDalton/RestCsvMcpServer",
+      "source": "https://github.com/JordanDalton/RestCsvMcpServer",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "JordiNeil/mcp-databricks-server",
+      "source": "https://github.com/JordiNeil/mcp-databricks-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jorgenclaw/nostr-mcp-server",
+      "source": "https://github.com/jorgenclaw/nostr-mcp-server",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jorkal-crypto/jorkal-nft-mcp",
+      "source": "https://github.com/jorkal-crypto/jorkal-nft-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "JoshuaRileyDev/mac-apps-launcher",
+      "source": "https://github.com/JoshuaRileyDev/mac-apps-launcher",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "JoshuaRileyDev/simulator-mcp-server",
+      "source": "https://github.com/JoshuaRileyDev/simulator-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "JoshuaRileyDev/supabase-mcp-server",
+      "source": "https://github.com/JoshuaRileyDev/supabase-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "jsdelivr/globalping-mcp-server",
+      "source": "https://github.com/jsdelivr/globalping-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "julien040/anyquery",
+      "source": "https://github.com/julien040/anyquery",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "kaiyuanxiaobing/atomgit-mcp-server",
+      "source": "https://github.com/kaiyuanxiaobing/atomgit-mcp-server",
+      "reason": "license-not-allowlisted:MulanPSL-2.0",
+      "license": "MulanPSL-2.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "kambriso/fritzbox-mcp-server",
+      "source": "https://github.com/kambriso/fritzbox-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "KashiwaByte/vikingdb-mcp-server",
+      "source": "https://github.com/KashiwaByte/vikingdb-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "kensaurus/mushi-mushi",
+      "source": "https://github.com/kensaurus/mushi-mushi",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "kevmoz/macaroonnetwork-mcp",
+      "source": "https://github.com/kevmoz/macaroonnetwork-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "khaoss85/mcp-orchestro",
+      "source": "https://github.com/khaoss85/mcp-orchestro",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "kimtth/mcp-remote-call-ping-pong",
+      "source": "https://github.com/kimtth/mcp-remote-call-ping-pong",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Kindly-Software/kdb",
+      "source": "https://github.com/Kindly-Software/kdb",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "kinlab-ai/kin",
+      "source": "https://github.com/kinlab-ai/kin",
+      "reason": "archived",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Kjopstad-IT/rqwstr-mcp",
+      "source": "https://github.com/Kjopstad-IT/rqwstr-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "KnockOutEZ/wigolo",
+      "source": "https://github.com/KnockOutEZ/wigolo",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "kojott/mailmcp-dist",
+      "source": "https://github.com/kojott/mailmcp-dist",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "kontext-security/attestable-mcp-server",
+      "source": "https://github.com/kontext-security/attestable-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "krystiangw/meet-live-assist-extension",
+      "source": "https://github.com/krystiangw/meet-live-assist-extension",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "kuafuai/DevOpsGPT",
+      "source": "https://github.com/kuafuai/DevOpsGPT",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "kyisaiah47/compound-mcp",
+      "source": "https://github.com/kyisaiah47/compound-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "KyuRish/mcp-dashboards",
+      "source": "https://github.com/KyuRish/mcp-dashboards",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Kzino/vorim-mcp-server",
+      "source": "https://github.com/Kzino/vorim-mcp-server",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "LadislavSopko/mcp-ai-server-visual-studio",
+      "source": "https://github.com/LadislavSopko/mcp-ai-server-visual-studio",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "LamantinAI/kaeru",
+      "source": "https://github.com/LamantinAI/kaeru",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "langchain-ai/langchain-mcp-adapters",
+      "source": "https://github.com/langchain-ai/langchain-mcp-adapters",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "langfuse/langfuse",
+      "source": "https://github.com/langfuse/langfuse",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "langgenius/dify",
+      "source": "https://github.com/langgenius/dify",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Leekangbum/networklytics-mcp",
+      "source": "https://github.com/Leekangbum/networklytics-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "letta-ai/letta",
+      "canonicalFullName": "letta-ai/letta",
+      "source": "https://github.com/letta-ai/letta",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "LGDiMaggio/predictive-maintenance-mcp",
+      "source": "https://github.com/LGDiMaggio/predictive-maintenance-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "lildaddyo/braintube-mcp",
+      "source": "https://github.com/lildaddyo/braintube-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "linklore/linklore-mcp",
+      "source": "https://github.com/linklore/linklore-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "LinuxSuRen/atest-mcp-server",
+      "source": "https://github.com/LinuxSuRen/atest-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "lithtrix/lithtrix-mcp",
+      "source": "https://github.com/lithtrix/lithtrix-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "livetennisapi/livetennisapi-mcp",
+      "source": "https://github.com/livetennisapi/livetennisapi-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "lnbits/LNbits-MCP-Server",
+      "source": "https://github.com/lnbits/LNbits-MCP-Server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "louis030195/easy-obsidian-mcp",
+      "source": "https://github.com/louis030195/easy-obsidian-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "lucygoodchild/mcp-national-rail",
+      "source": "https://github.com/lucygoodchild/mcp-national-rail",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "lulzasaur9192/marketplace-search-mcp",
+      "source": "https://github.com/lulzasaur9192/marketplace-search-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "luminati-io/brightdata-mcp",
+      "canonicalFullName": "brightdata/brightdata-mcp",
+      "source": "https://github.com/luminati-io/brightdata-mcp",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "LuniaKunal/mcp-twitter",
+      "source": "https://github.com/LuniaKunal/mcp-twitter",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "macrocosm-os/macrocosmos-mcp",
+      "source": "https://github.com/macrocosm-os/macrocosmos-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "madbonez/caldav-mcp",
+      "source": "https://github.com/madbonez/caldav-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "madhan-g-p/DevDocs-MCP",
+      "source": "https://github.com/madhan-g-p/DevDocs-MCP",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "manusa/kubernetes-mcp-server",
+      "canonicalFullName": "containers/kubernetes-mcp-server",
+      "source": "https://github.com/manusa/kubernetes-mcp-server",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "MarceauSolutions/amazon-seller-mcp",
+      "source": "https://github.com/MarceauSolutions/amazon-seller-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "MarceauSolutions/fitness-influencer-mcp",
+      "source": "https://github.com/MarceauSolutions/fitness-influencer-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "MarceauSolutions/hvac-quotes-mcp",
+      "source": "https://github.com/MarceauSolutions/hvac-quotes-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "MarceauSolutions/md-to-pdf-mcp",
+      "source": "https://github.com/MarceauSolutions/md-to-pdf-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "MarceauSolutions/rideshare-comparison-mcp",
+      "source": "https://github.com/MarceauSolutions/rideshare-comparison-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "MarcinDudekDev/crypto-signals-mcp",
+      "source": "https://github.com/MarcinDudekDev/crypto-signals-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "marras0914/agent-toolbelt",
+      "source": "https://github.com/marras0914/agent-toolbelt",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "marykovziridze/screaming-frog-mcp",
+      "source": "https://github.com/marykovziridze/screaming-frog-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "masna-ai/mcp-confluence-server",
+      "source": "https://github.com/masna-ai/mcp-confluence-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "mastra-ai/mastra",
+      "source": "https://github.com/mastra-ai/mastra",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Maximilian-Winter/llama-cpp-agent",
+      "source": "https://github.com/Maximilian-Winter/llama-cpp-agent",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "mctlhq/mctl-mcp",
+      "source": "https://github.com/mctlhq/mctl-mcp",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "mcurmi05/vdiff",
+      "source": "https://github.com/mcurmi05/vdiff",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "meacheal-ai/mrc-data",
+      "source": "https://github.com/meacheal-ai/mrc-data",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "megberts/mcp-websitepublisher-ai",
+      "source": "https://github.com/megberts/mcp-websitepublisher-ai",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "melbis/melbis-shop",
+      "source": "https://github.com/melbis/melbis-shop",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "meloliva14/verity-mcp",
+      "source": "https://github.com/meloliva14/verity-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "metatool-ai/metatool-app",
+      "canonicalFullName": "metatool-ai/metamcp",
+      "source": "https://github.com/metatool-ai/metatool-app",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "metorial/metorial",
+      "source": "https://github.com/metorial/metorial",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "mgnirck/lecka-mcp",
+      "source": "https://github.com/mgnirck/lecka-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Michael-WhiteCapData/ollama-handoff",
+      "source": "https://github.com/Michael-WhiteCapData/ollama-handoff",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "michalperni11-gif/secfinapi-mcp",
+      "source": "https://github.com/michalperni11-gif/secfinapi-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "microsoft/autogen",
+      "source": "https://github.com/microsoft/autogen",
+      "reason": "license-not-allowlisted:CC-BY-4.0",
+      "license": "CC-BY-4.0",
+      "sourceFeeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "awesome-ai-agents",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "MikkoParkkola/mcp-gateway",
+      "source": "https://github.com/MikkoParkkola/mcp-gateway",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Milofax/xert-mcp",
+      "source": "https://github.com/Milofax/xert-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "MindMap-AI/mcp",
+      "source": "https://github.com/MindMap-AI/mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "MindscapeHQ/mcp-server-raygun",
+      "source": "https://github.com/MindscapeHQ/mcp-server-raygun",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "minhoyoo-iotrust/WAIaaS",
+      "source": "https://github.com/minhoyoo-iotrust/WAIaaS",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "minhyeoky/mcp-server-ledger",
+      "source": "https://github.com/minhyeoky/mcp-server-ledger",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "mixpeek/amux",
+      "source": "https://github.com/mixpeek/amux",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "mmntm/weblate-mcp",
+      "source": "https://github.com/mmntm/weblate-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "mmorris35/devplan-mcp-server",
+      "source": "https://github.com/mmorris35/devplan-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Mnemosyne-OS/Mnemosyne-Neural-OS",
+      "source": "https://github.com/Mnemosyne-OS/Mnemosyne-Neural-OS",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/conformance",
+      "source": "https://github.com/modelcontextprotocol/conformance",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/csharp-sdk",
+      "source": "https://github.com/modelcontextprotocol/csharp-sdk",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/ext-apps",
+      "source": "https://github.com/modelcontextprotocol/ext-apps",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/go-sdk",
+      "source": "https://github.com/modelcontextprotocol/go-sdk",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/inspector",
+      "source": "https://github.com/modelcontextprotocol/inspector",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/kotlin-sdk",
+      "source": "https://github.com/modelcontextprotocol/kotlin-sdk",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/mcpb",
+      "source": "https://github.com/modelcontextprotocol/mcpb",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/modelcontextprotocol",
+      "source": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/php-sdk",
+      "source": "https://github.com/modelcontextprotocol/php-sdk",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/quickstart-resources",
+      "source": "https://github.com/modelcontextprotocol/quickstart-resources",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/registry",
+      "source": "https://github.com/modelcontextprotocol/registry",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/ruby-sdk",
+      "source": "https://github.com/modelcontextprotocol/ruby-sdk",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/rust-sdk",
+      "source": "https://github.com/modelcontextprotocol/rust-sdk",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/servers",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers",
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/swift-sdk",
+      "source": "https://github.com/modelcontextprotocol/swift-sdk",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "modelcontextprotocol/typescript-sdk",
+      "source": "https://github.com/modelcontextprotocol/typescript-sdk",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Mogacode-ma/elementor-mcp-agent",
+      "source": "https://github.com/Mogacode-ma/elementor-mcp-agent",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "moxno/privacyscrubber-mcp",
+      "source": "https://github.com/moxno/privacyscrubber-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "mozilla/firefox-devtools-mcp",
+      "source": "https://github.com/mozilla/firefox-devtools-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "MS-Teja/Glyphic",
+      "source": "https://github.com/MS-Teja/Glyphic",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Mtehabsim/ScreenPilot",
+      "source": "https://github.com/Mtehabsim/ScreenPilot",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "mumez/pharo-smalltalk-interop-mcp-server",
+      "source": "https://github.com/mumez/pharo-smalltalk-interop-mcp-server",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "mutonby/openshorts",
+      "source": "https://github.com/mutonby/openshorts",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "n8n-io/n8n",
+      "source": "https://github.com/n8n-io/n8n",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "namixai/funding-mcp",
+      "source": "https://github.com/namixai/funding-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Nano-Collective/nanocoder",
+      "source": "https://github.com/Nano-Collective/nanocoder",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Narasimhaponnada/mermaid-mcp",
+      "source": "https://github.com/Narasimhaponnada/mermaid-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "natiixnt/redcon",
+      "source": "https://github.com/natiixnt/redcon",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ncosic/webotee-mcp",
+      "source": "https://github.com/ncosic/webotee-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Nebula-Block-Data/nebulablock-mcp-server",
+      "source": "https://github.com/Nebula-Block-Data/nebulablock-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Neem2004/android-mcp-server",
+      "source": "https://github.com/Neem2004/android-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "neoninnovationlab/neon-mcp-gateway",
+      "source": "https://github.com/neoninnovationlab/neon-mcp-gateway",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "nfemmanuel/iranti",
+      "source": "https://github.com/nfemmanuel/iranti",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "nguyenvanduocit/all-in-one-model-context-protocol",
+      "source": "https://github.com/nguyenvanduocit/all-in-one-model-context-protocol",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "nhantour/inferenceview-mcp",
+      "source": "https://github.com/nhantour/inferenceview-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "nick1udwig/ws-mcp",
+      "source": "https://github.com/nick1udwig/ws-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "nickjlamb/groundwork",
+      "source": "https://github.com/nickjlamb/groundwork",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "nickjlamb/redacta",
+      "source": "https://github.com/nickjlamb/redacta",
+      "reason": "license-not-allowlisted:MIT-0",
+      "license": "MIT-0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "nickpending/mcp-recon",
+      "source": "https://github.com/nickpending/mcp-recon",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "nicktcode/swissgroceries-mcp",
+      "source": "https://github.com/nicktcode/swissgroceries-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "nlqueries/nlqueries",
+      "source": "https://github.com/nlqueries/nlqueries",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "node-man/dechonet-mcp",
+      "source": "https://github.com/node-man/dechonet-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "NVIDIA-NeMo/Guardrails",
+      "source": "https://github.com/NVIDIA-NeMo/Guardrails",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "nyachisn/falcoscan-mcp",
+      "source": "https://github.com/nyachisn/falcoscan-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "oerc-s/primordia",
+      "source": "https://github.com/oerc-s/primordia",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "OHNLP/omop_mcp",
+      "source": "https://github.com/OHNLP/omop_mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Oneirocom/Magick",
+      "source": "https://github.com/Oneirocom/Magick",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "onyx-dot-app/onyx",
+      "source": "https://github.com/onyx-dot-app/onyx",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "open-strategy-partners/osp_marketing_tools",
+      "source": "https://github.com/open-strategy-partners/osp_marketing_tools",
+      "reason": "license-not-allowlisted:CC-BY-SA-4.0",
+      "license": "CC-BY-SA-4.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "open-webui/open-webui",
+      "source": "https://github.com/open-webui/open-webui",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "openai/evals",
+      "source": "https://github.com/openai/evals",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "OpenDevin/OpenDevin",
+      "canonicalFullName": "OpenHands/OpenHands",
+      "source": "https://github.com/OpenDevin/OpenDevin",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "OpenHands/OpenHands",
+      "canonicalFullName": "OpenHands/OpenHands",
+      "source": "https://github.com/OpenHands/OpenHands",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "OpenInterpreter/open-interpreter",
+      "canonicalFullName": "openinterpreter/openinterpreter",
+      "source": "https://github.com/OpenInterpreter/open-interpreter",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "OpenRouterTeam/openrouter",
+      "source": "https://github.com/OpenRouterTeam/openrouter",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "agentic-open-source-tools"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "OptimNow/cloud-finops-skills",
+      "source": "https://github.com/OptimNow/cloud-finops-skills",
+      "reason": "license-not-allowlisted:CC-BY-SA-4.0",
+      "license": "CC-BY-SA-4.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "oracle/mcp",
+      "source": "https://github.com/oracle/mcp",
+      "reason": "license-not-allowlisted:UPL-1.0",
+      "license": "UPL-1.0",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "oraios/serena",
+      "source": "https://github.com/oraios/serena",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "orgs/community",
+      "source": "https://github.com/orgs/community",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "OrygnsCode/Omnicord",
+      "source": "https://github.com/OrygnsCode/Omnicord",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "osinmv/function-lookup-mcp",
+      "source": "https://github.com/osinmv/function-lookup-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Osseni94/keyneg-mcp",
+      "source": "https://github.com/Osseni94/keyneg-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Osseni94/oyemi-mcp",
+      "source": "https://github.com/Osseni94/oyemi-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "osulivan/skill4agent-mcp-server",
+      "source": "https://github.com/osulivan/skill4agent-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ovlabs/mcp-server-originalvoices",
+      "source": "https://github.com/ovlabs/mcp-server-originalvoices",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "oxgeneral/agentnet",
+      "source": "https://github.com/oxgeneral/agentnet",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "parallel-web/task-mcp",
+      "source": "https://github.com/parallel-web/task-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "partymola/fitbit-mcp",
+      "source": "https://github.com/partymola/fitbit-mcp",
+      "reason": "archived",
+      "license": "GPL-3.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "pathrule/mcp",
+      "source": "https://github.com/pathrule/mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "PatrickSys/codebase-context",
+      "source": "https://github.com/PatrickSys/codebase-context",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "PattrickChenforclaudeuse/mythsensus-mcp",
+      "source": "https://github.com/PattrickChenforclaudeuse/mythsensus-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "paul-gauthier/aider",
+      "canonicalFullName": "Aider-AI/aider",
+      "source": "https://github.com/paul-gauthier/aider",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Perufitlife/postwire-mcp",
+      "source": "https://github.com/Perufitlife/postwire-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "peter-j-thompson/semanticapi-mcp",
+      "source": "https://github.com/peter-j-thompson/semanticapi-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "pgvector/pgvector",
+      "source": "https://github.com/pgvector/pgvector",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "phisanti/MCPR",
+      "source": "https://github.com/phisanti/MCPR",
+      "reason": "license-not-allowlisted:CC-BY-SA-4.0",
+      "license": "CC-BY-SA-4.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "PhononX/cv-mcp-server",
+      "source": "https://github.com/PhononX/cv-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "PhungXuanAnh/selenium-mcp-server",
+      "source": "https://github.com/PhungXuanAnh/selenium-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "phuongrealmax/code-guardian",
+      "source": "https://github.com/phuongrealmax/code-guardian",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "pickelfintech/the13f-mcp",
+      "source": "https://github.com/pickelfintech/the13f-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "pipeboard-co/meta-ads-mcp",
+      "source": "https://github.com/pipeboard-co/meta-ads-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "PipedreamHQ/pipedream",
+      "source": "https://github.com/PipedreamHQ/pipedream",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "PolicyForge/mcp",
+      "source": "https://github.com/PolicyForge/mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "polygon-io/mcp_polygon",
+      "canonicalFullName": "massive-com/mcp_massive",
+      "source": "https://github.com/polygon-io/mcp_polygon",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "pomazanbohdan/memory-mcp-1file",
+      "source": "https://github.com/pomazanbohdan/memory-mcp-1file",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "portel-dev/ncp",
+      "source": "https://github.com/portel-dev/ncp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "PostHog/posthog",
+      "source": "https://github.com/PostHog/posthog",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "pragmar/mcp-server-webcrawl",
+      "source": "https://github.com/pragmar/mcp-server-webcrawl",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Pratyay/mac-monitor-mcp",
+      "source": "https://github.com/Pratyay/mac-monitor-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "PrefectHQ/fastmcp",
+      "canonicalFullName": "PrefectHQ/fastmcp",
+      "source": "https://github.com/PrefectHQ/fastmcp",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "projnanda/projnanda",
+      "source": "https://github.com/projnanda/projnanda",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Prototypr/feedbagel-mcp",
+      "source": "https://github.com/Prototypr/feedbagel-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "pskill9/web-search",
+      "source": "https://github.com/pskill9/web-search",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "pskill9/website-downloader",
+      "source": "https://github.com/pskill9/website-downloader",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "PSPDFKit/nutrient-dws-mcp-server",
+      "source": "https://github.com/PSPDFKit/nutrient-dws-mcp-server",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "public-ui/kolibri",
+      "source": "https://github.com/public-ui/kolibri",
+      "reason": "license-not-allowlisted:EUPL-1.2",
+      "license": "EUPL-1.2",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "purinzan/gx3-cli-mcp",
+      "source": "https://github.com/purinzan/gx3-cli-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "pylonapi/pylon-mcp",
+      "source": "https://github.com/pylonapi/pylon-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Pythagora-io/gpt-pilot",
+      "source": "https://github.com/Pythagora-io/gpt-pilot",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "QAInsights/jmeter-mcp-server",
+      "source": "https://github.com/QAInsights/jmeter-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "QuentinCody/braintree-mcp-server",
+      "source": "https://github.com/QuentinCody/braintree-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "QuentinCody/catalysishub-mcp-server",
+      "source": "https://github.com/QuentinCody/catalysishub-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "QuentinCody/github-graphql-mcp-server",
+      "source": "https://github.com/QuentinCody/github-graphql-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "QuentinCody/shopify-storefront-mcp-server",
+      "source": "https://github.com/QuentinCody/shopify-storefront-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "rae-api-com/rae-mcp",
+      "source": "https://github.com/rae-api-com/rae-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "rampify-dev/rampify-mcp",
+      "source": "https://github.com/rampify-dev/rampify-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Rarefied-Earth/groundwork",
+      "source": "https://github.com/Rarefied-Earth/groundwork",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "raye-deng/open-code-review",
+      "source": "https://github.com/raye-deng/open-code-review",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "reefapi/reefapi-mcp",
+      "source": "https://github.com/reefapi/reefapi-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Regan-Milne/obsideo-mcp",
+      "source": "https://github.com/Regan-Milne/obsideo-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "restatedev/restate",
+      "source": "https://github.com/restatedev/restate",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Retio-ai/Retio-pagemap",
+      "source": "https://github.com/Retio-ai/Retio-pagemap",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ReviewGate/reviewgate",
+      "source": "https://github.com/ReviewGate/reviewgate",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "reworkd/AgentGPT",
+      "source": "https://github.com/reworkd/AgentGPT",
+      "reason": "archived",
+      "license": "GPL-3.0",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "rhasspy/piper",
+      "source": "https://github.com/rhasspy/piper",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "rinadelph/Agent-MCP",
+      "source": "https://github.com/rinadelph/Agent-MCP",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "rm-rf-prod/GroundTruth-MCP",
+      "source": "https://github.com/rm-rf-prod/GroundTruth-MCP",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "rnwkr7rscy-lang/fittin-mcp",
+      "source": "https://github.com/rnwkr7rscy-lang/fittin-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "RooCodeInc/Roo-Code",
+      "source": "https://github.com/RooCodeInc/Roo-Code",
+      "reason": "archived",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "rrmistry/tilt-mcp",
+      "source": "https://github.com/rrmistry/tilt-mcp",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "s2-streamstore/mcp",
+      "source": "https://github.com/s2-streamstore/mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "sachitrafa/YourMemory",
+      "source": "https://github.com/sachitrafa/YourMemory",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "sailorpepe/litvm-tcg-oracle-mcp",
+      "source": "https://github.com/sailorpepe/litvm-tcg-oracle-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "sailorpepe/undesirables-mcp-server",
+      "source": "https://github.com/sailorpepe/undesirables-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "SakanaAI/AI-Scientist",
+      "source": "https://github.com/SakanaAI/AI-Scientist",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "samvas-codes/dawshund_mcp",
+      "source": "https://github.com/samvas-codes/dawshund_mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "saranshbamania/mobile-device-mcp",
+      "source": "https://github.com/saranshbamania/mobile-device-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Sarg338/steam-mcp",
+      "source": "https://github.com/Sarg338/steam-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "saten-private/BabyCommandAGI",
+      "source": "https://github.com/saten-private/BabyCommandAGI",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "saurav61091/mcp-openapi",
+      "source": "https://github.com/saurav61091/mcp-openapi",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Savvy-Tech-Sphere/usable-browser-agent-free",
+      "source": "https://github.com/Savvy-Tech-Sphere/usable-browser-agent-free",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "saxonnicholls/super-log",
+      "source": "https://github.com/saxonnicholls/super-log",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Scottcjn/rustchain-mcp",
+      "source": "https://github.com/Scottcjn/rustchain-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "screenpipe/screenpipe",
+      "source": "https://github.com/screenpipe/screenpipe",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "SebastianGilPinzon/colab-mcp",
+      "source": "https://github.com/SebastianGilPinzon/colab-mcp",
+      "reason": "fork",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "seleniumboot/selenium-mcp",
+      "source": "https://github.com/seleniumboot/selenium-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "selvage-lab/selvage",
+      "source": "https://github.com/selvage-lab/selvage",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "sentien-labs/verdictswarm-mcp",
+      "source": "https://github.com/sentien-labs/verdictswarm-mcp",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "seomarlboro/digmyname",
+      "source": "https://github.com/seomarlboro/digmyname",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "SerifeusStudio/rpgmaker-xp-mcp",
+      "source": "https://github.com/SerifeusStudio/rpgmaker-xp-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "servelink-swyftlabs/serve-mcp",
+      "source": "https://github.com/servelink-swyftlabs/serve-mcp",
+      "reason": "archived",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "sgx-labs/statelessagent",
+      "source": "https://github.com/sgx-labs/statelessagent",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "sh6drack/zen-mcp",
+      "source": "https://github.com/sh6drack/zen-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "shiped-app/shiped-mcp",
+      "source": "https://github.com/shiped-app/shiped-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "shkyyy18/mi_fitness_data_bridge",
+      "source": "https://github.com/shkyyy18/mi_fitness_data_bridge",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "sidhq/Multi-GPT",
+      "source": "https://github.com/sidhq/Multi-GPT",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Significant-Gravitas/AutoGPT",
+      "source": "https://github.com/Significant-Gravitas/AutoGPT",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "sikcapri/superglookoquery",
+      "source": "https://github.com/sikcapri/superglookoquery",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Sim-xia/skill-cortex-server",
+      "source": "https://github.com/Sim-xia/skill-cortex-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "simonpainter/netbox-mcp",
+      "source": "https://github.com/simonpainter/netbox-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "SimplyLiz/ckb",
+      "source": "https://github.com/SimplyLiz/ckb",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "skedgo/tripgo-mcp-server",
+      "source": "https://github.com/skedgo/tripgo-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "SLP-DEV1/qwen-dap-mcp",
+      "source": "https://github.com/SLP-DEV1/qwen-dap-mcp",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "sonnyflylock/voxie-ai-directory-mcp",
+      "source": "https://github.com/sonnyflylock/voxie-ai-directory-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "soolaugust/vMem",
+      "source": "https://github.com/soolaugust/vMem",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "sourcegraph/sourcegraph",
+      "source": "https://github.com/sourcegraph/sourcegraph",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "SPARKIT-science/sparkit-mcp",
+      "source": "https://github.com/SPARKIT-science/sparkit-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "srinivasan-sundaresan95/orihime",
+      "source": "https://github.com/srinivasan-sundaresan95/orihime",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "steamship-core/langchain-production-starter",
+      "source": "https://github.com/steamship-core/langchain-production-starter",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Stellify-Software-Ltd/stellify-mcp",
+      "source": "https://github.com/Stellify-Software-Ltd/stellify-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "strands-agents/sdk-python",
+      "canonicalFullName": "strands-agents/harness-sdk",
+      "source": "https://github.com/strands-agents/sdk-python",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "subnetmarco/pgmcp",
+      "source": "https://github.com/subnetmarco/pgmcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "supabase/mcp",
+      "canonicalFullName": "supabase/mcp",
+      "source": "https://github.com/supabase/mcp",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "superagent-ai/superagent",
+      "canonicalFullName": "superagent-ai/superagent",
+      "source": "https://github.com/superagent-ai/superagent",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "superagents-lab/search1api-mcp",
+      "source": "https://github.com/superagents-lab/search1api-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "SupplyMaven-SCR/supplymaven-mcp-server",
+      "source": "https://github.com/SupplyMaven-SCR/supplymaven-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "SureScaleAI/openai-gpt-image-mcp",
+      "source": "https://github.com/SureScaleAI/openai-gpt-image-mcp",
+      "reason": "fork",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "SWE-agent/SWE-agent",
+      "canonicalFullName": "SWE-agent/SWE-agent",
+      "source": "https://github.com/SWE-agent/SWE-agent",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "szhygulin/vaultpilot-mcp",
+      "source": "https://github.com/szhygulin/vaultpilot-mcp",
+      "reason": "fork",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "szp2005/llm-prices-cn",
+      "source": "https://github.com/szp2005/llm-prices-cn",
+      "reason": "license-not-allowlisted:CC-BY-4.0",
+      "license": "CC-BY-4.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "TamiShaks-2/git-context-mcp",
+      "source": "https://github.com/TamiShaks-2/git-context-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tao-izm/devpulse-mcp",
+      "source": "https://github.com/tao-izm/devpulse-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "TCSoftInc/testcollab-mcp-server",
+      "source": "https://github.com/TCSoftInc/testcollab-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "telly6/searchpin",
+      "source": "https://github.com/telly6/searchpin",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tengolabs/killbottleneck",
+      "source": "https://github.com/tengolabs/killbottleneck",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "teodorofodocrispin-cmyk/trustboost-api",
+      "source": "https://github.com/teodorofodocrispin-cmyk/trustboost-api",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tgeselle/bugsnag-mcp",
+      "source": "https://github.com/tgeselle/bugsnag-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "the402ai/mcp-server",
+      "source": "https://github.com/the402ai/mcp-server",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "theagenttimes/tat-mcp-server",
+      "source": "https://github.com/theagenttimes/tat-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "TheRundown/data-mcp",
+      "source": "https://github.com/TheRundown/data-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "thinkchainai/agentinterviews_mcp",
+      "source": "https://github.com/thinkchainai/agentinterviews_mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "thinkchainai/mcpbundles",
+      "source": "https://github.com/thinkchainai/mcpbundles",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tianqitang1/enrichr-mcp-server",
+      "source": "https://github.com/tianqitang1/enrichr-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "timeplus-io/mcp-timeplus",
+      "source": "https://github.com/timeplus-io/mcp-timeplus",
+      "reason": "fork",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "timowhite88/farnsworth-syntek",
+      "source": "https://github.com/timowhite88/farnsworth-syntek",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tipdotmd/tip-md-x402-mcp-server",
+      "source": "https://github.com/tipdotmd/tip-md-x402-mcp-server",
+      "reason": "fork",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "TollboothLabs/ai-tool-optimizer",
+      "source": "https://github.com/TollboothLabs/ai-tool-optimizer",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tomba-io/tomba-mcp-server",
+      "source": "https://github.com/tomba-io/tomba-mcp-server",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tomholford/mcp-tic-tac-toe",
+      "source": "https://github.com/tomholford/mcp-tic-tac-toe",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Tommertom/awesome-ionic-mcp",
+      "source": "https://github.com/Tommertom/awesome-ionic-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Tommertom/sonos-ts-mcp",
+      "source": "https://github.com/Tommertom/sonos-ts-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tomohiro-owada/devrag",
+      "source": "https://github.com/tomohiro-owada/devrag",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Top-Celestial-Company-Ltd/DROS-VajraClaw-Hacker",
+      "source": "https://github.com/Top-Celestial-Company-Ltd/DROS-VajraClaw-Hacker",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "topoteretes/PromethAI-Backend",
+      "source": "https://github.com/topoteretes/PromethAI-Backend",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "topskychen/tilde",
+      "source": "https://github.com/topskychen/tilde",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "trackerfitness729-jpg/sitelauncher-mcp-server",
+      "source": "https://github.com/trackerfitness729-jpg/sitelauncher-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tradercjz/dolphindb-mcp-server",
+      "source": "https://github.com/tradercjz/dolphindb-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Trainzilla/tzilla-mcp",
+      "source": "https://github.com/Trainzilla/tzilla-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "trayders/trayd-mcp",
+      "source": "https://github.com/trayders/trayd-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tribal-memory/tribal",
+      "source": "https://github.com/tribal-memory/tribal",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tro2789/scout-premiere-mcp",
+      "source": "https://github.com/tro2789/scout-premiere-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "trypromptly/LLMStack",
+      "source": "https://github.com/trypromptly/LLMStack",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tubasasakunn/context-apps-mcp",
+      "source": "https://github.com/tubasasakunn/context-apps-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Turbo-Puffin/measure-mcp-server",
+      "source": "https://github.com/Turbo-Puffin/measure-mcp-server",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "twelvedata/mcp",
+      "source": "https://github.com/twelvedata/mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "tydude001/proofcut",
+      "source": "https://github.com/tydude001/proofcut",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ugurcl/dbridge-mcp",
+      "source": "https://github.com/ugurcl/dbridge-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "unibaseio/membase",
+      "source": "https://github.com/unibaseio/membase",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "up2itnow0822/agentpay-mcp",
+      "source": "https://github.com/up2itnow0822/agentpay-mcp",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vanna-ai/vanna",
+      "source": "https://github.com/vanna-ai/vanna",
+      "reason": "archived",
+      "license": "MIT",
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "var-gg/mcp",
+      "source": "https://github.com/var-gg/mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vbhjckfd/timetable-api-node",
+      "source": "https://github.com/vbhjckfd/timetable-api-node",
+      "reason": "license-not-allowlisted:WTFPL",
+      "license": "WTFPL",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vercel-labs/mcp-handler",
+      "source": "https://github.com/vercel-labs/mcp-handler",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vercel/ai",
+      "source": "https://github.com/vercel/ai",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vercel/next-devtools-mcp",
+      "source": "https://github.com/vercel/next-devtools-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers",
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "VeriTeknik/pluggedin-mcp-proxy",
+      "source": "https://github.com/VeriTeknik/pluggedin-mcp-proxy",
+      "reason": "fork",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vezlo/src-to-kb",
+      "source": "https://github.com/vezlo/src-to-kb",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "VictoriaMetrics/mcp-victoriametrics",
+      "canonicalFullName": "VictoriaMetrics/mcp-victoriametrics",
+      "source": "https://github.com/VictoriaMetrics/mcp-victoriametrics",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vikasny30/aletheia-mcp",
+      "source": "https://github.com/vikasny30/aletheia-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vince-gonzalez/opticquiz-mcp",
+      "source": "https://github.com/vince-gonzalez/opticquiz-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vitalops/openvibe",
+      "source": "https://github.com/vitalops/openvibe",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vitorpavinato/ncbi-mcp-server",
+      "source": "https://github.com/vitorpavinato/ncbi-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "VmLia/books-mcp-server",
+      "source": "https://github.com/VmLia/books-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vmware-skills/VMware-Aria",
+      "source": "https://github.com/vmware-skills/VMware-Aria",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vmware-skills/VMware-AVI",
+      "source": "https://github.com/vmware-skills/VMware-AVI",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vmware-skills/VMware-NSX",
+      "source": "https://github.com/vmware-skills/VMware-NSX",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vmware-skills/VMware-NSX-Security",
+      "source": "https://github.com/vmware-skills/VMware-NSX-Security",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "vostride/agent-qa",
+      "source": "https://github.com/vostride/agent-qa",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "w0h1v/mcp-shodan",
+      "canonicalFullName": "w0h1v/mcp-shodan",
+      "source": "https://github.com/w0h1v/mcp-shodan",
+      "reason": "canonical-alias-merged",
+      "license": "MIT",
+      "sourceFeeds": [
+        "verified-awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "waystation-ai/mcp",
+      "source": "https://github.com/waystation-ai/mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "weaviate/mcp-server-weaviate",
+      "source": "https://github.com/weaviate/mcp-server-weaviate",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "weaviate/weaviate",
+      "source": "https://github.com/weaviate/weaviate",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "webscraping-ai/webscraping-ai-mcp-server",
+      "source": "https://github.com/webscraping-ai/webscraping-ai-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "webtoolbox/websitetoolbox-mcp",
+      "source": "https://github.com/webtoolbox/websitetoolbox-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "windborne/zulipmcp",
+      "source": "https://github.com/windborne/zulipmcp",
+      "reason": "fork",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "windmill-labs/windmill",
+      "source": "https://github.com/windmill-labs/windmill",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "wjgoarxiv/pymol-mcp",
+      "source": "https://github.com/wjgoarxiv/pymol-mcp",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "wkalidev/multichain-mcp",
+      "source": "https://github.com/wkalidev/multichain-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "wnbhr/being",
+      "source": "https://github.com/wnbhr/being",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Wooonster/hocr_mcp_server",
+      "source": "https://github.com/Wooonster/hocr_mcp_server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "wowinter13/solscan-mcp",
+      "source": "https://github.com/wowinter13/solscan-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "wuye-ai/mcp-server-wuye-ai",
+      "source": "https://github.com/wuye-ai/mcp-server-wuye-ai",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "x402-index/x402search-mcp",
+      "source": "https://github.com/x402-index/x402search-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "xspadex/bilibili-mcp",
+      "source": "https://github.com/xspadex/bilibili-mcp",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "XuebinMa/AIWiki",
+      "source": "https://github.com/XuebinMa/AIWiki",
+      "reason": "license-not-allowlisted:CC-BY-SA-4.0",
+      "license": "CC-BY-SA-4.0",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "yincongcyincong/VictoriaMetrics-mcp-server",
+      "source": "https://github.com/yincongcyincong/VictoriaMetrics-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "yiwenlu66/PiloTY",
+      "source": "https://github.com/yiwenlu66/PiloTY",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "yoheinakajima/babyagi",
+      "source": "https://github.com/yoheinakajima/babyagi",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "youichi-uda/godot-mcp-pro",
+      "source": "https://github.com/youichi-uda/godot-mcp-pro",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "yylo-dev/roundtable",
+      "source": "https://github.com/yylo-dev/roundtable",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "zakariagharzouli/sparda",
+      "source": "https://github.com/zakariagharzouli/sparda",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Zolo-Ryan/MarketAuxMcpServer",
+      "source": "https://github.com/Zolo-Ryan/MarketAuxMcpServer",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "zoomeye-ai/mcp_zoomeye",
+      "source": "https://github.com/zoomeye-ai/mcp_zoomeye",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "ztuskes/garmin-documentation-mcp-server",
+      "source": "https://github.com/ztuskes/garmin-documentation-mcp-server",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "Zydanny/x402-intel-engine",
+      "source": "https://github.com/Zydanny/x402-intel-engine",
+      "reason": "metadata-not-found",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-mcp-servers"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    },
+    {
+      "fullName": "zylon-ai/private-gpt",
+      "canonicalFullName": "zylon-ai/private-gpt",
+      "source": "https://github.com/zylon-ai/private-gpt",
+      "reason": "canonical-alias-merged",
+      "license": "Apache-2.0",
+      "sourceFeeds": [
+        "awesome-agents"
+      ],
+      "observedAt": "2026-10-21T21:47:09.521Z"
+    }
+  ]
 }
