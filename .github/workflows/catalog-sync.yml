@@ -9,7 +9,7 @@ on:
     types: [opened]
   pull_request_target:
     branches: [main]
-    types: [reopened]
+    types: [opened, reopened]
   push:
     branches: [main]
     paths:
