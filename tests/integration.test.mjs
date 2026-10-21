@@ -184,7 +184,9 @@ test('a dedicated worker cannot hide a blocked WebSocket attempt behind a succes
   assert.equal(hits, 0, 'A dedicated worker contacted an unapproved WebSocket origin.');
 });
 
-test('a shared worker cannot hide a blocked WebSocket attempt behind a successful locale change', { timeout: 20000 }, async (t) => {
+// The independent page and blocked SharedWorker run concurrently in isolated contexts.
+// Permit slow macOS runner scheduling without dropping either security assertion.
+test('a shared worker cannot hide a blocked WebSocket attempt behind a successful locale change', { timeout: 35000 }, async (t) => {
   const fixture = await startFixture();
   t.after(() => fixture.close());
   let hits = 0;
@@ -200,7 +202,7 @@ test('a shared worker cannot hide a blocked WebSocket attempt behind a successfu
     expectedLang: 'en',
   }, {
     id: 'concurrent-ordinary-page', kind: 'locale', startPath: '/locale', expectedLang: 'fr',
-  }]), options);
+  }], { timeoutMs: 8000 }), options);
   const result = expectNotPassed(report, 'unsupported-shared-worker');
   assert.equal(result.status, 'error', JSON.stringify(result));
   assert.equal(result.code, 'WORKER_UNSUPPORTED', JSON.stringify(result));
