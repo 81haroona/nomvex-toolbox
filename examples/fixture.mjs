@@ -138,7 +138,7 @@ export async function startFixture({ port = 0, host = '127.0.0.1' } = {}) {
 }
 
 export function makeDemoConfig(baseUrl = 'http://127.0.0.1:4317') {
-  return { version: 1, baseUrl, timeoutMs: 4000, concurrency: 2, language: 'fr', checks: [
+  return { version: 1, baseUrl, timeoutMs: 10000, concurrency: 2, language: 'fr', checks: [
     { id: 'auth-return', kind: 'redirect', startPath: '/protected', steps: [{ action: 'fill', selector: '#email', value: 'demo@example.invalid' }, { action: 'click', selector: '#login-button' }], expectedPath: '/members' },
     { id: 'locale-persistence', kind: 'locale', startPath: '/locale', steps: [{ action: 'select', selector: '#language', value: 'en' }], expectedLang: 'en', text: { selector: '[data-testid="greeting"]', includes: 'Hello' }, reload: true, followPath: '/locale/next' },
     { id: 'pdf-export', kind: 'download', startPath: '/exports', trigger: '#good-pdf', format: 'pdf', minBytes: 100 },

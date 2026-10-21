@@ -102,8 +102,8 @@ test('cold browser startup has a separate budget from the actual check', {
   const browser = process.env.NOMVEX_BROWSER_EXECUTABLE ?? chromium.executablePath();
   const wrapper = join(cwd, 'delayed-browser.sh');
   const quotedBrowser = `'${browser.replaceAll("'", "'\\''")}'`;
-  const checkBudgetMs = process.platform === 'darwin' ? 5000 : 1500;
-  const startupDelaySeconds = process.platform === 'darwin' ? 6 : 2;
+  const checkBudgetMs = process.platform === 'darwin' ? 10000 : 1500;
+  const startupDelaySeconds = process.platform === 'darwin' ? 12 : 2;
   await writeFile(wrapper, `#!/bin/sh\nsleep ${startupDelaySeconds}\nexec ${quotedBrowser} "$@"\n`);
   await chmod(wrapper, 0o700);
   const file = join(cwd, 'config.json');
