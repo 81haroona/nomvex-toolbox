@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "toolVersion": "0.1.0",
-  "startedAt": "2026-10-21T08:30:59.109Z",
-  "finishedAt": "2026-10-21T08:31:00.910Z",
-  "baseUrl": "http://127.0.0.1:37209",
+  "toolVersion": "0.1.1",
+  "startedAt": "2026-10-21T09:04:43.303Z",
+  "finishedAt": "2026-10-21T09:04:44.964Z",
+  "baseUrl": "http://127.0.0.1:35857",
   "language": "fr",
   "environment": {
     "node": "v24.19.0",
@@ -24,7 +24,7 @@
       "status": "passed",
       "code": "CHECK_PASSED",
       "message": "Les assertions configurées sont satisfaites.",
-      "durationMs": 493,
+      "durationMs": 454,
       "evidence": {
         "exactUrlMatched": true
       }
@@ -35,7 +35,7 @@
       "status": "passed",
       "code": "CHECK_PASSED",
       "message": "Les assertions configurées sont satisfaites.",
-      "durationMs": 647,
+      "durationMs": 627,
       "evidence": {
         "stagesChecked": 3,
         "textChecked": true
@@ -47,7 +47,7 @@
       "status": "passed",
       "code": "CHECK_PASSED",
       "message": "Les assertions configurées sont satisfaites.",
-      "durationMs": 629,
+      "durationMs": 519,
       "evidence": {
         "format": "pdf",
         "bytes": 887,
@@ -60,7 +60,7 @@
       "status": "passed",
       "code": "CHECK_PASSED",
       "message": "Les assertions configurées sont satisfaites.",
-      "durationMs": 544,
+      "durationMs": 425,
       "evidence": {
         "format": "json",
         "bytes": 84,
@@ -74,7 +74,7 @@
       "status": "passed",
       "code": "CHECK_PASSED",
       "message": "Les assertions configurées sont satisfaites.",
-      "durationMs": 492,
+      "durationMs": 500,
       "evidence": {
         "format": "csv",
         "bytes": 81,
@@ -89,7 +89,7 @@
       "status": "passed",
       "code": "CHECK_PASSED",
       "message": "Les assertions configurées sont satisfaites.",
-      "durationMs": 449,
+      "durationMs": 440,
       "evidence": {
         "format": "text",
         "bytes": 41,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "date": "2026-10-21",
   "completed": [
     "CLI/library with strict configuration and isolated browser checks",
@@ -10,7 +10,9 @@
     "24 source-reviewed catalog entries",
     "License, contribution, security and release documentation",
     "Independent review and regression fixes",
-    "Independent browser startup budget and deterministic cold-start regression"
+    "Independent browser startup budget and deterministic cold-start regression",
+    "Existing NOMVEX brand mark reused in both READMEs and embedded offline reports",
+    "Offline logo rendering verified on desktop, mobile and print media"
   ],
   "sourceEvidence": "docs/evidence/verification.json",
   "fullTestEvidence": "docs/evidence/test-log.txt",

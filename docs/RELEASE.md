@@ -17,7 +17,7 @@ The broken demo must exit **1** and show the intended behavioral failures. A gen
 
 Record the tested Node and Chromium versions, named test counts, skipped tests, command exit codes and any environment-specific changes. Keep the evidence in `docs/evidence/`. The GitHub-hosted workflow must be checked separately; a committed workflow file is not proof it has run.
 
-`npm pack` builds and produces `nomvex-web-checks-0.1.0.tgz`, including compiled JavaScript, type declarations, the parser worker, source, examples, catalog and documentation. It does not publish to the npm registry. A recipient can install the tarball in a Node project with `npm install ./nomvex-web-checks-0.1.0.tgz`; install its matching Playwright Chromium before running checks. For reproducible source development and `npm ci`, clone or download the complete Git repository, which contains `package-lock.json`.
+`npm pack` builds and produces `nomvex-web-checks-0.1.1.tgz`, including compiled JavaScript, type declarations, the parser worker, source, examples, catalog and documentation. It does not publish to the npm registry. A recipient can install the tarball in a Node project with `npm install ./nomvex-web-checks-0.1.1.tgz`; install its matching Playwright Chromium before running checks. For reproducible source development and `npm ci`, clone or download the complete Git repository, which contains `package-lock.json`.
 
 ## Public release contents
 

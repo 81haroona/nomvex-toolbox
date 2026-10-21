@@ -2,7 +2,7 @@
 
 ## Verified local release candidate — 2026-10-21
 
-The frozen v0.1.0 source was copied into a **clean directory without `node_modules`, `dist` or local reports**. Its locked dependencies were installed from a previously populated public npm cache. The commands below then ran against that clean copy. The source hashes in [verification.json](evidence/verification.json) identify the actual tested files; they were compared with the delivery source before recording success.
+The frozen v0.1.1 source was copied into a **clean directory without `node_modules`, `dist` or local reports**. Its locked dependencies were installed from a previously populated public npm cache. The commands below then ran against that clean copy. The source hashes in [verification.json](evidence/verification.json) identify the actual tested files; they were compared with the delivery source before recording success.
 
 Environment: **Linux, Node v24.19.0, Playwright 1.64.1, Chrome for Testing 156.0.8078.4**. The Playwright CDN returned an HTML unavailable page in the execution environment, so the exact matching browser archive was obtained from Google's official Chrome for Testing storage endpoint. Its archive MD5 matched the vendor response. This was an environment-specific download substitution, not a change to the browser version or test assertions.
 
@@ -14,7 +14,7 @@ Environment: **Linux, Node v24.19.0, Playwright 1.64.1, Chrome for Testing 156.0
 | Healthy documented demo command | Exit 0, **6/6 checks passed** | [Demo log](evidence/demo-log.txt) |
 | Deliberately broken documented demo | Exit **1**, **7 expected behavioral failures**, no runtime errors | [Broken-demo log](evidence/demo-broken-log.txt) |
 | Catalog schema and evidence statuses | **24 entries valid** | [Catalog log](evidence/catalog-log.txt) |
-| FR desktop and EN mobile report rendering | Six cards, correct language, no horizontal overflow | [Layout record](evidence/report-layout.json), [preview](examples/report-preview.png) |
+| FR desktop, EN mobile and print-media rendering | Six cards, embedded logo loaded offline, no horizontal overflow or HTTP(S) requests | [Layout record](evidence/report-layout.json), [preview](examples/report-preview.png) |
 
 The dependency advisory query `npm audit --audit-level=high --json` returned **zero reported vulnerabilities** on 2026-10-21 for this lockfile. Advisory data changes over time; this is not proof that the software has no security defects.
 
@@ -29,6 +29,7 @@ The dependency advisory query `npm audit --audit-level=high --json` returned **z
 - Literal form values and environment secrets are excluded from the generated report in the tested paths.
 - The CLI writes reports in paths containing spaces, preserves existing reports/configuration and returns the documented exit codes.
 - HTML rendering escapes untrusted strings, uses a restrictive content policy and cannot display a green verdict for an inconsistent/unknown result state.
+- The NOMVEX mark embedded in each HTML report matches the standalone brand asset. The configured content policy permits data images without allowing external image services.
 
 Several named tests contain multiple assertions or browser cases. **47 is the named test count**, not a count of real users, tools deployed or supported sites.
 

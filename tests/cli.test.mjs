@@ -29,7 +29,7 @@ async function diagnostic(result, directory) {
 test('CLI help, version and invalid flags return clear exit codes', async t => {
   const cwd = await workspace(t);
   assert.equal((await invoke(['--help'], cwd)).code, 0);
-  assert.equal((await invoke(['--version'], cwd)).stdout.trim(), '0.1.0');
+  assert.equal((await invoke(['--version'], cwd)).stdout.trim(), '0.1.1');
   assert.equal((await invoke(['--made-up', 'value'], cwd)).code, 2);
   assert.equal((await invoke([], cwd)).code, 2);
 });

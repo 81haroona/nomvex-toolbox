@@ -7,6 +7,10 @@ French/English documentation and reports, contribution/license/security policies
 and isolated CI. Public repository publication is an intended delivery step when
 the user's GitHub session and repository permissions permit it.
 
+The subsequent owner request adds the existing NOMVEX platform mark to both
+READMEs and standalone French/English HTML reports. Acceptance includes exact
+embedded asset bytes, offline image loading, responsive layout and print visibility.
+
 Acceptance: clean installation and build; three working check types; intended
 faults detected for the right reasons; invalid configuration, unavailable target,
 blocked origin, missing environment variable, skipped and timed-out checks are

@@ -1,12 +1,125 @@
 {
+  "verifiedAt": "2026-10-21T09:05:58.599Z",
+  "toolVersion": "0.1.1",
+  "report": "docs/examples/healthy-report.json",
+  "reportSha256": "1d9cad52e9100adf80529ebff79db2323848e8bbd4d34c156b7ab90e7f780687",
+  "reportStartedAt": "2026-10-21T09:04:43.303Z",
+  "reportSummary": {
+    "passed": 6,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "total": 6
+  },
+  "logo": {
+    "asset": "docs/branding/nomvex-mark.svg",
+    "sha256": "16ff2dcc69492a88f6888bcf8c1f4f9b3a09b862c923debe14d31c8e34342e8a"
+  },
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "browser": "156.0.8078.4"
+  },
   "desktop": {
+    "viewport": {
+      "width": 1200,
+      "height": 900
+    },
+    "media": "screen",
+    "networkOffline": true,
+    "httpRequests": 0,
+    "pageErrors": 0,
+    "documentProtocol": "file:",
     "language": "fr",
     "cards": 6,
-    "overflow": false
+    "visibleCards": 6,
+    "viewportWidth": 1200,
+    "documentWidth": 1200,
+    "overflow": false,
+    "cardsInsideViewport": true,
+    "logo": {
+      "count": 1,
+      "complete": true,
+      "naturalWidth": 64,
+      "naturalHeight": 64,
+      "width": 64,
+      "height": 64,
+      "embeddedDataUri": true,
+      "alt": ""
+    },
+    "brandText": "NOMVEX WEB CHECKS / 0.1.1",
+    "headerBackground": "rgb(9, 46, 55)",
+    "brandTextColor": "rgb(255, 255, 255)",
+    "versionTextColor": "rgb(153, 229, 213)",
+    "checkColumns": "532px 532px",
+    "contentSecurityPolicy": "default-src 'none'; img-src data:; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"
   },
   "mobile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "media": "screen",
+    "networkOffline": true,
+    "httpRequests": 0,
+    "pageErrors": 0,
+    "documentProtocol": "file:",
     "language": "en",
     "cards": 6,
-    "overflow": false
+    "visibleCards": 6,
+    "viewportWidth": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "cardsInsideViewport": true,
+    "logo": {
+      "count": 1,
+      "complete": true,
+      "naturalWidth": 64,
+      "naturalHeight": 64,
+      "width": 56,
+      "height": 56,
+      "embeddedDataUri": true,
+      "alt": ""
+    },
+    "brandText": "NOMVEX WEB CHECKS / 0.1.1",
+    "headerBackground": "rgb(9, 46, 55)",
+    "brandTextColor": "rgb(255, 255, 255)",
+    "versionTextColor": "rgb(153, 229, 213)",
+    "checkColumns": "358px",
+    "contentSecurityPolicy": "default-src 'none'; img-src data:; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"
+  },
+  "print": {
+    "viewport": {
+      "width": 1200,
+      "height": 900
+    },
+    "media": "print",
+    "networkOffline": true,
+    "httpRequests": 0,
+    "pageErrors": 0,
+    "documentProtocol": "file:",
+    "language": "fr",
+    "cards": 6,
+    "visibleCards": 6,
+    "viewportWidth": 1200,
+    "documentWidth": 1200,
+    "overflow": false,
+    "cardsInsideViewport": true,
+    "logo": {
+      "count": 1,
+      "complete": true,
+      "naturalWidth": 64,
+      "naturalHeight": 64,
+      "width": 64,
+      "height": 64,
+      "embeddedDataUri": true,
+      "alt": ""
+    },
+    "brandText": "NOMVEX WEB CHECKS / 0.1.1",
+    "headerBackground": "rgb(255, 255, 255)",
+    "brandTextColor": "rgb(16, 42, 53)",
+    "versionTextColor": "rgb(82, 102, 112)",
+    "checkColumns": "1080px",
+    "contentSecurityPolicy": "default-src 'none'; img-src data:; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"
   }
 }

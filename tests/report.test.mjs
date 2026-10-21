@@ -1,8 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { renderHtml, localizeReport, exitCode } from '../dist/report.js';
+import { NOMVEX_MARK_DATA_URI } from '../dist/branding.js';
 
-const report = () => ({ schemaVersion: 1, toolVersion: '0.1.0', language: 'fr', startedAt: '2026-10-21T12:00:00Z', finishedAt: '2026-10-21T12:00:01Z', baseUrl: 'https://example.test', environment: { node: '24', platform: 'linux', browser: 'test' }, summary: { total: 1, passed: 1, failed: 0, error: 0, skipped: 0 }, results: [{ id: 'login', kind: 'redirect', status: 'passed', code: 'CHECK_PASSED', message: 'Passed', durationMs: 100 }] });
+const report = () => ({ schemaVersion: 1, toolVersion: '0.1.1', language: 'fr', startedAt: '2026-10-21T12:00:00Z', finishedAt: '2026-10-21T12:00:01Z', baseUrl: 'https://example.test', environment: { node: '24', platform: 'linux', browser: 'test' }, summary: { total: 1, passed: 1, failed: 0, error: 0, skipped: 0 }, results: [{ id: 'login', kind: 'redirect', status: 'passed', code: 'CHECK_PASSED', message: 'Passed', durationMs: 100 }] });
 
 test('HTML report escapes content and loads no scripts, fonts or external services', () => {
   const input = report();
@@ -12,7 +14,11 @@ test('HTML report escapes content and loads no scripts, fonts or external servic
   assert.ok(html.includes('&lt;img'));
   assert.ok(html.includes('&lt;script&gt;'));
   assert.ok(!html.includes('<script'));
-  assert.ok(!html.includes('<img'));
+  assert.equal((html.match(/<img\s/g) ?? []).length, 1);
+  assert.ok(html.includes(`src="${NOMVEX_MARK_DATA_URI}"`));
+  assert.equal(NOMVEX_MARK_DATA_URI, `data:image/svg+xml;base64,${readFileSync(new URL('../docs/branding/nomvex-mark.svg', import.meta.url)).toString('base64')}`);
+  assert.ok(!html.includes('<img src=x'));
+  assert.ok(html.includes("img-src data:"));
   assert.ok(html.includes('Content-Security-Policy'));
   assert.ok(!/<(?:link|script|iframe)[\s>]/.test(html));
 });

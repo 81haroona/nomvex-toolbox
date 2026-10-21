@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 — 2026-10-21
+
+- Reuse the existing NOMVEX platform mark in both READMEs and the French/English HTML reports.
+- Embed the exact logo bytes for offline reports, preserving strict content escaping and allowing only data images in the content policy.
+- Refresh sample reports, responsive visual evidence and release packaging.
+
 ## 0.1.0 — 2026-10-21
 
 - Original Web Checks CLI and JavaScript library: redirects, language persistence and PDF/JSON/CSV/text downloads.

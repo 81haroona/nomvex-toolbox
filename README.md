@@ -1,3 +1,5 @@
+<p><img src="docs/branding/nomvex-mark.svg" width="80" height="80" alt="NOMVEX"></p>
+
 # NOMVEX Toolbox — Web Checks
 
 [English](README.en.md) · [Configuration](docs/CONFIGURATION.md) · [Catalogue](catalog/README.md) · [Contribuer](CONTRIBUTING.md)

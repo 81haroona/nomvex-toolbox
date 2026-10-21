@@ -1,4 +1,4 @@
 npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
-> @nomvex/web-checks@0.1.0 typecheck
+> @nomvex/web-checks@0.1.1 typecheck
 > tsc -p tsconfig.json --noEmit
