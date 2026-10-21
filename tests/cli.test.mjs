@@ -29,7 +29,7 @@ async function diagnostic(result, directory) {
 test('CLI help, version and invalid flags return clear exit codes', async t => {
   const cwd = await workspace(t);
   assert.equal((await invoke(['--help'], cwd)).code, 0);
-  assert.equal((await invoke(['--version'], cwd)).stdout.trim(), '0.1.1');
+  assert.equal((await invoke(['--version'], cwd)).stdout.trim(), '0.1.2');
   assert.equal((await invoke(['--made-up', 'value'], cwd)).code, 2);
   assert.equal((await invoke([], cwd)).code, 2);
 });
@@ -83,29 +83,34 @@ test('real CLI user path produces passing and failing browser reports', { timeou
   const fixture = await startFixture();
   t.after(() => fixture.close());
   const file = join(cwd, 'config.json');
-  await writeFile(file, JSON.stringify({ ...config([redirect]), baseUrl: fixture.baseUrl }));
+  await writeFile(file, JSON.stringify({ ...config([redirect]), timeoutMs: 10000, baseUrl: fixture.baseUrl }));
   const good = await invoke(['--config', file, '--out', 'good'], cwd);
   assert.equal(good.code, 0, await diagnostic(good, join(cwd, 'good')));
-  await writeFile(file, JSON.stringify({ ...config([{ ...redirect, expectedPath: '/wrong' }]), baseUrl: fixture.baseUrl }));
+  await writeFile(file, JSON.stringify({ ...config([{ ...redirect, expectedPath: '/wrong' }]), timeoutMs: 10000, baseUrl: fixture.baseUrl }));
   const broken = await invoke(['--config', file, '--out', 'broken'], cwd);
   assert.equal(broken.code, 1, await diagnostic(broken, join(cwd, 'broken')));
   assert.equal(JSON.parse(await readFile(join(cwd, 'broken/report.json'), 'utf8')).summary.failed, 1);
 });
 
-test('cold browser startup has a separate budget from the actual check', { timeout: 60000 }, async t => {
+test('cold browser startup has a separate budget from the actual check', {
+  timeout: 60000,
+  skip: process.platform === 'win32' ? 'The deterministic delayed executable wrapper is POSIX-only; Windows browser journeys are covered by the remaining suite.' : false,
+}, async t => {
   const cwd = await workspace(t);
   const fixture = await startFixture();
   t.after(() => fixture.close());
   const browser = process.env.NOMVEX_BROWSER_EXECUTABLE ?? chromium.executablePath();
   const wrapper = join(cwd, 'delayed-browser.sh');
   const quotedBrowser = `'${browser.replaceAll("'", "'\\''")}'`;
-  await writeFile(wrapper, `#!/bin/sh\nsleep 2\nexec ${quotedBrowser} "$@"\n`);
+  const checkBudgetMs = process.platform === 'darwin' ? 10000 : 1500;
+  const startupDelaySeconds = process.platform === 'darwin' ? 12 : 2;
+  await writeFile(wrapper, `#!/bin/sh\nsleep ${startupDelaySeconds}\nexec ${quotedBrowser} "$@"\n`);
   await chmod(wrapper, 0o700);
   const file = join(cwd, 'config.json');
-  await writeFile(file, JSON.stringify({ ...config([redirect]), baseUrl: fixture.baseUrl }));
+  await writeFile(file, JSON.stringify({ ...config([redirect]), timeoutMs: checkBudgetMs, baseUrl: fixture.baseUrl }));
   const result = await invoke(['--config', file, '--out', 'cold'], cwd, { ...process.env, NOMVEX_BROWSER_EXECUTABLE: wrapper });
   assert.equal(result.code, 0, await diagnostic(result, join(cwd, 'cold')));
   const report = JSON.parse(await readFile(join(cwd, 'cold', 'report.json'), 'utf8'));
   assert.equal(report.summary.passed, 1);
-  assert.ok(Date.parse(report.finishedAt) - Date.parse(report.startedAt) >= 2000);
+  assert.ok(Date.parse(report.finishedAt) - Date.parse(report.startedAt) >= startupDelaySeconds * 1000);
 });

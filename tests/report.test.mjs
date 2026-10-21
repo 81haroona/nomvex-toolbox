@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { renderHtml, localizeReport, exitCode } from '../dist/report.js';
 import { NOMVEX_MARK_DATA_URI } from '../dist/branding.js';
 
-const report = () => ({ schemaVersion: 1, toolVersion: '0.1.1', language: 'fr', startedAt: '2026-10-21T12:00:00Z', finishedAt: '2026-10-21T12:00:01Z', baseUrl: 'https://example.test', environment: { node: '24', platform: 'linux', browser: 'test' }, summary: { total: 1, passed: 1, failed: 0, error: 0, skipped: 0 }, results: [{ id: 'login', kind: 'redirect', status: 'passed', code: 'CHECK_PASSED', message: 'Passed', durationMs: 100 }] });
+const report = () => ({ schemaVersion: 1, toolVersion: '0.1.2', language: 'fr', startedAt: '2026-10-21T12:00:00Z', finishedAt: '2026-10-21T12:00:01Z', baseUrl: 'https://example.test', environment: { node: '24', platform: 'linux', browser: 'test' }, summary: { total: 1, passed: 1, failed: 0, error: 0, skipped: 0 }, results: [{ id: 'login', kind: 'redirect', status: 'passed', code: 'CHECK_PASSED', message: 'Passed', durationMs: 100 }] });
 
 test('HTML report escapes content and loads no scripts, fonts or external services', () => {
   const input = report();

@@ -1,13 +1,34 @@
 {
   "name": "@nomvex/web-checks",
-  "version": "0.1.1",
-  "description": "Configurable browser checks for login redirects, language persistence and exported files.",
+  "version": "0.1.2",
+  "description": "Evidence-driven Playwright checks for redirects, language persistence, and exported files.",
   "type": "module",
   "license": "Apache-2.0",
-  "engines": { "node": "22.x || 24.x" },
-  "bin": { "nomvex-check": "dist/cli.js" },
-  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
-  "files": ["dist", "src", "tests", "scripts", "examples", "docs", "catalog", "*.md", "LICENSE", "NOTICE", "tsconfig.json"],
+  "engines": {
+    "node": "22.x || 24.x"
+  },
+  "bin": {
+    "nomvex-check": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "tests",
+    "scripts",
+    "examples",
+    "docs",
+    "catalog",
+    "*.md",
+    "LICENSE",
+    "NOTICE",
+    "tsconfig.json"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
@@ -18,7 +39,8 @@
     "fixture": "node examples/fixture.mjs",
     "catalog": "node scripts/catalog.mjs",
     "catalog:check": "node scripts/validate-catalog.mjs",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "verify:broken-demo": "node scripts/verify-broken-demo.mjs"
   },
   "dependencies": {
     "csv-parse": "7.0.3",
@@ -29,5 +51,24 @@
   "devDependencies": {
     "@types/node": "24.19.2",
     "typescript": "7.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/81haroona/nomvex-toolbox.git"
+  },
+  "homepage": "https://github.com/81haroona/nomvex-toolbox#readme",
+  "bugs": {
+    "url": "https://github.com/81haroona/nomvex-toolbox/issues"
+  },
+  "keywords": [
+    "playwright",
+    "web-testing",
+    "e2e",
+    "qa",
+    "redirects",
+    "localization",
+    "downloads",
+    "ci",
+    "testing-tools"
+  ]
 }

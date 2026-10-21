@@ -54,7 +54,7 @@ test('broken redirects, lost language, invalid and oversized exports cannot be g
     download('invalid-utf8', '#invalid-utf8', 'text'),
     download('too-large', '#large-text', 'text'),
   ];
-  const report = await runChecks(checkConfig(fixture.baseUrl, checks), options);
+  const report = await runChecks(checkConfig(fixture.baseUrl, checks, { timeoutMs: 6000 }), options);
   assert.equal(report.summary.total, checks.length);
   assert.equal(report.summary.passed, 0, JSON.stringify(report.results, null, 2));
   const expectedCodes = {

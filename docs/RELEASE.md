@@ -1,4 +1,4 @@
-# Release procedure / Procédure de livraison
+# Release procedure
 
 ## Build and verify the exact source
 
@@ -9,36 +9,34 @@ npm run typecheck
 npm run catalog:check
 npm test
 npm run demo
-npm run demo:broken
+npm run verify:broken-demo
 npm pack
 ```
 
-The broken demo must exit **1** and show the intended behavioral failures. A general browser/environment error with exit **2** does not satisfy that acceptance condition.
+`verify:broken-demo` succeeds only when the deliberately broken demo itself exits **1** for the intended behavioral failures. Browser/environment failure is not accepted as evidence that defect detection works.
 
-Record the tested Node and Chromium versions, named test counts, skipped tests, command exit codes and any environment-specific changes. Keep the evidence in `docs/evidence/`. The GitHub-hosted workflow must be checked separately; a committed workflow file is not proof it has run.
+Record the exact Node/browser versions, named test counts, skipped tests, exit codes, and environment-specific limitations. GitHub-hosted CI must be checked separately; committing a workflow file is not evidence that it ran.
 
-`npm pack` builds and produces `nomvex-web-checks-0.1.1.tgz`, including compiled JavaScript, type declarations, the parser worker, source, examples, catalog and documentation. It does not publish to the npm registry. A recipient can install the tarball in a Node project with `npm install ./nomvex-web-checks-0.1.1.tgz`; install its matching Playwright Chromium before running checks. For reproducible source development and `npm ci`, clone or download the complete Git repository, which contains `package-lock.json`.
+`npm pack` for version 0.1.2 produces `nomvex-web-checks-0.1.2.tgz`. It does not publish to the npm registry.
 
 ## Public release contents
 
-- Original code and synthetic fixtures only.
-- Apache-2.0 text and project attribution, without replacing dependency licenses.
-- French default README, English README, configuration reference and actual verification evidence.
-- HTML/JSON examples generated from the synthetic local demo. They do not demonstrate live platform integration.
-- Source archive automatically associated with the GitHub release tag. An optional compiled npm tarball is a separate convenience artifact.
+- Original code and synthetic fixtures.
+- Apache-2.0 project license and attribution without replacing dependency licenses.
+- English public repository documentation.
+- English and French report-output examples only where they demonstrate the tool's localization capability.
+- Verification evidence that distinguishes source review, local tests, hosted CI, and live integration.
 
-Before publishing, review the staged file list. Exclude environment files, downloaded test documents, private application code, browser profiles, tokens, node_modules and arbitrary local run reports. The committed `docs/examples` reports contain only synthetic data.
+Before release, exclude environment files, private application code, browser profiles, tokens, production reports, customer data, and downloaded test documents.
 
 ## CI isolation
 
-Use GitHub-hosted runners for public pull requests with `contents: read`, pinned action commits and `persist-credentials: false`. This repository must not send public pull request jobs to an OVH or other production self-hosted runner. There are no deployment or production secrets in the supplied workflow.
-
-Dependabot suggests dependency and GitHub Action updates. Accept an update only after inspecting it and passing the checks. A clean dependency advisory scan is time-specific evidence, not a guarantee of the absence of vulnerabilities.
+Public pull requests use GitHub-hosted runners with read-only repository permissions, pinned action commits, and `persist-credentials: false`. Public PR code must not run on an OVH/production self-hosted runner or with production secrets/network access.
 
 ## Honest release wording
 
-State which checks and environments actually passed. Separate source review of the 24 catalog entries from installation, benchmarking, production adoption or integration. Do not promise stars, a future contributor count or support for an operating system that has not been tested.
+State exactly which environments and checks passed. Do not infer Windows/macOS support from Linux, do not describe source-reviewed catalog entries as installed tools, and do not promise star growth or adoption.
 
 ## Future NOMVEX integration
 
-For each branch, observe its actual staging UI, configure real paths/selectors, use a dedicated test account and exercise one deliberate failure. Keep the configuration free of secrets. Only then label that branch integration as verified. Web Worker, Shared Worker, new-window, CAPTCHA and MFA workflows need additional implementation before claiming support.
+For each authorized NOMVEX branch, observe the actual staging UI, use a dedicated test account, configure real paths/selectors, execute a healthy journey and at least one deliberate negative case, and retain the evidence. Only then label that branch integration verified.

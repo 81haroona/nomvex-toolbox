@@ -1,14 +1,11 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "reviewedAt": "2026-10-21",
   "tools": [
     {
       "id": "playwright",
       "name": "Playwright",
-      "description": {
-        "fr": "Automatisation et tests de navigateur avec une API commune.",
-        "en": "Browser automation and testing through a common API."
-      },
+      "description": "Browser automation and testing through a common API.",
       "category": "quality",
       "source": "https://github.com/microsoft/playwright",
       "license": {
@@ -39,18 +36,12 @@
         "language",
         "downloads"
       ],
-      "notes": {
-        "fr": "Moteur de navigateur du premier outil. Les scénarios réels de NOMVEX exigent leur propre configuration et preuve.",
-        "en": "Browser engine for the first tool. Real NOMVEX journeys require their own configuration and evidence."
-      }
+      "notes": "Browser engine for the first tool. Real NOMVEX journeys require their own configuration and evidence."
     },
     {
       "id": "pdf-lib",
       "name": "pdf-lib",
-      "description": {
-        "fr": "Création et modification de documents PDF en JavaScript.",
-        "en": "Create and modify PDF documents in JavaScript."
-      },
+      "description": "Create and modify PDF documents in JavaScript.",
       "category": "documents",
       "source": "https://github.com/Hopding/pdf-lib",
       "license": {
@@ -79,18 +70,12 @@
         "all-branches",
         "exports"
       ],
-      "notes": {
-        "fr": "Une analyse structurelle du PDF ne valide pas son rendu, son exactitude métier ou sa sécurité.",
-        "en": "Structural PDF parsing does not validate rendering, business correctness, or safety."
-      }
+      "notes": "Structural PDF parsing does not validate rendering, business correctness, or safety."
     },
     {
       "id": "csv-parse",
       "name": "csv-parse",
-      "description": {
-        "fr": "Analyse de fichiers CSV dans le projet Node CSV.",
-        "en": "CSV parsing from the Node CSV project."
-      },
+      "description": "CSV parsing from the Node CSV project.",
       "category": "data",
       "source": "https://github.com/adaltas/node-csv",
       "license": {
@@ -120,18 +105,12 @@
         "imports",
         "exports"
       ],
-      "notes": {
-        "fr": "Le format CSV doit préciser séparateur, en-têtes et encodage. Le dépôt source contient plusieurs paquets.",
-        "en": "Specify CSV delimiters, headers, and encoding. The source repository contains several packages."
-      }
+      "notes": "Specify CSV delimiters, headers, and encoding. The source repository contains several packages."
     },
     {
       "id": "zod",
       "name": "Zod",
-      "description": {
-        "fr": "Validation de schémas avec inférence de types TypeScript.",
-        "en": "Schema validation with TypeScript type inference."
-      },
+      "description": "Schema validation with TypeScript type inference.",
       "category": "validation",
       "source": "https://github.com/colinhacks/zod",
       "license": {
@@ -160,18 +139,12 @@
         "all-branches",
         "configuration"
       ],
-      "notes": {
-        "fr": "Un schéma valide la forme des données ; il ne prouve pas la correction du scénario métier.",
-        "en": "A schema validates data shape; it does not prove business behavior is correct."
-      }
+      "notes": "A schema validates data shape; it does not prove business behavior is correct."
     },
     {
       "id": "typescript",
       "name": "TypeScript",
-      "description": {
-        "fr": "Vérification statique des types et compilation vers JavaScript.",
-        "en": "Static type checking and compilation to JavaScript."
-      },
+      "description": "Static type checking and compilation to JavaScript.",
       "category": "development",
       "source": "https://github.com/microsoft/TypeScript",
       "license": {
@@ -200,18 +173,12 @@
         "all-branches",
         "build"
       ],
-      "notes": {
-        "fr": "Les types ne remplacent pas les tests exécutés dans le navigateur.",
-        "en": "Types do not replace executed browser tests."
-      }
+      "notes": "Types do not replace executed browser tests."
     },
     {
       "id": "vitest",
       "name": "Vitest",
-      "description": {
-        "fr": "Cadre de tests pour des projets JavaScript et TypeScript.",
-        "en": "Test framework for JavaScript and TypeScript projects."
-      },
+      "description": "Test framework for JavaScript and TypeScript projects.",
       "category": "quality",
       "source": "https://github.com/vitest-dev/vitest",
       "license": {
@@ -240,18 +207,12 @@
         "all-branches",
         "unit-tests"
       ],
-      "notes": {
-        "fr": "Candidat du catalogue ; sa présence ne signifie pas qu’il est installé ou utilisé dans cette version.",
-        "en": "Catalog candidate; inclusion does not mean it is installed or used in this release."
-      }
+      "notes": "Catalog candidate; inclusion does not mean it is installed or used in this release."
     },
     {
       "id": "eslint",
       "name": "ESLint",
-      "description": {
-        "fr": "Analyse statique du code JavaScript et règles configurables.",
-        "en": "Static JavaScript analysis with configurable rules."
-      },
+      "description": "Static JavaScript analysis with configurable rules.",
       "category": "development",
       "source": "https://github.com/eslint/eslint",
       "license": {
@@ -280,18 +241,12 @@
         "all-branches",
         "code-quality"
       ],
-      "notes": {
-        "fr": "Les extensions et configurations ajoutées possèdent leurs propres versions et licences.",
-        "en": "Added plugins and configurations have their own versions and licenses."
-      }
+      "notes": "Added plugins and configurations have their own versions and licenses."
     },
     {
       "id": "prettier",
       "name": "Prettier",
-      "description": {
-        "fr": "Mise en forme automatique du code et de fichiers pris en charge.",
-        "en": "Automatic formatting for code and supported file types."
-      },
+      "description": "Automatic formatting for code and supported file types.",
       "category": "development",
       "source": "https://github.com/prettier/prettier",
       "license": {
@@ -320,18 +275,12 @@
         "all-branches",
         "contributions"
       ],
-      "notes": {
-        "fr": "La mise en forme ne constitue pas une vérification fonctionnelle.",
-        "en": "Formatting is not functional verification."
-      }
+      "notes": "Formatting is not functional verification."
     },
     {
       "id": "axe-core",
       "name": "axe-core",
-      "description": {
-        "fr": "Moteur de contrôles automatisés d’accessibilité web.",
-        "en": "Automated web accessibility checking engine."
-      },
+      "description": "Automated web accessibility checking engine.",
       "category": "accessibility",
       "source": "https://github.com/dequelabs/axe-core",
       "license": {
@@ -360,18 +309,12 @@
         "all-branches",
         "accessibility"
       ],
-      "notes": {
-        "fr": "Les contrôles automatisés ne couvrent pas toute l’accessibilité ; compléter par des vérifications humaines. Respecter MPL-2.0.",
-        "en": "Automated checks do not cover all accessibility requirements; add human review. Follow MPL-2.0."
-      }
+      "notes": "Automated checks do not cover all accessibility requirements; add human review. Follow MPL-2.0."
     },
     {
       "id": "lighthouse",
       "name": "Lighthouse",
-      "description": {
-        "fr": "Audits automatisés de qualité de pages web.",
-        "en": "Automated quality audits for web pages."
-      },
+      "description": "Automated quality audits for web pages.",
       "category": "quality",
       "source": "https://github.com/GoogleChrome/lighthouse",
       "license": {
@@ -400,18 +343,12 @@
         "all-branches",
         "performance"
       ],
-      "notes": {
-        "fr": "Les mesures dépendent de la machine et des conditions de test ; conserver ces informations avec le résultat.",
-        "en": "Measurements depend on hardware and test conditions; retain those details with results."
-      }
+      "notes": "Measurements depend on hardware and test conditions; retain those details with results."
     },
     {
       "id": "fastify",
       "name": "Fastify",
-      "description": {
-        "fr": "Cadre web pour des services Node.js.",
-        "en": "Web framework for Node.js services."
-      },
+      "description": "Web framework for Node.js services.",
       "category": "backend",
       "source": "https://github.com/fastify/fastify",
       "license": {
@@ -440,18 +377,12 @@
         "all-branches",
         "api"
       ],
-      "notes": {
-        "fr": "Candidat pour des services futurs ; le catalogue ne promet pas une migration du serveur existant.",
-        "en": "Candidate for future services; the catalog does not imply migration of the existing server."
-      }
+      "notes": "Candidate for future services; the catalog does not imply migration of the existing server."
     },
     {
       "id": "ajv",
       "name": "Ajv",
-      "description": {
-        "fr": "Validation de données suivant JSON Schema et JSON Type Definition.",
-        "en": "Data validation using JSON Schema and JSON Type Definition."
-      },
+      "description": "Data validation using JSON Schema and JSON Type Definition.",
       "category": "validation",
       "source": "https://github.com/ajv-validator/ajv",
       "license": {
@@ -481,18 +412,12 @@
         "catalog",
         "configuration"
       ],
-      "notes": {
-        "fr": "Choisir une version de schéma explicite et des schémas de confiance.",
-        "en": "Choose an explicit schema version and trusted schemas."
-      }
+      "notes": "Choose an explicit schema version and trusted schemas."
     },
     {
       "id": "pino",
       "name": "Pino",
-      "description": {
-        "fr": "Journalisation structurée pour des applications Node.js.",
-        "en": "Structured logging for Node.js applications."
-      },
+      "description": "Structured logging for Node.js applications.",
       "category": "observability",
       "source": "https://github.com/pinojs/pino",
       "license": {
@@ -521,18 +446,12 @@
         "all-branches",
         "operations"
       ],
-      "notes": {
-        "fr": "Les applications doivent filtrer leurs secrets et données personnelles avant journalisation.",
-        "en": "Applications must filter secrets and personal data before logging."
-      }
+      "notes": "Applications must filter secrets and personal data before logging."
     },
     {
       "id": "opentelemetry-js",
       "name": "OpenTelemetry JavaScript",
-      "description": {
-        "fr": "API et SDK de télémétrie pour JavaScript.",
-        "en": "Telemetry APIs and SDKs for JavaScript."
-      },
+      "description": "Telemetry APIs and SDKs for JavaScript.",
       "category": "observability",
       "source": "https://github.com/open-telemetry/opentelemetry-js",
       "license": {
@@ -561,18 +480,12 @@
         "all-branches",
         "operations"
       ],
-      "notes": {
-        "fr": "Candidat optionnel. Aucun export de télémétrie n’est activé par cette fiche ; choisir destination et politique explicitement.",
-        "en": "Optional candidate. This entry enables no telemetry export; select destinations and policy explicitly."
-      }
+      "notes": "Optional candidate. This entry enables no telemetry export; select destinations and policy explicitly."
     },
     {
       "id": "prom-client",
       "name": "prom-client",
-      "description": {
-        "fr": "Client JavaScript pour exposer des métriques au format Prometheus.",
-        "en": "JavaScript client for exposing Prometheus metrics."
-      },
+      "description": "JavaScript client for exposing Prometheus metrics.",
       "category": "observability",
       "source": "https://github.com/prometheus/client_js",
       "license": {
@@ -601,18 +514,12 @@
         "all-branches",
         "operations"
       ],
-      "notes": {
-        "fr": "Source canonique actuelle : prometheus/client_js. Les métriques ne doivent pas contenir de secrets ou d’identifiants personnels.",
-        "en": "Current canonical source: prometheus/client_js. Metrics must not contain secrets or personal identifiers."
-      }
+      "notes": "Current canonical source: prometheus/client_js. Metrics must not contain secrets or personal identifiers."
     },
     {
       "id": "better-sqlite3",
       "name": "better-sqlite3",
-      "description": {
-        "fr": "Accès à SQLite depuis Node.js.",
-        "en": "SQLite access from Node.js."
-      },
+      "description": "SQLite access from Node.js.",
       "category": "data",
       "source": "https://github.com/WiseLibs/better-sqlite3",
       "license": {
@@ -641,18 +548,12 @@
         "all-branches",
         "local-storage"
       ],
-      "notes": {
-        "fr": "Vérifier les binaires et la compatibilité de la version Node cible avant intégration.",
-        "en": "Check binaries and target Node version compatibility before integration."
-      }
+      "notes": "Check binaries and target Node version compatibility before integration."
     },
     {
       "id": "sharp",
       "name": "sharp",
-      "description": {
-        "fr": "Redimensionnement et traitement d’images pour Node.js.",
-        "en": "Image resizing and processing for Node.js."
-      },
+      "description": "Image resizing and processing for Node.js.",
       "category": "media",
       "source": "https://github.com/lovell/sharp",
       "license": {
@@ -687,18 +588,12 @@
         "food",
         "market"
       ],
-      "notes": {
-        "fr": "Le code sharp et ses composants natifs ont des licences à examiner séparément. Aucun binaire n’est distribué par le catalogue.",
-        "en": "Review sharp code and native component licenses separately. The catalog distributes no binaries."
-      }
+      "notes": "Review sharp code and native component licenses separately. The catalog distributes no binaries."
     },
     {
       "id": "markdown-it",
       "name": "markdown-it",
-      "description": {
-        "fr": "Analyse et rendu de Markdown en JavaScript.",
-        "en": "Markdown parsing and rendering in JavaScript."
-      },
+      "description": "Markdown parsing and rendering in JavaScript.",
       "category": "documents",
       "source": "https://github.com/markdown-it/markdown-it",
       "license": {
@@ -727,18 +622,12 @@
         "all-branches",
         "documentation"
       ],
-      "notes": {
-        "fr": "Un moteur Markdown ne remplace pas une stratégie de traitement du contenu non fiable et de sanitisation HTML.",
-        "en": "A Markdown engine does not replace untrusted-content handling and HTML sanitization."
-      }
+      "notes": "A Markdown engine does not replace untrusted-content handling and HTML sanitization."
     },
     {
       "id": "pypdf",
       "name": "pypdf",
-      "description": {
-        "fr": "Lecture, extraction et transformation de documents PDF en Python.",
-        "en": "Read, extract, and transform PDF documents in Python."
-      },
+      "description": "Read, extract, and transform PDF documents in Python.",
       "category": "documents",
       "source": "https://github.com/py-pdf/pypdf",
       "license": {
@@ -769,18 +658,12 @@
         "owner",
         "training"
       ],
-      "notes": {
-        "fr": "La licence BSD à trois conditions est indiquée par le texte LICENSE consulté. Les extensions facultatives sont à vérifier séparément.",
-        "en": "The reviewed LICENSE text contains the three BSD conditions. Review optional extensions separately."
-      }
+      "notes": "The reviewed LICENSE text contains the three BSD conditions. Review optional extensions separately."
     },
     {
       "id": "docling",
       "name": "Docling",
-      "description": {
-        "fr": "Extraction de documents, tableaux et mise en forme vers des représentations structurées.",
-        "en": "Extract documents, tables, and layout into structured representations."
-      },
+      "description": "Extract documents, tables, and layout into structured representations.",
       "category": "documents",
       "source": "https://github.com/docling-project/docling",
       "license": {
@@ -814,18 +697,12 @@
         "owner",
         "training"
       ],
-      "notes": {
-        "fr": "Le projet précise que les modèles ont leurs propres licences. La qualité d’extraction doit être testée sur les fichiers cibles.",
-        "en": "The project explicitly states that models have their own licenses. Test extraction quality on target files."
-      }
+      "notes": "The project explicitly states that models have their own licenses. Test extraction quality on target files."
     },
     {
       "id": "faster-whisper",
       "name": "faster-whisper",
-      "description": {
-        "fr": "Transcription audio avec Whisper et CTranslate2.",
-        "en": "Audio transcription using Whisper and CTranslate2."
-      },
+      "description": "Audio transcription using Whisper and CTranslate2.",
       "category": "speech",
       "source": "https://github.com/SYSTRAN/faster-whisper",
       "license": {
@@ -855,18 +732,12 @@
         "volley",
         "owner"
       ],
-      "notes": {
-        "fr": "Vérifier séparément le modèle choisi. Aucune mesure de précision en arabe ou de performance sur le VPS NOMVEX n’est revendiquée.",
-        "en": "Review the selected model separately. No Arabic accuracy or performance on the NOMVEX VPS is claimed."
-      }
+      "notes": "Review the selected model separately. No Arabic accuracy or performance on the NOMVEX VPS is claimed."
     },
     {
       "id": "whisper-cpp",
       "name": "whisper.cpp",
-      "description": {
-        "fr": "Implémentation de l’inférence Whisper en C et C++.",
-        "en": "Whisper inference implementation in C and C++."
-      },
+      "description": "Whisper inference implementation in C and C++.",
       "category": "speech",
       "source": "https://github.com/ggml-org/whisper.cpp",
       "license": {
@@ -896,18 +767,12 @@
         "volley",
         "owner"
       ],
-      "notes": {
-        "fr": "Les poids des modèles et les accélérateurs exigent leur propre vérification. Aucun modèle n’est fourni ici.",
-        "en": "Model weights and accelerators require separate review. No model is bundled here."
-      }
+      "notes": "Model weights and accelerators require separate review. No model is bundled here."
     },
     {
       "id": "ffmpeg",
       "name": "FFmpeg",
-      "description": {
-        "fr": "Traitement, conversion et extraction de flux audio et vidéo.",
-        "en": "Process, convert, and extract audio and video streams."
-      },
+      "description": "Process, convert, and extract audio and video streams.",
       "category": "media",
       "source": "https://ffmpeg.org",
       "license": {
@@ -943,18 +808,12 @@
         "volley",
         "food"
       ],
-      "notes": {
-        "fr": "Le choix de composants GPL peut rendre la compilation soumise à GPL. Vérifier la compilation, les codecs et leurs obligations avant distribution.",
-        "en": "Enabling GPL components may make the build subject to GPL. Review build options, codecs, and obligations before distribution."
-      }
+      "notes": "Enabling GPL components may make the build subject to GPL. Review build options, codecs, and obligations before distribution."
     },
     {
       "id": "n8n",
       "name": "n8n",
-      "description": {
-        "fr": "Orchestration de workflows avec code source disponible et restrictions d’usage.",
-        "en": "Workflow orchestration with source available and usage restrictions."
-      },
+      "description": "Workflow orchestration with source available and usage restrictions.",
       "category": "automation",
       "source": "https://github.com/n8n-io/n8n",
       "license": {
@@ -985,10 +844,7 @@
         "all-branches",
         "owner-automation"
       ],
-      "notes": {
-        "fr": "Source-available, pas une licence open source OSI. La FAQ autorise certains workflows internes derrière un produit, mais pas leur construction ou modification par des utilisateurs externes sous la licence communautaire.",
-        "en": "Source-available, not an OSI open-source license. The FAQ permits some operator-built background workflows but not external users building or modifying workflows under the Community license."
-      }
+      "notes": "Source-available, not an OSI open-source license. The FAQ permits some operator-built background workflows but not external users building or modifying workflows under the Community license."
     }
   ]
 }

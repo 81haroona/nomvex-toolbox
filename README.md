@@ -2,19 +2,21 @@
 
 # NOMVEX Toolbox — Web Checks
 
-[English](README.en.md) · [Configuration](docs/CONFIGURATION.md) · [Catalogue](catalog/README.md) · [Contribuer](CONTRIBUTING.md)
+[![Quality checks](https://github.com/81haroona/nomvex-toolbox/actions/workflows/ci.yml/badge.svg)](https://github.com/81haroona/nomvex-toolbox/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/81haroona/nomvex-toolbox)](https://github.com/81haroona/nomvex-toolbox/releases) [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
-**Vérifier des redirections, la persistance d’une langue et des téléchargements, puis obtenir un rapport lisible et un résultat exploitable en CI.**
+[Configuration](docs/CONFIGURATION.md) · [Catalog](catalog/README.md) · [Contributing](CONTRIBUTING.md)
 
-Web Checks est le premier outil original de NOMVEX Toolbox. Il utilise une configuration JSON et Playwright pour exécuter des parcours explicites. La démonstration utilise un petit site local avec un comportement correct et des erreurs volontairement introduites. Aucun compte NOMVEX ni clé d’API payante n’est nécessaire pour cette démonstration.
+**Check redirects, language persistence, and downloads, then receive a readable report and a CI-friendly result.**
 
-![Rapport réel de la démonstration locale : six contrôles réussis](docs/examples/report-preview.png)
+Web Checks is the first original NOMVEX Toolbox utility. The public repository documentation is English-first so the project is easier to discover and contribute to globally. It uses declarative JSON configuration and Playwright to run explicit journeys. Its demo runs a small local site with correct behavior and deliberately introduced faults. No NOMVEX account or paid API key is required for that demo.
 
-[Rapport HTML français](docs/examples/healthy-report.fr.html) · [English HTML report](docs/examples/healthy-report.en.html) · [Preuves de vérification](docs/ACCEPTANCE.md)
+![Actual local demo report with six passing checks](docs/examples/report-preview.png)
 
-## Commencer dans cette copie du projet
+[English HTML report](docs/examples/healthy-report.en.html) · [Verification evidence](docs/ACCEPTANCE.md)
 
-Ouvrez un terminal dans le dossier qui contient `package.json`. Utilisez une version de Node compatible avec le champ `engines` de ce fichier.
+## Start from this local project
+
+Open a terminal in the directory containing `package.json`. Use a Node version compatible with that file's `engines` field.
 
 ```bash
 npm ci
@@ -24,72 +26,74 @@ npm test
 npm run demo
 ```
 
-L’installation des paquets et du navigateur nécessite un accès réseau. Selon la machine, Chromium peut aussi nécessiter des bibliothèques système : consultez les instructions de Playwright si son lancement échoue. Le test local ne nécessite pas de service de modèle d’IA.
+Installing packages and the browser requires network access. Chromium may also require system libraries on your machine; consult Playwright's installation instructions if launch fails. The local test requires no AI model service.
 
-Pour voir la détection des erreurs préparées dans le site de démonstration :
+To observe the faults prepared in the demo site:
 
 ```bash
 npm run demo:broken
 ```
 
-Ce scénario doit montrer des contrôles en échec et renvoyer le code **1**. Un échec attendu dans cette démonstration n’est pas une preuve de panne de vos sites. Le site local est lancé et arrêté par la commande de démonstration ; le chemin du rapport est affiché dans le terminal.
+That scenario should show failed checks and return exit code **1**. Expected failures in the demo do not indicate a fault in your actual sites. The demo command starts and stops the local fixture and prints the report path in the terminal.
 
-Pour vérifier la structure du catalogue :
+Validate the catalog structure with:
 
 ```bash
-npm run catalog -- --query pdf --lang fr
+npm run catalog -- --query pdf
 npm run catalog:check
 ```
 
-Ces commandes exécutent le code local. Elles ne supposent pas une publication du paquet sur npm.
+These commands run the local code. They do not assume that a package has been published to npm.
 
-## Vérifier votre environnement de test
+## Check your test environment
 
-Adaptez [examples/config.json](examples/config.json) à un environnement que vous êtes autorisé à contrôler. Les sélecteurs et les résultats attendus dépendent de votre application ; ils ne sont pas découverts automatiquement.
+Adapt [examples/config.json](examples/config.json) to a target you are authorized to test. Selectors and expected behavior are application-specific; they are not discovered automatically.
 
 ```bash
-npm run check -- --config examples/config.json --out reports --lang fr
+npm run check -- --config examples/config.json --out reports --lang en
 ```
 
-Le dossier de sortie contient `report.json` et `report.html`. Ouvrez le fichier HTML dans votre navigateur. Utilisez `--lang en` pour un rapport anglais. La langue par défaut est le français. Les rapports existants ne sont pas écrasés : choisissez un nouveau dossier `--out` à chaque exécution, ou omettez cette option pour obtenir un sous-dossier daté automatiquement.
+The output directory contains `report.json` and `report.html`. Open the HTML file in your browser. Use `--lang en` for English reports. The checker also supports French report output for applications that need it. Existing reports are not overwritten: choose a new `--out` directory for each run, or omit that option to create a dated subdirectory automatically.
 
-| Contrôle | Ce qui est vérifié | Limite à connaître |
+| Check | Assertion | Important limit |
 | --- | --- | --- |
-| `redirect` | Le chemin atteint après les actions prévues | Un contrôle du chemin ne valide pas toute la politique d’authentification |
-| `locale` | La langue déclarée et, si configuré, un texte après rechargement ou navigation | Ce contrôle ne vérifie pas toutes les traductions ni leur qualité |
-| `download` | La réception et des propriétés du fichier PDF, JSON, CSV ou texte | La validation structurelle ne prouve pas l’exactitude métier ni le rendu visuel |
+| `redirect` | Path reached after configured actions | Checking a path does not validate a complete authentication policy |
+| `locale` | Declared language and optionally text after a reload or navigation | It does not check every translation or translation quality |
+| `download` | Receipt and selected properties of PDF, JSON, CSV, or text files | Structural validation does not prove business correctness or visual fidelity |
 
-Les étapes JSON permettent de cliquer, remplir et sélectionner des champs. Elles peuvent donc avoir des effets dans l’application cible. Utilisez des comptes et données de test. Pour les secrets, utilisez les références aux variables d’environnement décrites dans [la configuration](docs/CONFIGURATION.md).
+JSON steps can click, fill, and select fields, so they can affect the target application. Use test accounts and data. Reference environment variables for secrets as described in [the configuration guide](docs/CONFIGURATION.md).
 
-### Interpréter le résultat
+### Interpret the outcome
 
-| État | Signification |
+| Status | Meaning |
 | --- | --- |
-| `passed` | Les assertions configurées ont réussi pendant cette exécution |
-| `failed` | Le comportement observé ne correspond pas à une assertion |
-| `error` | Une erreur de configuration, d’exécution ou de dépendance a empêché le contrôle |
-| `skipped` | Le contrôle n’a pas été exécuté ; il ne compte pas comme une réussite |
+| `passed` | Configured assertions succeeded in this run |
+| `failed` | Observed behavior differed from an assertion |
+| `error` | A configuration, execution, or dependency error prevented a check |
+| `skipped` | A check was not executed; it is not a success |
 
-Codes de sortie : **0** si tous les contrôles ont réussi ; **1** en cas d’échec fonctionnel ; **2** pour une erreur ou une exécution incomplète, y compris un contrôle ignoré. Une combinaison d’échec et d’erreur renvoie **2**.
+Exit codes: **0** when every check passes; **1** for behavioral failures; **2** for an error or incomplete run, including a skipped check. Mixed failures and errors return **2**.
 
-## Ce que contient le catalogue
+## Catalog and evidence
 
-[24 fiches](catalog/README.md) présentent des bibliothèques et outils dont les sources primaires ont été consultées. Chaque fiche initiale porte le statut `source-reviewed` et `evidence.test: null`. Cela ne signifie pas que ces 24 outils ont été installés, testés ou intégrés dans NOMVEX.
+The [24 catalog entries](catalog/README.md) are based on primary-source reviews. Every initial entry is `source-reviewed` with `evidence.test: null`; inclusion does not mean that every tool has been installed, tested, or integrated into NOMVEX.
 
-Les dépendances exécutées par Web Checks sont déterminées par `package.json` et `package-lock.json`. Les résultats d’une exécution de Web Checks ne qualifient pas automatiquement tous les usages possibles de ces dépendances.
+`package.json` and `package-lock.json` identify Web Checks' actual dependencies. A successful Web Checks run does not qualify every possible use of those dependencies.
 
-## Périmètre et preuves
+- The local fixture demonstrates the checker against its configured scenarios.
+- Actual NOMVEX sites require their own configuration and execution evidence.
+- Platform support is based only on actual CI evidence. See [verification evidence](docs/ACCEPTANCE.md) for the current operating-system matrix.
+- Reports may contain URLs or test context. Review them before sharing.
+- No star count, adoption level, or defect-free operation is promised.
 
-- Le scénario local montre le fonctionnement du vérificateur sur ses fixtures.
-- Une vérification sur les vrais sites NOMVEX demande une configuration et un résultat propres à ces sites.
-- La prise en charge annoncée d’un système par une dépendance ne constitue pas un test de ce projet sur ce système. Windows et macOS restent non vérifiés tant qu’un rapport de cette version n’est pas disponible.
-- Les rapports peuvent révéler des URL ou du contexte de test. Vérifiez-les avant de les partager.
-- Le projet ne promet ni nombre d’étoiles, ni adoption, ni absence totale de défauts.
+## Contribute and reuse
 
-## Participer et réutiliser
+Reproducible fixes, accessibility improvements, and useful translations are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and the [code of conduct](CODE_OF_CONDUCT.md).
 
-Une correction reproductible, une amélioration d’accessibilité ou une traduction utile est bienvenue. Consultez [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) et [le code de conduite](CODE_OF_CONDUCT.md).
+Original code is provided under [Apache-2.0](LICENSE), with attribution in [NOTICE](NOTICE). Dependencies and linked tools retain their own licenses. See the [catalog rules](docs/CATALOG.md) and [license notes](docs/LICENSES.md).
 
-Le code original est distribué sous [Apache-2.0](LICENSE), avec les attributions du fichier [NOTICE](NOTICE). Les outils référencés et les dépendances conservent leurs licences. [Les règles du catalogue](docs/CATALOG.md) et [les notes de licence](docs/LICENSES.md) expliquent la distinction.
+If the tool helps you, a star is appreciated. Use and features do not require a star, subscription, or NOMVEX account.
 
-Si l’outil vous est utile, une étoile est appréciée. Son utilisation et ses fonctions ne sont pas conditionnées à une étoile, à un abonnement ou à un compte NOMVEX.
+## Roadmap
+
+The next additions are evidence-driven: broader platform verification, reusable checks that solve real developer problems, and catalog entries promoted from source review to reproducible testing only when there is execution evidence. See [GROWTH.md](docs/GROWTH.md).
