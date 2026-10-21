@@ -14,6 +14,7 @@ if (!token) throw new Error('GITHUB_TOKEN is required for the batched GitHub Gra
 const maxRepos = Number.parseInt(process.env.NOMVEX_CATALOG_MAX_REPOS || '1500', 10);
 const observedAt = new Date().toISOString();
 const userAgent = 'nomvex-toolbox-open-source-indexer';
+const useSnapshot = process.env.NOMVEX_CATALOG_USE_SNAPSHOT === '1';
 
 async function rawReadme(repository, requestedRef) {
   const normalized = normalizeRepo(repository);
@@ -61,14 +62,24 @@ function add(repo, feed) {
   if (feed && !provenance.get(key).feeds.some(item => item.id === feed.id)) provenance.get(key).feeds.push(feed);
 }
 
-for (const source of sources.sources) {
-  process.stderr.write(`Reading source feed: ${source.repository}\n`);
-  const markdown = await rawReadme(source.repository, source.ref);
-  const discovered = extractGitHubRepos(markdown);
-  for (const repo of discovered) add(repo, source);
-  process.stderr.write(`Source feed complete: ${source.repository} -> ${discovered.length} GitHub links\n`);
+if (useSnapshot) {
+  const snapshot = JSON.parse(await readFile(new URL('../catalog/candidates.json', import.meta.url), 'utf8'));
+  const feeds = new Map(sources.sources.map(source => [source.id, source]));
+  feeds.set('nomvex-core-seeds', { id: 'nomvex-core-seeds', defaultCategory: 'developer-tool' });
+  for (const item of snapshot.candidates ?? []) {
+    for (const feedId of item.feeds ?? []) add(item.repo, feeds.get(feedId) ?? { id: feedId, defaultCategory: 'developer-tool' });
+  }
+  process.stderr.write(`Using verified candidate snapshot: ${provenance.size} repositories\n`);
+} else {
+  for (const source of sources.sources) {
+    process.stderr.write(`Reading source feed: ${source.repository}\n`);
+    const markdown = await rawReadme(source.repository, source.ref);
+    const discovered = extractGitHubRepos(markdown);
+    for (const repo of discovered) add(repo, source);
+    process.stderr.write(`Source feed complete: ${source.repository} -> ${discovered.length} GitHub links\n`);
+  }
+  for (const repo of seeds.repositories) add(repo, { id: 'nomvex-core-seeds', defaultCategory: 'developer-tool' });
 }
-for (const repo of seeds.repositories) add(repo, { id: 'nomvex-core-seeds', defaultCategory: 'developer-tool' });
 
 const candidates = [...provenance.values()].sort((a,b)=>a.repo.localeCompare(b.repo)).slice(0, maxRepos);
 await writeFile(new URL('../catalog/candidates.json', import.meta.url), JSON.stringify({
