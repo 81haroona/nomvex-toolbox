@@ -1,0 +1,994 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-21",
+  "tools": [
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "description": {
+        "fr": "Automatisation et tests de navigateur avec une API commune.",
+        "en": "Browser automation and testing through a common API."
+      },
+      "category": "quality",
+      "source": "https://github.com/microsoft/playwright",
+      "license": {
+        "code": "Apache-2.0",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/microsoft/playwright"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "login",
+        "language",
+        "downloads"
+      ],
+      "notes": {
+        "fr": "Moteur de navigateur du premier outil. Les scénarios réels de NOMVEX exigent leur propre configuration et preuve.",
+        "en": "Browser engine for the first tool. Real NOMVEX journeys require their own configuration and evidence."
+      }
+    },
+    {
+      "id": "pdf-lib",
+      "name": "pdf-lib",
+      "description": {
+        "fr": "Création et modification de documents PDF en JavaScript.",
+        "en": "Create and modify PDF documents in JavaScript."
+      },
+      "category": "documents",
+      "source": "https://github.com/Hopding/pdf-lib",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/Hopding/pdf-lib"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "exports"
+      ],
+      "notes": {
+        "fr": "Une analyse structurelle du PDF ne valide pas son rendu, son exactitude métier ou sa sécurité.",
+        "en": "Structural PDF parsing does not validate rendering, business correctness, or safety."
+      }
+    },
+    {
+      "id": "csv-parse",
+      "name": "csv-parse",
+      "description": {
+        "fr": "Analyse de fichiers CSV dans le projet Node CSV.",
+        "en": "CSV parsing from the Node CSV project."
+      },
+      "category": "data",
+      "source": "https://github.com/adaltas/node-csv",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/adaltas/node-csv"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "imports",
+        "exports"
+      ],
+      "notes": {
+        "fr": "Le format CSV doit préciser séparateur, en-têtes et encodage. Le dépôt source contient plusieurs paquets.",
+        "en": "Specify CSV delimiters, headers, and encoding. The source repository contains several packages."
+      }
+    },
+    {
+      "id": "zod",
+      "name": "Zod",
+      "description": {
+        "fr": "Validation de schémas avec inférence de types TypeScript.",
+        "en": "Schema validation with TypeScript type inference."
+      },
+      "category": "validation",
+      "source": "https://github.com/colinhacks/zod",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/colinhacks/zod"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "configuration"
+      ],
+      "notes": {
+        "fr": "Un schéma valide la forme des données ; il ne prouve pas la correction du scénario métier.",
+        "en": "A schema validates data shape; it does not prove business behavior is correct."
+      }
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "description": {
+        "fr": "Vérification statique des types et compilation vers JavaScript.",
+        "en": "Static type checking and compilation to JavaScript."
+      },
+      "category": "development",
+      "source": "https://github.com/microsoft/TypeScript",
+      "license": {
+        "code": "Apache-2.0",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/microsoft/TypeScript"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "build"
+      ],
+      "notes": {
+        "fr": "Les types ne remplacent pas les tests exécutés dans le navigateur.",
+        "en": "Types do not replace executed browser tests."
+      }
+    },
+    {
+      "id": "vitest",
+      "name": "Vitest",
+      "description": {
+        "fr": "Cadre de tests pour des projets JavaScript et TypeScript.",
+        "en": "Test framework for JavaScript and TypeScript projects."
+      },
+      "category": "quality",
+      "source": "https://github.com/vitest-dev/vitest",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/vitest-dev/vitest"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "unit-tests"
+      ],
+      "notes": {
+        "fr": "Candidat du catalogue ; sa présence ne signifie pas qu’il est installé ou utilisé dans cette version.",
+        "en": "Catalog candidate; inclusion does not mean it is installed or used in this release."
+      }
+    },
+    {
+      "id": "eslint",
+      "name": "ESLint",
+      "description": {
+        "fr": "Analyse statique du code JavaScript et règles configurables.",
+        "en": "Static JavaScript analysis with configurable rules."
+      },
+      "category": "development",
+      "source": "https://github.com/eslint/eslint",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/eslint/eslint"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "code-quality"
+      ],
+      "notes": {
+        "fr": "Les extensions et configurations ajoutées possèdent leurs propres versions et licences.",
+        "en": "Added plugins and configurations have their own versions and licenses."
+      }
+    },
+    {
+      "id": "prettier",
+      "name": "Prettier",
+      "description": {
+        "fr": "Mise en forme automatique du code et de fichiers pris en charge.",
+        "en": "Automatic formatting for code and supported file types."
+      },
+      "category": "development",
+      "source": "https://github.com/prettier/prettier",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/prettier/prettier"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "contributions"
+      ],
+      "notes": {
+        "fr": "La mise en forme ne constitue pas une vérification fonctionnelle.",
+        "en": "Formatting is not functional verification."
+      }
+    },
+    {
+      "id": "axe-core",
+      "name": "axe-core",
+      "description": {
+        "fr": "Moteur de contrôles automatisés d’accessibilité web.",
+        "en": "Automated web accessibility checking engine."
+      },
+      "category": "accessibility",
+      "source": "https://github.com/dequelabs/axe-core",
+      "license": {
+        "code": "MPL-2.0",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/dequelabs/axe-core"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "accessibility"
+      ],
+      "notes": {
+        "fr": "Les contrôles automatisés ne couvrent pas toute l’accessibilité ; compléter par des vérifications humaines. Respecter MPL-2.0.",
+        "en": "Automated checks do not cover all accessibility requirements; add human review. Follow MPL-2.0."
+      }
+    },
+    {
+      "id": "lighthouse",
+      "name": "Lighthouse",
+      "description": {
+        "fr": "Audits automatisés de qualité de pages web.",
+        "en": "Automated quality audits for web pages."
+      },
+      "category": "quality",
+      "source": "https://github.com/GoogleChrome/lighthouse",
+      "license": {
+        "code": "Apache-2.0",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/GoogleChrome/lighthouse"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "performance"
+      ],
+      "notes": {
+        "fr": "Les mesures dépendent de la machine et des conditions de test ; conserver ces informations avec le résultat.",
+        "en": "Measurements depend on hardware and test conditions; retain those details with results."
+      }
+    },
+    {
+      "id": "fastify",
+      "name": "Fastify",
+      "description": {
+        "fr": "Cadre web pour des services Node.js.",
+        "en": "Web framework for Node.js services."
+      },
+      "category": "backend",
+      "source": "https://github.com/fastify/fastify",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/fastify/fastify"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "api"
+      ],
+      "notes": {
+        "fr": "Candidat pour des services futurs ; le catalogue ne promet pas une migration du serveur existant.",
+        "en": "Candidate for future services; the catalog does not imply migration of the existing server."
+      }
+    },
+    {
+      "id": "ajv",
+      "name": "Ajv",
+      "description": {
+        "fr": "Validation de données suivant JSON Schema et JSON Type Definition.",
+        "en": "Data validation using JSON Schema and JSON Type Definition."
+      },
+      "category": "validation",
+      "source": "https://github.com/ajv-validator/ajv",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/ajv-validator/ajv"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "catalog",
+        "configuration"
+      ],
+      "notes": {
+        "fr": "Choisir une version de schéma explicite et des schémas de confiance.",
+        "en": "Choose an explicit schema version and trusted schemas."
+      }
+    },
+    {
+      "id": "pino",
+      "name": "Pino",
+      "description": {
+        "fr": "Journalisation structurée pour des applications Node.js.",
+        "en": "Structured logging for Node.js applications."
+      },
+      "category": "observability",
+      "source": "https://github.com/pinojs/pino",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/pinojs/pino"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "operations"
+      ],
+      "notes": {
+        "fr": "Les applications doivent filtrer leurs secrets et données personnelles avant journalisation.",
+        "en": "Applications must filter secrets and personal data before logging."
+      }
+    },
+    {
+      "id": "opentelemetry-js",
+      "name": "OpenTelemetry JavaScript",
+      "description": {
+        "fr": "API et SDK de télémétrie pour JavaScript.",
+        "en": "Telemetry APIs and SDKs for JavaScript."
+      },
+      "category": "observability",
+      "source": "https://github.com/open-telemetry/opentelemetry-js",
+      "license": {
+        "code": "Apache-2.0",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/open-telemetry/opentelemetry-js"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "operations"
+      ],
+      "notes": {
+        "fr": "Candidat optionnel. Aucun export de télémétrie n’est activé par cette fiche ; choisir destination et politique explicitement.",
+        "en": "Optional candidate. This entry enables no telemetry export; select destinations and policy explicitly."
+      }
+    },
+    {
+      "id": "prom-client",
+      "name": "prom-client",
+      "description": {
+        "fr": "Client JavaScript pour exposer des métriques au format Prometheus.",
+        "en": "JavaScript client for exposing Prometheus metrics."
+      },
+      "category": "observability",
+      "source": "https://github.com/prometheus/client_js",
+      "license": {
+        "code": "Apache-2.0",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/prometheus/client_js"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "operations"
+      ],
+      "notes": {
+        "fr": "Source canonique actuelle : prometheus/client_js. Les métriques ne doivent pas contenir de secrets ou d’identifiants personnels.",
+        "en": "Current canonical source: prometheus/client_js. Metrics must not contain secrets or personal identifiers."
+      }
+    },
+    {
+      "id": "better-sqlite3",
+      "name": "better-sqlite3",
+      "description": {
+        "fr": "Accès à SQLite depuis Node.js.",
+        "en": "SQLite access from Node.js."
+      },
+      "category": "data",
+      "source": "https://github.com/WiseLibs/better-sqlite3",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/WiseLibs/better-sqlite3"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "local-storage"
+      ],
+      "notes": {
+        "fr": "Vérifier les binaires et la compatibilité de la version Node cible avant intégration.",
+        "en": "Check binaries and target Node version compatibility before integration."
+      }
+    },
+    {
+      "id": "sharp",
+      "name": "sharp",
+      "description": {
+        "fr": "Redimensionnement et traitement d’images pour Node.js.",
+        "en": "Image resizing and processing for Node.js."
+      },
+      "category": "media",
+      "source": "https://github.com/lovell/sharp",
+      "license": {
+        "code": "Apache-2.0",
+        "models": null,
+        "notes": "Apache-2.0 for sharp code. Native dependencies, including libvips, require their own license review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": [
+          "linux",
+          "macos",
+          "windows"
+        ],
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/lovell/sharp"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "creator",
+        "volley",
+        "food",
+        "market"
+      ],
+      "notes": {
+        "fr": "Le code sharp et ses composants natifs ont des licences à examiner séparément. Aucun binaire n’est distribué par le catalogue.",
+        "en": "Review sharp code and native component licenses separately. The catalog distributes no binaries."
+      }
+    },
+    {
+      "id": "markdown-it",
+      "name": "markdown-it",
+      "description": {
+        "fr": "Analyse et rendu de Markdown en JavaScript.",
+        "en": "Markdown parsing and rendering in JavaScript."
+      },
+      "category": "documents",
+      "source": "https://github.com/markdown-it/markdown-it",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/markdown-it/markdown-it"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "documentation"
+      ],
+      "notes": {
+        "fr": "Un moteur Markdown ne remplace pas une stratégie de traitement du contenu non fiable et de sanitisation HTML.",
+        "en": "A Markdown engine does not replace untrusted-content handling and HTML sanitization."
+      }
+    },
+    {
+      "id": "pypdf",
+      "name": "pypdf",
+      "description": {
+        "fr": "Lecture, extraction et transformation de documents PDF en Python.",
+        "en": "Read, extract, and transform PDF documents in Python."
+      },
+      "category": "documents",
+      "source": "https://github.com/py-pdf/pypdf",
+      "license": {
+        "code": "BSD-3-Clause",
+        "models": null,
+        "notes": "Code license reported by the primary project source. Dependencies and distributed artifacts require separate review."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/py-pdf/pypdf",
+          "https://github.com/py-pdf/pypdf/blob/main/LICENSE"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "business",
+        "owner",
+        "training"
+      ],
+      "notes": {
+        "fr": "La licence BSD à trois conditions est indiquée par le texte LICENSE consulté. Les extensions facultatives sont à vérifier séparément.",
+        "en": "The reviewed LICENSE text contains the three BSD conditions. Review optional extensions separately."
+      }
+    },
+    {
+      "id": "docling",
+      "name": "Docling",
+      "description": {
+        "fr": "Extraction de documents, tableaux et mise en forme vers des représentations structurées.",
+        "en": "Extract documents, tables, and layout into structured representations."
+      },
+      "category": "documents",
+      "source": "https://github.com/docling-project/docling",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "MIT for the codebase. Upstream requires checking licenses of individual models in their original packages."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": [
+          "linux",
+          "macos",
+          "windows"
+        ],
+        "hardware": "Upstream documents x86_64 and arm64; requirements depend on the chosen pipeline.",
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/docling-project/docling"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "business",
+        "owner",
+        "training"
+      ],
+      "notes": {
+        "fr": "Le projet précise que les modèles ont leurs propres licences. La qualité d’extraction doit être testée sur les fichiers cibles.",
+        "en": "The project explicitly states that models have their own licenses. Test extraction quality on target files."
+      }
+    },
+    {
+      "id": "faster-whisper",
+      "name": "faster-whisper",
+      "description": {
+        "fr": "Transcription audio avec Whisper et CTranslate2.",
+        "en": "Audio transcription using Whisper and CTranslate2."
+      },
+      "category": "speech",
+      "source": "https://github.com/SYSTRAN/faster-whisper",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "MIT for this codebase. No blanket claim is made about arbitrary model weights or additional runtime components."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": "CPU or compatible NVIDIA GPU depending on configuration; model and runtime requirements must be checked.",
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/SYSTRAN/faster-whisper"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "creator",
+        "volley",
+        "owner"
+      ],
+      "notes": {
+        "fr": "Vérifier séparément le modèle choisi. Aucune mesure de précision en arabe ou de performance sur le VPS NOMVEX n’est revendiquée.",
+        "en": "Review the selected model separately. No Arabic accuracy or performance on the NOMVEX VPS is claimed."
+      }
+    },
+    {
+      "id": "whisper-cpp",
+      "name": "whisper.cpp",
+      "description": {
+        "fr": "Implémentation de l’inférence Whisper en C et C++.",
+        "en": "Whisper inference implementation in C and C++."
+      },
+      "category": "speech",
+      "source": "https://github.com/ggml-org/whisper.cpp",
+      "license": {
+        "code": "MIT",
+        "models": null,
+        "notes": "MIT for this codebase. No blanket claim is made about arbitrary model weights or additional runtime components."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/ggml-org/whisper.cpp"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "creator",
+        "volley",
+        "owner"
+      ],
+      "notes": {
+        "fr": "Les poids des modèles et les accélérateurs exigent leur propre vérification. Aucun modèle n’est fourni ici.",
+        "en": "Model weights and accelerators require separate review. No model is bundled here."
+      }
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "description": {
+        "fr": "Traitement, conversion et extraction de flux audio et vidéo.",
+        "en": "Process, convert, and extract audio and video streams."
+      },
+      "category": "media",
+      "source": "https://ffmpeg.org",
+      "license": {
+        "code": "LGPL-2.1-or-later",
+        "models": null,
+        "notes": "LGPL-2.1-or-later base; optional GPL components change the applicable build license. No complete codec or patent review was performed."
+      },
+      "cost": {
+        "software": "No code-license fee under the stated license; its conditions still apply.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": [
+          "linux",
+          "macos",
+          "windows"
+        ],
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://ffmpeg.org",
+          "https://ffmpeg.org/about.html",
+          "https://ffmpeg.org/legal.html"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "creator",
+        "volley",
+        "food"
+      ],
+      "notes": {
+        "fr": "Le choix de composants GPL peut rendre la compilation soumise à GPL. Vérifier la compilation, les codecs et leurs obligations avant distribution.",
+        "en": "Enabling GPL components may make the build subject to GPL. Review build options, codecs, and obligations before distribution."
+      }
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "description": {
+        "fr": "Orchestration de workflows avec code source disponible et restrictions d’usage.",
+        "en": "Workflow orchestration with source available and usage restrictions."
+      },
+      "category": "automation",
+      "source": "https://github.com/n8n-io/n8n",
+      "license": {
+        "code": "Sustainable Use License",
+        "models": null,
+        "notes": "Sustainable Use License for community code; enterprise-designated files have separate terms. Source-available with use restrictions."
+      },
+      "cost": {
+        "software": "Community use is free only within its license terms; other uses may require a commercial agreement.",
+        "services": null
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-10-21",
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/n8n-io/n8n",
+          "https://docs.n8n.io/n8n-community-license",
+          "https://docs.n8n.io/n8n-community-license/community-license/license-faq"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "all-branches",
+        "owner-automation"
+      ],
+      "notes": {
+        "fr": "Source-available, pas une licence open source OSI. La FAQ autorise certains workflows internes derrière un produit, mais pas leur construction ou modification par des utilisateurs externes sous la licence communautaire.",
+        "en": "Source-available, not an OSI open-source license. The FAQ permits some operator-built background workflows but not external users building or modifying workflows under the Community license."
+      }
+    }
+  ]
+}

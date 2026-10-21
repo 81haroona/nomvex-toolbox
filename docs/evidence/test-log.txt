@@ -1,0 +1,64 @@
+
+> @nomvex/web-checks@0.1.0 test
+> npm run build && node --test --test-concurrency=1 tests/*.test.mjs
+
+
+> @nomvex/web-checks@0.1.0 build
+> tsc -p tsconfig.json
+
+✔ source catalog has evidence for every entry without invented test claims (8.973057ms)
+✔ duplicate catalog entries and unsupported tested claims are rejected (3.994194ms)
+✔ CLI help, version and invalid flags return clear exit codes (1444.764543ms)
+✔ invalid JSON/config and missing file fail without leaking values (698.959639ms)
+✔ disabled check writes bilingual reports but exits incomplete (371.889417ms)
+✔ pre-existing reports and configuration are never overwritten (386.280393ms)
+✔ missing environment input exits error and records its diagnostic (381.500067ms)
+✔ real CLI user path produces passing and failing browser reports (2695.236849ms)
+✔ defaults are bounded and base origins normalized (4.642825ms)
+✔ URL resolver preserves query/fragment and allows explicitly approved origin (0.292041ms)
+✔ dangerous, ambiguous and unapproved target URLs are rejected (0.819708ms)
+✔ secrets in base URL and extra origin paths are rejected (0.699216ms)
+✔ unknown fields, duplicate IDs and invalid bounds cannot silently pass (1.731697ms)
+✔ fill takes exactly one literal or environment variable (4.833583ms)
+✔ format-specific assertions reject unsupported PDF text extraction (0.759598ms)
+✔ validation diagnostics and report URL redaction exclude supplied secrets (0.401536ms)
+✔ direct PDF helper validates actual bytes despite a non-PDF filename (135.103068ms)
+✔ missing files and directories return controlled errors without exposing paths (210.448356ms)
+✔ direct helper refuses symbolic links on Linux (109.156006ms)
+✔ PDF validation rejects missing EOF and truncated objects even with an EOF marker (229.045458ms)
+✔ JSON required keys must be own properties, including prototype-like key names (208.050282ms)
+✔ expectedText is enforced together with structural checks for JSON and CSV (422.967766ms)
+✔ caller size ceiling and minBytes boundaries apply before content validation (315.943182ms)
+✔ text validation rejects invalid UTF-8 and binary NUL content (213.785931ms)
+✔ a UTF-8 BOM by itself does not count as usable text content (112.246384ms)
+✔ parser deadline and abort return bounded errors and later parsing still succeeds (129.686803ms)
+✔ local fixture exposes valid files and a synthetic cookie sign-in (68.12855ms)
+✔ fixture rejects a public interface and invalid ports (0.985179ms)
+✔ fixture rejects external auth return targets (14.438633ms)
+✔ healthy auth, locale and four export formats pass real browser checks (1677.929177ms)
+✔ delayed navigation and return URL query parameters are checked correctly (853.455428ms)
+✔ broken redirects, lost language, invalid and oversized exports cannot be green (5653.478023ms)
+✔ a disabled check is skipped and never reported as passed (2.914643ms)
+✔ an unavailable local target is reported without success (248.559748ms)
+✔ missing environment input fails explicitly and cannot be green (2.977869ms)
+✔ a slow page respects the configured timeout and produces an error (635.032181ms)
+✔ unapproved navigation origin is blocked before the destination receives a request (332.253437ms)
+✔ an HTTP redirect cannot contact an unapproved second origin (282.808807ms)
+✔ an explicitly approved second origin may complete a redirect round-trip (299.087172ms)
+✔ a dedicated worker cannot hide a blocked WebSocket attempt behind a successful locale change (282.740419ms)
+✔ a shared worker cannot hide a blocked WebSocket attempt behind a successful locale change (511.961819ms)
+✔ environment and literal form secrets never appear in reports (2578.312224ms)
+✔ HTML report escapes content and loads no scripts, fonts or external services (1.136888ms)
+✔ French and English messages are generated from safe diagnostic codes (4.320418ms)
+✔ failure, runtime errors and skipped checks have distinct nonzero exit codes (0.190749ms)
+✔ JavaScript API consumers cannot get green for unknown or inconsistent report states (0.144859ms)
+ℹ tests 46
+ℹ suites 0
+ℹ pass 46
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 22711.327152
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.

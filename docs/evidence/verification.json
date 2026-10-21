@@ -1,0 +1,82 @@
+{
+  "recordedAt": "2026-10-21T08:38:40.408010+00:00",
+  "cleanInstall": true,
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "browser": "Google Chrome for Testing 156.0.8078.4"
+  },
+  "scope": "Synthetic local fixtures and tests; no live NOMVEX platform",
+  "checks": [
+    {
+      "name": "clean-install",
+      "command": "npm ci --ignore-scripts --offline (pre-populated public package cache)",
+      "exitCode": 0,
+      "expectedExitCode": 0
+    },
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "expectedExitCode": 0
+    },
+    {
+      "name": "catalog",
+      "command": "npm run catalog:check",
+      "exitCode": 0,
+      "expectedExitCode": 0
+    },
+    {
+      "name": "tests",
+      "command": "npm test",
+      "exitCode": 0,
+      "expectedExitCode": 0
+    },
+    {
+      "name": "demo",
+      "command": "npm run demo",
+      "exitCode": 0,
+      "expectedExitCode": 0
+    },
+    {
+      "name": "demo-broken",
+      "command": "npm run demo:broken",
+      "exitCode": 1,
+      "expectedExitCode": 1
+    }
+  ],
+  "counts": {
+    "tests": 46,
+    "pass": 46,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "sourceSha256": {
+    "src/cli.ts": "a412ec36dd6a8d1fd0890649d3aa0e88adaf1c7fc8f2a70ec09cc6ebb6a0ba74",
+    "src/config.ts": "0ed3f3d94bc4efeb86d43d3fa4e854b1bf6174f0a1eb6905b5d21ff5e4a34234",
+    "src/download-worker.ts": "d61ba1bf90eea5ea32048eb39ce1cb8c1bdbf65d586256a9e2b443578860f641",
+    "src/downloads.ts": "ec26f6a22f512f2ba95435b39393cbf31292b584c4152e6efd95f39ac14915b0",
+    "src/index.ts": "f2a2d985e6aff4062bf60b76cd8dc6edc125e5024fd43da4f218dbd5aef4dc47",
+    "src/report.ts": "08b26501cada947c7a7cd9bc5c880023db45216ba0f706ea83fe0a8a704fb9fa",
+    "src/run.ts": "c0afaa0711a0849a00199340c39cbb3094abe5089f31c2de344bfd91434f7d1d",
+    "src/types.ts": "204dd2b4ab1eed7f3cdd5906b1741797829aec6c661b78d31efa507e972d7971",
+    "tests/catalog.test.mjs": "cce932c1eeb8dd33d40f7cacf13b510643397b1928d02ef0a8af8c24ebd4f5c0",
+    "tests/cli.test.mjs": "02e0c5527835eab6e00a8579101f635e763940f001bed1197318af81e65da767",
+    "tests/config.test.mjs": "fd63788581bef6290392f8d47adeb2c721065d62222a8f15e997a4e10102b3a8",
+    "tests/downloads.test.mjs": "a8f2b93791fe4bc08548232c134e8d5e6c36fab38690568a55a08786837e8c21",
+    "tests/fixture.test.mjs": "37e288a583f8fd470de5ab83ec4872b213a9b8063b213f7edb0bd0e5a49f6a55",
+    "tests/integration.test.mjs": "6a968883e537e3a6e1466ab2660a48700aa15ef414494e52ae3ed01bc7c76232",
+    "tests/report.test.mjs": "80674490abf5d7f98c83cf4613f09124ad9f241d0519f69c554ff900a0832c57",
+    "scripts/catalog.mjs": "4245b2f99065dfd244923f8b8d9530548bb42467e48313f3dac94e4bf9c6269c",
+    "scripts/demo.mjs": "3a863b3f0ba69ba93c89faaeea01d2a11d0350185a9ccf195f2c519f5f2ccf4d",
+    "scripts/validate-catalog.mjs": "e4c69722fe39e335c06204fd622b44a80378c7ef718158d2167ede4e090bb31f",
+    "examples/config.json": "aa5c7f1e37d51a7a0084b105c74810d9cff04c39693ff838a133bab685a3c4ba",
+    "examples/configs/broken.json": "50556083fbb9073c899dcdfb608b0468f90de2b3d163682bb0e658a4490e3f1f",
+    "examples/configs/healthy.json": "aa5c7f1e37d51a7a0084b105c74810d9cff04c39693ff838a133bab685a3c4ba",
+    "examples/fixture.mjs": "c27e0f55ade65988b1d484241b0a0e0e209fc7396cdca12c04c36959adf7d3fd",
+    "package.json": "c39904604e39c728dc40672385c655437466e70b52650baaee4bf9b2e2c5253b",
+    "package-lock.json": "e6c719ffccff32edf5dd0c732ef2325e6dfa34b1409bdd72babfcfa63e149b86",
+    "tsconfig.json": "ce2a9ac87f85222d44eea1ad56abb38c0e022e24b335cd962ab0e2f743ac2cfd"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "date": "2026-10-21",
+  "completed": [
+    "CLI/library with strict configuration and isolated browser checks",
+    "French/English HTML and JSON reports",
+    "Synthetic healthy and broken fixtures",
+    "46 named tests verified from a clean copy",
+    "24 source-reviewed catalog entries",
+    "License, contribution, security and release documentation",
+    "Independent review and regression fixes"
+  ],
+  "sourceEvidence": "docs/evidence/verification.json",
+  "fullTestEvidence": "docs/evidence/test-log.txt",
+  "reproduceAndRelease": "docs/RELEASE.md",
+  "futureIntegrationNeeds": [
+    "Actual authorized NOMVEX staging origins and observed selectors",
+    "Dedicated test accounts supplied through environment variables",
+    "A real passing journey and deliberate failure for each integrated branch"
+  ],
+  "notClaimed": ["live NOMVEX integration", "Windows/macOS validation", "npm registry publication", "external adoption or star growth"]
+}

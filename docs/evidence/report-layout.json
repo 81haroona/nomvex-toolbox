@@ -1,0 +1,12 @@
+{
+  "desktop": {
+    "language": "fr",
+    "cards": 6,
+    "overflow": false
+  },
+  "mobile": {
+    "language": "en",
+    "cards": 6,
+    "overflow": false
+  }
+}

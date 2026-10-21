@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "baseUrl": "http://127.0.0.1:4317",
+  "timeoutMs": 2500,
+  "concurrency": 2,
+  "language": "en",
+  "checks": [
+    { "id": "wrong-return", "kind": "redirect", "startPath": "/broken/protected", "steps": [{ "action": "click", "selector": "#login-button" }], "expectedPath": "/members" },
+    { "id": "lost-locale", "kind": "locale", "startPath": "/broken/locale", "steps": [{ "action": "select", "selector": "#language", "value": "en" }], "expectedLang": "en", "reload": true },
+    { "id": "html-as-pdf", "kind": "download", "startPath": "/exports", "trigger": "#fake-pdf", "format": "pdf" },
+    { "id": "truncated-pdf", "kind": "download", "startPath": "/exports", "trigger": "#truncated-pdf", "format": "pdf" },
+    { "id": "empty-text", "kind": "download", "startPath": "/exports", "trigger": "#empty-text", "format": "text" },
+    { "id": "wrong-json-keys", "kind": "download", "startPath": "/exports", "trigger": "#bad-keys", "format": "json", "requiredKeys": ["title", "items"] },
+    { "id": "wrong-csv-header", "kind": "download", "startPath": "/exports", "trigger": "#bad-header", "format": "csv", "csvHeaders": ["name", "note", "count"] }
+  ]
+}

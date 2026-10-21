@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://127.0.0.1:4317",
+  "timeoutMs": 4000,
+  "concurrency": 2,
+  "language": "fr",
+  "checks": [
+    { "id": "auth-return", "kind": "redirect", "startPath": "/protected", "steps": [{ "action": "fill", "selector": "#email", "value": "demo@example.invalid" }, { "action": "click", "selector": "#login-button" }], "expectedPath": "/members" },
+    { "id": "locale-persistence", "kind": "locale", "startPath": "/locale", "steps": [{ "action": "select", "selector": "#language", "value": "en" }], "expectedLang": "en", "text": { "selector": "[data-testid=\"greeting\"]", "includes": "Hello" }, "reload": true, "followPath": "/locale/next" },
+    { "id": "pdf-export", "kind": "download", "startPath": "/exports", "trigger": "#good-pdf", "format": "pdf", "minBytes": 100 },
+    { "id": "json-export", "kind": "download", "startPath": "/exports", "trigger": "#good-json", "format": "json", "requiredKeys": ["title", "items", "status"] },
+    { "id": "csv-export", "kind": "download", "startPath": "/exports", "trigger": "#good-csv", "format": "csv", "csvHeaders": ["name", "note", "count"] },
+    { "id": "text-export", "kind": "download", "startPath": "/exports", "trigger": "#good-text", "format": "text", "expectedText": "NOMVEX export verified" }
+  ]
+}

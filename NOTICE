@@ -1,0 +1,18 @@
+NOMVEX Toolbox
+Copyright 2026 NOMVEX contributors
+
+Original code and documentation in this repository are licensed under the
+Apache License, Version 2.0, unless a file states otherwise.
+
+This project uses or references independently maintained projects. Their names
+and source links identify their authors' work; no affiliation or endorsement
+is implied. Dependencies and their distributed components retain their own
+licenses, copyright notices, and applicable conditions.
+
+The catalog is a set of original descriptions and source references. It does
+not redistribute or relicense the source code, model weights, datasets, or
+binaries of the projects it lists. A catalog license summary is not a complete
+license analysis of every dependency or build variant.
+
+See catalog/tools.json for primary sources and docs/LICENSES.md for the review
+policy. This NOTICE is informational and does not change any license terms.

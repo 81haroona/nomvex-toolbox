@@ -1,0 +1,34 @@
+name: "Outil ou amélioration / Tool or improvement"
+description: "Proposer une valeur concrète et des sources / Propose concrete value and sources"
+title: "[Proposal] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problème concret / Concrete problem"
+      description: "Qui rencontre ce problème et quel résultat est utile ? / Who encounters it and what result would help?"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: "Source primaire si outil externe / Primary source for an external tool"
+  - type: textarea
+    id: license
+    attributes:
+      label: "Licence et points inconnus / License and unknowns"
+      description: "Distinguez code, modèles, données et services / Distinguish code, models, data, and services"
+  - type: textarea
+    id: verification
+    attributes:
+      label: "Preuve disponible / Available evidence"
+      description: "Source consultée seulement, ou test exécuté avec version, environnement et résultat / Source review only, or an executed test with version, environment, and outcome"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Critère d’acceptation / Acceptance criterion"
+      description: "Comment vérifier que la proposition aide réellement ? / How can we verify that it helps?"
+    validations:
+      required: true

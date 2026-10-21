@@ -1,0 +1,33 @@
+{
+  "name": "@nomvex/web-checks",
+  "version": "0.1.0",
+  "description": "Configurable browser checks for login redirects, language persistence and exported files.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": { "node": "22.x || 24.x" },
+  "bin": { "nomvex-check": "dist/cli.js" },
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "src", "tests", "scripts", "examples", "docs", "catalog", "*.md", "LICENSE", "NOTICE", "tsconfig.json"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test --test-concurrency=1 tests/*.test.mjs",
+    "check": "node dist/cli.js",
+    "demo": "npm run build && node scripts/demo.mjs",
+    "demo:broken": "npm run build && node scripts/demo.mjs --broken",
+    "fixture": "node examples/fixture.mjs",
+    "catalog": "node scripts/catalog.mjs",
+    "catalog:check": "node scripts/validate-catalog.mjs",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "csv-parse": "7.0.3",
+    "pdf-lib": "1.17.1",
+    "playwright": "1.64.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "7.0.2"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "toolVersion": "0.1.0",
+  "startedAt": "2026-10-21T08:30:59.109Z",
+  "finishedAt": "2026-10-21T08:31:00.910Z",
+  "baseUrl": "http://127.0.0.1:37209",
+  "language": "fr",
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "browser": "156.0.8078.4"
+  },
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "total": 6
+  },
+  "results": [
+    {
+      "id": "auth-return",
+      "kind": "redirect",
+      "status": "passed",
+      "code": "CHECK_PASSED",
+      "message": "Les assertions configurées sont satisfaites.",
+      "durationMs": 493,
+      "evidence": {
+        "exactUrlMatched": true
+      }
+    },
+    {
+      "id": "locale-persistence",
+      "kind": "locale",
+      "status": "passed",
+      "code": "CHECK_PASSED",
+      "message": "Les assertions configurées sont satisfaites.",
+      "durationMs": 647,
+      "evidence": {
+        "stagesChecked": 3,
+        "textChecked": true
+      }
+    },
+    {
+      "id": "pdf-export",
+      "kind": "download",
+      "status": "passed",
+      "code": "CHECK_PASSED",
+      "message": "Les assertions configurées sont satisfaites.",
+      "durationMs": 629,
+      "evidence": {
+        "format": "pdf",
+        "bytes": 887,
+        "pages": 1
+      }
+    },
+    {
+      "id": "json-export",
+      "kind": "download",
+      "status": "passed",
+      "code": "CHECK_PASSED",
+      "message": "Les assertions configurées sont satisfaites.",
+      "durationMs": 544,
+      "evidence": {
+        "format": "json",
+        "bytes": 84,
+        "expectedTextChecked": false,
+        "requiredKeysChecked": 3
+      }
+    },
+    {
+      "id": "csv-export",
+      "kind": "download",
+      "status": "passed",
+      "code": "CHECK_PASSED",
+      "message": "Les assertions configurées sont satisfaites.",
+      "durationMs": 492,
+      "evidence": {
+        "format": "csv",
+        "bytes": 81,
+        "expectedTextChecked": false,
+        "columns": 3,
+        "dataRows": 2
+      }
+    },
+    {
+      "id": "text-export",
+      "kind": "download",
+      "status": "passed",
+      "code": "CHECK_PASSED",
+      "message": "Les assertions configurées sont satisfaites.",
+      "durationMs": 449,
+      "evidence": {
+        "format": "text",
+        "bytes": 41,
+        "expectedTextChecked": true
+      }
+    }
+  ]
+}
