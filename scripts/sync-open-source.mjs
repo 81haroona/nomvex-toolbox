@@ -4,18 +4,14 @@ import {
   isRecognizedOpenSourceLicense,
   buildIndexedEntry,
   normalizeRepo,
-  graphqlNodeToMetadata
+  graphqlNodeToMetadata,
+  selectCatalogCandidates
 } from './open-source-lib.mjs';
 
 const sources = JSON.parse(await readFile(new URL('../catalog/sources.json', import.meta.url), 'utf8'));
 const seeds = JSON.parse(await readFile(new URL('../catalog/seeds.json', import.meta.url), 'utf8'));
 const token = process.env.GITHUB_TOKEN || '';
 if (!token) throw new Error('GITHUB_TOKEN is required for the batched GitHub GraphQL metadata scan.');
-const configuredLimit = process.env.NOMVEX_CATALOG_MAX_REPOS;
-const maxRepos = configuredLimit === undefined ? Infinity : Number(configuredLimit);
-if (configuredLimit !== undefined && (!Number.isSafeInteger(maxRepos) || maxRepos < 1)) {
-  throw new Error('NOMVEX_CATALOG_MAX_REPOS must be a positive integer when specified.');
-}
 const observedAt = new Date().toISOString();
 const userAgent = 'nomvex-toolbox-open-source-indexer';
 const useSnapshot = process.env.NOMVEX_CATALOG_USE_SNAPSHOT === '1';
@@ -105,7 +101,7 @@ if (useSnapshot) {
   for (const repo of seeds.repositories) add(repo, { id: 'nomvex-core-seeds', defaultCategory: 'developer-tool' });
 }
 
-const candidates = [...provenance.values()].sort((a,b)=>a.repo.localeCompare(b.repo)).slice(0, maxRepos);
+const candidates = selectCatalogCandidates([...provenance.values()].sort((a,b)=>a.repo.localeCompare(b.repo)), process.env.NOMVEX_CATALOG_MAX_REPOS);
 process.stderr.write(`Candidate discovery: ${provenance.size} unique source links; ${candidates.length} selected.\n`);
 await writeFile(new URL('../catalog/candidates.json', import.meta.url), JSON.stringify({
   schemaVersion: 1,
