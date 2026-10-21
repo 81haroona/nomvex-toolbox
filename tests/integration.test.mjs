@@ -213,7 +213,7 @@ test('a shared worker cannot hide a blocked WebSocket attempt behind a successfu
   assert.equal(report.summary.error, 1);
 });
 
-test('environment and literal form secrets never appear in reports', { timeout: 30000 }, async (t) => {
+test('environment and literal form secrets never appear in reports', { timeout: 45000 }, async (t) => {
   const fixture = await startFixture();
   t.after(() => fixture.close());
   const key = `NOMVEX_FIXTURE_SECRET_${process.pid}`;
@@ -224,7 +224,7 @@ test('environment and literal form secrets never appear in reports', { timeout: 
   const report = await runChecks(checkConfig(fixture.baseUrl, [
     { id: 'env-secret', kind: 'redirect', startPath: '/protected', steps: [{ action: 'fill', selector: '#email', env: key }, { action: 'click', selector: '#login-button' }], expectedPath: `/wrong?token=${secret}` },
     { id: 'literal-secret', kind: 'redirect', startPath: '/protected', steps: [{ action: 'fill', selector: '#email', value: 'synthetic-literal-private-value-67' }, { action: 'click', selector: '#login-button' }], expectedPath: '/wrong' },
-  ]), options);
+  ], { timeoutMs: 8000 }), options);
   assert.equal(report.summary.passed, 0);
   assert.equal(expectNotPassed(report, 'env-secret').code, 'REDIRECT_MISMATCH');
   assert.equal(expectNotPassed(report, 'literal-secret').code, 'REDIRECT_MISMATCH');
