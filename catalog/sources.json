@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "policy": {
     "description": "Feeds are used only to discover canonical GitHub repository URLs. NOMVEX does not copy upstream source code or list text into the registry.",
     "inclusion": "A discovered repository is admitted to the open-source index only when GitHub metadata reports a recognized open-source SPDX identifier, the repository is public, non-archived, and not a fork.",
@@ -48,6 +48,24 @@
       "repository": "Sagargupta16/awesome-mcp-servers",
       "kind": "curated-list",
       "defaultCategory": "mcp"
+    },
+    {
+      "id": "awesome-mcp-servers-wong2",
+      "repository": "wong2/awesome-mcp-servers",
+      "kind": "curated-list",
+      "defaultCategory": "mcp"
+    },
+    {
+      "id": "awesome-opensource-ai",
+      "repository": "alvinreal/awesome-opensource-ai",
+      "kind": "curated-list",
+      "defaultCategory": "developer-tool"
+    },
+    {
+      "id": "awesome-ai-agent-platforms",
+      "repository": "Agenta-AI/awesome-ai-agent-platforms",
+      "kind": "curated-list",
+      "defaultCategory": "agents"
     }
   ]
 }

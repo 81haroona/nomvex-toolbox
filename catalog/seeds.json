@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "repositories": [
     "microsoft/autogen",
     "crewAIInc/crewAI",
@@ -39,7 +39,6 @@
     "mudler/LocalAI",
     "huggingface/text-generation-inference",
     "nomic-ai/gpt4all",
-    "open-webui/open-webui",
     "Mintplex-Labs/anything-llm",
     "Qdrant/qdrant",
     "chroma-core/chroma",
@@ -59,7 +58,6 @@
     "temporalio/temporal",
     "PrefectHQ/prefect",
     "dagster-io/dagster",
-    "langgenius/dify",
     "FlowiseAI/Flowise",
     "langflow-ai/langflow",
     "docling-project/docling",
@@ -80,6 +78,17 @@
     "modelcontextprotocol/servers",
     "jlowin/fastmcp",
     "PrefectHQ/marvin",
-    "microsoft/magentic-ui"
+    "microsoft/magentic-ui",
+    "openai/openai-agents-python",
+    "openai/openai-agents-js",
+    "huggingface/transformers",
+    "huggingface/diffusers",
+    "infiniflow/ragflow",
+    "modelcontextprotocol/python-sdk",
+    "google-gemini/gemini-cli",
+    "langchain-ai/deepagents",
+    "microsoft/BitNet",
+    "openai/codex",
+    "plandex-ai/plandex"
   ]
 }
