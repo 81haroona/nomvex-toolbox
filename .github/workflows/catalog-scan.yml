@@ -3,7 +3,7 @@ name: Open-source catalog scan
 on:
   pull_request:
     branches: [main]
-    types: [reopened]
+    types: [opened, reopened]
   workflow_dispatch:
 
 permissions:
