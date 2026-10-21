@@ -23,7 +23,7 @@ async function rawReadme(repository, requestedRef) {
   const failures = [];
   for (const ref of refs) {
     const url = `https://raw.githubusercontent.com/${owner}/${name}/${ref}/README.md`;
-    const response = await fetch(url, { headers: { 'User-Agent': userAgent } });
+    const response = await fetch(url, { headers: { 'User-Agent': userAgent }, signal: AbortSignal.timeout(15000) });
     if (response.ok) return response.text();
     failures.push(`${ref}:${response.status}`);
   }
@@ -38,7 +38,8 @@ async function graphql(query) {
       'Content-Type': 'application/json',
       'User-Agent': userAgent
     },
-    body: JSON.stringify({ query })
+    body: JSON.stringify({ query }),
+    signal: AbortSignal.timeout(30000)
   });
   const body = await response.text();
   if (!response.ok) throw new Error(`GitHub GraphQL HTTP ${response.status}: ${body.slice(0, 400)}`);
@@ -61,8 +62,11 @@ function add(repo, feed) {
 }
 
 for (const source of sources.sources) {
+  process.stderr.write(`Reading source feed: ${source.repository}\n`);
   const markdown = await rawReadme(source.repository, source.ref);
-  for (const repo of extractGitHubRepos(markdown)) add(repo, source);
+  const discovered = extractGitHubRepos(markdown);
+  for (const repo of discovered) add(repo, source);
+  process.stderr.write(`Source feed complete: ${source.repository} -> ${discovered.length} GitHub links\n`);
 }
 for (const repo of seeds.repositories) add(repo, { id: 'nomvex-core-seeds', defaultCategory: 'developer-tool' });
 
@@ -106,6 +110,7 @@ for (let start = 0; start < candidates.length; start += BATCH_SIZE) {
     const [owner, name] = item.repo.split('/');
     return repositorySelection(`r${index}`, owner, name);
   }).join('\n');
+  process.stderr.write(`GraphQL batch starting: ${start}-${start + batch.length - 1}\n`);
   const payload = await graphql(`query NomvexRegistryBatch {\n${selections}\nrateLimit { cost remaining resetAt }\n}`);
   if (payload.errors?.length) {
     process.stderr.write(`GraphQL batch warning at ${start}: ${payload.errors.map(item => item.message).join('; ').slice(0, 500)}\n`);
