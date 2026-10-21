@@ -1,14 +1,14 @@
 <p><img src="docs/branding/nomvex-mark.svg" width="80" height="80" alt="NOMVEX"></p>
 
-# NOMVEX Toolbox — Web Checks
+# NOMVEX Toolbox — Open-Source Tools & Web Checks
 
 [![Quality checks](https://github.com/81haroona/nomvex-toolbox/actions/workflows/ci.yml/badge.svg)](https://github.com/81haroona/nomvex-toolbox/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/81haroona/nomvex-toolbox)](https://github.com/81haroona/nomvex-toolbox/releases) [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 [Configuration](docs/CONFIGURATION.md) · [Catalog](catalog/README.md) · [Contributing](CONTRIBUTING.md)
 
-**Check redirects, language persistence, and downloads, then receive a readable report and a CI-friendly result.**
+**A practical open-source developer hub: verified Web Checks plus a continuously refreshed registry of AI agents, agent frameworks, MCP servers, RAG/retrieval systems, coding agents, browser agents, evaluation tools, local inference runtimes, automation engines, data systems, and media/document tooling.**
 
-Web Checks is the first original NOMVEX Toolbox utility. The public repository documentation is English-first so the project is easier to discover and contribute to globally. It uses declarative JSON configuration and Playwright to run explicit journeys. Its demo runs a small local site with correct behavior and deliberately introduced faults. No NOMVEX account or paid API key is required for that demo.
+Web Checks is the first original NOMVEX Toolbox utility. The repository now also maintains a machine-indexed open-source registry. The public repository documentation is English-first so the project is easier to discover and contribute to globally. It uses declarative JSON configuration and Playwright to run explicit journeys. Its demo runs a small local site with correct behavior and deliberately introduced faults. No NOMVEX account or paid API key is required for that demo.
 
 ![Actual local demo report with six passing checks](docs/examples/report-preview.png)
 
@@ -74,9 +74,20 @@ JSON steps can click, fill, and select fields, so they can affect the target app
 
 Exit codes: **0** when every check passes; **1** for behavioral failures; **2** for an error or incomplete run, including a skipped check. Mixed failures and errors return **2**.
 
+## Open-source registry
+
+The registry has two evidence levels:
+
+- **source-reviewed** — manually reviewed entries already present in `catalog/tools.json`.
+- **indexed** — public GitHub repositories discovered from curated source lists and admitted only when GitHub metadata reports a recognized open-source SPDX license. Indexed projects are references, not installed or executed integrations.
+
+Run `npm run catalog:sync` with an optional `GITHUB_TOKEN` to refresh the index, then `npm run catalog:check`. Projects with missing/ambiguous licenses, archived repositories, forks, or metadata failures are quarantined rather than mislabeled as open source. The scheduled catalog workflow refreshes the public index through a data-only pull request and never executes upstream project code.
+
+See [catalog sources](catalog/sources.json), [core seeds](catalog/seeds.json), and [catalog policy](docs/CATALOG.md).
+
 ## Catalog and evidence
 
-The [24 catalog entries](catalog/README.md) are based on primary-source reviews. Every initial entry is `source-reviewed` with `evidence.test: null`; inclusion does not mean that every tool has been installed, tested, or integrated into NOMVEX.
+The manually reviewed catalog entries are complemented by the generated open-source index. Exact counts are intentionally read from the current JSON files rather than hard-coded here. The manual entries are based on primary-source reviews. Every initial entry is `source-reviewed` with `evidence.test: null`; inclusion does not mean that every tool has been installed, tested, or integrated into NOMVEX.
 
 `package.json` and `package-lock.json` identify Web Checks' actual dependencies. A successful Web Checks run does not qualify every possible use of those dependencies.
 
