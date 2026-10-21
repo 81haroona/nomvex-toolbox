@@ -42,6 +42,12 @@
       "repository": "kyrolabs/awesome-agents",
       "kind": "curated-list",
       "defaultCategory": "agents"
+    },
+    {
+      "id": "verified-awesome-mcp-servers",
+      "repository": "Sagargupta16/awesome-mcp-servers",
+      "kind": "curated-list",
+      "defaultCategory": "mcp"
     }
   ]
 }
