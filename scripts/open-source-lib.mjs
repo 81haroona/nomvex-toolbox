@@ -49,6 +49,15 @@ export function inferCategory(metadata, sourceCategories = []) {
   return sourceCategories[0] || 'developer-tool';
 }
 
+export function selectCatalogCandidates(candidates, limitSetting) {
+  if (limitSetting === undefined) return candidates;
+  const limit = Number(limitSetting);
+  if (!Number.isSafeInteger(limit) || limit < 1) {
+    throw new Error('NOMVEX_CATALOG_MAX_REPOS must be a positive integer when specified.');
+  }
+  return candidates.slice(0, limit);
+}
+
 export function uniqueSorted(values) {
   return [...new Set((values || []).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
 }
