@@ -2,6 +2,14 @@ name: Open-source catalog sync
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'catalog/sources.json'
+      - 'catalog/seeds.json'
+      - 'scripts/sync-open-source.mjs'
+      - 'scripts/open-source-lib.mjs'
+      - '.github/workflows/catalog-sync.yml'
   schedule:
     - cron: '17 3 * * *'
 
