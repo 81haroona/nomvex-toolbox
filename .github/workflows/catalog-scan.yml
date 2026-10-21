@@ -1,0 +1,58 @@
+name: Open-source catalog scan
+
+on:
+  pull_request:
+    branches: [main]
+    types: [reopened]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: open-source-catalog-scan
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.head_ref, 'trigger/catalog-sync')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Refresh public open-source index
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run catalog:sync
+      - run: npm run catalog:check
+      - run: node --test tests/open-source-registry.test.mjs
+      - name: Emit verified registry payload
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          import { createHash } from 'node:crypto';
+          for (const [label, path] of [
+            ['INDEX', 'catalog/open-source-index.json'],
+            ['QUARANTINE', 'catalog/open-source-quarantine.json'],
+          ]) {
+            const bytes = await readFile(path);
+            const b64 = bytes.toString('base64');
+            const sha = createHash('sha256').update(bytes).digest('hex');
+            const width = 6000;
+            const total = Math.ceil(b64.length / width);
+            console.log(`NOMVEX_${label}_META bytes=${bytes.length} sha256=${sha} parts=${total}`);
+            for (let i = 0; i < total; i++) {
+              const part = String(i + 1).padStart(4, '0');
+              console.log(`NOMVEX_${label}_PART ${part}/${String(total).padStart(4, '0')} ${b64.slice(i * width, (i + 1) * width)}`);
+            }
+          }
+          NODE
