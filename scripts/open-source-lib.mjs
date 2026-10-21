@@ -65,7 +65,7 @@ export function buildIndexedEntry(metadata, sourceFeeds, observedAt) {
     description: metadata.description || `${fullName} open-source repository.`,
     category: inferCategory(metadata, feedCategories),
     source: metadata.html_url,
-    license: { code: spdx, source: `${metadata.html_url}/blob/${metadata.default_branch}/LICENSE` },
+    license: { code: spdx, source: `https://api.github.com/repos/${fullName}/license` },
     github: {
       language: metadata.language ?? null,
       topics: uniqueSorted(metadata.topics),

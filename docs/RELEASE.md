@@ -17,7 +17,7 @@ npm pack
 
 Record the exact Node/browser versions, named test counts, skipped tests, exit codes, and environment-specific limitations. GitHub-hosted CI must be checked separately; committing a workflow file is not evidence that it ran.
 
-`npm pack` for version 0.1.2 produces `nomvex-web-checks-0.1.2.tgz`. It does not publish to the npm registry.
+`npm pack` for version 0.2.0 produces `nomvex-web-checks-0.2.0.tgz`. It does not publish to the npm registry.
 
 ## Public release contents
 
@@ -40,3 +40,8 @@ State exactly which environments and checks passed. Do not infer Windows/macOS s
 ## Future NOMVEX integration
 
 For each authorized NOMVEX branch, observe the actual staging UI, use a dedicated test account, configure real paths/selectors, execute a healthy journey and at least one deliberate negative case, and retain the evidence. Only then label that branch integration verified.
+
+
+## Registry release gate
+
+Before a registry release, run `npm run catalog:sync` in an authenticated environment, then `npm run catalog:check`, unit tests, Web Checks demos, and the cross-platform CI matrix. Record exact indexed/quarantined counts. Do not treat a large index count as proof of integration.
