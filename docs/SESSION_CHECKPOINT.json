@@ -1,33 +1,25 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.1",
+  "version": "0.1.2-rc",
   "date": "2026-10-21",
   "completed": [
-    "CLI/library with strict configuration and isolated browser checks",
-    "French/English HTML and JSON reports",
-    "Synthetic healthy and broken fixtures",
-    "47 named tests verified from a clean copy",
+    "Web Checks CLI/library with strict configuration and isolated browser checks",
+    "Localized HTML and JSON report output",
+    "Synthetic healthy and deliberately broken fixtures",
     "24 source-reviewed catalog entries",
     "License, contribution, security and release documentation",
-    "Independent review and regression fixes",
-    "Independent browser startup budget and deterministic cold-start regression",
-    "Existing NOMVEX brand mark reused in both READMEs and embedded offline reports",
-    "Offline logo rendering verified on desktop, mobile and print media"
+    "Existing NOMVEX mark reused in repository and embedded offline reports",
+    "Public GitHub documentation changed to English-first",
+    "Cross-platform GitHub CI matrix configured for Ubuntu, Windows and macOS on Node 22/24",
+    "Healthy and deliberately-broken demos added to hosted verification"
   ],
-  "sourceEvidence": "docs/evidence/verification.json",
-  "fullTestEvidence": "docs/evidence/test-log.txt",
-  "reproduceAndRelease": "docs/RELEASE.md",
-  "futureIntegrationNeeds": [
-    "Actual authorized NOMVEX staging origins and observed selectors",
-    "Dedicated test accounts supplied through environment variables",
-    "A real passing journey and deliberate failure for each integrated branch"
-  ],
-  "notClaimed": [
-    "live NOMVEX integration",
-    "Windows/macOS validation",
+  "pendingVerification": [
+    "Actual v0.1.2 hosted matrix results",
+    "Any platform-specific skipped tests must be reported explicitly",
+    "Actual authorized NOMVEX staging integrations",
     "npm registry publication",
     "external adoption or star growth"
   ],
   "repository": "https://github.com/81haroona/nomvex-toolbox",
-  "externalDeliveryEvidence": "Consult the release notes for the exact released commit and hosted Node 22/24 CI result."
+  "branch": "cross-platform-0.1.2"
 }

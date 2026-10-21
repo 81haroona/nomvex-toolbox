@@ -1,29 +1,11 @@
 # Implementation scope — 2026-10-21
 
-The approved delivery is NOMVEX Toolbox: an original Web Checks CLI/library,
-a runnable local fixture demonstrating correct and deliberately broken redirect,
-language-persistence and download behavior, an evidence-based tools catalog,
-French/English documentation and reports, contribution/license/security policies,
-and isolated CI. Public repository publication is an intended delivery step when
-the user's GitHub session and repository permissions permit it.
+The approved delivery is NOMVEX Toolbox: the original Web Checks CLI/library, reproducible healthy and deliberately broken browser fixtures, an evidence-based tools catalog, English public repository documentation, localized report output, contribution/license/security policies, and isolated CI.
 
-The subsequent owner request adds the existing NOMVEX platform mark to both
-READMEs and standalone French/English HTML reports. Acceptance includes exact
-embedded asset bytes, offline image loading, responsive layout and print visibility.
+The owner-requested NOMVEX platform mark is used in the public README and embedded offline HTML reports.
 
-Acceptance: clean installation and build; three working check types; intended
-faults detected for the right reasons; invalid configuration, unavailable target,
-blocked origin, missing environment variable, skipped and timed-out checks are
-never reported as successful; PDF/JSON/CSV/text validation has explicit limits;
-no production credentials, paid API keys, or NOMVEX account required for demo;
-no telemetry; reproducible evidence, exact versions, and bounded resource use.
+Acceptance requires clean installation/build, working redirect/locale/download checks, intended fixture defects detected for the correct reasons, explicit failure states for invalid configuration/unavailable targets/blocked origins/missing environment values/skips/timeouts, bounded file validation, no production credentials or paid API keys for the demo, no telemetry, reproducible evidence, and explicit platform limits.
 
-Catalog metadata distinguishes source review, runnable verification and actual
-integration. No unexecuted tool is labeled tested. Runtime input is declarative
-JSON, never arbitrary shell or JavaScript. Public PR checks never use an owner
-production runner. Account settings, private repositories, live branch apps and
-external communications are outside the mutation scope of this delivery.
+Catalog metadata distinguishes source review from runnable verification and actual NOMVEX integration. Runtime input is declarative JSON, not arbitrary JavaScript or shell. Public PR checks use GitHub-hosted runners rather than production infrastructure.
 
-External developer adoption, star growth and testing actual NOMVEX account
-journeys are not fabricated. Any access-dependent acceptance item remains
-explicitly unverified until its own evidence exists.
+External adoption, star growth, and live NOMVEX branch journeys are never inferred from repository tests.

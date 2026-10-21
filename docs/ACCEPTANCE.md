@@ -1,67 +1,45 @@
-# Verification evidence / Preuves de vérification
+# Verification evidence
 
-## Verified local release candidate — 2026-10-21
+## Published baseline: v0.1.1
 
-The frozen v0.1.1 source was copied into a **clean directory without `node_modules`, `dist` or local reports**. Its locked dependencies were installed from a previously populated public npm cache. The commands below then ran against that clean copy. The source hashes in [verification.json](evidence/verification.json) identify the actual tested files; they were compared with the delivery source before recording success.
+The v0.1.1 source was verified from a clean Linux copy on Node v24.19.0 with Playwright 1.64.1 / Chrome for Testing 156.0.8078.4. The stored evidence records **47 passed, 0 failed, 0 skipped**, a healthy demo with **6/6 checks passed**, and a deliberately broken demo with **7 expected behavioral failures**.
 
-Environment: **Linux, Node v24.19.0, Playwright 1.64.1, Chrome for Testing 156.0.8078.4**. The Playwright CDN returned an HTML unavailable page in the execution environment, so the exact matching browser archive was obtained from Google's official Chrome for Testing storage endpoint. Its archive MD5 matched the vendor response. This was an environment-specific download substitution, not a change to the browser version or test assertions.
+GitHub-hosted v0.1.1 CI also passed on Node 22 and Node 24 on Ubuntu. See the repository Actions history and the stored logs in `docs/evidence/`.
 
-| Acceptance check | Observed result | Evidence |
-|---|---|---|
-| Clean locked installation | Exit 0, `npm ci --ignore-scripts --offline` with populated cache | [Install log](evidence/clean-install-log.txt) |
-| Strict TypeScript checks | Exit 0 | [Typecheck log](evidence/typecheck-log.txt) |
-| Build and complete named test suite | **47 passed, 0 failed, 0 skipped, 0 cancelled** | [Full test log](evidence/test-log.txt) |
-| Healthy documented demo command | Exit 0, **6/6 checks passed** | [Demo log](evidence/demo-log.txt) |
-| Deliberately broken documented demo | Exit **1**, **7 expected behavioral failures**, no runtime errors | [Broken-demo log](evidence/demo-broken-log.txt) |
-| Catalog schema and evidence statuses | **24 entries valid** | [Catalog log](evidence/catalog-log.txt) |
-| FR desktop, EN mobile and print-media rendering | Six cards, embedded logo loaded offline, no horizontal overflow or HTTP(S) requests | [Layout record](evidence/report-layout.json), [preview](examples/report-preview.png) |
+## v0.1.2 release-candidate verification
 
-The dependency advisory query `npm audit --audit-level=high --json` returned **zero reported vulnerabilities** on 2026-10-21 for this lockfile. Advisory data changes over time; this is not proof that the software has no security defects.
+This candidate changes public GitHub documentation to English-first and expands the hosted matrix to Ubuntu, Windows, and macOS on Node 22 and Node 24. **The matrix configuration itself is not proof of support.** The release may claim an operating system only after the corresponding hosted job completes successfully. Platform-specific tests that cannot run on an OS must be reported as skipped, not counted as passed.
+
+The workflow also runs the healthy demo and a cross-platform verifier that requires the deliberately broken demo to exit exactly 1.
 
 ## What the tests establish
 
-- The healthy login return, language persistence and four export formats actually pass in Chromium.
-- Deliberate wrong redirects, lost locale, fake/truncated PDFs, bad JSON/CSV, invalid UTF-8, empty/BOM-only text and oversized files produce the expected diagnostic outcomes.
-- Missing environment values, unavailable targets, timeouts and disabled checks cannot be counted as success.
-- Unapproved page navigation and HTTP redirect destinations receive **zero requests** in controlled sink tests; an explicitly approved second origin can complete its journey.
-- Unsupported dedicated and shared worker workflows return `WORKER_UNSUPPORTED`. A normal concurrent check remains unaffected by the rejected shared worker.
-- File parsing has tested deadline, prior abort, in-flight abort and subsequent recovery paths. Symlink rejection was tested on Linux.
-- Literal form values and environment secrets are excluded from the generated report in the tested paths.
-- The CLI writes reports in paths containing spaces, preserves existing reports/configuration and returns the documented exit codes.
-- HTML rendering escapes untrusted strings, uses a restrictive content policy and cannot display a green verdict for an inconsistent/unknown result state.
-- The NOMVEX mark embedded in each HTML report matches the standalone brand asset. The configured content policy permits data images without allowing external image services.
+- Healthy login-return, language-persistence, and four export formats pass in Chromium fixtures.
+- Deliberate wrong redirects, lost locale, malformed/truncated files, invalid UTF-8, empty/BOM-only text, and oversized downloads are not green.
+- Missing environment values, unavailable targets, timeout, disabled checks, unsupported workers, and unapproved origins cannot be counted as success.
+- Report output escapes untrusted strings and embeds the NOMVEX mark without external image requests.
+- Download parsing runs in a terminable worker with bounded deadlines and JavaScript heap limits.
 
-Several named tests contain multiple assertions or browser cases. **47 is the named test count**, not a count of real users, tools deployed or supported sites.
+These tests do not constitute an external security certification or prove production NOMVEX integration.
 
-## Council review and corrections
+## Security and behavior corrections already covered by regressions
 
-Implementation, fixture/behavior testing and documentation/license review were separated into parallel work. A separate read-only review then examined the assembled code. Concrete issues found and corrected included:
-
-1. Chromium's own proxy connectivity probe incorrectly failed healthy checks. Its traffic remains blocked; page-attributable blocked requests determine check errors.
-2. JavaScript callers could construct an unknown/inconsistent report and receive a green verdict. Exit status and summary consistency now fail closed.
-3. BOM-only text appeared nonempty in bytes but empty after decoding. It now fails with `DOWNLOAD_TOO_SMALL`.
-4. A dedicated/shared worker could catch an unsupported WebSocket failure and satisfy a page assertion. Such worker workflows now return an explicit unsupported error, with regressions covering both and context isolation.
-5. Heavy parsing could occupy the browser event loop. Parsing now runs in a terminable worker with a deadline and JavaScript heap limits.
-6. Browser startup incorrectly shared the per-check timeout. A controlled two-second startup delay reproduced `BROWSER_UNAVAILABLE` with a 1500 ms check budget before the fix and passed after it. Startup now has a separate 30000 ms limit. A slow-page control still returns `CHECK_TIMEOUT` at its original 500 ms budget; the CLI includes a tracked cold-start regression.
-
-The review found no remaining reproducible critical/high-severity issue in its reviewed paths. It is not an external certification, penetration test of a production platform, or proof of an operating-system sandbox.
-
-## GitHub CI
-
-[The supplied workflow](../.github/workflows/ci.yml) targets GitHub-hosted Ubuntu with Node **22 and 24**. It uses read-only repository permissions and immutable Action references. Consult the workflow run associated with the relevant commit in the repository's **Actions** tab; this local evidence file does not manufacture a hosted-CI result.
-
-The [first hosted run](https://github.com/81haroona/nomvex-toolbox/actions/runs/39571416576) passed Node 24 but exposed one healthy CLI-path failure on Node 22. Its log did not contain the JSON diagnostic, so that historical error cannot be attributed conclusively to startup. The follow-up adds report diagnostics to failed CLI assertions and corrects the independently reproduced startup-budget defect above. Release notes link the actual final hosted result.
+1. Browser-owned connectivity probes no longer incorrectly fail healthy checks.
+2. Unknown/inconsistent JavaScript report states fail closed.
+3. BOM-only text is rejected as empty.
+4. Unsupported dedicated/shared worker workflows return an explicit error instead of allowing a misleading success.
+5. File parsing runs off the browser event loop with a deadline.
+6. Browser startup has a separate budget from per-check execution.
 
 ## Explicit boundaries
 
-- No live NOMVEX production site or private application was tested or modified by this fixture verification.
-- Windows and macOS have not been verified for this release. Node 22 must be assessed from its actual CI run, not inferred from the Node 24 local result.
-- Chromium only. Dedicated/shared workers, WebSockets, service workers, new-window journeys and interactive MFA/CAPTCHA are outside the implemented workflow support.
-- PDF parsing checks structure/pages, not visual rendering, malware, business correctness or text extraction.
-- Download cancellation may have bytes in flight above the acceptance limit. Worker heap limits do not cap all native/ArrayBuffer memory. Use an isolated environment for untrusted targets.
-- The 24 catalog entries are **source-reviewed**. They are not 24 tools installed in a NOMVEX deployment.
-- No npm registry publication, external adoption, star count growth or future maintenance guarantee is implied.
+- No live NOMVEX production site or private application is proven by fixture tests.
+- Chromium is the implemented browser.
+- WebSocket, service-worker, new-window, MFA, and CAPTCHA journeys remain unsupported unless separately implemented and tested.
+- PDF validation checks parseable structure/pages, not visual fidelity, malware, business correctness, or text extraction.
+- The 24 catalog entries are source-reviewed candidates, not 24 deployed NOMVEX integrations.
+- npm registry publication, external adoption, star growth, and future maintenance are not implied.
 
 ## Reproduce
 
-Follow [CONFIGURATION.md](CONFIGURATION.md) and [RELEASE.md](RELEASE.md). Use a current writable npm cache and install the browser matching the lockfile. `NOMVEX_BROWSER_EXECUTABLE` was used only to select the exact separately downloaded browser in this execution environment. Do not replace a failed test with a skip or treat a browser startup error as a successful negative test.
+Follow [CONFIGURATION.md](CONFIGURATION.md) and [RELEASE.md](RELEASE.md). Do not replace a failed test with a skip merely to make a release green.
