@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { extractGitHubRepos, isRecognizedOpenSourceLicense, inferCategory, buildIndexedEntry } from '../scripts/open-source-lib.mjs';
+import { extractGitHubRepos, isRecognizedOpenSourceLicense, inferCategory, buildIndexedEntry, graphqlNodeToMetadata } from '../scripts/open-source-lib.mjs';
 
 test('extractGitHubRepos canonicalizes repository links and deduplicates deep URLs', () => {
   const repos = extractGitHubRepos([
@@ -35,4 +35,30 @@ test('indexed entries remain reference-only until separately tested', () => {
   assert.equal(entry.integration.tested, false);
   assert.equal(entry.integration.installRecipe, null);
   assert.deepEqual(entry.evidence.sourceFeeds, ['feed']);
+});
+
+
+test('GraphQL repository metadata is normalized without changing evidence state', () => {
+  const meta = graphqlNodeToMetadata({
+    name: 'demo',
+    nameWithOwner: 'owner/demo',
+    description: 'Agent framework',
+    url: 'https://github.com/owner/demo',
+    isPrivate: false,
+    isArchived: false,
+    isFork: false,
+    pushedAt: '2026-10-20T00:00:00Z',
+    stargazerCount: 12,
+    forkCount: 3,
+    defaultBranchRef: { name: 'main' },
+    licenseInfo: { spdxId: 'Apache-2.0' },
+    primaryLanguage: { name: 'Python' },
+    repositoryTopics: { nodes: [{ topic: { name: 'agents' } }, { topic: { name: 'mcp' } }] }
+  });
+  assert.equal(meta.full_name, 'owner/demo');
+  assert.equal(meta.license.spdx_id, 'Apache-2.0');
+  assert.equal(meta.language, 'Python');
+  assert.deepEqual(meta.topics, ['agents', 'mcp']);
+  assert.equal(meta.archived, false);
+  assert.equal(meta.fork, false);
 });

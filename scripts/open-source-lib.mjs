@@ -89,3 +89,24 @@ export function buildIndexedEntry(metadata, sourceFeeds, observedAt) {
     }
   };
 }
+
+
+export function graphqlNodeToMetadata(node) {
+  if (!node?.nameWithOwner || !node?.name || !node?.url) throw new TypeError('Incomplete GitHub GraphQL repository metadata.');
+  return {
+    name: node.name,
+    full_name: node.nameWithOwner,
+    description: node.description ?? null,
+    html_url: node.url,
+    default_branch: node.defaultBranchRef?.name ?? null,
+    license: { spdx_id: node.licenseInfo?.spdxId ?? null },
+    language: node.primaryLanguage?.name ?? null,
+    topics: (node.repositoryTopics?.nodes ?? []).map(item => item?.topic?.name).filter(Boolean),
+    stargazers_count: Number.isInteger(node.stargazerCount) ? node.stargazerCount : null,
+    forks_count: Number.isInteger(node.forkCount) ? node.forkCount : null,
+    pushed_at: node.pushedAt ?? null,
+    archived: Boolean(node.isArchived),
+    fork: Boolean(node.isFork),
+    private: Boolean(node.isPrivate)
+  };
+}
