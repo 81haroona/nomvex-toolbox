@@ -1,26 +1,24 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.2-rc",
+  "version": "0.2.0-rc",
   "date": "2026-10-21",
+  "repository": "https://github.com/81haroona/nomvex-toolbox",
+  "branch": "open-source-registry-v020",
   "completed": [
-    "Web Checks CLI/library with strict configuration and isolated browser checks",
-    "Localized HTML and JSON report output",
-    "Synthetic healthy and deliberately broken fixtures",
-    "24 source-reviewed catalog entries",
-    "License, contribution, security and release documentation",
-    "Existing NOMVEX mark reused in repository and embedded offline reports",
-    "Public GitHub documentation changed to English-first",
-    "Cross-platform GitHub CI matrix configured for Ubuntu, Windows and macOS on Node 22/24",
-    "Healthy and deliberately-broken demos added to hosted verification",
-    "Catalog schema v2 converted public catalog descriptions and notes to English-only"
+    "Registry architecture and fail-closed license policy",
+    "Seven curated discovery feeds including a verified MCP feed",
+    "79 NOMVEX core seed repositories",
+    "768 deduplicated discovery candidates captured",
+    "Automated sync/validation scripts",
+    "Combined catalog CLI design",
+    "Scheduled data-only catalog refresh workflow",
+    "Open-source registry parser tests"
   ],
   "pendingVerification": [
-    "Actual v0.1.2 hosted matrix results for the current PR head",
-    "Any platform-specific skipped tests must be reported explicitly",
-    "Actual authorized NOMVEX staging integrations",
-    "npm registry publication",
-    "external adoption or star growth"
-  ],
-  "repository": "https://github.com/81haroona/nomvex-toolbox",
-  "branch": "cross-platform-0.1.2"
+    "Cross-platform CI for registry engine",
+    "Full authenticated sync on main",
+    "Exact indexed/quarantine counts after full sync",
+    "Data-only refresh PR validation and merge",
+    "v0.2.0 release after final verification"
+  ]
 }

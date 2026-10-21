@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-21",
+  "policy": {
+    "description": "Feeds are used only to discover canonical GitHub repository URLs. NOMVEX does not copy upstream source code or list text into the registry.",
+    "inclusion": "A discovered repository is admitted to the open-source index only when GitHub metadata reports a recognized open-source SPDX identifier, the repository is public, non-archived, and not a fork.",
+    "unverified": "Missing, NOASSERTION, or non-open-source license metadata is quarantined instead of being described as open source."
+  },
+  "sources": [
+    {
+      "id": "ai-agent-frameworks",
+      "repository": "aglio-lab/ai-agent-frameworks",
+      "kind": "curated-list",
+      "defaultCategory": "agents"
+    },
+    {
+      "id": "awesome-llm-apps",
+      "repository": "Shubhamsaboo/awesome-llm-apps",
+      "kind": "curated-list",
+      "defaultCategory": "agents"
+    },
+    {
+      "id": "agentic-open-source-tools",
+      "repository": "samaybhavsar/awesome-agentic-opensource-tools",
+      "kind": "curated-list",
+      "defaultCategory": "agents"
+    },
+    {
+      "id": "awesome-mcp-servers",
+      "repository": "punkpeye/awesome-mcp-servers",
+      "kind": "curated-list",
+      "defaultCategory": "mcp"
+    },
+    {
+      "id": "awesome-ai-agents",
+      "repository": "e2b-dev/awesome-ai-agents",
+      "kind": "curated-list",
+      "defaultCategory": "agents"
+    },
+    {
+      "id": "awesome-agents",
+      "repository": "kyrolabs/awesome-agents",
+      "kind": "curated-list",
+      "defaultCategory": "agents"
+    },
+    {
+      "id": "verified-awesome-mcp-servers",
+      "repository": "Sagargupta16/awesome-mcp-servers",
+      "kind": "curated-list",
+      "defaultCategory": "mcp"
+    }
+  ]
+}

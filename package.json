@@ -1,7 +1,7 @@
 {
   "name": "@nomvex/web-checks",
-  "version": "0.1.2",
-  "description": "Evidence-driven Playwright checks for redirects, language persistence, and exported files.",
+  "version": "0.2.0",
+  "description": "NOMVEX open-source developer toolbox: verified Web Checks plus a continuously refreshed registry of open-source tools and agents.",
   "type": "module",
   "license": "Apache-2.0",
   "engines": {
@@ -38,9 +38,10 @@
     "demo:broken": "npm run build && node scripts/demo.mjs --broken",
     "fixture": "node examples/fixture.mjs",
     "catalog": "node scripts/catalog.mjs",
-    "catalog:check": "node scripts/validate-catalog.mjs",
+    "catalog:check": "node scripts/validate-catalog.mjs && node scripts/validate-open-source.mjs",
     "prepack": "npm run build",
-    "verify:broken-demo": "node scripts/verify-broken-demo.mjs"
+    "verify:broken-demo": "node scripts/verify-broken-demo.mjs",
+    "catalog:sync": "node scripts/sync-open-source.mjs"
   },
   "dependencies": {
     "csv-parse": "7.0.3",
@@ -69,6 +70,13 @@
     "localization",
     "downloads",
     "ci",
-    "testing-tools"
+    "testing-tools",
+    "open-source",
+    "ai-agents",
+    "mcp",
+    "rag",
+    "llm-tools",
+    "agent-frameworks",
+    "developer-tools"
   ]
 }

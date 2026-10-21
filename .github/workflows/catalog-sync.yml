@@ -1,0 +1,53 @@
+name: Open-source catalog sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * *'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: open-source-catalog-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Refresh public open-source index
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run catalog:sync
+      - run: npm run catalog:check
+      - run: node --test tests/open-source-registry.test.mjs
+      - name: Create or update data-only pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if git diff --quiet -- catalog/open-source-index.json catalog/open-source-quarantine.json; then
+            echo "No catalog changes."
+            exit 0
+          fi
+          branch="automation/open-source-catalog"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add catalog/open-source-index.json catalog/open-source-quarantine.json
+          git commit -m "chore: refresh open-source registry"
+          git push --force origin "$branch"
+          if ! gh pr view "$branch" >/dev/null 2>&1; then
+            gh pr create --base main --head "$branch" --title "chore: refresh open-source registry" --body "Automated data-only refresh. The sync admits only public, non-archived, non-fork repositories with allowlisted open-source SPDX metadata. No upstream code is executed or vendored."
+          fi

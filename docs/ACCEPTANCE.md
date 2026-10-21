@@ -43,3 +43,10 @@ These tests do not constitute an external security certification or prove produc
 ## Reproduce
 
 Follow [CONFIGURATION.md](CONFIGURATION.md) and [RELEASE.md](RELEASE.md). Do not replace a failed test with a skip merely to make a release green.
+
+
+## v0.2.0 open-source registry candidate
+
+The candidate adds a machine-indexed open-source registry without executing or vendoring discovered projects. Acceptance requires: parser tests; fail-closed SPDX filtering; quarantine for ambiguous licenses; combined catalog search; cross-platform Web Checks regression tests; and a full authenticated GitHub sync after the registry engine lands on main.
+
+A generated `indexed` record is not equivalent to `source-reviewed`, tested, or integrated.

@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "offset": 0,
+  "limit": 8,
+  "processed": 8,
+  "indexed": [
+    {
+      "id": "0-ai-ug-cate",
+      "name": "cate",
+      "fullName": "0-AI-UG/cate",
+      "description": "An infinite zoomable canvas for coding. Editor, terminal, and browser panels in a spatial workspace.",
+      "category": "browser-agent",
+      "source": "https://github.com/0-AI-UG/cate",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/0-AI-UG/cate/license"
+      },
+      "github": {
+        "language": "TypeScript",
+        "topics": [],
+        "stars": 2196,
+        "forks": 142,
+        "pushedAt": "2026-10-21T13:49:40Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:05.047Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/0-AI-UG/cate",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "0xplaygrounds-rig",
+      "name": "rig",
+      "fullName": "0xPlaygrounds/rig",
+      "description": "⚙️🦀 Build modular and scalable LLM Applications in Rust",
+      "category": "agent-framework",
+      "source": "https://github.com/0xPlaygrounds/rig",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/0xPlaygrounds/rig/license"
+      },
+      "github": {
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "ai",
+          "artificial-intelligence",
+          "automation",
+          "generative-ai",
+          "large-language-model",
+          "llm",
+          "llmops",
+          "rust",
+          "scalable-ai"
+        ],
+        "stars": 8932,
+        "forks": 991,
+        "pushedAt": "2026-10-21T17:13:58Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:05.047Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/0xPlaygrounds/rig",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "101dotxyz-gpteam",
+      "name": "GPTeam",
+      "fullName": "101dotxyz/GPTeam",
+      "description": "GPTeam: An open-source multi-agent simulation",
+      "category": "agent-framework",
+      "source": "https://github.com/101dotxyz/GPTeam",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/101dotxyz/GPTeam/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "agents",
+          "ai",
+          "autogpt",
+          "gpt-4"
+        ],
+        "stars": 1724,
+        "forks": 251,
+        "pushedAt": "2026-10-15T13:56:08Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:05.047Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-ai-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/101dotxyz/GPTeam",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "21st-dev-magic-mcp",
+      "name": "magic-mcp",
+      "fullName": "21st-dev/magic-mcp",
+      "description": "It's like v0, but in your Cursor / Claude Code / Windsurf: search 10,000+ React/Tailwind components, generate new UI with AI, and publish your own — right from your editor. Magic MCP is now the 21st MCP; this package keeps old configs working. Setup: 21st.dev/mcp",
+      "category": "mcp",
+      "source": "https://github.com/21st-dev/magic-mcp",
+      "license": {
+        "code": "ISC",
+        "source": "https://api.github.com/repos/21st-dev/magic-mcp/license"
+      },
+      "github": {
+        "language": "TypeScript",
+        "topics": [
+          "21st",
+          "claude",
+          "cursor",
+          "mcp",
+          "model-context-protocol",
+          "react",
+          "tailwindcss",
+          "ui-components"
+        ],
+        "stars": 6167,
+        "forks": 503,
+        "pushedAt": "2026-09-09T20:38:22Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:05.047Z",
+      "evidence": {
+        "sourceFeeds": [
+          "verified-awesome-mcp-servers"
+        ],
+        "githubApi": "https://api.github.com/repos/21st-dev/magic-mcp",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "2captcha-2captcha-mcp",
+      "name": "2captcha-mcp",
+      "fullName": "2captcha/2captcha-mcp",
+      "description": "2Captcha MCP server for AI agents with web search, web scraping, browser automation, captcha solving, and scalable web data collection.",
+      "category": "mcp",
+      "source": "https://github.com/2captcha/2captcha-mcp",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/2captcha/2captcha-mcp/license"
+      },
+      "github": {
+        "language": "JavaScript",
+        "topics": [
+          "2captcha-mcp",
+          "ai-agents",
+          "ai-integrations",
+          "anti-bot-detection",
+          "browser-automation-mcp",
+          "browser-mcp",
+          "data-collection",
+          "data-extraction",
+          "gemini-cli-extension",
+          "headless-browser-mcp",
+          "mcp",
+          "mcp-scraper",
+          "mcp-server",
+          "mcp-web-browser",
+          "scraping",
+          "scraping-mcp-server",
+          "scraping-tools",
+          "web-mcp",
+          "web-mcp-server",
+          "web-search-mcp"
+        ],
+        "stars": 31,
+        "forks": 1,
+        "pushedAt": "2026-10-13T23:17:32Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:05.047Z",
+      "evidence": {
+        "sourceFeeds": [
+          "verified-awesome-mcp-servers"
+        ],
+        "githubApi": "https://api.github.com/repos/2captcha/2captcha-mcp",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "2fastlabs-agent-squad",
+      "name": "agent-squad",
+      "fullName": "2FastLabs/agent-squad",
+      "description": "Flexible and powerful framework for managing multiple AI agents and handling complex conversations",
+      "category": "agent-framework",
+      "source": "https://github.com/2FastLabs/agent-squad",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/2FastLabs/agent-squad/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "agentic-ai",
+          "agents",
+          "ai-agents",
+          "ai-agents-framework",
+          "anthropic",
+          "anthropic-claude",
+          "aws",
+          "aws-bedrock",
+          "aws-cdk",
+          "aws-lambda",
+          "chatbot",
+          "framework",
+          "generative-ai",
+          "machine-learning",
+          "openai",
+          "openaiapi",
+          "orchestrator",
+          "python",
+          "serverless",
+          "typescript"
+        ],
+        "stars": 7794,
+        "forks": 743,
+        "pushedAt": "2026-10-08T09:03:31Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:05.047Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/2FastLabs/agent-squad",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "54yyyu-zotero-mcp",
+      "name": "zotero-mcp",
+      "fullName": "54yyyu/zotero-mcp",
+      "description": "Zotero MCP: Connects your Zotero research library with Claude and other AI assistants via the Model Context Protocol to discuss papers, get summaries, analyze citations, and more.",
+      "category": "mcp",
+      "source": "https://github.com/54yyyu/zotero-mcp",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/54yyyu/zotero-mcp/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "ai-agent",
+          "chatgpt",
+          "claude",
+          "claude-code",
+          "mcp",
+          "mcp-server",
+          "model-context-protocol",
+          "research-tools",
+          "semantic-search",
+          "zotero",
+          "zotero-plugin"
+        ],
+        "stars": 5509,
+        "forks": 441,
+        "pushedAt": "2026-10-16T21:34:45Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:05.047Z",
+      "evidence": {
+        "sourceFeeds": [
+          "verified-awesome-mcp-servers"
+        ],
+        "githubApi": "https://api.github.com/repos/54yyyu/zotero-mcp",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    }
+  ],
+  "quarantine": [
+    {
+      "fullName": "0xpayne/gpt-migrate",
+      "source": "https://github.com/0xpayne/gpt-migrate",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-ai-agents"
+      ],
+      "observedAt": "2026-10-21T17:37:05.047Z"
+    }
+  ]
+}

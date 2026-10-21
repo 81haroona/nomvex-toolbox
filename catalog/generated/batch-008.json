@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 1,
+  "offset": 8,
+  "limit": 15,
+  "processed": 15,
+  "indexed": [
+    {
+      "id": "5dive-ai-5dive",
+      "name": "5dive",
+      "fullName": "5dive-ai/5dive",
+      "description": "Run a company of AI agents on a server you own. Spin up named agents (claude, codex, pi…), put them on an org chart with a shared backlog, let them hand off work and ping your phone only when a human must decide. MIT.",
+      "category": "agent-framework",
+      "source": "https://github.com/5dive-ai/5dive",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/5dive-ai/5dive/license"
+      },
+      "github": {
+        "language": "Shell",
+        "topics": [
+          "agent-loops",
+          "agent-orchestration",
+          "agent-runtime",
+          "agent-to-agent",
+          "ai-agents",
+          "ai-company",
+          "ai-team",
+          "ai-workforce",
+          "autonomous-agents",
+          "claude-code",
+          "grokbot",
+          "human-in-the-loop",
+          "long-running-agents",
+          "loop-engineering",
+          "multi-agent",
+          "multi-agent-orchestration",
+          "one-person-company",
+          "persistent-agents",
+          "self-hosted",
+          "zero-human-company"
+        ],
+        "stars": 73,
+        "forks": 11,
+        "pushedAt": "2026-10-21T13:30:50Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/5dive-ai/5dive",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "777genius-agent-teams-ai",
+      "name": "agent-teams-ai",
+      "fullName": "777genius/agent-teams-ai",
+      "description": "You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode/Cursor/Grok/GitHub/Kiro/Z.AI/Xiaomi/MiniMax/Kimi(300+ models, 200+ LLM providers, free models no auth) Build your AI company with multiple teams",
+      "category": "mcp",
+      "source": "https://github.com/777genius/agent-teams-ai",
+      "license": {
+        "code": "AGPL-3.0",
+        "source": "https://api.github.com/repos/777genius/agent-teams-ai/license"
+      },
+      "github": {
+        "language": "TypeScript",
+        "topics": [
+          "agent-orchestration",
+          "agent-teams",
+          "agent-to-agent",
+          "ai-agents",
+          "claude",
+          "claude-code",
+          "codex",
+          "coding-agent",
+          "cursor",
+          "developer-tools",
+          "electron",
+          "github-copilot",
+          "kiro",
+          "llm",
+          "mcp-server",
+          "multi-agent",
+          "multi-agent-systems",
+          "openai",
+          "opencode",
+          "typescript"
+        ],
+        "stars": 2286,
+        "forks": 377,
+        "pushedAt": "2026-10-21T17:21:20Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/777genius/agent-teams-ai",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "a2aproject-a2a",
+      "name": "A2A",
+      "fullName": "a2aproject/A2A",
+      "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
+      "category": "mcp",
+      "source": "https://github.com/a2aproject/A2A",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/a2aproject/A2A/license"
+      },
+      "github": {
+        "language": "Shell",
+        "topics": [
+          "a2a",
+          "a2a-mcp",
+          "a2a-protocol",
+          "a2a-server",
+          "agents",
+          "generative-ai",
+          "linux-foundation"
+        ],
+        "stars": 26232,
+        "forks": 2677,
+        "pushedAt": "2026-10-21T15:58:48Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/a2aproject/A2A",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aaif-goose-goose",
+      "name": "goose",
+      "fullName": "aaif-goose/goose",
+      "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+      "category": "mcp",
+      "source": "https://github.com/aaif-goose/goose",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/aaif-goose/goose/license"
+      },
+      "github": {
+        "language": "Rust",
+        "topics": [
+          "acp",
+          "ai",
+          "ai-agents",
+          "mcp"
+        ],
+        "stars": 55499,
+        "forks": 6412,
+        "pushedAt": "2026-10-21T17:11:24Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks",
+          "verified-awesome-mcp-servers"
+        ],
+        "githubApi": "https://api.github.com/repos/aaif-goose/goose",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aakashadesara-ctop",
+      "name": "ctop",
+      "fullName": "aakashadesara/ctop",
+      "description": "CTOP - Interactive Process Viewer for AI Coding Agents",
+      "category": "coding-agent",
+      "source": "https://github.com/aakashadesara/ctop",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/aakashadesara/ctop/license"
+      },
+      "github": {
+        "language": "JavaScript",
+        "topics": [
+          "ai-agents",
+          "claude",
+          "claude-ai",
+          "claude-code",
+          "codex",
+          "codex-cli",
+          "coding-agent",
+          "terminal-based",
+          "tui"
+        ],
+        "stars": 93,
+        "forks": 10,
+        "pushedAt": "2026-09-26T22:55:08Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/aakashadesara/ctop",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aannoo-hcom",
+      "name": "hcom",
+      "fullName": "aannoo/hcom",
+      "description": "Let AI agents message, watch, and spawn each other across terminals. Claude Code, Codex, Antigravity CLI, Cursor CLI, OpenCode, Kilo, Pi, Kimi",
+      "category": "agent-framework",
+      "source": "https://github.com/aannoo/hcom",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/aannoo/hcom/license"
+      },
+      "github": {
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "ai",
+          "ai-agents",
+          "ai-tools",
+          "antigravity",
+          "automation",
+          "claude",
+          "claude-code",
+          "claude-code-hooks",
+          "cli",
+          "codex",
+          "communication",
+          "cursor-ai",
+          "developer-tools",
+          "multi-agent",
+          "opencode",
+          "orchestration",
+          "pi-coding-agent",
+          "terminal"
+        ],
+        "stars": 584,
+        "forks": 92,
+        "pushedAt": "2026-10-21T03:44:10Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/aannoo/hcom",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "actionbook-actionbook",
+      "name": "actionbook",
+      "fullName": "actionbook/actionbook",
+      "description": "Let your AI agent get the sources behind logins and paywalls.",
+      "category": "browser-agent",
+      "source": "https://github.com/actionbook/actionbook",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/actionbook/actionbook/license"
+      },
+      "github": {
+        "language": "Rust",
+        "topics": [
+          "ai-agents",
+          "browser-automation",
+          "rust",
+          "skills"
+        ],
+        "stars": 1620,
+        "forks": 121,
+        "pushedAt": "2026-10-19T08:20:05Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/actionbook/actionbook",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aden-hive-hive",
+      "name": "hive",
+      "fullName": "aden-hive/hive",
+      "description": "Multi-Agent Harness for Production AI",
+      "category": "agent-framework",
+      "source": "https://github.com/aden-hive/hive",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/aden-hive/hive/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "agent",
+          "agent-framework",
+          "agent-skills",
+          "anthropic",
+          "automation",
+          "autonomous-agents",
+          "claude",
+          "harness",
+          "harness-engineering",
+          "human-in-the-loop",
+          "openai",
+          "python",
+          "self-hosted",
+          "self-improving"
+        ],
+        "stars": 11113,
+        "forks": 5644,
+        "pushedAt": "2026-10-19T19:36:02Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/aden-hive/hive",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "adyen-adyen-mcp",
+      "name": "adyen-mcp",
+      "fullName": "Adyen/adyen-mcp",
+      "description": "Typescript library for integrating Adyen APIs via an MCP server",
+      "category": "mcp",
+      "source": "https://github.com/Adyen/adyen-mcp",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/Adyen/adyen-mcp/license"
+      },
+      "github": {
+        "language": "TypeScript",
+        "topics": [
+          "adyen",
+          "lllm",
+          "llm-agents",
+          "mcp",
+          "mcp-server",
+          "typescript"
+        ],
+        "stars": 27,
+        "forks": 16,
+        "pushedAt": "2026-10-21T12:16:03Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "verified-awesome-mcp-servers"
+        ],
+        "githubApi": "https://api.github.com/repos/Adyen/adyen-mcp",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "aeonfun-aeon",
+      "name": "aeon",
+      "fullName": "aeonfun/aeon",
+      "description": "The most autonomous AI agent framework: runs unattended on GitHub Actions, self-healing skills, drives Claude Code, Grok, Codex & more. No approval loops. Configure once, forget forever.",
+      "category": "mcp",
+      "source": "https://github.com/aeonfun/aeon",
+      "license": {
+        "code": "MIT",
+        "source": "https://api.github.com/repos/aeonfun/aeon/license"
+      },
+      "github": {
+        "language": "JavaScript",
+        "topics": [
+          "agent-framework",
+          "agents",
+          "ai",
+          "ai-agents",
+          "anthropic",
+          "automation",
+          "autonomous-agents",
+          "claude",
+          "claude-code",
+          "devops",
+          "github-actions",
+          "harness",
+          "llm",
+          "mcp"
+        ],
+        "stars": 781,
+        "forks": 292,
+        "pushedAt": "2026-10-21T14:57:03Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/aeonfun/aeon",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "ag2ai-ag2",
+      "name": "ag2",
+      "fullName": "ag2ai/ag2",
+      "description": "AG2 (formerly AutoGen): The Open-Source AgentOS.Join us at: https://discord.gg/sNGSwQME3x",
+      "category": "mcp",
+      "source": "https://github.com/ag2ai/ag2",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/ag2ai/ag2/license"
+      },
+      "github": {
+        "language": "Python",
+        "topics": [
+          "a2a",
+          "ag2",
+          "agent-framework",
+          "agentic",
+          "agentic-ai",
+          "ai",
+          "ai-agents-framework",
+          "aiagents",
+          "genai",
+          "llm",
+          "llms",
+          "mcp",
+          "multi-agent",
+          "multi-agent-system",
+          "open-source",
+          "python"
+        ],
+        "stars": 5008,
+        "forks": 754,
+        "pushedAt": "2026-10-21T16:59:29Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks",
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/ag2ai/ag2",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "agent-field-agentfield",
+      "name": "agentfield",
+      "fullName": "Agent-Field/agentfield",
+      "description": "Build, run and scale AI agents like API and microservices",
+      "category": "agent-framework",
+      "source": "https://github.com/Agent-Field/agentfield",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/Agent-Field/agentfield/license"
+      },
+      "github": {
+        "language": "Go",
+        "topics": [
+          "agent",
+          "agent-auth",
+          "agent-authentication",
+          "agent-indentity",
+          "agent-scaling",
+          "agentic-ai",
+          "ai",
+          "ai-backend",
+          "aiagent",
+          "anthropic",
+          "cloud-native",
+          "genai",
+          "go",
+          "kubernetes",
+          "llm",
+          "multiagent",
+          "multiagent-systems",
+          "python",
+          "rag",
+          "typescript"
+        ],
+        "stars": 2615,
+        "forks": 433,
+        "pushedAt": "2026-10-20T14:10:41Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "awesome-agents"
+        ],
+        "githubApi": "https://api.github.com/repos/Agent-Field/agentfield",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    },
+    {
+      "id": "agent-network-protocol-agentnetworkprotocol",
+      "name": "AgentNetworkProtocol",
+      "fullName": "agent-network-protocol/AgentNetworkProtocol",
+      "description": "AgentNetworkProtocol(ANP) is an open source protocol for agent communication. Our vision is to define how agents connect with each other, building an open, secure, and efficient collaboration network for billions of intelligent agents.",
+      "category": "agent-framework",
+      "source": "https://github.com/agent-network-protocol/AgentNetworkProtocol",
+      "license": {
+        "code": "Apache-2.0",
+        "source": "https://api.github.com/repos/agent-network-protocol/AgentNetworkProtocol/license"
+      },
+      "github": {
+        "language": "HTML",
+        "topics": [
+          "agent",
+          "communication",
+          "protocol"
+        ],
+        "stars": 1457,
+        "forks": 107,
+        "pushedAt": "2026-10-15T07:59:01Z",
+        "archived": false
+      },
+      "status": "indexed",
+      "observedAt": "2026-10-21T17:37:47.541Z",
+      "evidence": {
+        "sourceFeeds": [
+          "ai-agent-frameworks"
+        ],
+        "githubApi": "https://api.github.com/repos/agent-network-protocol/AgentNetworkProtocol",
+        "licenseFromGitHubMetadata": true,
+        "executedTest": false
+      },
+      "integration": {
+        "mode": "reference",
+        "tested": false,
+        "installRecipe": null
+      }
+    }
+  ],
+  "quarantine": [
+    {
+      "fullName": "accomplish-ai/coworker",
+      "source": "https://github.com/accomplish-ai/coworker",
+      "reason": "license-missing",
+      "license": null,
+      "sourceFeeds": [
+        "awesome-llm-apps"
+      ],
+      "observedAt": "2026-10-21T17:37:47.541Z"
+    },
+    {
+      "fullName": "activepieces/activepieces",
+      "source": "https://github.com/activepieces/activepieces",
+      "reason": "license-not-allowlisted:NOASSERTION",
+      "license": "NOASSERTION",
+      "sourceFeeds": [
+        "nomvex-core-seeds"
+      ],
+      "observedAt": "2026-10-21T17:37:47.541Z"
+    }
+  ]
+}

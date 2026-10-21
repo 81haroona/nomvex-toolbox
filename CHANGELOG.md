@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.0 — 2026-10-21
+
+- Add a continuously refreshed open-source tools and agents registry.
+- Discover repositories from curated agent/MCP lists plus NOMVEX core seeds.
+- Fail closed on missing, ambiguous, archived, forked, or non-allowlisted license metadata.
+- Keep indexed projects reference-only until separately tested.
+- Add combined catalog search, source/metadata provenance, quarantine output, parser tests, and a scheduled data-only refresh PR.
+- Preserve Web Checks and its cross-platform verification as the first original NOMVEX utility.
+
+
 ## 0.1.2 — 2026-10-21
 
 - Make the public GitHub presentation and primary documentation English-first.

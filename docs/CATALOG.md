@@ -25,3 +25,14 @@ npm run catalog:check
 ```
 
 That command validates local schema and evidence declarations. It does not perform a network audit, legal opinion, vulnerability assessment, or execution test of every listed tool.
+
+
+## Generated open-source registry
+
+The generated registry is intentionally stricter than a generic awesome list. It discovers GitHub repositories from the configured source feeds and core seeds, then admits only public, non-archived, non-fork repositories whose GitHub metadata exposes an allowlisted open-source SPDX identifier.
+
+An `indexed` entry means **discovered and license-metadata checked**. It does not mean installed, executed, secure, production-ready, compatible with NOMVEX, or cleared for every dependency/model/data license. Those claims require separate evidence.
+
+Missing or ambiguous license metadata, custom/source-available licenses, archived repositories, forks, and metadata failures go to `open-source-quarantine.json`. The sync never executes or vendors upstream project code.
+
+The scheduled sync opens a data-only pull request. It never auto-merges an upstream tool into production.

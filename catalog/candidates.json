@@ -1,0 +1,4752 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-21T17:34:05.537Z",
+  "count": 768,
+  "candidates": [
+    {
+      "repo": "0-AI-UG/cate",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "0xpayne/gpt-migrate",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "0xPlaygrounds/rig",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "101dotxyz/GPTeam",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "21st-dev/magic-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "2captcha/2captcha-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "2FastLabs/agent-squad",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "54yyyu/zotero-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "5dive-ai/5dive",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "777genius/agent-teams-ai",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "a2aproject/A2A",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "aaif-goose/goose",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "aakashadesara/ctop",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "aannoo/hcom",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "accomplish-ai/coworker",
+      "feeds": [
+        "awesome-llm-apps"
+      ]
+    },
+    {
+      "repo": "actionbook/actionbook",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "activepieces/activepieces",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "aden-hive/hive",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Adyen/adyen-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "aeonfun/aeon",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "ag2ai/ag2",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Agent-Field/agentfield",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "agent-network-protocol/AgentNetworkProtocol",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "AgentDeskAI/browser-tools-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AgentDock/AgentDock",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "agenticenv/agent-sdk-go",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "agentlas-ai/Agentlas-OS",
+      "feeds": [
+        "awesome-agents",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AgentOps-AI/agentops",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "agentrhq/webcmd",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "agentscope-ai/agentscope",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "agentset-ai/agentset",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "AgentsMesh/AgentsMesh",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "agiresearch/OpenAGI",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "aglio-lab/ai-agent-frameworks",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "aglio-lab/ai-evaluation-tools",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "aglio-lab/ai-governance-tools",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "aglio-lab/ai-red-teaming-tools",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "aglio-lab/context-engineering-tools",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "aglio-lab/llm-fine-tuning-tools",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "aglio-lab/llm-observability-tools",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "aglio-lab/rag-retrieval-tools",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "agno-agi/agno",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "agntcy/oasf",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "ahujasid/ableton-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ahujasid/mcp-for-blender",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ai-blueteam/http-detection-agent",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Aident-AI/aident-skill",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Aider-AI/aider",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "airtai/fastagency",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "aiwaves-cn/agents",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "ajhous44/cody",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "akshayaggarwal99/jarvis-ai-assistant",
+      "feeds": [
+        "awesome-llm-apps"
+      ]
+    },
+    {
+      "repo": "Alex2Yang97/yahoo-finance-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "alibaba/open-code-review",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "All-Hands-AI/OpenHands",
+      "feeds": [
+        "agentic-open-source-tools",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "AlmanacCode/codealmanac",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "alondmnt/joplin-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "alpacahq/alpaca-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AltoRank/altorank",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AminForou/mcp-gsc",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "amirrezasalimi/friday",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "ANative-Lab/EvoAgentX",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "ankimcp/anki-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AnkleBreaker-Studio/unity-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "feeds": [
+        "awesome-agents",
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "anthropics/claude-agent-sdk-python",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "AntonOsika/gpt-engineer",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "antvis/mcp-server-chart",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "anyproto/anytype-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "apache/doris-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "apache/iotdb-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "apify/apify-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "apify/crawlee",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "aplaceforallmystuff/mcp-arr",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "apollographql/apollo-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "appium/appium-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "apps/use-tusk",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "appwrite/appwrite",
+      "feeds": [
+        "agentic-open-source-tools"
+      ]
+    },
+    {
+      "repo": "appwrite/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "arabold/docs-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "arc53/DocsGPT",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "ArcadeAI/arcade-mcp",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "archcore-ai/archcore",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "argoproj-labs/mcp-for-argocd",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Arize-ai/openinference",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "Arize-ai/phoenix",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "artokun/comfyui-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ASCIT31/Dark-Moon",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "assafelovic/gpt-researcher",
+      "feeds": [
+        "agentic-open-source-tools",
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "ast-grep/ast-grep-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AtomicBot-ai/atomic-agent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "auroracapital/upres-cli",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AutoPackAI/beebot",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "aws/amazon-q-developer-cli",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "awslabs/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "aymenfurter/microagents",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "azeemkafridi/bulkpublish-api",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "azmartone67/dchub-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "baidu-baige/LoongFlow",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "basementstudio/xmcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "basicmachines-co/basic-memory",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "benborla/mcp-server-mysql",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "bentoml/BentoML",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "bgauryy/octocode",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "biobootloader/mentat",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "bitwarden/mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "blazickjp/arxiv-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "blob42/Instrukt",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "BloopAI/bloop",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "BloopAI/vibe-kanban",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "botpress/botpress",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "brave/brave-search-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "brekkylab/ailoy",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "brianbooms/brianbooms-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "brightdata/brightdata-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "browser-use/browser-use",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "browserbase/stagehand",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "browserstack/mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "buildkite/buildkite-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "bulutarkan/mac-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "busabase/busabase",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "BuyWhere/buywhere-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "buzhidaosm/muse-cli-bridge",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "bytebase/dbhub",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "cablate/mcp-google-map",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "calcom/cal.com",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "camel-ai/camel",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-ai-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "Canner/WrenAI",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "capoomgit/houdini-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "caura-ai/caura",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "cbcoutinho/nextcloud-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "CesiumGS/cesium-ai-integrations",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "chakkaradeep/pyCodeAGI",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Charlie85270/Dorothy",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "chatboxai/chatbox",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "CherryHQ/cherry-studio",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "chigwell/telegram-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ChiR24/Unreal_mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "chroma-core/chroma",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "CircleCI-Public/mcp-server-circleci",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ckreiling/mcp-server-docker",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ClickHouse/mcp-clickhouse",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "cline/cline",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "cloudflare/mcp-server-cloudflare",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "cloudflare/sandbox-sdk",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "cluefinch/mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "codapult/codapult-guard",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "codefuse-ai/codefuse-chatbot",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "codeintegrity-ai/mutahunter",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Coding-Solo/godot-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "coinbase/agentkit",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "comet-ml/opik",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "comfyanonymous/ComfyUI",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "commercetools/mcp-essentials",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "CommonNinja/sendraven-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "composable-models/llm_multiagent_debate",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "ComposioHQ/composio",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "compozy/compozy",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "confident-ai/deepeval",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "confident-ai/deepteam",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "confluentinc/mcp-confluent",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "containers/kubernetes-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "contextstream/mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "continuedev/continue",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-ai-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "Continuum-AI-Corp/OrcaReplay",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "coqui-ai/TTS",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "cordum-io/cordum",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "CosVoice/cosvoice-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "couchbase/mcp-server-couchbase",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "cpacker/MemGPT",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "CR-Gjx/Suspicion-Agent",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "crewAIInc/crewAI",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "CrowdStrike/falcon-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "crystaldba/postgres-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "cuga-project/cuga-agent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "cynative/cynative",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "czlonkowski/n8n-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "dagster-io/dagster",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "dagworks-inc/burr",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "dapr/dapr-agents",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "DataBassGit/AgentForge",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "dataforseo/mcp-server-typescript",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "datalayer/jupyter-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "daytonaio/daytona",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "dbos-inc/dbos-transact-py",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "dbt-labs/dbt-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "deepset-ai/haystack",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "delorenj/mcp-server-trello",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "dequelabs/axe-mcp-server-public",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "desplega-ai/agent-swarm",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "DeusData/codebase-memory-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "digitalocean-labs/mcp-digitalocean",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "diivi/aseprite-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "discourse/discourse-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "docker/mcp-gateway",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "docling-project/docling",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "docling-project/docling-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "domdomegg/airtable-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Doriandarko/claude-engineer",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Doriandarko/maestro",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "dot-agent/dotagent",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "dropbox/mcp-server-dash",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "dualverse-ai/station",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "dust-tt/dust",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "dzoba/gptrpg",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "e2b-dev/awesome-ai-agents",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "e2b-dev/awesome-sdks-for-ai-agents",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "e2b-dev/E2B",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "e2b-dev/e2b-cookbook",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "echoVic/orca-agent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "eibrahim/dedicated-mac-mini-ai-bot-setup-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "eidolon-ai/eidolon",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Eigenwise/atomic-agents",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "elastic/mcp-server-elasticsearch",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "emrgnt-cmplxty/automata",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "ennucore/clippy",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "entropy-research/Devon",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "eosphoros-ai/DB-GPT",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "ergut/mcp-bigquery-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ergut/mcp-logseq",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "estevecastells/domscan-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "estevecastells/invokely-mcp-connector",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "eumemic/ai-legion",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "EverMind-AI/Raven",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "exa-labs/exa-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "explodinggradients/ragas",
+      "feeds": [
+        "agentic-open-source-tools",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "Extelligence-ai/bagel",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "eylonmiz/react-agent",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "ezhuk/mqtt-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Farama-Foundation/chatarena",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "farizrahman4u/loopgpt",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "fclairamb/solidping",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "features/preview",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "feder-cr/invisible_playwright",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "felixbrock/lemon-agent",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "fetchai/uAgents",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "FFmpeg/FFmpeg",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "firebase/firebase-tools",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "firebase/genkit",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "firecrawl/firecrawl-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "fjrdomingues/autopilot",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "flepied/second-brain-agent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "FlowiseAI/Flowise",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "awesome-ai-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "FOLLGAD/Godmode-GPT",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "fosdickio/binary_ninja_mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "FoundationAgents/MetaGPT",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "ftaricano/mcp-onedrive-sharepoint",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "fullselfbrowsing/FSB",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "FunplayAI/funplay-cocos-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Fzkuji/OpenProgram",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "GCWing/OpenBitFun",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "geekan/MetaGPT",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "GeiserX/genieacs-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "GeiserX/lynxprompt-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "GeiserX/pumperly-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "GeiserX/spinnaker-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "GeiserX/telegram-archive-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "genia-dev/GeniA",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Gennadiyev/STS2MCP",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "getcursor/cursor",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "getsentry/MobileBuildMCP",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "getsentry/toolkit",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "getzep/graphiti",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ggml-org/llama.cpp",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "ggml-org/whisper.cpp",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "giselles-ai/giselle",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "github/copilot-sdk",
+      "feeds": [
+        "agentic-open-source-tools"
+      ]
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "gmpetrov/databerry",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "gobii-ai/gobii-platform",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "gomarble-ai/facebook-ads-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "google-agentic-commerce/AP2",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "google-gemini/gemini-cli",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "google/adk-python",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "googleapis/gcloud-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "googleapis/mcp-toolbox",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "GoogleCloudPlatform/cloud-run-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "grafana/mcp-grafana",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Graphify-Labs/graphify",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "GreyhavenHQ/greywall",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "groq/groq-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "guardrails-ai/guardrails",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "h5i-dev/h5i",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "hahahahahahahahah6/browser-buddy",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "hahahahahahahahah6/fitlog-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "haris-musa/excel-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "hashicorp/terraform-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "hashicorp/vault-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "hatchet-dev/hatchet",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "headroomlabs-ai/headroom",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Helicone/helicone",
+      "feeds": [
+        "agentic-open-source-tools"
+      ]
+    },
+    {
+      "repo": "heroku/heroku-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "hetpatel-11/Adobe_Premiere_Pro_MCP",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "HKUDS/nanobot",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "homanp/superagent",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "homeassistant-ai/ha-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "hpcaitech/ColossalAI",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "huggingface/hf-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "huggingface/smolagents",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "huggingface/text-generation-inference",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "HumanSignal/Adala",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "i-am-bee/acp",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "i-am-bee/beeai-framework",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "IBM/mcp-context-forge",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "idosal/git-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "iflytek/astron-agent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "ihor-sokoliuk/mcp-searxng",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "imartinez/privateGPT",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "imbenrabi/Financial-Modeling-Prep-MCP-Server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "InditexTech/mcp-teams-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "infiniflow/ragflow",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "inngest/inngest",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "integromat/make-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "InternLM/lagent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "intuit/quickbooks-online-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Invompt/invompt-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "irgolic/AutoPR",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Ironclad/rivet",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "iwe-org/iwe",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "jarrycyx/openlens-ai",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "jbexta/AgentPilot",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "jenkinsci/mcp-server-plugin",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "jina-ai/dev-gpt",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "jina-ai/MCP",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "jina-ai/thinkgpt",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "jlowin/fastmcp",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "joaomdmoura/crewai",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "joinly-ai/joinly",
+      "feeds": [
+        "awesome-agents",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Josh-XT/AGiXT",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "josstei/maestro-orchestrate",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "julep-ai/julep",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "kagisearch/kagimcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "kaiban-ai/KaibanJS",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "karakeep-app/karakeep",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Kav-K/GPTDiscord",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "kayba-ai/agentic-context-engine",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "kburrus64-max/anansi-haven",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Keesan12/martin-loop",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "kestra-io/kestra",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "khoj-ai/khoj",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "KillianLucas/open-interpreter",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Kilo-Org/kilocode",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "kimtaeyoon83/mcp-server-youtube-transcript",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Kirill89/reviewcerberus",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Klavis-AI/klavis",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "kleaphq/cli",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "kocierik/mcp-nomad",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "korotovsky/slack-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "kreneskyp/ix",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "krohling/bondai",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "kuafuai/DevOpsGPT",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "kubestellar/console",
+      "feeds": [
+        "awesome-agents",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "kyegomez/swarms",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "kyrolabs/awesome-ade",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "l33tdawg/sage",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "LAHutchins91/continuity-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Laksh-star/mcp-server-tmdb",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "landing-ai/vision-agent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "langchain-ai/langchain",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "langchain-ai/langchain-mcp-adapters",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "langchain-ai/langgraph",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "langchain-ai/langmem",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "langflow-ai/langflow",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "langfuse/langfuse",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "langgenius/dify",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "langroid/langroid",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "langwatch/scenario",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "latitude-dev/latitude-llm",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "lavague-ai/LaVague",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "Leeroo-AI/kapso",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "LehengTHU/Agent4Rec",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "letta-ai/letta",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "LibreChat-AI/LibreChat",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "line/line-bot-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "linyiLYi/street-fighter-ai",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "litanlitudan/skyagi",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "livekit/agents",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "LLM-Pulse/llmpulse-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "lobu-ai/lobu",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "localstack/localstack-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "loonghao/photoshop-python-api-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "loootai/looot-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "louis030195/hyperconsciousness",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mahdin75/gis-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mailgun/mailgun-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mailtrap/mailtrap-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "makenotion/notion-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "makeplane/plane-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Manavarya09/design-extract",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mapbox/mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mark3labs/mcp-go",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "markeljan/web3gpt",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Marker-Inc-Korea/AutoRAG",
+      "feeds": [
+        "agentic-open-source-tools"
+      ]
+    },
+    {
+      "repo": "markus-global/markus",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "MarkusPfundstein/mcp-obsidian",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "massive-com/mcp_massive",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mastra-ai/mastra",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "mateaix/mateclaw",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "mattt/iMCP",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Maximilian-Winter/llama-cpp-agent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "mcp-use/mcp-use",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mczhuge/NLSOM",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "meetstream-ai/meetstream-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "meilisearch/meilisearch-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "melih-unsal/DemoGPT",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "mem0ai/mem0",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "memfreeme/memfree",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "memgraph/ai-toolkit",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "memvid/memvid",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "mertkayacs/reevesagents",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "MervinPraison/PraisonAI",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "metatool-ai/metamcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "metauto-ai/GPTSwarm",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "microsoft/agent-framework",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "microsoft/autogen",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "awesome-ai-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "microsoft/azure-devops-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "microsoft/graphrag",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "microsoft/JARVIS",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "microsoft/magentic-ui",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "feeds": [
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "microsoft/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "microsoft/mcp-for-beginners",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "microsoft/playwright",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "microsoft/playwright-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "microsoft/semantic-kernel",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "microsoft/UFO",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "mikekelly/AgentK",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "milvus-io/milvus",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "MindMap-AI/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mindsdb/mindshub",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "MineDojo/Voyager",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "MiniMax-AI/MiniMax-MCP",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Mintplex-Labs/anything-llm",
+      "feeds": [
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Mirascope/mirascope",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "MiroShark/MiroShark",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "mixpeek/amux",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "mnfst/llm-gateway",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "mochow13/keen-code",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/conformance",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/csharp-sdk",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/example-remote-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/ext-apps",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/go-sdk",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/inspector",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/java-sdk",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/kotlin-sdk",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/mcpb",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/modelcontextprotocol",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/php-sdk",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/python-sdk",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/quickstart-resources",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/registry",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/ruby-sdk",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/rust-sdk",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "feeds": [
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/swift-sdk",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/typescript-sdk",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "MohamedAbdallah-14/prompt-to-asset",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mondaycom/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mongodb-js/mongodb-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "motherduckdb/mcp-server-motherduck",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mpaepper/llm_agents",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "mpeirone/zabbix-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mrexodia/ida-pro-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mudler/LocalAI",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "muellerberndt/mini-agi",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "mukul-dutt/mentionsapi-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "myshell-ai/AIlice",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "Nano-Collective/nanocoder",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Necmttn/ax",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "negm17111995/mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "neo4j-contrib/mcp-neo4j",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "neondatabase/mcp-server-neon",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "netdata/netdata",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "neuml/txtai",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "neurocult/agency",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "nicedreamzapp/claude-code-local",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "nicepkg/gpt-runner",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "nickclyde/duckduckgo-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "nomic-ai/gpt4all",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "nousresearch/hermes-agent",
+      "feeds": [
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "Noveum/orbit",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "nowork-studio/notfair-plugin",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "nrwl/nx-console",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "nspady/google-calendar-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "nuanu-ai/agent-payment-node",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "NVIDIA/NeMo-Agent-Toolkit",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "NVIDIA/NeMo-Guardrails",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "nyachisn/falcoscan-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ollama/ollama",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "omarshahine/HomeClaw",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "omnara-ai/omnara",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Oneirocom/Magick",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "onyx-dot-app/onyx",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "oomol-lab/open-connector",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "open-multi-agent/open-multi-agent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "open-webui/mcpo",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "open-webui/open-webui",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "OpenAdaptAI/OpenAdapt",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "openai/codex",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "openai/evals",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "openai/gpt-oss",
+      "feeds": [
+        "agentic-open-source-tools"
+      ]
+    },
+    {
+      "repo": "openai/openai-agents-python",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "openai/swarm",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "OpenBMB/AgentVerse",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "OpenBMB/ChatDev",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "OpenBMB/IoA",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "OpenBMB/RepoAgent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "OpenBMB/XAgent",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "openbnb-org/mcp-server-airbnb",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "OpenDevin/OpenDevin",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "OpenHands/OpenHands",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "OpenInterpreter/open-interpreter",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "openonion/connectonion",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "OpenRouterTeam/openrouter",
+      "feeds": [
+        "agentic-open-source-tools"
+      ]
+    },
+    {
+      "repo": "openwong2kim/wmux",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "oracle/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "oraios/serena",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "orbi-build/orbi",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "ordewell/ordewell",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "orgexyz/BlockAGI",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "orgs/community",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Orkas-AI/Orkas",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Orkas-AI/Orkas-VideoStudio",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "OthersideAI/self-operating-computer",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "pab1it0/prometheus-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Packrift/packrift-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Panniantong/Agent-Reach",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "paperandbeyond23-gif/restosignals-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "paperclipai/paperclip",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Patdolitse/piia-engram",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "pathwaycom/llm-app",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "paul-gauthier/aider",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "paulpierre/RasaGPT",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "paypal/agent-toolkit",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "perplexityai/modelcontextprotocol",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "pezzolabs/pezzo",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "pgalko/BambooAI",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "pgvector/pgvector",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "pilot-protocol/pilotprotocol",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "pinecone-io/pinecone-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "pipecat-ai/pipecat",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "PipedreamHQ/pipedream",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "pj4533/yourgoal",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "plandex-ai/plandex",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "plasma-ai/fractal",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "polywrap/evo.ninja",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "portainer/portainer-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Portkey-AI/gateway",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "PostHog/posthog",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "postmanlabs/postman-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "prajwalshettydev/UnrealGenAISupport",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "PrefectHQ/fastmcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "PrefectHQ/marvin",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "PrefectHQ/prefect",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "princeton-nlp/SWE-agent",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "PrivateAISystems/needhave",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "probelabs/probe",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "proficientai/js",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "projnanda/projnanda",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "promptfoo/promptfoo",
+      "feeds": [
+        "agentic-open-source-tools",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "PromtEngineer/localGPT",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "punkpeye/fastmcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "punkpeye/mcp-remote",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "puppeteer/puppeteer",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "pydantic/logfire",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Pythagora-io/gpt-pilot",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Q00/ouroboros",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Qdrant/qdrant",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "QuantGeekDev/mcp-framework",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "quarkiverse/quarkus-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "QwenLM/qwen-code",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "qybaihe/mu",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "radareorg/radare2-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "RasaHQ/rasa",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "razorpay/razorpay-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "razzant/ouroboros",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "redis/mcp-redis",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ref-tools/ref-tools-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "render-oss/render-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "resend/resend-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "restatedev/restate",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "reworkd/AgentGPT",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "rhasspy/piper",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "rigwild/mcp-server-amazon",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "RooCodeInc/Roo-Code",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "roychri/mcp-server-asana",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "rrrrrredy/research-toolkit",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "RubricLab/maige",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "ruc-datalab/DeepAnalyze",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "rumpfmax/Multi-GPT",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "run-llama/llama_index",
+      "feeds": [
+        "agentic-open-source-tools",
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "run-llama/llama-agents",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "runapi-ai/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "RunMaestro/Maestro",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "ruvnet/ruflo",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "safedep/vet",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Sagargupta16/awesome-mcp-servers",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Sagargupta16/orrery",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "saharmor/voice-lab",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "SakanaAI/AI-Scientist",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "saleor/saleor-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "salesforcecli/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "samholt/l2mac",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "samuelgursky/davinci-resolve-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "samugit83/redamon",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "SamurAIGPT/muapi-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "sandbaseai/cli",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "sandbaseai/sandbase-harness",
+      "feeds": [
+        "awesome-agents",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "satellitecomponent/Neurite",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "saten-private/BabyCommandAGI",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "sbusso/claudeclaw",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "SciPhi-AI/R2R",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "seahyinghang8/blinky",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "seanpixel/Teenage-AGI",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "SeleniumHQ/selenium",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "semanser/codel",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "semgrep/semgrep",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "serpapi/serpapi-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ShengranHu/ADAS",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Shubhamsaboo/awesome-llm-apps",
+      "feeds": [
+        "awesome-llm-apps"
+      ]
+    },
+    {
+      "repo": "sidra-ai-development/scode",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Significant-Gravitas/Auto-GPT",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "simular-ai/Agent-S",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "sipyourdrink-ltd/bernstein",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "sirkirby/unifi-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "six2dez/burp-ai-agent",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "sky-access/skyaccess-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Skyvern-AI/skyvern",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "smaramwbc/statewave",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "smol-ai/developer",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Snowflake-Labs/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "snyk/agent-scan",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "socai-io/jev-social",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "socai-io/socai",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Softeria/ms-365-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "sopaco/cortex-mem",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "sourcegraph/sourcegraph",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "sparfenyuk/mcp-proxy",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "spring-projects/spring-ai",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "stackwiseai/stackwise",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "stakpak/agent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "stanford-oval/storm",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "stanfordnlp/dspy",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "stape-io/google-tag-manager-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "StarRocks/mcp-server-starrocks",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "stayingapi/hotel-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "steamship-core/langchain-production-starter",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "steel-dev/steel-browser",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "stefanoamorelli/sec-edgar-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "stepanogil/autonomous-hr-chatbot",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "StevenStavrakis/obsidian-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "stitionai/devika",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "stonianua/neither-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "strands-agents/harness-sdk",
+      "feeds": [
+        "awesome-agents",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "strands-agents/sdk-python",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "stripe/ai",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "supabase/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "superagent-ai/superagent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "supercorp-ai/supergateway",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "superfly/flyctl",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "supermemoryai/supermemory",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "surendranb/google-analytics-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "swarmclawai/swarmclaw",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "SWE-agent/SWE-agent",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "SYSTRAN/faster-whisper",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "tale-project/tale",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "tareq7/muslim-prayer-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "tavily-ai/tavily-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "TaxyAI/browser-extension",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "taylorwilsdon/google_workspace_mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "team-openpm/workgpt",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Technion-Kishony-lab/data-to-paper",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "temporalio/temporal",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "TencentCloudBase/CloudBase-AI-Toolkit",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "tenequm/pond",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "tenuo-ai/tenuo",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "the-open-agent/openagent",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "the-open-engine/zeroshot",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "The-Pocket/PocketFlow",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "thedotmack/claude-mem",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "theluckystrike/mcp-invoice-generator",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "theluckystrike/mcp-servers",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "TheoLvs/westworld",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "TheoLvs/westworldjs",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "tigerops-win/scout-packs",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "tinyhumansai/openhuman",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "tjmlabs/AgentRun",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "tomtom-international/tomtom-maps-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "topoteretes/cognee",
+      "feeds": [
+        "ai-agent-frameworks",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "topoteretes/PromethAI-Backend",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "traceloop/opentelemetry-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "TrafficGuard/typedai",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "TransformerOptimus/SuperAGI",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "triggerdotdev/trigger.dev",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "trpc-group/trpc-agent-go",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "trypromptly/LLMStack",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Tura-AI/tura",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "twzrd-sol/twzrd-trust",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "uilicious/english-compiler",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "UllrAI/diplay-helper",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "unclecode/crawl4ai",
+      "feeds": [
+        "nomvex-core-seeds",
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "UnrealUGC/mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "upsonic/upsonic",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "upstash/context7",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "upstash/mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ur-whitelab/chemcrow-public",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "usenetstate/statsnet-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "vanna-ai/vanna",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "vectara/open-rag-eval",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "vectara/py-vectara-agentic",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "vectorize-io/hindsight",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "vercel-labs/mcp-handler",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "vercel/ai",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "vercel/next-devtools-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "VictoriaMetrics/mcp-victoriametrics",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "vivekchand/clawmetry",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "vllm-project/vllm",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "volcengine/OpenViking",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "VoltAgent/voltagent",
+      "feeds": [
+        "ai-agent-frameworks",
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "voska/hass-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "vostride/agent-qa",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "VRSEN/agency-swarm",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "vstorm-co/pydantic-deepagents",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "w0h1v/mcp-shodan",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "wandb/wandb-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "wandb/weave",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "weaviate/weaviate",
+      "feeds": [
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "webflow/mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "WecoAI/aideml",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "windmill-labs/windmill",
+      "feeds": [
+        "ai-agent-frameworks",
+        "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "winor30/mcp-server-datadog",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "wonderwhy-er/DesktopCommanderMCP",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "xeol-io/bumpgen",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "XeroAPI/xero-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "xing5/mcp-google-sheets",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "xlang-ai/OpenAgents",
+      "feeds": [
+        "awesome-agents",
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Xquik-dev/x-twitter-scraper",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "yamadashy/repomix",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "yctimlin/mcp_excalidraw",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "yeagerai/yeagerai-agent",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "Yifan-Song793/RestGPT",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "YoanWai/agent-manager",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "yoheinakajima/babyagi",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "yoheinakajima/babyagi_archive",
+      "feeds": [
+        "ai-agent-frameworks"
+      ]
+    },
+    {
+      "repo": "YosefHayim/ebay-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "yuanzui0728/enclave",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "yumaheymans/carejobs-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Yunsoft-Software/yuncms",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "zabirauf/AutoGPT.js",
+      "feeds": [
+        "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "zcaceres/markdownify-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "zekker6/mcp-helm",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "zenlee123/routerbase-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "zereight/gitlab-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "zerodha/kite-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "zilliztech/mcp-server-milvus",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ZubeidHendricks/youtube-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "zulip/zulipmcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "zylon-ai/private-gpt",
+      "feeds": [
+        "awesome-agents"
+      ]
+    }
+  ]
+}

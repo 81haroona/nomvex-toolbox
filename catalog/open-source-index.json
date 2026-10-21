@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-21T17:45:00.000Z",
+  "candidateCount": 0,
+  "indexedCount": 0,
+  "policy": "Initial feature branch placeholder. Full GitHub sync runs only after the registry engine passes CI.",
+  "tools": []
+}
