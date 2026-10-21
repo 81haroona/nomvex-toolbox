@@ -517,7 +517,7 @@ export async function runChecks(
     result.message = diagnosticMessage(result.code, config.language ?? 'fr');
   }
   return {
-    schemaVersion: 1, toolVersion: '0.1.1', startedAt, finishedAt: new Date().toISOString(),
+    schemaVersion: 1, toolVersion: '0.1.2', startedAt, finishedAt: new Date().toISOString(),
     baseUrl: safeUrl(config.baseUrl), language: config.language ?? 'fr',
     environment: { node: process.version, platform: process.platform, browser: browserVersion },
     summary, results: finished,

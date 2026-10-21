@@ -1,45 +1,45 @@
-name: "Défaut / Bug report"
-description: "Signaler un défaut reproductible sans données sensibles / Report a reproducible defect without sensitive data"
+name: "Bug report"
+description: "Report a reproducible defect without sensitive data"
 title: "[Bug] "
 body:
   - type: markdown
     attributes:
-      value: "Pour une vulnérabilité, suivez SECURITY.md. Ne publiez aucun secret ou compte client. / For vulnerabilities, follow SECURITY.md. Do not disclose secrets or customer accounts."
+      value: "For vulnerabilities, follow SECURITY.md. Do not disclose secrets, personal data, or customer accounts."
   - type: input
     id: version
     attributes:
-      label: "Version ou commit / Version or commit"
+      label: "Version or commit"
     validations:
       required: true
   - type: textarea
     id: environment
     attributes:
-      label: "Environnement / Environment"
-      description: "Système, Node, navigateur / OS, Node, browser"
+      label: "Environment"
+      description: "Operating system, Node version, browser, and relevant dependency versions."
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
-      label: "Reproduction minimale / Minimal reproduction"
-      description: "Commandes et configuration anonymisée / Commands and sanitized configuration"
+      label: "Minimal reproduction"
+      description: "Commands and sanitized configuration. Remove credentials and private URLs."
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: "Résultat attendu et observé / Expected and observed result"
+      label: "Expected and observed result"
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: "Preuves et limites / Evidence and limitations"
-      description: "Extraits de rapport vérifiés avant partage ; contrôles non effectués / Reviewed report excerpts and checks not performed"
+      label: "Evidence and limitations"
+      description: "Reviewed report excerpts, exit codes, and checks that were not performed."
   - type: checkboxes
     id: privacy
     attributes:
-      label: "Avant envoi / Before submitting"
+      label: "Before submitting"
       options:
-        - label: "J’ai retiré les secrets et données personnelles. / I removed secrets and personal data."
+        - label: "I removed secrets, personal data, and customer information."
           required: true

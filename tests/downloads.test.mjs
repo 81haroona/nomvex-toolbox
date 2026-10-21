@@ -44,7 +44,7 @@ test('missing files and directories return controlled errors without exposing pa
   assert.equal(nonFile.code, 'FILE_READ_ERROR');
 });
 
-test('direct helper refuses symbolic links on Linux', { timeout: 15000, skip: process.platform !== 'linux' ? 'Linux O_NOFOLLOW behavior is tested on Linux.' : false }, async (t) => {
+test('direct helper refuses symbolic links on POSIX systems', { timeout: 15000, skip: process.platform === 'win32' ? 'O_NOFOLLOW coverage is POSIX-specific.' : false }, async (t) => {
   const directory = await tempDirectory(t);
   const original = join(directory, 'original.txt');
   const link = join(directory, 'link.txt');

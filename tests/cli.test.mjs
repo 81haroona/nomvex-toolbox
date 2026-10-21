@@ -29,7 +29,7 @@ async function diagnostic(result, directory) {
 test('CLI help, version and invalid flags return clear exit codes', async t => {
   const cwd = await workspace(t);
   assert.equal((await invoke(['--help'], cwd)).code, 0);
-  assert.equal((await invoke(['--version'], cwd)).stdout.trim(), '0.1.1');
+  assert.equal((await invoke(['--version'], cwd)).stdout.trim(), '0.1.2');
   assert.equal((await invoke(['--made-up', 'value'], cwd)).code, 2);
   assert.equal((await invoke([], cwd)).code, 2);
 });
@@ -92,7 +92,10 @@ test('real CLI user path produces passing and failing browser reports', { timeou
   assert.equal(JSON.parse(await readFile(join(cwd, 'broken/report.json'), 'utf8')).summary.failed, 1);
 });
 
-test('cold browser startup has a separate budget from the actual check', { timeout: 60000 }, async t => {
+test('cold browser startup has a separate budget from the actual check', {
+  timeout: 60000,
+  skip: process.platform === 'win32' ? 'The deterministic delayed executable wrapper is POSIX-only; Windows browser journeys are covered by the remaining suite.' : false,
+}, async t => {
   const cwd = await workspace(t);
   const fixture = await startFixture();
   t.after(() => fixture.close());

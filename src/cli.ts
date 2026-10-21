@@ -7,7 +7,7 @@ import { runChecks } from './run.js';
 import { exitCode, renderHtml, localizeReport } from './report.js';
 import type { Language } from './types.js';
 
-const HELP = `NOMVEX Web Checks 0.1.1
+const HELP = `NOMVEX Web Checks 0.1.2
 
 Usage: nomvex-check --config <config.json> [--out <new-directory>] [--lang fr|en]
 
@@ -24,7 +24,7 @@ Existing report files are never overwritten. No telemetry is sent.
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   if (args.length === 1 && args[0] === '--help') { process.stdout.write(HELP); return; }
-  if (args.length === 1 && args[0] === '--version') { process.stdout.write('0.1.1\n'); return; }
+  if (args.length === 1 && args[0] === '--version') { process.stdout.write('0.1.2\n'); return; }
   let configPath: string | undefined;
   let outputPath: string | undefined;
   let language: Language = 'fr';
