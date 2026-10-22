@@ -89,6 +89,14 @@
     "langchain-ai/deepagents",
     "microsoft/BitNet",
     "openai/codex",
-    "plandex-ai/plandex"
+    "plandex-ai/plandex",
+    "agentscope-ai/agentscope",
+    "mark3labs/mcp-go",
+    "microsoft/promptflow",
+    "mcp-use/mcp-use",
+    "astral-sh/uv",
+    "dagger/dagger",
+    "tesseract-ocr/tesseract",
+    "a2aproject/a2a-python"
   ]
 }
