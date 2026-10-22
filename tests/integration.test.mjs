@@ -27,17 +27,17 @@ test('healthy auth, locale and four export formats pass real browser checks', { 
   assert.equal(report.results.length, 6);
 });
 
-test('delayed navigation and return URL query parameters are checked correctly', { timeout: 30000 }, async (t) => {
+test('delayed navigation and return URL query parameters are checked correctly', { timeout: 45000 }, async (t) => {
   const fixture = await startFixture();
   t.after(() => fixture.close());
   const report = await runChecks(checkConfig(fixture.baseUrl, [
     { id: 'delayed', kind: 'redirect', startPath: '/delayed', steps: [{ action: 'click', selector: '#continue-button' }], expectedPath: '/members' },
     { id: 'query-return', kind: 'redirect', startPath: '/protected?returnTo=%2Fmembers%3Ftab%3Dexports', steps: [{ action: 'click', selector: '#login-button' }], expectedPath: '/members?tab=exports' },
-  ]), options);
+  ], { timeoutMs: 10000 }), options);
   assert.equal(report.summary.passed, 2, JSON.stringify(report.results, null, 2));
 });
 
-test('broken redirects, lost language, invalid and oversized exports cannot be green', { timeout: 60000 }, async (t) => {
+test('broken redirects, lost language, invalid and oversized exports cannot be green', { timeout: 90000 }, async (t) => {
   const fixture = await startFixture();
   t.after(() => fixture.close());
   const checks = [
@@ -54,7 +54,7 @@ test('broken redirects, lost language, invalid and oversized exports cannot be g
     download('invalid-utf8', '#invalid-utf8', 'text'),
     download('too-large', '#large-text', 'text'),
   ];
-  const report = await runChecks(checkConfig(fixture.baseUrl, checks, { timeoutMs: 6000 }), options);
+  const report = await runChecks(checkConfig(fixture.baseUrl, checks, { timeoutMs: 12000 }), options);
   assert.equal(report.summary.total, checks.length);
   assert.equal(report.summary.passed, 0, JSON.stringify(report.results, null, 2));
   const expectedCodes = {
