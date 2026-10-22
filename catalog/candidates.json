@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T09:07:56.144Z",
-  "count": 6215,
+  "generatedAt": "2026-10-22T18:47:44.460Z",
+  "count": 6219,
   "candidates": [
     {
       "repo": "0-AI-UG/cate",
@@ -520,6 +520,12 @@
       "feeds": [
         "ai-agent-frameworks",
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "a2aproject/a2a-python",
+      "feeds": [
+        "nomvex-core-seeds"
       ]
     },
     {
@@ -1357,7 +1363,8 @@
       "feeds": [
         "ai-agent-frameworks",
         "awesome-agents",
-        "awesome-opensource-ai"
+        "awesome-opensource-ai",
+        "nomvex-core-seeds"
       ]
     },
     {
@@ -3969,7 +3976,8 @@
     {
       "repo": "astral-sh/uv",
       "feeds": [
-        "awesome-opensource-ai"
+        "awesome-opensource-ai",
+        "nomvex-core-seeds"
       ]
     },
     {
@@ -8004,6 +8012,12 @@
       "repo": "dagger/container-use",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "dagger/dagger",
+      "feeds": [
+        "nomvex-core-seeds"
       ]
     },
     {
@@ -18252,6 +18266,12 @@
       ]
     },
     {
+      "repo": "koruworks/mono",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "kosminus/querywise-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -20974,6 +20994,7 @@
     {
       "repo": "mark3labs/mcp-go",
       "feeds": [
+        "nomvex-core-seeds",
         "verified-awesome-mcp-servers"
       ]
     },
@@ -21378,6 +21399,7 @@
       "repo": "mcp-use/mcp-use",
       "feeds": [
         "ai-agent-frameworks",
+        "nomvex-core-seeds",
         "verified-awesome-mcp-servers"
       ]
     },
@@ -21997,7 +22019,8 @@
     {
       "repo": "microsoft/promptflow",
       "feeds": [
-        "awesome-opensource-ai"
+        "awesome-opensource-ai",
+        "nomvex-core-seeds"
       ]
     },
     {
@@ -33394,6 +33417,12 @@
       "repo": "tersignhq/tersign-js",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "tesseract-ocr/tesseract",
+      "feeds": [
+        "nomvex-core-seeds"
       ]
     },
     {
