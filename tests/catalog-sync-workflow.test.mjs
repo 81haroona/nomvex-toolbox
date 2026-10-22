@@ -20,3 +20,17 @@ test('only catalog JSON snapshots are committed by the sync', async () => {
   const line = content.split('\n').find(row => row.trimStart().startsWith('git add '));
   assert.equal(line?.trim(), 'git add catalog/candidates.json catalog/open-source-index.json catalog/open-source-quarantine.json');
 });
+
+test('automated data-only PR triggers actual protected merge-SHA CI', async () => {
+  const workflow = await readFile(new URL('../.github/workflows/catalog-sync.yml', import.meta.url), 'utf8');
+  assert.match(workflow, /actions: write/);
+  assert.match(workflow, /gh pr create --base main --head "\$branch"/);
+  assert.match(workflow, /pr_number=.*gh pr view/);
+  assert.match(workflow, /pr_head=.*gh pr view/);
+  assert.match(workflow, /merge_sha=.*gh api/);
+  assert.match(workflow, /merge_sha.*pr_head/);
+  assert.match(workflow, /gh api -X POST "repos\/\$GITHUB_REPOSITORY\/git\/refs"/);
+  assert.match(workflow, /gh workflow run ci\.yml -R "\$GITHUB_REPOSITORY" --ref "\$check_branch"/);
+  assert.doesNotMatch(workflow, /gh pr merge|--admin|--force origin|GIT_SSL_NO_VERIFY|NODE_TLS_REJECT_UNAUTHORIZED/);
+  assert.doesNotMatch(workflow, /continue-on-error:\s*true/);
+});

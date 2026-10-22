@@ -16,6 +16,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 
 concurrency:
   group: open-source-catalog-sync
@@ -61,5 +62,24 @@ jobs:
           # Push only this new branch. Never force-update an existing review.
           git push origin "HEAD:refs/heads/$branch"
           if ! gh pr view "$branch" >/dev/null 2>&1; then
-            gh pr create --base main --head "$branch" --title "chore: refresh open-source registry" --body "Automated data-only refresh (candidate snapshot, admitted index, and quarantine). The sync admits only public, non-archived, non-fork repositories with allowlisted open-source SPDX metadata. No upstream code is executed or vendored." || echo "::warning::Could not create PR with workflow token; branch was pushed and can be opened by a maintainer."
+            gh pr create --base main --head "$branch" --title "chore: refresh open-source registry" --body "Automated data-only refresh of candidates/index/quarantine. Only public, non-archived, non-fork GitHub repositories with allowlisted SPDX metadata are admitted. No upstream code is executed or vendored."
           fi
+          # A PR opened with GITHUB_TOKEN does not normally trigger pull_request
+          # CI. Check the synthetic merge SHA, never only the data branch head.
+          pr_number="$(gh pr view "$branch" --json number --jq .number)"
+          pr_head="$(gh pr view "$branch" --json headRefOid --jq .headRefOid)"
+          merge_sha=""
+          for attempt in 1 2 3 4 5 6; do
+            merge_sha="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$pr_number" --jq .merge_commit_sha)" || true
+            if [[ "$merge_sha" =~ ^[a-f0-9]{40}$ ]] && [[ "$merge_sha" != "$pr_head" ]]; then break; fi
+            sleep 3
+          done
+          if [[ ! "$merge_sha" =~ ^[a-f0-9]{40}$ ]] || [[ "$merge_sha" == "$pr_head" ]]; then
+            echo "::error::GitHub did not provide a distinct review merge commit; no CI dispatched."
+            exit 1
+          fi
+          check_branch="ci/catalog-pr-${pr_number}-run-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          gh api -X POST "repos/$GITHUB_REPOSITORY/git/refs" \
+            -f "ref=refs/heads/$check_branch" -f "sha=$merge_sha" >/dev/null
+          gh workflow run ci.yml -R "$GITHUB_REPOSITORY" --ref "$check_branch"
+          echo "Catalog PR #$pr_number: six required CI checks dispatched at merge SHA $merge_sha"
