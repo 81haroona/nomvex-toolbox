@@ -20,3 +20,14 @@ test('only catalog JSON snapshots are committed by the sync', async () => {
   const line = content.split('\n').find(row => row.trimStart().startsWith('git add '));
   assert.equal(line?.trim(), 'git add catalog/candidates.json catalog/open-source-index.json catalog/open-source-quarantine.json');
 });
+
+test('automated catalog PRs trigger strict CI on their synthetic merge commit', async () => {
+  const workflow = await readFile(new URL('../.github/workflows/catalog-sync.yml', import.meta.url), 'utf8');
+  assert.match(workflow, /actions: write/);
+  assert.match(workflow, /pr_number=.*gh pr view/);
+  assert.match(workflow, /merge_sha=.*gh api/);
+  assert.match(workflow, /merge_sha.*pr_head/);
+  assert.match(workflow, /git\/refs/);
+  assert.match(workflow, /gh workflow run ci\.yml/);
+  assert.doesNotMatch(workflow, /gh pr merge|--admin|--force origin|GIT_SSL_NO_VERIFY/);
+});
