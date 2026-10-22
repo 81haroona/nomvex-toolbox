@@ -56,8 +56,30 @@ jobs:
           branch="automation/open-source-catalog-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$branch"
+          # A full GitHub metadata scan can outlive concurrent main catalog PRs.
+          # First commit the generated files LOCALLY, then transplant exactly
+          # those three read-only snapshots onto the latest immutable main.
+          # Do not accept a snapshot if its generator inputs changed meanwhile.
+          scan_base="$(git rev-parse HEAD)"
           git add catalog/candidates.json catalog/open-source-index.json catalog/open-source-quarantine.json
+          git commit -m "chore: capture generated catalog snapshot (local only)"
+          snapshot_commit="$(git rev-parse HEAD)"
+          git fetch --no-tags origin main
+          latest_main="$(git rev-parse origin/main)"
+          if ! git diff --quiet "$scan_base" "$latest_main" -- \
+            catalog/sources.json catalog/seeds.json \
+            scripts/open-source-lib.mjs scripts/sync-open-source.mjs scripts/validate-open-source.mjs \
+            .github/workflows/catalog-sync.yml package.json package-lock.json; then
+            echo "::error::Catalog generation inputs changed during this scan; discard the stale snapshot and rescan."
+            exit 1
+          fi
+          git checkout -b "$branch" "$latest_main"
+          git restore --source="$snapshot_commit" --staged --worktree -- \
+            catalog/candidates.json catalog/open-source-index.json catalog/open-source-quarantine.json
+          if git diff --cached --quiet -- catalog/candidates.json catalog/open-source-index.json catalog/open-source-quarantine.json; then
+            echo "Generated catalog is already current on main."
+            exit 0
+          fi
           git commit -m "chore: refresh open-source registry"
           # Push only this new branch. Never force-update an existing review.
           git push origin "HEAD:refs/heads/$branch"
