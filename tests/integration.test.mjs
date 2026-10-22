@@ -54,7 +54,10 @@ test('broken redirects, lost language, invalid and oversized exports cannot be g
     download('invalid-utf8', '#invalid-utf8', 'text'),
     download('too-large', '#large-text', 'text'),
   ];
-  const report = await runChecks(checkConfig(fixture.baseUrl, checks, { timeoutMs: 12000 }), options);
+  // The deliberately broken locale reload still MUST return LOCALE_MISMATCH;
+  // allow Chromium scheduling headroom on macOS/Node 22 without treating a timeout as a pass.
+  // A separate 500 ms timeout regression below preserves the strict timeout boundary.
+  const report = await runChecks(checkConfig(fixture.baseUrl, checks, { timeoutMs: 24000 }), options);
   assert.equal(report.summary.total, checks.length);
   assert.equal(report.summary.passed, 0, JSON.stringify(report.results, null, 2));
   const expectedCodes = {
