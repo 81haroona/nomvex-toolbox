@@ -50,13 +50,16 @@ jobs:
             echo "No catalog changes."
             exit 0
           fi
-          branch="automation/open-source-catalog"
+          # Every refresh creates a new reviewable snapshot branch. Reusing the
+          # old automation branch requires unsafe overwrites and stale leases.
+          branch="automation/open-source-catalog-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -B "$branch"
+          git checkout -b "$branch"
           git add catalog/candidates.json catalog/open-source-index.json catalog/open-source-quarantine.json
           git commit -m "chore: refresh open-source registry"
-          git push --force-with-lease origin "$branch"
+          # Push only this new branch. Never force-update an existing review.
+          git push origin "HEAD:refs/heads/$branch"
           if ! gh pr view "$branch" >/dev/null 2>&1; then
             gh pr create --base main --head "$branch" --title "chore: refresh open-source registry" --body "Automated data-only refresh (candidate snapshot, admitted index, and quarantine). The sync admits only public, non-archived, non-fork repositories with allowlisted open-source SPDX metadata. No upstream code is executed or vendored." || echo "::warning::Could not create PR with workflow token; branch was pushed and can be opened by a maintainer."
           fi
