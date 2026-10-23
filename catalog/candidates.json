@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T10:06:28.490Z",
-  "count": 6218,
+  "generatedAt": "2026-10-23T00:24:58.326Z",
+  "count": 6219,
   "candidates": [
     {
       "repo": "0-AI-UG/cate",
@@ -18263,6 +18263,12 @@
       "repo": "korovin-aa97/talkthrough-mcp",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "koruworks/mono",
+      "feeds": [
+        "verified-awesome-mcp-servers"
       ]
     },
     {
