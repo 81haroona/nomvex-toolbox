@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { z } from 'zod';
-import { OPEN_SOURCE_SPDX } from './open-source-lib.mjs';
+import { OPEN_SOURCE_SPDX, assertDistinctReferenceIds } from './open-source-lib.mjs';
 
 const url = z.string().url().refine(value => value.startsWith('https://'));
 const entry = z.strictObject({
@@ -65,6 +65,7 @@ if (index.indexedCount !== index.tools.length) throw new Error('indexedCount doe
 if (quarantine.quarantinedCount !== quarantine.items.length) throw new Error('quarantinedCount does not match items length.');
 if (index.candidateCount !== index.indexedCount + quarantine.quarantinedCount) throw new Error('Candidate accounting mismatch: indexed + quarantined must equal candidates.');
 if (index.generatedAt !== quarantine.generatedAt) throw new Error('Catalog evidence timestamps do not match.');
+assertDistinctReferenceIds(index.tools);
 const names = index.tools.map(item => item.fullName.toLowerCase());
 if (new Set(names).size !== names.length) throw new Error('Duplicate repository in open-source index.');
 process.stdout.write(`Open-source index valid: ${index.tools.length} indexed; ${quarantine.items.length} quarantined.\n`);
