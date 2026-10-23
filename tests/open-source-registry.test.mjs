@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { extractGitHubRepos, isRecognizedOpenSourceLicense, inferCategory, buildIndexedEntry, graphqlNodeToMetadata, selectCatalogCandidates, buildQuarantineRecord, resolveCanonicalAliasCollision } from '../scripts/open-source-lib.mjs';
+import { extractGitHubRepos, isRecognizedOpenSourceLicense, inferCategory, buildIndexedEntry, graphqlNodeToMetadata, selectCatalogCandidates, buildQuarantineRecord, resolveCanonicalAliasCollision, assertDistinctReferenceIds } from '../scripts/open-source-lib.mjs';
 
 test('extractGitHubRepos canonicalizes repository links and deduplicates deep URLs', () => {
   const repos = extractGitHubRepos([
@@ -159,4 +159,21 @@ test('canonical collision rejects invalid or duplicate source identities', () =>
   const first = { repo: 'example/repo', sourceFeeds: ['feed'] };
   assert.throws(() => resolveCanonicalAliasCollision(first, first, 'example/repo'));
   assert.throws(() => resolveCanonicalAliasCollision(first, { repo: '../invalid' }, 'example/repo'));
+});
+
+
+test('different repositories with a colliding generated catalog ID are rejected', () => {
+  const build = fullName => buildIndexedEntry({
+    full_name: fullName, name: fullName.split('/')[1],
+    html_url: `https://github.com/${fullName}`, visibility: 'PUBLIC',
+    private: false, archived: false, fork: false, license: { spdx_id: 'MIT' }, topics: []
+  }, [{ id: 'test-feed', defaultCategory: 'developer-tool' }], '2026-10-23T00:00:00Z');
+  const a = build('owner-one/repo');
+  const b = build('owner/one-repo');
+  assert.notEqual(a.fullName, b.fullName);
+  assert.equal(a.id, b.id);
+  assert.throws(() => assertDistinctReferenceIds([a, b]), /Duplicate registry reference ID/);
+  assert.throws(() => assertDistinctReferenceIds([{ id: 'ABC' }, { id: 'abc' }]), /Duplicate registry reference ID/);
+  assert.throws(() => assertDistinctReferenceIds([{ id: '' }]), /non-empty/);
+  assert.doesNotThrow(() => assertDistinctReferenceIds([a]));
 });
