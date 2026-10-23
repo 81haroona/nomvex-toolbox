@@ -147,3 +147,26 @@ export function buildQuarantineRecord(candidateRepo, metadata, reason, sourceFee
     observedAt
   };
 }
+
+/**
+ * A canonical repository might first be discovered via an older redirect.
+ * If its canonical name is later encountered as a candidate, retain that
+ * canonical candidate and quarantine the earlier alias instead. Preserve
+ * the corresponding feed evidence without copying or executing upstream code.
+ */
+export function resolveCanonicalAliasCollision(primaryCandidate, incomingCandidate, canonicalFullName) {
+  const primary = normalizeRepo(primaryCandidate?.repo);
+  const incoming = normalizeRepo(incomingCandidate?.repo);
+  const canonical = normalizeRepo(canonicalFullName);
+  if (!primary || !incoming || !canonical || primary.toLowerCase() === incoming.toLowerCase()) {
+    throw new TypeError('Canonical alias collision needs two distinct valid candidates and a canonical repository.');
+  }
+  const promoteIncoming = incoming.toLowerCase() === canonical.toLowerCase()
+    && primary.toLowerCase() !== canonical.toLowerCase();
+  const quarantined = promoteIncoming ? primaryCandidate : incomingCandidate;
+  return {
+    quarantinedRepo: promoteIncoming ? primary : incoming,
+    quarantinedFeeds: [...(quarantined.sourceFeeds ?? [])],
+    promoteIncoming
+  };
+}
