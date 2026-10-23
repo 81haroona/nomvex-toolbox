@@ -37,7 +37,7 @@ test('delayed navigation and return URL query parameters are checked correctly',
   assert.equal(report.summary.passed, 2, JSON.stringify(report.results, null, 2));
 });
 
-test('broken redirects, lost language, invalid and oversized exports cannot be green', { timeout: 90000 }, async (t) => {
+test('broken redirects, lost language, invalid and oversized exports cannot be green', { timeout: 150000 }, async (t) => {
   const fixture = await startFixture();
   t.after(() => fixture.close());
   const checks = [
@@ -54,12 +54,21 @@ test('broken redirects, lost language, invalid and oversized exports cannot be g
     download('invalid-utf8', '#invalid-utf8', 'text'),
     download('too-large', '#large-text', 'text'),
   ];
-  // The deliberately broken locale reload still MUST return LOCALE_MISMATCH;
-  // allow Chromium scheduling headroom on macOS/Node 22 without treating a timeout as a pass.
-  // A separate 500 ms timeout regression below preserves the strict timeout boundary.
-  const report = await runChecks(checkConfig(fixture.baseUrl, checks, { timeoutMs: 24000 }), options);
-  assert.equal(report.summary.total, checks.length);
-  assert.equal(report.summary.passed, 0, JSON.stringify(report.results, null, 2));
+  // Reload-based locale checks need an isolated browser run on slow macOS runners:
+  // parallel export/download contexts have intermittently starved page.reload().
+  // Keep exact failure-code assertions: CHECK_TIMEOUT is still an error, never
+  // treated as LOCALE_MISMATCH or a passing negative test. The 500 ms timeout
+  // regression below remains unchanged.
+  const localeChecks = checks.filter((check) => check.kind === 'locale');
+  const otherChecks = checks.filter((check) => check.kind !== 'locale');
+  const localeReport = await runChecks(
+    checkConfig(fixture.baseUrl, localeChecks, { timeoutMs: 36000, concurrency: 1 }), options);
+  const otherReport = await runChecks(
+    checkConfig(fixture.baseUrl, otherChecks, { timeoutMs: 24000, concurrency: 2 }), options);
+  const results = [...localeReport.results, ...otherReport.results];
+  assert.equal(localeReport.summary.total + otherReport.summary.total, checks.length);
+  assert.equal(results.length, checks.length);
+  assert.equal(localeReport.summary.passed + otherReport.summary.passed, 0, JSON.stringify(results, null, 2));
   const expectedCodes = {
     'wrong-return': 'REDIRECT_MISMATCH',
     'lost-locale': 'LOCALE_MISMATCH',
@@ -75,7 +84,7 @@ test('broken redirects, lost language, invalid and oversized exports cannot be g
     'too-large': 'DOWNLOAD_TOO_LARGE',
   };
   for (const check of checks) {
-    const result = expectNotPassed(report, check.id);
+    const result = expectNotPassed({ results }, check.id);
     assert.equal(result.status, 'failed', JSON.stringify(result));
     assert.equal(result.code, expectedCodes[check.id], JSON.stringify(result));
   }
