@@ -8,7 +8,11 @@ export const OPEN_SOURCE_SPDX = new Set([
 export function normalizeRepo(value) {
   const match = String(value || '').trim().match(/^([A-Za-z0-9_.-]+)\/([A-Za-z0-9_.-]+)$/);
   if (!match) return null;
-  return `${match[1]}/${match[2].replace(/\.git$/i, '')}`;
+  // Reject dot-path identities and empty names after optional .git normalization.
+  // Otherwise a source such as ../repo or owner/.git can enter the source ledger.
+  const name = match[2].replace(/\.git$/i, '');
+  if (!name || match[1] === '.' || match[1] === '..' || name === '.' || name === '..') return null;
+  return `${match[1]}/${name}`;
 }
 
 export function extractGitHubRepos(markdown) {
@@ -145,5 +149,28 @@ export function buildQuarantineRecord(candidateRepo, metadata, reason, sourceFee
     license: metadata.license?.spdx_id ?? null,
     sourceFeeds: uniqueSorted(sourceFeeds),
     observedAt
+  };
+}
+
+/**
+ * A canonical repository might first be discovered via an older redirect.
+ * If its canonical name is later encountered as a candidate, retain that
+ * canonical candidate and quarantine the earlier alias instead. Preserve
+ * the corresponding feed evidence without copying or executing upstream code.
+ */
+export function resolveCanonicalAliasCollision(primaryCandidate, incomingCandidate, canonicalFullName) {
+  const primary = normalizeRepo(primaryCandidate?.repo);
+  const incoming = normalizeRepo(incomingCandidate?.repo);
+  const canonical = normalizeRepo(canonicalFullName);
+  if (!primary || !incoming || !canonical || primary.toLowerCase() === incoming.toLowerCase()) {
+    throw new TypeError('Canonical alias collision needs two distinct valid candidates and a canonical repository.');
+  }
+  const promoteIncoming = incoming.toLowerCase() === canonical.toLowerCase()
+    && primary.toLowerCase() !== canonical.toLowerCase();
+  const quarantined = promoteIncoming ? primaryCandidate : incomingCandidate;
+  return {
+    quarantinedRepo: promoteIncoming ? primary : incoming,
+    quarantinedFeeds: [...(quarantined.sourceFeeds ?? [])],
+    promoteIncoming
   };
 }

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { extractGitHubRepos, isRecognizedOpenSourceLicense, inferCategory, buildIndexedEntry, graphqlNodeToMetadata, selectCatalogCandidates, buildQuarantineRecord } from '../scripts/open-source-lib.mjs';
+import { extractGitHubRepos, isRecognizedOpenSourceLicense, inferCategory, buildIndexedEntry, graphqlNodeToMetadata, selectCatalogCandidates, buildQuarantineRecord, resolveCanonicalAliasCollision } from '../scripts/open-source-lib.mjs';
 
 test('extractGitHubRepos canonicalizes repository links and deduplicates deep URLs', () => {
   const repos = extractGitHubRepos([
@@ -123,4 +123,40 @@ test('quarantine identity and reason fail closed on invalid data', () => {
   assert.throws(() => buildQuarantineRecord('invalid', meta, 'fork', ['feed'], 'now'));
   assert.throws(() => buildQuarantineRecord('owner/repo', { full_name: 'invalid' }, 'fork', ['feed'], 'now'));
   assert.throws(() => buildQuarantineRecord('owner/repo', meta, '', ['feed'], 'now'));
+});
+
+test('canonical candidate displaces an earlier redirected alias without losing its evidence', () => {
+  const oldAlias = { repo: 'ahujasid/blender-mcp', sourceFeeds: ['source-old'] };
+  const canonical = { repo: 'ahujasid/mcp-for-blender', sourceFeeds: ['source-direct'] };
+  const result = resolveCanonicalAliasCollision(oldAlias, canonical, 'ahujasid/mcp-for-blender');
+  assert.deepEqual(result, {
+    quarantinedRepo: 'ahujasid/blender-mcp',
+    quarantinedFeeds: ['source-old'],
+    promoteIncoming: true
+  });
+  assert.deepEqual(oldAlias.sourceFeeds, ['source-old']);
+});
+
+test('a later alias is quarantined when the canonical candidate was already primary', () => {
+  const canonical = { repo: 'example/actual', sourceFeeds: ['source-direct'] };
+  const alias = { repo: 'example/old', sourceFeeds: ['source-alias'] };
+  assert.deepEqual(resolveCanonicalAliasCollision(canonical, alias, 'example/actual'), {
+    quarantinedRepo: 'example/old',
+    quarantinedFeeds: ['source-alias'],
+    promoteIncoming: false
+  });
+});
+
+test('a second redirect cannot displace a previous redirect until the canonical candidate arrives', () => {
+  assert.deepEqual(resolveCanonicalAliasCollision(
+    { repo: 'example/old-a', sourceFeeds: ['feed-a'] },
+    { repo: 'example/old-b', sourceFeeds: ['feed-b'] },
+    'example/actual'
+  ), { quarantinedRepo: 'example/old-b', quarantinedFeeds: ['feed-b'], promoteIncoming: false });
+});
+
+test('canonical collision rejects invalid or duplicate source identities', () => {
+  const first = { repo: 'example/repo', sourceFeeds: ['feed'] };
+  assert.throws(() => resolveCanonicalAliasCollision(first, first, 'example/repo'));
+  assert.throws(() => resolveCanonicalAliasCollision(first, { repo: '../invalid' }, 'example/repo'));
 });

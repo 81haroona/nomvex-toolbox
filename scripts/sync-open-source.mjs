@@ -6,7 +6,8 @@ import {
   normalizeRepo,
   graphqlNodeToMetadata,
   selectCatalogCandidates,
-  buildQuarantineRecord
+  buildQuarantineRecord,
+  resolveCanonicalAliasCollision
 } from './open-source-lib.mjs';
 
 const sources = JSON.parse(await readFile(new URL('../catalog/sources.json', import.meta.url), 'utf8'));
@@ -117,6 +118,7 @@ await writeFile(new URL('../catalog/candidates.json', import.meta.url), JSON.str
 const indexed = [];
 const quarantine = [];
 const canonicalRecords = new Map();
+const canonicalPrimary = new Map();
 const BATCH_SIZE = 40;
 
 function repositorySelection(alias, owner, name) {
@@ -171,19 +173,21 @@ for (let start = 0; start < candidates.length; start += BATCH_SIZE) {
       const canonicalKey = meta.full_name.toLowerCase();
       const previous = canonicalRecords.get(canonicalKey);
       if (previous) {
-        // GitHub redirects older repository names. Preserve their feed provenance,
-        // but never add a second indexed entry for the same canonical repository.
+        // Prefer the actual canonical candidate when its old redirect was seen first.
+        // Otherwise the same canonical identity appears in both outputs and the
+        // original alias is absent from the candidate-to-result ledger.
         if (previous.evidence) previous.evidence.sourceFeeds = [...new Set([...previous.evidence.sourceFeeds, ...sourceFeeds])].sort();
         else previous.sourceFeeds = [...new Set([...previous.sourceFeeds, ...sourceFeeds])].sort();
-        quarantine.push({
-          fullName: item.repo,
-          canonicalFullName: meta.full_name,
-          source: `https://github.com/${item.repo}`,
-          reason: 'canonical-alias-merged',
-          license: spdx,
-          sourceFeeds,
-          observedAt
-        });
+        let rejectedRepo = item.repo;
+        let rejectedFeeds = sourceFeeds;
+        const primary = canonicalPrimary.get(canonicalKey);
+        if (previous.evidence && primary) {
+          const collision = resolveCanonicalAliasCollision(primary, { repo: item.repo, sourceFeeds }, meta.full_name);
+          rejectedRepo = collision.quarantinedRepo;
+          rejectedFeeds = collision.quarantinedFeeds;
+          if (collision.promoteIncoming) canonicalPrimary.set(canonicalKey, { repo: item.repo, sourceFeeds });
+        }
+        quarantine.push(buildQuarantineRecord(rejectedRepo, meta, 'canonical-alias-merged', rejectedFeeds, observedAt));
         continue;
       }
       let reason = null;
@@ -200,6 +204,7 @@ for (let start = 0; start < candidates.length; start += BATCH_SIZE) {
         const admitted = buildIndexedEntry(meta, item.feeds, observedAt);
         indexed.push(admitted);
         canonicalRecords.set(canonicalKey, admitted);
+        canonicalPrimary.set(canonicalKey, { repo: item.repo, sourceFeeds });
       }
     } catch (error) {
       quarantine.push({
@@ -219,6 +224,10 @@ for (let start = 0; start < candidates.length; start += BATCH_SIZE) {
 
 if (indexed.length + quarantine.length !== candidates.length) {
   throw new Error('Every discovered candidate must be indexed or quarantined exactly once.');
+}
+const admittedNames = new Set(indexed.map(item => item.fullName.toLowerCase()));
+if (quarantine.some(item => admittedNames.has(item.fullName.toLowerCase()))) {
+  throw new Error('Canonical identity may not be indexed and quarantined simultaneously.');
 }
 indexed.sort((a,b)=>a.fullName.localeCompare(b.fullName));
 quarantine.sort((a,b)=>a.fullName.localeCompare(b.fullName));
