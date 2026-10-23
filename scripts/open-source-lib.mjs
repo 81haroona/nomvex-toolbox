@@ -8,7 +8,11 @@ export const OPEN_SOURCE_SPDX = new Set([
 export function normalizeRepo(value) {
   const match = String(value || '').trim().match(/^([A-Za-z0-9_.-]+)\/([A-Za-z0-9_.-]+)$/);
   if (!match) return null;
-  return `${match[1]}/${match[2].replace(/\.git$/i, '')}`;
+  // Reject dot-path identities and empty names after optional .git normalization.
+  // Otherwise a source such as ../repo or owner/.git can enter the source ledger.
+  const name = match[2].replace(/\.git$/i, '');
+  if (!name || match[1] === '.' || match[1] === '..' || name === '.' || name === '..') return null;
+  return `${match[1]}/${name}`;
 }
 
 export function extractGitHubRepos(markdown) {
