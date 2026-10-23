@@ -125,3 +125,25 @@ export function graphqlNodeToMetadata(node) {
     visibility: node.visibility ?? null
   };
 }
+
+
+/**
+ * Quarantine one discovered source identity even when GitHub redirects it to a
+ * different canonical repository. This makes the candidate-to-result ledger
+ * auditable without changing the canonical uniqueness policy for accepted refs.
+ */
+export function buildQuarantineRecord(candidateRepo, metadata, reason, sourceFeeds, observedAt) {
+  const original = normalizeRepo(candidateRepo);
+  const canonical = normalizeRepo(metadata?.full_name);
+  if (!original || !canonical) throw new TypeError('Quarantine entry lacks a valid candidate or canonical repository.');
+  if (!reason || typeof reason !== 'string') throw new TypeError('Quarantine requires a reason.');
+  return {
+    fullName: original,
+    ...(canonical.toLowerCase() === original.toLowerCase() ? {} : { canonicalFullName: canonical }),
+    source: `https://github.com/${original}`,
+    reason,
+    license: metadata.license?.spdx_id ?? null,
+    sourceFeeds: uniqueSorted(sourceFeeds),
+    observedAt
+  };
+}

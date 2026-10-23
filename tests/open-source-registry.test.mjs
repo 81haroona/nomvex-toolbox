@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { extractGitHubRepos, isRecognizedOpenSourceLicense, inferCategory, buildIndexedEntry, graphqlNodeToMetadata, selectCatalogCandidates } from '../scripts/open-source-lib.mjs';
+import { extractGitHubRepos, isRecognizedOpenSourceLicense, inferCategory, buildIndexedEntry, graphqlNodeToMetadata, selectCatalogCandidates, buildQuarantineRecord } from '../scripts/open-source-lib.mjs';
 
 test('extractGitHubRepos canonicalizes repository links and deduplicates deep URLs', () => {
   const repos = extractGitHubRepos([
@@ -96,4 +96,31 @@ test('index builder fails closed on private, archived, forked and ambiguous-lice
   }
   assert.equal(buildIndexedEntry(safe, feeds, observed).github.visibility, 'PUBLIC');
   assert.equal(buildIndexedEntry(safe, feeds, observed).github.fork, false);
+});
+
+
+test('quarantine keeps original alias identity for denied canonical redirects', () => {
+  const metadata = { full_name: 'getsentry/toolkit', license: { spdx_id: 'NOASSERTION' } };
+  const alias = buildQuarantineRecord('getsentry/old-toolkit', metadata, 'license-not-allowlisted:NOASSERTION', ['feed-b', 'feed-a', 'feed-a'], '2026-10-23T00:00:00Z');
+  const direct = buildQuarantineRecord('getsentry/toolkit', metadata, 'canonical-alias-merged', ['feed-c'], '2026-10-23T00:00:00Z');
+  assert.equal(alias.fullName, 'getsentry/old-toolkit');
+  assert.equal(alias.canonicalFullName, 'getsentry/toolkit');
+  assert.equal(alias.source, 'https://github.com/getsentry/old-toolkit');
+  assert.deepEqual(alias.sourceFeeds, ['feed-a', 'feed-b']);
+  assert.equal(direct.fullName, 'getsentry/toolkit');
+  assert.equal('canonicalFullName' in direct, false);
+  assert.notEqual(alias.fullName.toLowerCase(), direct.fullName.toLowerCase());
+});
+
+test('quarantine preserves candidate case without inventing another alias', () => {
+  const row = buildQuarantineRecord('Owner/Repo', { full_name: 'owner/repo', license: { spdx_id: 'MIT' } }, 'fork', ['feed'], '2026-10-23T00:00:00Z');
+  assert.equal(row.fullName, 'Owner/Repo');
+  assert.equal('canonicalFullName' in row, false);
+});
+
+test('quarantine identity and reason fail closed on invalid data', () => {
+  const meta = { full_name: 'owner/repo', license: { spdx_id: 'MIT' } };
+  assert.throws(() => buildQuarantineRecord('invalid', meta, 'fork', ['feed'], 'now'));
+  assert.throws(() => buildQuarantineRecord('owner/repo', { full_name: 'invalid' }, 'fork', ['feed'], 'now'));
+  assert.throws(() => buildQuarantineRecord('owner/repo', meta, '', ['feed'], 'now'));
 });
