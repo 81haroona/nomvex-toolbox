@@ -174,3 +174,19 @@ export function resolveCanonicalAliasCollision(primaryCandidate, incomingCandida
     promoteIncoming
   };
 }
+
+/** Guard the generated stable IDs, not just the canonical GitHub full names.
+ * Replacing non-alphanumerics with '-' can make distinct repository names
+ * produce the same catalog ID. A collision must block publication.
+ */
+export function assertDistinctReferenceIds(entries) {
+  if (!Array.isArray(entries)) throw new TypeError('Registry entries must be an array.');
+  const seen = new Set();
+  for (const entry of entries) {
+    const id = entry?.id;
+    if (typeof id !== 'string' || !id.trim()) throw new TypeError('Registry reference ID must be non-empty.');
+    const key = id.toLowerCase();
+    if (seen.has(key)) throw new Error(`Duplicate registry reference ID: ${id}`);
+    seen.add(key);
+  }
+}
