@@ -5,7 +5,8 @@ import {
   buildIndexedEntry,
   normalizeRepo,
   graphqlNodeToMetadata,
-  selectCatalogCandidates
+  selectCatalogCandidates,
+  buildQuarantineRecord
 } from './open-source-lib.mjs';
 
 const sources = JSON.parse(await readFile(new URL('../catalog/sources.json', import.meta.url), 'utf8'));
@@ -192,14 +193,7 @@ for (let start = 0; start < candidates.length; start += BATCH_SIZE) {
       else if (meta.fork) reason = 'fork';
       else if (!isRecognizedOpenSourceLicense(spdx)) reason = spdx ? `license-not-allowlisted:${spdx}` : 'license-missing';
       if (reason) {
-        const excluded = {
-          fullName: meta.full_name || item.repo,
-          source: meta.html_url || `https://github.com/${item.repo}`,
-          reason,
-          license: spdx,
-          sourceFeeds,
-          observedAt
-        };
+        const excluded = buildQuarantineRecord(item.repo, meta, reason, sourceFeeds, observedAt);
         quarantine.push(excluded);
         canonicalRecords.set(canonicalKey, excluded);
       } else {
