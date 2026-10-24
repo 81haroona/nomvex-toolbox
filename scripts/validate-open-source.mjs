@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { z } from 'zod';
-import { OPEN_SOURCE_SPDX, assertDistinctReferenceIds } from './open-source-lib.mjs';
+import { OPEN_SOURCE_SPDX, assertDistinctReferenceIds, assertCandidateIdentityLedger } from './open-source-lib.mjs';
 
 const url = z.string().url().refine(value => value.startsWith('https://'));
 const entry = z.strictObject({
@@ -25,6 +25,7 @@ const entry = z.strictObject({
   observedAt: z.string().min(1),
   evidence: z.strictObject({
     sourceFeeds: z.array(z.string()).min(1),
+    candidateFullName: z.string().regex(/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/).optional(),
     githubApi: url,
     licenseFromGitHubMetadata: z.literal(true),
     executedTest: z.literal(false)
@@ -42,7 +43,7 @@ const entry = z.strictObject({
   if (value.evidence.githubApi.toLowerCase() !== `https://api.github.com/repos/${value.fullName}`.toLowerCase()) ctx.addIssue({ code: 'custom', message: 'GitHub metadata evidence URL mismatch.' });
 });
 const indexSchema = z.strictObject({
-  schemaVersion: z.literal(1),
+  schemaVersion: z.union([z.literal(1), z.literal(2)]),
   generatedAt: z.string().min(1),
   candidateCount: z.number().int().nonnegative(),
   indexedCount: z.number().int().nonnegative(),
@@ -50,7 +51,7 @@ const indexSchema = z.strictObject({
   tools: z.array(entry)
 });
 const quarantineSchema = z.strictObject({
-  schemaVersion: z.literal(1),
+  schemaVersion: z.union([z.literal(1), z.literal(2)]),
   generatedAt: z.string().min(1),
   quarantinedCount: z.number().int().nonnegative(),
   items: z.array(z.object({
@@ -66,6 +67,18 @@ if (quarantine.quarantinedCount !== quarantine.items.length) throw new Error('qu
 if (index.candidateCount !== index.indexedCount + quarantine.quarantinedCount) throw new Error('Candidate accounting mismatch: indexed + quarantined must equal candidates.');
 if (index.generatedAt !== quarantine.generatedAt) throw new Error('Catalog evidence timestamps do not match.');
 assertDistinctReferenceIds(index.tools);
+if (index.schemaVersion !== quarantine.schemaVersion) throw new Error('Index and quarantine schema versions differ.');
+if (index.schemaVersion === 2) {
+  const candidates = z.strictObject({
+    schemaVersion: z.literal(2), generatedAt: z.string().min(1),
+    count: z.number().int().nonnegative(),
+    candidates: z.array(z.strictObject({ repo: z.string().min(1), feeds: z.array(z.string()).min(1) }))
+  }).parse(JSON.parse(await readFile(new URL('../catalog/candidates.json', import.meta.url), 'utf8')));
+  if (candidates.generatedAt !== index.generatedAt || candidates.count !== candidates.candidates.length || candidates.count !== index.candidateCount) {
+    throw new Error('Candidate snapshot count or timestamp mismatch.');
+  }
+  assertCandidateIdentityLedger(candidates.candidates, index.tools, quarantine.items);
+}
 const names = index.tools.map(item => item.fullName.toLowerCase());
 if (new Set(names).size !== names.length) throw new Error('Duplicate repository in open-source index.');
 process.stdout.write(`Open-source index valid: ${index.tools.length} indexed; ${quarantine.items.length} quarantined.\n`);

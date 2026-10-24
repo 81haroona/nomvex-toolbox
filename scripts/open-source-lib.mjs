@@ -66,7 +66,9 @@ export function uniqueSorted(values) {
   return [...new Set((values || []).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
 }
 
-export function buildIndexedEntry(metadata, sourceFeeds, observedAt) {
+export function buildIndexedEntry(metadata, sourceFeeds, observedAt, candidateRepo = metadata?.full_name) {
+  const candidateFullName = normalizeRepo(candidateRepo);
+  if (!candidateFullName) throw new TypeError('Indexed entry needs a valid discovered candidate identity.');
   const fullName = normalizeRepo(metadata?.full_name);
   if (!fullName) throw new TypeError('GitHub metadata missing full_name.');
   const spdx = metadata?.license?.spdx_id ?? null;
@@ -96,6 +98,7 @@ export function buildIndexedEntry(metadata, sourceFeeds, observedAt) {
     observedAt,
     evidence: {
       sourceFeeds: uniqueSorted(sourceFeeds.map(item => item.id)),
+      candidateFullName,
       githubApi: `https://api.github.com/repos/${fullName}`,
       licenseFromGitHubMetadata: true,
       executedTest: false
@@ -188,5 +191,41 @@ export function assertDistinctReferenceIds(entries) {
     const key = id.toLowerCase();
     if (seen.has(key)) throw new Error(`Duplicate registry reference ID: ${id}`);
     seen.add(key);
+  }
+}
+
+/** Enforce a one-to-one record of original discovered identities in v2 snapshots.
+ * GitHub canonical redirects may change the accepted fullName, but never the
+ * candidate that justified the index entry. This is metadata only.
+ */
+export function assertCandidateIdentityLedger(candidates, indexed, quarantined) {
+  if (!Array.isArray(candidates) || !Array.isArray(indexed) || !Array.isArray(quarantined)) {
+    throw new TypeError('Candidate identity ledger requires three arrays.');
+  }
+  const keyOf = (name, label) => {
+    const normalized = normalizeRepo(name);
+    if (!normalized) throw new TypeError(`Invalid ${label} repository identity.`);
+    return normalized.toLowerCase();
+  };
+  const sources = new Set();
+  for (const item of candidates) {
+    const key = keyOf(item?.repo, 'candidate');
+    if (sources.has(key)) throw new Error(`Duplicate discovered candidate identity: ${key}`);
+    sources.add(key);
+  }
+  const accounted = new Set();
+  const record = (name, label) => {
+    const key = keyOf(name, label);
+    if (!sources.has(key)) throw new Error(`Unrecognized ${label} candidate identity: ${key}`);
+    if (accounted.has(key)) throw new Error(`Candidate accounted for more than once: ${key}`);
+    accounted.add(key);
+  };
+  for (const item of indexed) {
+    if (!item?.evidence?.candidateFullName) throw new Error('Indexed reference lacks original candidateFullName evidence.');
+    record(item.evidence.candidateFullName, 'indexed');
+  }
+  for (const item of quarantined) record(item?.fullName, 'quarantined');
+  if (accounted.size !== sources.size) {
+    throw new Error(`Unaccounted discovered candidate identities: ${sources.size - accounted.size}`);
   }
 }

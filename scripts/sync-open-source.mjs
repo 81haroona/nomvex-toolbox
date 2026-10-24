@@ -106,7 +106,7 @@ if (useSnapshot) {
 const candidates = selectCatalogCandidates([...provenance.values()].sort((a,b)=>a.repo.localeCompare(b.repo)), process.env.NOMVEX_CATALOG_MAX_REPOS);
 process.stderr.write(`Candidate discovery: ${provenance.size} unique source links; ${candidates.length} selected.\n`);
 await writeFile(new URL('../catalog/candidates.json', import.meta.url), JSON.stringify({
-  schemaVersion: 1,
+  schemaVersion: 2,
   generatedAt: observedAt,
   count: candidates.length,
   candidates: candidates.map(item => ({
@@ -185,7 +185,10 @@ for (let start = 0; start < candidates.length; start += BATCH_SIZE) {
           const collision = resolveCanonicalAliasCollision(primary, { repo: item.repo, sourceFeeds }, meta.full_name);
           rejectedRepo = collision.quarantinedRepo;
           rejectedFeeds = collision.quarantinedFeeds;
-          if (collision.promoteIncoming) canonicalPrimary.set(canonicalKey, { repo: item.repo, sourceFeeds });
+          if (collision.promoteIncoming) {
+            previous.evidence.candidateFullName = normalizeRepo(item.repo);
+            canonicalPrimary.set(canonicalKey, { repo: item.repo, sourceFeeds });
+          }
         }
         quarantine.push(buildQuarantineRecord(rejectedRepo, meta, 'canonical-alias-merged', rejectedFeeds, observedAt));
         continue;
@@ -201,7 +204,7 @@ for (let start = 0; start < candidates.length; start += BATCH_SIZE) {
         quarantine.push(excluded);
         canonicalRecords.set(canonicalKey, excluded);
       } else {
-        const admitted = buildIndexedEntry(meta, item.feeds, observedAt);
+        const admitted = buildIndexedEntry(meta, item.feeds, observedAt, item.repo);
         indexed.push(admitted);
         canonicalRecords.set(canonicalKey, admitted);
         canonicalPrimary.set(canonicalKey, { repo: item.repo, sourceFeeds });
@@ -233,7 +236,7 @@ indexed.sort((a,b)=>a.fullName.localeCompare(b.fullName));
 quarantine.sort((a,b)=>a.fullName.localeCompare(b.fullName));
 await mkdir(new URL('../catalog/', import.meta.url), { recursive: true });
 await writeFile(new URL('../catalog/open-source-index.json', import.meta.url), JSON.stringify({
-  schemaVersion: 1,
+  schemaVersion: 2,
   generatedAt: observedAt,
   candidateCount: candidates.length,
   indexedCount: indexed.length,
@@ -241,7 +244,7 @@ await writeFile(new URL('../catalog/open-source-index.json', import.meta.url), J
   tools: indexed
 }, null, 2) + '\n');
 await writeFile(new URL('../catalog/open-source-quarantine.json', import.meta.url), JSON.stringify({
-  schemaVersion: 1,
+  schemaVersion: 2,
   generatedAt: observedAt,
   quarantinedCount: quarantine.length,
   items: quarantine
