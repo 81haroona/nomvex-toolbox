@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { extractGitHubRepos, isRecognizedOpenSourceLicense, inferCategory, buildIndexedEntry, graphqlNodeToMetadata, selectCatalogCandidates, buildQuarantineRecord, resolveCanonicalAliasCollision, assertDistinctReferenceIds } from '../scripts/open-source-lib.mjs';
+import { extractGitHubRepos, isRecognizedOpenSourceLicense, inferCategory, buildIndexedEntry, graphqlNodeToMetadata, selectCatalogCandidates, buildQuarantineRecord, resolveCanonicalAliasCollision, assertDistinctReferenceIds, assertCandidateIdentityLedger } from '../scripts/open-source-lib.mjs';
 
 test('extractGitHubRepos canonicalizes repository links and deduplicates deep URLs', () => {
   const repos = extractGitHubRepos([
@@ -176,4 +176,31 @@ test('different repositories with a colliding generated catalog ID are rejected'
   assert.throws(() => assertDistinctReferenceIds([{ id: 'ABC' }, { id: 'abc' }]), /Duplicate registry reference ID/);
   assert.throws(() => assertDistinctReferenceIds([{ id: '' }]), /non-empty/);
   assert.doesNotThrow(() => assertDistinctReferenceIds([a]));
+});
+
+
+test('indexed canonical redirect keeps the original discovered identity', () => {
+  const entry = buildIndexedEntry({
+    full_name:'actual/project', name:'project', html_url:'https://github.com/actual/project',
+    visibility:'PUBLIC', private:false, archived:false, fork:false,
+    license:{ spdx_id:'MIT' }, topics:[]
+  }, [{id:'feed',defaultCategory:'developer-tool'}], '2026-10-24T00:00:00Z', 'old/project');
+  assert.equal(entry.fullName, 'actual/project');
+  assert.equal(entry.evidence.candidateFullName, 'old/project');
+  assert.doesNotThrow(() => assertCandidateIdentityLedger(
+    [{repo:'old/project'}], [entry], []
+  ));
+});
+
+test('candidate ledger rejects missing, duplicated and invented source identities', () => {
+  const sources = [{ repo:'old/one' }, { repo:'old/two' }];
+  const indexed = [{ evidence:{ candidateFullName:'old/one' } }];
+  const quarantine = [{ fullName:'old/two' }];
+  assert.doesNotThrow(() => assertCandidateIdentityLedger(sources, indexed, quarantine));
+  assert.throws(() => assertCandidateIdentityLedger(sources, indexed, []), /Unaccounted/);
+  assert.throws(() => assertCandidateIdentityLedger(sources, indexed, [{ fullName:'old/one' }]), /more than once/);
+  assert.throws(() => assertCandidateIdentityLedger(sources, [{ evidence:{} }], quarantine), /lacks original/);
+  assert.throws(() => assertCandidateIdentityLedger(sources, [{ evidence:{ candidateFullName:'invented/other' } }], quarantine), /Unrecognized/);
+  assert.throws(() => assertCandidateIdentityLedger([...sources, sources[0]], indexed, quarantine), /Duplicate discovered/);
+  assert.throws(() => assertCandidateIdentityLedger(sources, [{ evidence:{ candidateFullName:'../oops' } }], quarantine), /Invalid indexed/);
 });
