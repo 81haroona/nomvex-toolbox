@@ -10,7 +10,7 @@ export function pendingCatalogReviewNumbers(pages, expectedRepository) {
       !/^[a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+$/.test(expectedRepository)) {
     throw new Error('Invalid repository identity');
   }
-  if (!Array.isArray(pages)) throw new Error('Missing paginated pull request response');
+  if (!Array.isArray(pages) || pages.length === 0) throw new Error('Missing paginated pull request response');
 
   const pending = new Set();
   for (const page of pages) {
