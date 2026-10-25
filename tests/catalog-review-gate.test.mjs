@@ -20,10 +20,11 @@ test('catalog review gate detects all open same-repository generated PRs across 
 
 test('catalog review gate permits only an explicitly empty pending set', () => {
   assert.deepEqual(pendingCatalogReviewNumbers([[], [review(9, 'feature/unrelated')]], repo), []);
+  assert.deepEqual(pendingCatalogReviewNumbers([[]], repo), []);
 });
 
 test('catalog review gate fails closed on malformed, absent, or untrusted page records', () => {
-  for (const pages of [undefined, {}, [[null]], [{}], [[{state:'open'}]], [[{ ...review(3), head: { ref:'automation/open-source-catalog-3', repo:null }}]], [[{...review(3), number:0}]], [null]]) {
+  for (const pages of [undefined, {}, [], [[null]], [{}], [[{state:'open'}]], [[{ ...review(3), head: { ref:'automation/open-source-catalog-3', repo:null }}]], [[{...review(3), number:0}]], [null]]) {
     assert.throws(() => pendingCatalogReviewNumbers(pages, repo));
   }
   assert.throws(() => pendingCatalogReviewNumbers([[]], 'invalid-repo'));
@@ -37,4 +38,7 @@ test('catalog review gate CLI prints sorted PRs and returns an error for invalid
   const blocked = spawnSync(process.execPath, [script, repo], { input: '{not json', encoding:'utf8' });
   assert.notEqual(blocked.status, 0);
   assert.match(blocked.stderr, /failed closed/);
+  const zeroPages = spawnSync(process.execPath, [script, repo], { input: '[]', encoding:'utf8' });
+  assert.notEqual(zeroPages.status, 0);
+  assert.match(zeroPages.stderr, /Missing paginated pull request response/);
 });
