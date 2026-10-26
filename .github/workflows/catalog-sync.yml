@@ -8,22 +8,53 @@ on:
       - 'catalog/sources.json'
       - 'catalog/seeds.json'
       - 'scripts/sync-open-source.mjs'
+      - 'scripts/catalog-review-gate.mjs'
       - 'scripts/open-source-lib.mjs'
       - '.github/workflows/catalog-sync.yml'
   schedule:
     - cron: '17 3 * * *'
-
-permissions:
-  contents: write
-  pull-requests: write
-  actions: write
 
 concurrency:
   group: open-source-catalog-sync
   cancel-in-progress: true
 
 jobs:
+  review_gate:
+    permissions:
+      contents: read
+      pull-requests: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      may_sync: ${{ steps.pending.outputs.may_sync }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
+        with:
+          node-version: 24
+      - name: Skip scan when a catalog review PR is outstanding
+        id: pending
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          pending="$(gh api --paginate --slurp "repos/${GITHUB_REPOSITORY}/pulls?state=open&per_page=100" | node scripts/catalog-review-gate.mjs "$GITHUB_REPOSITORY")"
+          if [[ -n "$pending" ]]; then
+            echo "::notice::Catalog review PR(s) remain open; sync skipped: $pending"
+            echo "may_sync=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "may_sync=true" >> "$GITHUB_OUTPUT"
+          fi
   sync:
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    needs: review_gate
+    if: needs.review_gate.outputs.may_sync == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
@@ -68,9 +99,25 @@ jobs:
           latest_main="$(git rev-parse origin/main)"
           if ! git diff --quiet "$scan_base" "$latest_main" -- \
             catalog/sources.json catalog/seeds.json \
-            scripts/open-source-lib.mjs scripts/sync-open-source.mjs scripts/validate-open-source.mjs \
-            .github/workflows/catalog-sync.yml package.json package-lock.json; then
+            scripts/open-source-lib.mjs scripts/sync-open-source.mjs scripts/catalog-review-gate.mjs scripts/validate-open-source.mjs \
+            .github/workflows/catalog-sync.yml package.json package-lock.json \
+            catalog/candidates.json catalog/open-source-index.json catalog/open-source-quarantine.json; then
             echo "::error::Catalog generation inputs changed during this scan; discard the stale snapshot and rescan."
+            exit 1
+          fi
+          # A review can open during a long metadata scan. Recheck just
+          # before creating a branch; failure to query must fail closed.
+          pending="$(gh api --paginate --slurp "repos/${GITHUB_REPOSITORY}/pulls?state=open&per_page=100" | node scripts/catalog-review-gate.mjs "$GITHUB_REPOSITORY")"
+          if [[ -n "$pending" ]]; then
+            echo "::notice::A catalog review PR opened during the scan; new snapshot skipped: $pending"
+            exit 0
+          fi
+          # Fail closed if main advances again after the gate query, even if
+          # the newly merged change has no outstanding review PR.
+          git fetch --no-tags origin main
+          final_main="$(git rev-parse origin/main)"
+          if [[ "$final_main" != "$latest_main" ]]; then
+            echo "::error::Main advanced during final catalog review gate; discard this scan."
             exit 1
           fi
           git checkout -b "$branch" "$latest_main"
