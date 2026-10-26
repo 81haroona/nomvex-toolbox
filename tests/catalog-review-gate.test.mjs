@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { pendingCatalogReviewNumbers } from '../scripts/catalog-review-gate.mjs';
 
@@ -41,4 +42,17 @@ test('catalog review gate CLI prints sorted PRs and returns an error for invalid
   const zeroPages = spawnSync(process.execPath, [script, repo], { input: '[]', encoding:'utf8' });
   assert.notEqual(zeroPages.status, 0);
   assert.match(zeroPages.stderr, /Missing paginated pull request response/);
+});
+
+
+test('catalog sync grants only read-scoped GitHub token to preflight review gate', () => {
+  const workflow = readFileSync(new URL('../.github/workflows/catalog-sync.yml', import.meta.url), 'utf8');
+  const [beforeJobs, jobs] = workflow.split('\njobs:\n');
+  assert.ok(jobs, 'workflow jobs must be present');
+  assert.doesNotMatch(beforeJobs, /^permissions:/m, 'workflow must not grant write privileges to every job');
+  const [reviewGate, sync] = jobs.split('\n  sync:\n');
+  assert.ok(reviewGate && sync, 'review and sync jobs must be distinct');
+  assert.match(reviewGate, /\n    permissions:\n      contents: read\n      pull-requests: read\n/, 'preflight must use read-only token scopes');
+  assert.doesNotMatch(reviewGate, /\n      (?:actions|contents|pull-requests): write\b/, 'preflight must not have write scopes');
+  assert.match(sync, /^    permissions:\n      contents: write\n      pull-requests: write\n      actions: write\n/, 'write scopes must be limited to publishing job');
 });

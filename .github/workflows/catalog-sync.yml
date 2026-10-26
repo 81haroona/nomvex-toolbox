@@ -14,17 +14,15 @@ on:
   schedule:
     - cron: '17 3 * * *'
 
-permissions:
-  contents: write
-  pull-requests: write
-  actions: write
-
 concurrency:
   group: open-source-catalog-sync
   cancel-in-progress: true
 
 jobs:
   review_gate:
+    permissions:
+      contents: read
+      pull-requests: read
     runs-on: ubuntu-latest
     timeout-minutes: 5
     outputs:
@@ -51,6 +49,10 @@ jobs:
             echo "may_sync=true" >> "$GITHUB_OUTPUT"
           fi
   sync:
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
     needs: review_gate
     if: needs.review_gate.outputs.may_sync == 'true'
     runs-on: ubuntu-latest
