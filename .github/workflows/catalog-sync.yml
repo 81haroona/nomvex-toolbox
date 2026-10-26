@@ -98,7 +98,8 @@ jobs:
           if ! git diff --quiet "$scan_base" "$latest_main" -- \
             catalog/sources.json catalog/seeds.json \
             scripts/open-source-lib.mjs scripts/sync-open-source.mjs scripts/catalog-review-gate.mjs scripts/validate-open-source.mjs \
-            .github/workflows/catalog-sync.yml package.json package-lock.json; then
+            .github/workflows/catalog-sync.yml package.json package-lock.json \
+            catalog/candidates.json catalog/open-source-index.json catalog/open-source-quarantine.json; then
             echo "::error::Catalog generation inputs changed during this scan; discard the stale snapshot and rescan."
             exit 1
           fi
@@ -108,6 +109,14 @@ jobs:
           if [[ -n "$pending" ]]; then
             echo "::notice::A catalog review PR opened during the scan; new snapshot skipped: $pending"
             exit 0
+          fi
+          # Fail closed if main advances again after the gate query, even if
+          # the newly merged change has no outstanding review PR.
+          git fetch --no-tags origin main
+          final_main="$(git rev-parse origin/main)"
+          if [[ "$final_main" != "$latest_main" ]]; then
+            echo "::error::Main advanced during final catalog review gate; discard this scan."
+            exit 1
           fi
           git checkout -b "$branch" "$latest_main"
           git restore --source="$snapshot_commit" --staged --worktree -- \
