@@ -13,10 +13,12 @@ const catalogPaths = [
 
 test('catalog sync invalidates snapshot on catalog-data-only main advance', () => {
   const workflow = readFileSync(new URL('../.github/workflows/catalog-sync.yml', import.meta.url), 'utf8');
-  const guard = workflow.match(/if ! git diff --quiet "\\$scan_base" "\\$latest_main" -- \\\n([\\s\\S]*?); then/);
-  assert.ok(guard, 'missing mandatory fail-closed scan base guard');
+  const guardStart = workflow.indexOf('if ! git diff --quiet "$scan_base" "$latest_main" --');
+  const guardEnd = workflow.indexOf('; then', guardStart);
+  assert.ok(guardStart >= 0 && guardEnd > guardStart, 'missing mandatory fail-closed scan base guard');
+  const guard = workflow.slice(guardStart, guardEnd);
   for (const path of catalogPaths) {
-    assert.ok(guard[1].includes(path), `data-only changes must invalidate scan: ${path}`);
+    assert.ok(guard.includes(path), `data-only changes must invalidate scan: ${path}`);
   }
   const checkpoint = workflow.indexOf('pending="$(gh api', workflow.indexOf('snapshot_commit="$(git rev-parse HEAD)"'));
   const finalFetch = workflow.indexOf('git fetch --no-tags origin main', checkpoint);
