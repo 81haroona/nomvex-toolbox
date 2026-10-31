@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-10-22T10:06:28.490Z",
-  "count": 6218,
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T09:37:04.542Z",
+  "count": 6511,
   "candidates": [
     {
       "repo": "0-AI-UG/cate",
@@ -199,6 +199,12 @@
       ]
     },
     {
+      "repo": "28naem-del/mnemosyne",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
       "repo": "2captcha/2captcha-mcp",
       "feeds": [
         "verified-awesome-mcp-servers"
@@ -255,6 +261,12 @@
     },
     {
       "repo": "3KniGHtcZ/codebeamer-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "402MCP/402mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -323,6 +335,12 @@
     },
     {
       "repo": "6figr-com/jobgpt-mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "77777R7/Octocrawl",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -397,6 +415,12 @@
     },
     {
       "repo": "a-y-ibrahim/after-effects-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "A1-x-Tech/mcp-avito-ads",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -513,6 +537,12 @@
       "repo": "a16z-infra/ai-town",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "a18565517703-ctrl/fateclear-solar-time",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -675,9 +705,21 @@
       ]
     },
     {
+      "repo": "abhishekash/spanhound",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "abi/screenshot-to-code",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "abm9111/chamber",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -727,6 +769,12 @@
       "repo": "ace-step/ACE-Step-1.5",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "AceAtDev/ascended-browser",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -890,13 +938,31 @@
       ]
     },
     {
+      "repo": "Adeniyikayodee/ng-postcode",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "Adeptus-Innovatio/solvitor-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
     },
     {
+      "repo": "Aderali06/sqlite-mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "AdesiaHQ/bangermap-integrations",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "adexbn/walk-kcal",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -1090,6 +1156,12 @@
     },
     {
       "repo": "afiliptsov/pickadive-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "afmontoya/baconservices-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -1371,6 +1443,13 @@
       "repo": "agentscope-ai/CoPaw",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "agentsearchhq-coder/agentsearch-mcp",
+      "feeds": [
+        "awesome-mcp-servers",
+        "verified-awesome-mcp-servers"
       ]
     },
     {
@@ -1774,6 +1853,12 @@
       ]
     },
     {
+      "repo": "aimdb-dev/aimdb",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "aimhubio/aim",
       "feeds": [
         "awesome-opensource-ai"
@@ -1781,6 +1866,12 @@
     },
     {
       "repo": "AIMLPM/markcrawl",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "aimusicvideogen-com/music-video-cli",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -1817,6 +1908,12 @@
     },
     {
       "repo": "AIops-tools/Endpoint-AIops",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AIops-tools/Firewall-AIops",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -1870,7 +1967,19 @@
       ]
     },
     {
+      "repo": "AIops-tools/Proxy-AIops",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "AIops-tools/Queue-AIops",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AIops-tools/TrueNAS-AIops",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -1997,7 +2106,25 @@
       ]
     },
     {
+      "repo": "ak10082247-max/canaryguard-402",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ak10082247-max/stealthguard-402",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "AkaciaNL/basicdeploy-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "akalongman/nbg-rates-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -2112,6 +2239,12 @@
     },
     {
       "repo": "alcylu/nightlife-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "aldohushi1-stack/shipback-sftp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -2261,6 +2394,12 @@
       ]
     },
     {
+      "repo": "alexneamtu/gmail-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "alexpfau/zigbee2mqtt-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -2395,6 +2534,12 @@
     },
     {
       "repo": "alibaizhanov/mengram",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AlicanAkyol/nativekeel",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -2663,6 +2808,18 @@
       ]
     },
     {
+      "repo": "ample-run/amplerun-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "AmrDab/clawdcursor",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "amundsen-io/amundsen",
       "feeds": [
         "awesome-opensource-ai"
@@ -2708,6 +2865,12 @@
     },
     {
       "repo": "andreas-roennestad/openhive-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "andreibesleaga/agentic-system-core",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -2921,6 +3084,12 @@
     },
     {
       "repo": "anpekesen/namegender-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "anshulyadav1976/synapse",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -3266,6 +3435,18 @@
       ]
     },
     {
+      "repo": "Apex-Byte-Technologies/fictura-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Apex-Byte-Technologies/house-ai-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "aphrodite-engine/aphrodite-engine",
       "feeds": [
         "awesome-opensource-ai"
@@ -3372,6 +3553,12 @@
       ]
     },
     {
+      "repo": "AppachiTech/suvadu",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "appcreationsca/bumpguard-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -3381,6 +3568,12 @@
       "repo": "appium/appium-mcp",
       "feeds": [
         "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "applyra-io/mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -3585,6 +3778,18 @@
       ]
     },
     {
+      "repo": "arif-js/agentsensor",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "arif-js/opensdr-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "arifszn/reminder-mcp",
       "feeds": [
         "awesome-mcp-servers-wong2"
@@ -3676,6 +3881,12 @@
       "feeds": [
         "awesome-mcp-servers",
         "awesome-mcp-servers-wong2"
+      ]
+    },
+    {
+      "repo": "Armulee/ai-gateway-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -3814,6 +4025,12 @@
       ]
     },
     {
+      "repo": "as9978/designfit",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "ASCIT31/Dark-Moon",
       "feeds": [
         "awesome-opensource-ai",
@@ -3938,6 +4155,12 @@
       ]
     },
     {
+      "repo": "assoujojo82-coder/synergieloc-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "ast-grep/ast-grep-mcp",
       "feeds": [
         "verified-awesome-mcp-servers"
@@ -4023,7 +4246,19 @@
       ]
     },
     {
+      "repo": "ateymoori/oh-my-android",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "atifnayeem-oss/saveproptax-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "atilaahmettaner/tradingview-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -4295,6 +4530,12 @@
       ]
     },
     {
+      "repo": "AutomatosAI/automatos-ai",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
       "repo": "Autonomad1/autonomad-travel",
       "feeds": [
         "awesome-mcp-servers"
@@ -4345,6 +4586,12 @@
     },
     {
       "repo": "Avierovich/openpitch",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "avikchakraborty060-create/The-top-innovation",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -4607,6 +4854,12 @@
       ]
     },
     {
+      "repo": "BackpowCom/backpow-mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "Backspace-me/sportscore-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -4734,6 +4987,12 @@
       ]
     },
     {
+      "repo": "bartosz-kuc/honest-pl-holidays-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "bartosz-kuc/honest-stat-gov-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -4795,6 +5054,12 @@
       ]
     },
     {
+      "repo": "batchdataco/batchdata-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "Battam1111/Myco",
       "feeds": [
         "awesome-mcp-servers"
@@ -4802,6 +5067,12 @@
     },
     {
       "repo": "Battam1111/omniseek",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "BatuhanCakmakk/laserpdf",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -4832,6 +5103,12 @@
     },
     {
       "repo": "beardfaceguy/daimonos",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "BeatAPI/BeatBrowser",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -4949,6 +5226,12 @@
     },
     {
       "repo": "Berckan/bugherd-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "BerkantACUN/ifc-ruhsat",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -5121,6 +5404,12 @@
       ]
     },
     {
+      "repo": "BijectiveLabs/trading-research-agents",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "billster45/mcp-chatgpt-responses",
       "feeds": [
         "awesome-mcp-servers"
@@ -5148,6 +5437,12 @@
       "repo": "bionic-gpt/bionic-gpt",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "birdwell/runescape-wiki-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -5218,6 +5513,18 @@
     },
     {
       "repo": "bivex/kanboard-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "bkraad47/ramen",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Blackman99/postsleuth",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -5314,6 +5621,12 @@
       ]
     },
     {
+      "repo": "bloriner/terse",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "BluesPrince/thiri-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -5401,6 +5714,12 @@
       "repo": "bolivian-peru/baozi-mcp",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "bormeapi/borme-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
       ]
     },
     {
@@ -5519,6 +5838,12 @@
       ]
     },
     {
+      "repo": "brianbooms/steward-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "briandconnelly/mcp-server-ipinfo",
       "feeds": [
         "awesome-mcp-servers"
@@ -5580,7 +5905,7 @@
       ]
     },
     {
-      "repo": "BrowseAI-HQ/BrowserAI-Dev",
+      "repo": "brodesigns/gsc-readonly-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -5590,6 +5915,7 @@
       "feeds": [
         "agentic-open-source-tools",
         "ai-agent-frameworks",
+        "awesome-agents",
         "awesome-ai-agent-platforms",
         "awesome-opensource-ai",
         "nomvex-core-seeds"
@@ -5757,6 +6083,12 @@
       ]
     },
     {
+      "repo": "bunkerity/bunkerweb-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "burningion/video-editing-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -5888,6 +6220,12 @@
       ]
     },
     {
+      "repo": "c-viper-work/cabal-radar-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "c4pt0r/mcp-server-tidb",
       "feeds": [
         "awesome-mcp-servers"
@@ -5926,6 +6264,12 @@
     },
     {
       "repo": "cahthuranag/mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "cairncommons/cairn-commons",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -6081,6 +6425,12 @@
       ]
     },
     {
+      "repo": "CanvasKeep/canvaskeep-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "caol64/wenyan-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -6141,6 +6491,12 @@
       ]
     },
     {
+      "repo": "CarlxsMG/UEAgent",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "carrasquelalex1/hipocampo",
       "feeds": [
         "awesome-mcp-servers"
@@ -6178,6 +6534,12 @@
     },
     {
       "repo": "Castaldo-Solutions/mcp-vtenext",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "castovdev/castov",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -6470,6 +6832,12 @@
       ]
     },
     {
+      "repo": "cherninlab/ennodia",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "CherryHQ/cherry-studio",
       "feeds": [
         "awesome-opensource-ai",
@@ -6497,6 +6865,12 @@
     },
     {
       "repo": "Chimera-Protocol/csl-core",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "chinwe/compound-memory",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -6698,6 +7072,12 @@
         "awesome-mcp-servers",
         "awesome-mcp-servers-wong2",
         "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "cirwel/unitares",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -7369,6 +7749,12 @@
       ]
     },
     {
+      "repo": "conrader/plainsay",
+      "feeds": [
+        "awesome-opensource-ai"
+      ]
+    },
+    {
       "repo": "ConstantineB6/comfy-pilot",
       "feeds": [
         "awesome-mcp-servers"
@@ -7699,6 +8085,12 @@
       ]
     },
     {
+      "repo": "crp4222/PrivAiTe",
+      "feeds": [
+        "awesome-opensource-ai"
+      ]
+    },
+    {
       "repo": "crynta/terax-ai",
       "feeds": [
         "awesome-opensource-ai"
@@ -7742,6 +8134,12 @@
       ]
     },
     {
+      "repo": "csanadymiklos/lauther-js",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "CSCSoftware/AiDex",
       "feeds": [
         "awesome-mcp-servers"
@@ -7767,6 +8165,18 @@
     },
     {
       "repo": "csmediapro/moodle-mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "CSP911/routemind",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "cstamigo-droid/market-data-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -7910,6 +8320,12 @@
       "feeds": [
         "awesome-mcp-servers",
         "awesome-mcp-servers-wong2"
+      ]
+    },
+    {
+      "repo": "cyberdroid2077/opsecforge-tools",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -8147,6 +8563,12 @@
       ]
     },
     {
+      "repo": "danielLuo2/bioharbor",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "danielmiessler/LifeOS",
       "feeds": [
         "awesome-opensource-ai"
@@ -8311,6 +8733,12 @@
       ]
     },
     {
+      "repo": "datakoot/regulatory-intel-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "datalab-to/marker",
       "feeds": [
         "awesome-opensource-ai"
@@ -8345,6 +8773,12 @@
       "repo": "datastax/jvector",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "datavidence/datavidence-financials-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -8471,6 +8905,7 @@
     {
       "repo": "DayuanJiang/next-ai-draw-io",
       "feeds": [
+        "awesome-mcp-servers",
         "awesome-opensource-ai"
       ]
     },
@@ -8587,6 +9022,12 @@
     },
     {
       "repo": "debtstack-ai/debtstack-python",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "debuffjp/debuff",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -8789,6 +9230,12 @@
       ]
     },
     {
+      "repo": "denizgursoy/kafka-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "denyn1/aifeed-protocol",
       "feeds": [
         "awesome-mcp-servers"
@@ -8810,6 +9257,12 @@
       "repo": "dequelabs/axe-mcp-server-public",
       "feeds": [
         "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Desearch-ai/mcp-desearch",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -9052,6 +9505,12 @@
       ]
     },
     {
+      "repo": "Dipeshpal/capes",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "dirtcubeinteractive/specter-skills",
       "feeds": [
         "awesome-mcp-servers"
@@ -9176,6 +9635,12 @@
       "repo": "DLR-RM/stable-baselines3",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "dmae97/omk",
+      "feeds": [
+        "awesome-agents"
       ]
     },
     {
@@ -9512,6 +9977,42 @@
       ]
     },
     {
+      "repo": "doomsday-network/bounty-guard",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "doomsday-network/cuda-gpu-miner",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "doomsday-network/doom-pay",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "doomsday-network/doomsday",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "doomsday-network/github-bounty-scanner",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "doomsday-network/web3-agent-skills",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "Doriandarko/claude-engineer",
       "feeds": [
         "awesome-agents"
@@ -9614,6 +10115,12 @@
       ]
     },
     {
+      "repo": "Downshift/rivalize-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "dpkdhingra91/aiia-mcp-server",
       "feeds": [
         "awesome-mcp-servers"
@@ -9647,6 +10154,12 @@
       "repo": "dreamfactorysoftware/df-mcp",
       "feeds": [
         "awesome-mcp-servers-wong2"
+      ]
+    },
+    {
+      "repo": "dreamworkhq/mcp",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -9825,6 +10338,18 @@
       ]
     },
     {
+      "repo": "dustinliang666-blip/lava-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "duty27/eu-vat",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "dvdsosa/zotero-native-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -9899,6 +10424,12 @@
       ]
     },
     {
+      "repo": "eamwhite1/xrpl-referee",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "earendil-works/pi",
       "feeds": [
         "awesome-opensource-ai"
@@ -9965,6 +10496,12 @@
       ]
     },
     {
+      "repo": "eddyflores100-lang/alethech",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "EdelmarSchneider/permark",
       "feeds": [
         "awesome-mcp-servers"
@@ -10007,6 +10544,30 @@
       ]
     },
     {
+      "repo": "edouard-claude/ent1-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "edouard-claude/gryzzly-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "edouard-claude/whatsapp-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "edtool79-collab/hirepulse-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "EduBase/MCP",
       "feeds": [
         "awesome-mcp-servers-wong2"
@@ -10017,6 +10578,12 @@
       "feeds": [
         "awesome-mcp-servers",
         "awesome-mcp-servers-wong2"
+      ]
+    },
+    {
+      "repo": "edycutjong/BagOS",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -10071,7 +10638,8 @@
     {
       "repo": "Eigenwise/atomic-agents",
       "feeds": [
-        "ai-agent-frameworks"
+        "ai-agent-frameworks",
+        "awesome-agents"
       ]
     },
     {
@@ -10692,6 +11260,18 @@
       ]
     },
     {
+      "repo": "euisuh/nginx-proxy-manager-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "eukosh/youtube-kit",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "eulogik/fugusashi",
       "feeds": [
         "awesome-opensource-ai"
@@ -10738,6 +11318,12 @@
       "repo": "evanatpizzarobot/vr-org-mcp",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "EvanZhang008/open-walnut",
+      "feeds": [
+        "awesome-opensource-ai"
       ]
     },
     {
@@ -10814,6 +11400,12 @@
       "feeds": [
         "awesome-mcp-servers",
         "awesome-mcp-servers-wong2"
+      ]
+    },
+    {
+      "repo": "exmergo/dex",
+      "feeds": [
+        "awesome-agents"
       ]
     },
     {
@@ -10922,6 +11514,12 @@
     },
     {
       "repo": "f4ww4z/mcp-mysql-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "FabianIMV/voice-coach-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -11397,6 +11995,7 @@
     {
       "repo": "firecrawl/firecrawl",
       "feeds": [
+        "awesome-agents",
         "awesome-opensource-ai"
       ]
     },
@@ -11430,6 +12029,12 @@
       "feeds": [
         "awesome-mcp-servers",
         "awesome-mcp-servers-wong2"
+      ]
+    },
+    {
+      "repo": "first-fluke/oh-my-agent",
+      "feeds": [
+        "awesome-agents"
       ]
     },
     {
@@ -11697,6 +12302,12 @@
       ]
     },
     {
+      "repo": "forgemeshlabs/crypto-signals-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "forgemeshlabs/disruption-intelligence-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -11715,6 +12326,12 @@
       ]
     },
     {
+      "repo": "forgemeshlabs/kronos-forgemesh-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "forgemeshlabs/library-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -11722,6 +12339,12 @@
     },
     {
       "repo": "forgemeshlabs/seo-authority-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "forgemeshlabs/shopscout-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -11764,6 +12387,12 @@
     },
     {
       "repo": "format37/youtube_mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "formfeed-dev/formfeed",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -11967,7 +12596,8 @@
     {
       "repo": "fullselfbrowsing/FSB",
       "feeds": [
-        "awesome-agents"
+        "awesome-agents",
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -11992,6 +12622,7 @@
     {
       "repo": "future-agi/future-agi",
       "feeds": [
+        "awesome-agents",
         "awesome-opensource-ai"
       ]
     },
@@ -12020,6 +12651,12 @@
       ]
     },
     {
+      "repo": "gabrielkasmi/deeppvmapper",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "gabrielmahia/mpesa-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -12033,6 +12670,12 @@
     },
     {
       "repo": "Gaffx/volatility-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "gagarin-cloud/mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -12254,16 +12897,16 @@
       ]
     },
     {
-      "repo": "GeeeekExplorer/nano-vllm",
-      "feeds": [
-        "awesome-opensource-ai"
-      ]
-    },
-    {
       "repo": "geekan/MetaGPT",
       "feeds": [
         "awesome-ai-agent-platforms",
         "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "geeks-accelerator/ollama-herd",
+      "feeds": [
+        "awesome-opensource-ai"
       ]
     },
     {
@@ -12454,6 +13097,7 @@
     {
       "repo": "Get-Concord-AI/concord-mcp",
       "feeds": [
+        "awesome-agents",
         "awesome-mcp-servers"
       ]
     },
@@ -12531,6 +13175,12 @@
       ]
     },
     {
+      "repo": "getopenscreen/openscreen",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "getpoststack/mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -12545,7 +13195,8 @@
     {
       "repo": "getremcp/remcp",
       "feeds": [
-        "awesome-mcp-servers"
+        "awesome-mcp-servers",
+        "verified-awesome-mcp-servers"
       ]
     },
     {
@@ -12639,6 +13290,12 @@
     },
     {
       "repo": "gingugu/gingugu",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "giorgio44/gateonai-mcp-server",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -12813,6 +13470,18 @@
       ]
     },
     {
+      "repo": "glongusmain/glongus-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "gmansystems/agent-stack-directory",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "gmpetrov/databerry",
       "feeds": [
         "awesome-ai-agents"
@@ -12822,6 +13491,12 @@
       "repo": "gobii-ai/gobii-platform",
       "feeds": [
         "awesome-agents"
+      ]
+    },
+    {
+      "repo": "godikemahesh/smart-job-apply-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -12912,6 +13587,12 @@
       ]
     },
     {
+      "repo": "gonzaroman/IHMT-MEMORY",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "goodmeta/intelligence-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -12922,6 +13603,12 @@
       "feeds": [
         "awesome-mcp-servers",
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "googlarz/proton-mail-bridge-client",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -13088,6 +13775,12 @@
       ]
     },
     {
+      "repo": "Goran-Arsov/freshjots-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "gordonkjlee/facthouse",
       "feeds": [
         "awesome-mcp-servers"
@@ -13152,6 +13845,12 @@
     },
     {
       "repo": "Gowthaman90/mcp-bastion",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "goyohan0611-png/graph-mind",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -13384,7 +14083,19 @@
       ]
     },
     {
+      "repo": "gridpin/gridpin",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "gridproof/gridproof",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "GriffMurder/taskbullet-mcp-server",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -13417,6 +14128,12 @@
       "repo": "groq/groq-mcp-server",
       "feeds": [
         "verified-awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Groundmail/groundmail-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -13578,6 +14295,12 @@
       ]
     },
     {
+      "repo": "gxc/gaussdb-ro-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "gzchenhao/openhire",
       "feeds": [
         "awesome-mcp-servers"
@@ -13605,6 +14328,12 @@
       "repo": "h5i-dev/h5i",
       "feeds": [
         "awesome-agents"
+      ]
+    },
+    {
+      "repo": "Hackeatutiempo/mapache",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -13663,6 +14392,12 @@
       ]
     },
     {
+      "repo": "haison8x/geogebra-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "HakashiKatake/docorbit",
       "feeds": [
         "awesome-mcp-servers"
@@ -13694,6 +14429,12 @@
     },
     {
       "repo": "hampsterx/claude-mcp-bridge",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "hamza-aziz-ai/codex-claude-council",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -13804,6 +14545,12 @@
       "repo": "happy520ai/unified-ai-system",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "happyc0der/garmin-connect-api",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -14436,6 +15183,12 @@
       ]
     },
     {
+      "repo": "Hiroshi-Ichiyanagi/obolpay-x402-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "hitsz-ids/synthetic-data-generator",
       "feeds": [
         "awesome-opensource-ai"
@@ -14464,6 +15217,12 @@
       "repo": "hiyouga/LLaMA-Factory",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "hjbaard/SolidWorks-MCP",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -14638,6 +15397,12 @@
     },
     {
       "repo": "hostodo/hostodo-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "hostsmith/mcp-server",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -14899,6 +15664,12 @@
       "repo": "huginn/huginn",
       "feeds": [
         "awesome-ai-agent-platforms"
+      ]
+    },
+    {
+      "repo": "Hugo0/swarmmemo",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -15528,6 +16299,12 @@
       ]
     },
     {
+      "repo": "imnoo-team/drawing-anonymizer-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "imnoo-team/drawing-converter-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -15541,6 +16318,12 @@
     },
     {
       "repo": "impossiblecode/overseer-nvim-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "imprezahost/impreza-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -15840,6 +16623,18 @@
       ]
     },
     {
+      "repo": "intoApex/ai-trading-tools",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "intoApex/tas-guard",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "introlab/rtabmap",
       "feeds": [
         "awesome-opensource-ai"
@@ -15914,6 +16709,12 @@
     },
     {
       "repo": "ipfred/aiwen-mcp-server-geoip",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "IPGeolocation/ipgeolocation-io-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -16032,6 +16833,12 @@
     },
     {
       "repo": "isdaniel/pgtuner_mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ishay60/mcpolyglot",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -16323,6 +17130,12 @@
     },
     {
       "repo": "jakzaizzat/cukaimax-agent",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "jamalkamaladdin/pixelpact",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -16677,6 +17490,12 @@
       ]
     },
     {
+      "repo": "jeanpfs/stock-images-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "jen6/ticktick-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -16743,9 +17562,21 @@
       ]
     },
     {
+      "repo": "Jezue/fitatu_library",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "jf-cmyk/blocksize-agentic-payments-mcp",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "jgouviergmail/LIA-Assistant",
+      "feeds": [
+        "awesome-agents"
       ]
     },
     {
@@ -17473,6 +18304,12 @@
       ]
     },
     {
+      "repo": "Jwrede/tokentoll",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "jxnl/instructor",
       "feeds": [
         "awesome-opensource-ai"
@@ -17556,6 +18393,12 @@
       ]
     },
     {
+      "repo": "kaiser-data/kitsune-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "kaiyuanxiaobing/atomgit-mcp-server",
       "feeds": [
         "awesome-mcp-servers"
@@ -17592,6 +18435,12 @@
       ]
     },
     {
+      "repo": "KalpeshMahida0212/runsheet-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "kambriso/fritzbox-mcp-server",
       "feeds": [
         "awesome-mcp-servers"
@@ -17601,6 +18450,12 @@
       "repo": "KamranBiglari/mcp-server-chart",
       "feeds": [
         "awesome-mcp-servers-wong2"
+      ]
+    },
+    {
+      "repo": "kamysh/muninn",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -17972,6 +18827,12 @@
       ]
     },
     {
+      "repo": "kim-dongho/krds-a11y-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "kimdonghwi94/web-analyzer-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -17979,6 +18840,12 @@
     },
     {
       "repo": "kimimgo/viznoir",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "kimjooyoon/gooo-go-ports",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -18234,6 +19101,12 @@
       ]
     },
     {
+      "repo": "koraykutlu/kut",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "koraynar/doc-extract-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -18266,6 +19139,12 @@
       ]
     },
     {
+      "repo": "koruworks/mono",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "kosminus/querywise-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -18273,6 +19152,12 @@
     },
     {
       "repo": "KOVY/agentforge-trust-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "koyourmoon/perspective-api-alternative-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -18798,6 +19683,12 @@
       ]
     },
     {
+      "repo": "kumarganduri/legwork",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "kunchenguid/firstmate",
       "feeds": [
         "awesome-opensource-ai"
@@ -19041,7 +19932,19 @@
       ]
     },
     {
+      "repo": "labyrinth-analytics/loredocs",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "lacausecrypto/mcp-sports-hub",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "lachy3433/contextfetch-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -19054,6 +19957,12 @@
     },
     {
       "repo": "LadislavSopko/mcp-ai-server-visual-studio",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "lagaam-ai/lagaam",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -19083,6 +19992,12 @@
       ]
     },
     {
+      "repo": "LambdaTest/kane-cli",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
       "repo": "LamboPoewert/mcp-server-madeonsol",
       "feeds": [
         "awesome-mcp-servers"
@@ -19104,6 +20019,12 @@
       "repo": "lanchuske/local-mcp-releases",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "landedjobs/ai-engineer-portfolio-projects",
+      "feeds": [
+        "awesome-opensource-ai"
       ]
     },
     {
@@ -19263,6 +20184,12 @@
       ]
     },
     {
+      "repo": "LastSearch-HQ/lastsearch",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "laszlopere/mcp-abacus",
       "feeds": [
         "awesome-mcp-servers"
@@ -19343,6 +20270,18 @@
     },
     {
       "repo": "layervai/qurl-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "LazyAGI/LazyMind",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "LazyInvestor/fauxgen-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -19432,6 +20371,12 @@
       ]
     },
     {
+      "repo": "Leonezz/openbaud",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "LeonTing1010/tap",
       "feeds": [
         "awesome-mcp-servers"
@@ -19456,6 +20401,18 @@
       ]
     },
     {
+      "repo": "lets-order-some-fries/loreweave",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "LetsFG/LetsFG",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "letta-ai/letta",
       "feeds": [
         "ai-agent-frameworks",
@@ -19475,6 +20432,12 @@
       "repo": "lettio-eu/mcp",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "LeulAria/VOLT",
+      "feeds": [
+        "awesome-opensource-ai"
       ]
     },
     {
@@ -19553,6 +20516,12 @@
       "repo": "LibreTranslate/LibreTranslate",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "LienDeadline/liendeadline-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -19983,6 +20952,12 @@
       ]
     },
     {
+      "repo": "log-10x/log10x-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "Log-LogN/langfuse-mcp-java",
       "feeds": [
         "awesome-mcp-servers"
@@ -20014,6 +20989,12 @@
     },
     {
       "repo": "logly/mureo",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "LogneBudo/llmxray",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -20284,6 +21265,18 @@
       ]
     },
     {
+      "repo": "Lumiwealth/lumibot",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "lumizone/postsider",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "LuniaKunal/mcp-twitter",
       "feeds": [
         "awesome-mcp-servers"
@@ -20315,6 +21308,12 @@
     },
     {
       "repo": "Luqueee/kivgraph",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Luvi-io/luw-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -20690,6 +21689,12 @@
       ]
     },
     {
+      "repo": "mambalabsdev/mcp-creator-lead-list-all-in-one",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "mambalabsdev/mcp-domain-deliverability-checker",
       "feeds": [
         "awesome-mcp-servers"
@@ -20697,6 +21702,12 @@
     },
     {
       "repo": "mambalabsdev/mcp-domain-to-linkedin-url-resolver",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mambalabsdev/mcp-ecommerce-platform-profiler",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -20768,6 +21779,12 @@
       ]
     },
     {
+      "repo": "mambalabsdev/mcp-job-change-tracker",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "mambalabsdev/mcp-legal-entity-resolver",
       "feeds": [
         "awesome-mcp-servers"
@@ -20775,6 +21792,12 @@
     },
     {
       "repo": "mambalabsdev/mcp-linkedin-post-engager-capture",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mambalabsdev/mcp-outbound-infrastructure-fingerprint",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -20792,13 +21815,31 @@
       ]
     },
     {
+      "repo": "mambalabsdev/mcp-public-company-reporting-window-finder",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "mambalabsdev/mcp-review-platform-reputation-enricher",
       "feeds": [
         "awesome-mcp-servers"
       ]
     },
     {
+      "repo": "mambalabsdev/mcp-team-page-people-extractor",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "mambalabsdev/mcp-tiktok-brand-presence-mapper",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mambalabsdev/mcp-youtube-channel-transcript-extractor",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -20841,6 +21882,12 @@
       ]
     },
     {
+      "repo": "Manho/Panelize",
+      "feeds": [
+        "awesome-opensource-ai"
+      ]
+    },
+    {
       "repo": "MankhongGarden/line-bot-ops-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -20856,6 +21903,18 @@
       "repo": "manticoresoftware/manticoresearch",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "manueltarouca/qbt-kit",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ManuelWarland/MemCore",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -20879,6 +21938,12 @@
     },
     {
       "repo": "mapsmith-ai/MapSmith",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Marc-Armillas/bicycle-routes-generator-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -20944,6 +22009,12 @@
       ]
     },
     {
+      "repo": "marcomq/mq-bridge",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "marimo-team/codemirror-mcp",
       "feeds": [
         "awesome-mcp-servers-wong2"
@@ -20994,6 +22065,12 @@
     },
     {
       "repo": "markaestro/markaestro-agents",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "markankamaransheogarat-sys/stellar-pulse-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -21191,6 +22268,12 @@
       ]
     },
     {
+      "repo": "matebenyovszky/agentplaybooks",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "mathbeal/avenir-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -21230,7 +22313,8 @@
     {
       "repo": "MattJeff/orizn-mcp-server",
       "feeds": [
-        "awesome-mcp-servers"
+        "awesome-mcp-servers",
+        "verified-awesome-mcp-servers"
       ]
     },
     {
@@ -21258,7 +22342,19 @@
       ]
     },
     {
+      "repo": "mauriblint/jsonlink-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "mavdol/capsule",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mavrovde/viafrei-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -21704,6 +22800,12 @@
       ]
     },
     {
+      "repo": "MetcalfSolutions/Satori",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
       "repo": "metorial/metorial",
       "feeds": [
         "awesome-mcp-servers"
@@ -21796,6 +22898,12 @@
     },
     {
       "repo": "michaelrice/zendesk-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "michal-niedzwiedzki/visimark",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -22089,6 +23197,12 @@
       ]
     },
     {
+      "repo": "miduo100/agent-virtual-world",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "mihnin/stellara-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -22122,6 +23236,12 @@
       "repo": "mikekelly/AgentK",
       "feeds": [
         "awesome-agents"
+      ]
+    },
+    {
+      "repo": "mikenguyen13/research-methods-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -22377,6 +23497,18 @@
       ]
     },
     {
+      "repo": "Misar-AI/misarmail-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mishan/shotbox",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "misiektoja/kill-process-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -22392,6 +23524,12 @@
       "repo": "mistralai/mistral-vibe",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "MIt9/workatastartup-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -22803,6 +23941,18 @@
       ]
     },
     {
+      "repo": "Moha2005269/agentgo",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Moha2005269/agentgo-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "Mohabdo21/linux-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -22888,6 +24038,12 @@
       ]
     },
     {
+      "repo": "Monyeah777/NinFenz",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "MoonEyes/google-ecommerce-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -22967,12 +24123,6 @@
     },
     {
       "repo": "morphik-org/morphik-core",
-      "feeds": [
-        "awesome-opensource-ai"
-      ]
-    },
-    {
-      "repo": "mosaicml/composer",
       "feeds": [
         "awesome-opensource-ai"
       ]
@@ -23122,6 +24272,12 @@
       ]
     },
     {
+      "repo": "mrpkk/attest",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "mrslbt/rakuten-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -23250,6 +24406,12 @@
       ]
     },
     {
+      "repo": "multiassist/nakamotonotes-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "multimail-dev/mcp-server",
       "feeds": [
         "awesome-mcp-servers"
@@ -23335,8 +24497,9 @@
       ]
     },
     {
-      "repo": "Muvon/octomind",
+      "repo": "muvon/octomind",
       "feeds": [
+        "awesome-agents",
         "awesome-opensource-ai"
       ]
     },
@@ -23350,6 +24513,12 @@
       "repo": "mvanhorn/last30days-skill",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "MvikManners/aw1-circuit-breaker",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -23374,6 +24543,12 @@
       "repo": "MyAgentHubs/aimemo",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "mybolide/mcp-probe-kit",
+      "feeds": [
+        "verified-awesome-mcp-servers"
       ]
     },
     {
@@ -23522,6 +24697,12 @@
       "feeds": [
         "awesome-agents",
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "nanobrowser/nanobrowser",
+      "feeds": [
+        "awesome-agents"
       ]
     },
     {
@@ -23833,6 +25014,12 @@
       ]
     },
     {
+      "repo": "neymark/abliteration-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "nfemmanuel/iranti",
       "feeds": [
         "awesome-mcp-servers"
@@ -23864,6 +25051,18 @@
     },
     {
       "repo": "nhantour/inferenceview-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "nhorie-canal/mmm_mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "nhost/nhost",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -24039,6 +25238,12 @@
       ]
     },
     {
+      "repo": "nickjlamb/pubcrawl",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "nickjlamb/redacta",
       "feeds": [
         "awesome-mcp-servers"
@@ -24088,6 +25293,12 @@
     },
     {
       "repo": "nihalxkumar/arch-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "nika110/openhuddle",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -24178,6 +25389,12 @@
       ]
     },
     {
+      "repo": "niuheilong/stock-mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "Nixtla/mlforecast",
       "feeds": [
         "awesome-opensource-ai"
@@ -24247,6 +25464,12 @@
       "repo": "node-red/node-red",
       "feeds": [
         "awesome-ai-agent-platforms"
+      ]
+    },
+    {
+      "repo": "nodecode-ai/nodecode",
+      "feeds": [
+        "awesome-agents"
       ]
     },
     {
@@ -24637,6 +25860,12 @@
       ]
     },
     {
+      "repo": "O-mega-Enterprise/suprsonic-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "O-word/lane-lint",
       "feeds": [
         "awesome-opensource-ai"
@@ -24674,6 +25903,12 @@
     },
     {
       "repo": "ocbenji/bitcoinbenji-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "OceanAlt666/oceanalt-aml-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -24729,6 +25964,12 @@
       ]
     },
     {
+      "repo": "odb366/genready-mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "odd-Innocent/den_archi_mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -24736,6 +25977,12 @@
     },
     {
       "repo": "odds-api-io/odds-api-mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "oddsrelay/oddsrelay-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -25012,6 +26259,12 @@
       ]
     },
     {
+      "repo": "ondraulehla/mcpcost",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "ONE8943/ai-furniture-hub",
       "feeds": [
         "awesome-mcp-servers"
@@ -25223,12 +26476,6 @@
       ]
     },
     {
-      "repo": "openai/mle-bench",
-      "feeds": [
-        "awesome-opensource-ai"
-      ]
-    },
-    {
       "repo": "openai/openai-agents-js",
       "feeds": [
         "nomvex-core-seeds"
@@ -25242,12 +26489,6 @@
         "awesome-opensource-ai",
         "nomvex-core-seeds",
         "verified-awesome-mcp-servers"
-      ]
-    },
-    {
-      "repo": "openai/simple-evals",
-      "feeds": [
-        "awesome-opensource-ai"
       ]
     },
     {
@@ -25706,6 +26947,12 @@
       ]
     },
     {
+      "repo": "orcsnren/pkg-health-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "ordewell/ordewell",
       "feeds": [
         "awesome-agents",
@@ -25847,6 +27094,12 @@
     },
     {
       "repo": "osulivan/skill4agent-mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "OtaKit/otakit",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -26253,6 +27506,12 @@
       ]
     },
     {
+      "repo": "ParserBee/parserbee-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "particlefuture/1mcpserver",
       "feeds": [
         "awesome-mcp-servers",
@@ -26571,6 +27830,12 @@
       ]
     },
     {
+      "repo": "penmadebykisss/ru-payroll-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "Pentagonal-ai/pentagonal",
       "feeds": [
         "awesome-mcp-servers"
@@ -26698,6 +27963,12 @@
       ]
     },
     {
+      "repo": "PGHQdev/OpenScreenShot",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "pgvector/pgvector",
       "feeds": [
         "awesome-opensource-ai",
@@ -26742,6 +28013,12 @@
     },
     {
       "repo": "PHONGUIT22/nostrpulse-full",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "phonology024/babelscribe",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -26975,6 +28252,12 @@
       ]
     },
     {
+      "repo": "pkj8282/Agent-Uplink",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "pkolawa/krs-poland-mcp-server",
       "feeds": [
         "awesome-mcp-servers-wong2"
@@ -27139,6 +28422,12 @@
       ]
     },
     {
+      "repo": "polymatx/opsgate",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "polywrap/evo.ninja",
       "feeds": [
         "awesome-ai-agents"
@@ -27227,6 +28516,12 @@
       ]
     },
     {
+      "repo": "pouriaetab/llmledger",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "powerdragonfire/platformio.mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -27281,6 +28576,12 @@
       ]
     },
     {
+      "repo": "pratham-jain33/hackerearth-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "Pratyay/mac-monitor-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -27288,6 +28589,12 @@
     },
     {
       "repo": "praveendias1180/easypaydirect-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "predgeAI/whale-data-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -27325,6 +28632,12 @@
       "repo": "preflight-dev/preflight",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "preloop/preloop",
+      "feeds": [
+        "awesome-agents"
       ]
     },
     {
@@ -27415,6 +28728,12 @@
       "repo": "proficientai/js",
       "feeds": [
         "awesome-ai-agents"
+      ]
+    },
+    {
+      "repo": "profilesearch/GohireHumans",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -27958,6 +29277,12 @@
       ]
     },
     {
+      "repo": "qingchejun/mindlm-io",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "qinisolabs/bizdays",
       "feeds": [
         "awesome-mcp-servers"
@@ -28007,6 +29332,12 @@
     },
     {
       "repo": "QuackbackIO/quackback",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "qualienai/qualien-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -28284,6 +29615,12 @@
       ]
     },
     {
+      "repo": "radres/call-me",
+      "feeds": [
+        "verified-awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "radumalica/infrastructure-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -28555,6 +29892,12 @@
       ]
     },
     {
+      "repo": "Rbkmen/qa-orchestrator",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "rbmuller/scherlok",
       "feeds": [
         "awesome-mcp-servers"
@@ -28562,6 +29905,12 @@
     },
     {
       "repo": "rchanllc/joltsms-mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "rchurro/kasm-use",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -28619,6 +29968,12 @@
       "repo": "ReAPI-com/mcp-openapi",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Recall-Kitchen/rk-mcp",
+      "feeds": [
+        "verified-awesome-mcp-servers"
       ]
     },
     {
@@ -28812,6 +30167,12 @@
       ]
     },
     {
+      "repo": "renkagod/osint-toolbox-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "ReplenishRadar/MCP",
       "feeds": [
         "awesome-mcp-servers"
@@ -28986,6 +30347,18 @@
       ]
     },
     {
+      "repo": "RikyZ90/ShibaClaw",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
+      "repo": "rillsoft/rillsoft-project-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "rinadelph/Agent-MCP",
       "feeds": [
         "awesome-mcp-servers"
@@ -28999,6 +30372,12 @@
     },
     {
       "repo": "rishijatia/fantasy-pl-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "rison1337/x64dbgMCP",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -29022,6 +30401,12 @@
       ]
     },
     {
+      "repo": "rlaope/oh-my-hermes",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
       "repo": "RLinf/RLinf",
       "feeds": [
         "awesome-opensource-ai"
@@ -29035,6 +30420,12 @@
     },
     {
       "repo": "rm-rf-prod/GroundTruth-MCP",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "rmb/omniforce-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -29124,6 +30515,12 @@
       ]
     },
     {
+      "repo": "robyroro/mcp-latchpoint",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "rocketride-org/rocketride-server",
       "feeds": [
         "awesome-mcp-servers"
@@ -29131,6 +30528,12 @@
     },
     {
       "repo": "rogertheunissenmerge-oss/mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "rohan-protocol/sdk",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -29227,6 +30630,12 @@
       ]
     },
     {
+      "repo": "roomi-fields/rtfm",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "rooquiz/rooquiz-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -29243,6 +30652,12 @@
       "feeds": [
         "awesome-mcp-servers",
         "awesome-mcp-servers-wong2"
+      ]
+    },
+    {
+      "repo": "rootSunc/CNEquity",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -29327,7 +30742,8 @@
     {
       "repo": "rrrrrredy/research-toolkit",
       "feeds": [
-        "awesome-agents"
+        "awesome-agents",
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -29528,6 +30944,12 @@
       "repo": "ryansilk/apexvol-mcp",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "RYOITABASHI/Shelly",
+      "feeds": [
+        "awesome-agents"
       ]
     },
     {
@@ -29736,6 +31158,12 @@
       ]
     },
     {
+      "repo": "sammyboi81/arkhive",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "samrothschild23/intelligence-api",
       "feeds": [
         "awesome-mcp-servers"
@@ -29807,6 +31235,12 @@
     },
     {
       "repo": "SanggonBoy/PyreCrawl",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "sanikacentric/biolit-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -29977,6 +31411,12 @@
       "repo": "scavio-ai/scavio-mcp",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Scento-com/perfume-mcp-server",
+      "feeds": [
+        "verified-awesome-mcp-servers"
       ]
     },
     {
@@ -30228,6 +31668,18 @@
       ]
     },
     {
+      "repo": "SECRET4422/guardrail-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "SECRET4422/mcp-deep-research-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "SecretiveShell/MCP-Bridge",
       "feeds": [
         "awesome-mcp-servers-wong2"
@@ -30306,6 +31758,12 @@
       ]
     },
     {
+      "repo": "seinun-ai/maestro-career-studio",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "SEKeener/airtreks-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -30345,6 +31803,12 @@
       "repo": "SeleniumHQ/selenium",
       "feeds": [
         "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "Self-hosted-MCP/Selfhost-Remote-Mail-MCP",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -30398,6 +31862,12 @@
     },
     {
       "repo": "sena-labs/OzBridge",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "sena-labs/replicate-mcp-server",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -30464,6 +31934,12 @@
     },
     {
       "repo": "Sequenzy/mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "sequico/server-noonien",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -30986,6 +32462,12 @@
     },
     {
       "repo": "signaltech-org/bolthub-sdk",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "signdocsbrasil/signdocs-mcp-server",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -31618,6 +33100,12 @@
       ]
     },
     {
+      "repo": "SnlperStripes/claude-account-switcher",
+      "feeds": [
+        "awesome-opensource-ai"
+      ]
+    },
+    {
       "repo": "snorkel-team/snorkel",
       "feeds": [
         "awesome-opensource-ai"
@@ -31742,6 +33230,12 @@
       ]
     },
     {
+      "repo": "solvi-ai/solvi",
+      "feeds": [
+        "awesome-opensource-ai"
+      ]
+    },
+    {
       "repo": "SonAIengine/graph-tool-call",
       "feeds": [
         "awesome-mcp-servers"
@@ -31863,6 +33357,12 @@
       ]
     },
     {
+      "repo": "speakeasy-api/gram",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
       "repo": "specshield26/specshield-mcp-server",
       "feeds": [
         "awesome-mcp-servers"
@@ -31876,6 +33376,12 @@
     },
     {
       "repo": "speedwarnsf/scenef-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "spicyapi-ai/spicy-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -31955,6 +33461,12 @@
     },
     {
       "repo": "squidcode/timebook-cli",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "sraj0501/Devtrack_",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -32292,6 +33804,12 @@
       ]
     },
     {
+      "repo": "stevehuang0115/crewly",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
       "repo": "stevejford/shiply-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -32304,7 +33822,19 @@
       ]
     },
     {
+      "repo": "stevensu04/eco-router-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "stevepridemore/graph-memory",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "stevevstd-oss/eterna-mcp-agent-starter",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -32353,6 +33883,12 @@
       ]
     },
     {
+      "repo": "stoneskin/open-memex",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "stonianua/neither-mcp",
       "feeds": [
         "verified-awesome-mcp-servers"
@@ -32384,6 +33920,12 @@
         "ai-agent-frameworks",
         "awesome-opensource-ai",
         "nomvex-core-seeds"
+      ]
+    },
+    {
+      "repo": "Strategiumfinancepartner/AgentNexus",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -32632,6 +34174,12 @@
       ]
     },
     {
+      "repo": "SupportPages-io/wtfm",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "supra126/taiwan-payroll",
       "feeds": [
         "awesome-mcp-servers"
@@ -32742,6 +34290,12 @@
       ]
     },
     {
+      "repo": "Swih/ritoko",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "swimmwatch/cloakbrowser-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -32781,6 +34335,12 @@
       "repo": "SylphAI-Inc/AdalFlow",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "symbionix-sl/airstrings-cli",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -33186,6 +34746,12 @@
       ]
     },
     {
+      "repo": "tekspry/DotnetFastMCP",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "TeleAI-UAGI/telemem",
       "feeds": [
         "awesome-mcp-servers"
@@ -33450,6 +35016,12 @@
       ]
     },
     {
+      "repo": "Thanatos9404/llmslim",
+      "feeds": [
+        "awesome-opensource-ai"
+      ]
+    },
+    {
       "repo": "The-40-Thieves/codecalc",
       "feeds": [
         "awesome-mcp-servers"
@@ -33520,7 +35092,8 @@
     {
       "repo": "TheBestCo/bestprice-mcp",
       "feeds": [
-        "awesome-mcp-servers"
+        "awesome-mcp-servers",
+        "verified-awesome-mcp-servers"
       ]
     },
     {
@@ -33563,6 +35136,7 @@
     {
       "repo": "theguysudo/ENZO",
       "feeds": [
+        "awesome-agents",
         "awesome-opensource-ai"
       ]
     },
@@ -33574,6 +35148,12 @@
     },
     {
       "repo": "thehealthai/fda-risk-radar-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "TheHiddenPandaDev/catastro_gps_mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -33804,6 +35384,12 @@
       ]
     },
     {
+      "repo": "thu-lawyer/china-law-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "THU-MAIC/OpenMAIC",
       "feeds": [
         "awesome-opensource-ai"
@@ -33817,6 +35403,12 @@
     },
     {
       "repo": "thunderboltsid/mcp-nutanix",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Thx93/mcp-weather-server",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -33895,6 +35487,12 @@
     },
     {
       "repo": "timescale/rsigma",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "timgordontg/engrim",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -34011,6 +35609,12 @@
       ]
     },
     {
+      "repo": "tobee89/mcp-paperless-ngx",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "TobikoData/sqlmesh",
       "feeds": [
         "awesome-opensource-ai"
@@ -34018,6 +35622,12 @@
     },
     {
       "repo": "tobocop2/lilbee",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "toby7979/sealmyapp-tools",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -34164,6 +35774,12 @@
       "repo": "tonnode/mcp",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "tonydzi/sqlite-graph-memory",
+      "feeds": [
+        "verified-awesome-mcp-servers"
       ]
     },
     {
@@ -34486,6 +36102,12 @@
       ]
     },
     {
+      "repo": "tribgames/mixdog",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
       "repo": "triggerdotdev/trigger.dev",
       "feeds": [
         "ai-agent-frameworks",
@@ -34668,6 +36290,12 @@
       "feeds": [
         "awesome-mcp-servers",
         "awesome-mcp-servers-wong2"
+      ]
+    },
+    {
+      "repo": "tuantqse90/moltnode-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -34942,6 +36570,12 @@
       ]
     },
     {
+      "repo": "Umair/stalemap",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "UModeler/picoberry-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -34949,6 +36583,12 @@
     },
     {
       "repo": "umum-ai/claude-codex-bridge",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "unblockingapi/mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -35163,6 +36803,12 @@
       ]
     },
     {
+      "repo": "urbankitstudio/mcp-atlas",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "urbanmorph/mdshare",
       "feeds": [
         "awesome-mcp-servers"
@@ -35269,6 +36915,12 @@
       "repo": "V0v1kkk/DotNetMetadataMcpServer",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "vadimchernets/poly-duo",
+      "feeds": [
+        "awesome-opensource-ai"
       ]
     },
     {
@@ -35504,6 +37156,12 @@
       ]
     },
     {
+      "repo": "Venut-Technologies/serato-dj-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "verax-ai/verax",
       "feeds": [
         "awesome-mcp-servers"
@@ -35681,6 +37339,12 @@
       ]
     },
     {
+      "repo": "vigmarcarlo/OntoPrune",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "vikasny30/aletheia-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -35816,6 +37480,12 @@
       "repo": "vitali87/code-graph-rag",
       "feeds": [
         "awesome-opensource-ai"
+      ]
+    },
+    {
+      "repo": "vitofico/galley",
+      "feeds": [
+        "awesome-mcp-servers"
       ]
     },
     {
@@ -36061,6 +37731,12 @@
       ]
     },
     {
+      "repo": "vstorm-co/agenticos",
+      "feeds": [
+        "awesome-agents"
+      ]
+    },
+    {
       "repo": "vstorm-co/pydantic-deepagents",
       "feeds": [
         "awesome-agents"
@@ -36105,6 +37781,12 @@
     },
     {
       "repo": "wangkuangkuang/jev-mcp-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Wangxian111/xaudaily-gold-data",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -36361,6 +38043,12 @@
       ]
     },
     {
+      "repo": "Whq02/MercuryCLI",
+      "feeds": [
+        "awesome-opensource-ai"
+      ]
+    },
+    {
       "repo": "whw23/searxng_http_mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -36421,6 +38109,12 @@
       ]
     },
     {
+      "repo": "wiltodelta/remove-ai-watermarks",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "windborne/zulipmcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -36466,6 +38160,12 @@
     },
     {
       "repo": "wishfinity/wishfinity-mcp-plusw",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Wism-Corp/scrupp-mcp-server",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -36636,6 +38336,12 @@
       ]
     },
     {
+      "repo": "wraps-team/wraps-js",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "wretcher207/reaper-daemon",
       "feeds": [
         "awesome-mcp-servers"
@@ -36680,6 +38386,12 @@
     },
     {
       "repo": "wundervault/wundervault-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "wusaki0723/Aelios",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -36944,6 +38656,12 @@
       ]
     },
     {
+      "repo": "Xxx91n/mcp-for-maya",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "xyver/daedal-map",
       "feeds": [
         "awesome-mcp-servers"
@@ -36957,6 +38675,18 @@
     },
     {
       "repo": "XZXZZX-Ai/bilibili-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "Yacine-ai-tech/AgentKit",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "yagobski/agentleak",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -37450,6 +39180,12 @@
       ]
     },
     {
+      "repo": "yxs1640-png/xflux",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "yylo-dev/yylo",
       "feeds": [
         "awesome-opensource-ai"
@@ -37535,6 +39271,12 @@
     },
     {
       "repo": "zaizaizhao/mcp-swagger-server",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "zanaat-dev/baron",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -37632,6 +39374,12 @@
       ]
     },
     {
+      "repo": "zeitcow/implicit-core",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "zekebuilds-lab/captcha-mcp",
       "feeds": [
         "awesome-mcp-servers"
@@ -37693,6 +39441,12 @@
       ]
     },
     {
+      "repo": "Zeraissh/stm32-gdb-mcp",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
       "repo": "zereight/gitlab-mcp",
       "feeds": [
         "verified-awesome-mcp-servers"
@@ -37742,6 +39496,12 @@
     },
     {
       "repo": "Zhonghao1995/agentic-swmm-workflow",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ZhongQuinnKing/caishi",
       "feeds": [
         "awesome-mcp-servers"
       ]
@@ -37800,6 +39560,12 @@
       "repo": "zinja-coder/jadx-ai-mcp",
       "feeds": [
         "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "ziyu/system-one-sdk",
+      "feeds": [
+        "awesome-opensource-ai"
       ]
     },
     {
@@ -37960,6 +39726,12 @@
     },
     {
       "repo": "zw008/VMware-VKS",
+      "feeds": [
+        "awesome-mcp-servers"
+      ]
+    },
+    {
+      "repo": "zwznco/camberstack-mcp",
       "feeds": [
         "awesome-mcp-servers"
       ]
