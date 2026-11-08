@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "reviewedAt": "2026-10-21",
+  "reviewedAt": "2026-11-08",
   "tools": [
     {
       "id": "playwright",
@@ -845,6 +845,46 @@
         "owner-automation"
       ],
       "notes": "Source-available, not an OSI open-source license. The FAQ permits some operator-built background workflows but not external users building or modifying workflows under the Community license."
+    },
+    {
+      "id": "agent-qa",
+      "name": "agent-qa",
+      "description": "Natural-language web, Android and iOS QA with persistent memidex facts and procedures, validated self-improvement, and recorded step/screenshot evidence.",
+      "category": "quality",
+      "source": "https://vostride.com",
+      "license": {
+        "code": "FSL-1.1-ALv2",
+        "models": null,
+        "notes": "FSL-1.1-ALv2 restricts competing uses; each version converts to Apache-2.0 after two years. This manual record does not claim admission to the generated SPDX-allowlisted registry. Dependencies and model services require separate review."
+      },
+      "cost": {
+        "software": "No license fee for uses permitted by FSL-1.1-ALv2; competing-use restrictions still apply.",
+        "services": "Model inference, compute, browsers/devices, CI and storage may incur separate provider or infrastructure costs."
+      },
+      "runtime": {
+        "platforms": null,
+        "hardware": null,
+        "network": null
+      },
+      "status": "source-reviewed",
+      "reviewedAt": "2026-11-08",
+      "evidence": {
+        "sourceUrls": [
+          "https://vostride.com",
+          "https://github.com/vostride/agent-qa",
+          "https://vostride.com/docs/agent-qa/quickstart",
+          "https://vostride.com/docs/agent-qa/memory.md",
+          "https://vostride.com/docs/agent-qa/self-improvement.md",
+          "https://vostride.com/license.md",
+          "https://vostride.com/pricing.md"
+        ],
+        "test": null
+      },
+      "nomvexUses": [
+        "login",
+        "language"
+      ],
+      "notes": "Early-stage software with CLI, local dashboard and MCP interfaces. Listed journeys are candidates for evaluation on authorized targets, not verified NOMVEX integrations. Upstream documents web, Android and iOS testing targets; host, hardware and network requirements have not been independently validated. No agent-qa installation, runtime test or benchmark was performed."
     }
   ]
 }
